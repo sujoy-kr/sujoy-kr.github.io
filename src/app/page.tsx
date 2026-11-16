@@ -3,181 +3,101 @@ import Image from "next/image";
 import { featured, projects } from "@/data/projects";
 import { Arrow } from "@/components/Icons";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Tx } from "@/components/Tx";
+
+const services = [
+  {
+    en: ["Websites that communicate", "Clear, responsive sites for businesses, services and campaigns."],
+    bn: ["যে ওয়েবসাইট কথা বলে", "ব্যবসা, সেবা ও ক্যাম্পেইনের জন্য পরিষ্কার ও রেসপন্সিভ সাইট।"],
+  },
+  {
+    en: ["Applications that organise", "Catalogues, admin tools and workflows that bring information together."],
+    bn: ["যে অ্যাপ্লিকেশন গুছিয়ে দেয়", "ক্যাটালগ, অ্যাডমিন টুল ও ওয়ার্কফ্লো, যা তথ্যকে এক জায়গায় আনে।"],
+  },
+  {
+    en: ["Engineering with intention", "Readable code, explicit system boundaries, and practical verification."],
+    bn: ["ভেবেচিন্তে করা ইঞ্জিনিয়ারিং", "পাঠযোগ্য কোড, স্পষ্ট সিস্টেম-সীমানা এবং বাস্তবসম্মত যাচাই।"],
+  },
+];
+
 export default function Home() {
   return (
     <main id="main">
       <section className="hero wrap">
         <div className="hero-copy">
-          <div className="availability">
-            <i /> Open to projects & opportunities
-          </div>
-          <h1>
-            Good ideas.
-            <br />
-            Thoughtful code.
-            <br />
-            <em>Useful things.</em>
-          </h1>
-          <p>
-            I’m Sujoy, a full-stack developer turning business problems into
-            websites and applications people can actually use.
+          <p className="availability">
+            <i />
+            <Tx en="Open to projects & opportunities" bn="নতুন প্রকল্প ও সুযোগের জন্য প্রস্তুত" />
           </p>
-          <div className="hero-actions">
-            <Link className="button" href="/projects/">
-              Explore my work <Arrow diagonal />
+          <h1>
+            <Tx
+              en={<>Good ideas.<br />Thoughtful code.<br /><em>Useful things.</em></>}
+              bn={<>ভালো ভাবনা।<br />যত্নের কোড।<br /><em>কাজের জিনিস।</em></>}
+            />
+          </h1>
+          <p className="hero-lead">
+            <Tx
+              en="I’m Sujoy, a full-stack developer turning business problems into websites and applications people can actually use."
+              bn="আমি সুজয়, একজন ফুল-স্ট্যাক ডেভেলপার। ব্যবসার সমস্যাকে এমন ওয়েবসাইট ও অ্যাপ্লিকেশনে রূপ দিই, যা মানুষ সত্যিই ব্যবহার করতে পারে।"
+            />
+          </p>
+          <div className="actions">
+            <Link className="button primary" href="/projects/">
+              <Tx en="Explore my work" bn="আমার কাজ দেখুন" />
+              <Arrow />
             </Link>
             <Link className="text-link" href="/about/">
-              A little about me <Arrow />
+              <Tx en="About me" bn="আমার কথা" />
             </Link>
           </div>
-          <div className="hero-location">
-            <span>BASED IN BANGLADESH</span>
-            <span>BUILDING FOR THE WEB & BEYOND</span>
-          </div>
         </div>
-        <div className="hero-canvas">
-          <div className="canvas-top">
-            <span>FROM THE WORKBENCH</span>
-            <span>↗</span>
-          </div>
-          <div className="canvas-ring" />
-          <Link href="/projects/gsg/" className="hero-browser">
-            <div className="browser-bar">
-              <span>● ● ●</span>
-              <span>G.S. Garments Ltd.</span>
-              <Arrow diagonal />
-            </div>
-            <Image
-              src="/images/hero/gsg-home.webp"
-              width={1920}
-              height={1152}
-              alt="G.S. Garments Ltd. homepage featuring its factory and clothing collections"
-              priority
-            />
-          </Link>
-          <Link href="/projects/hood-up-cse489/" className="hero-phone">
-            <Image
-              src="/images/hero/hood-up-workshop.webp"
-              width={810}
-              height={1794}
-              alt="Hood Up Android app showing a workshop, vehicle-service prices and booking options"
-              priority
-            />
-          </Link>
-          <div className="canvas-note">
-            <span className="star">✳</span>
-            <span>
-              Built for real workflows.
-              <br />
-              Considered down to the details.
-            </span>
-          </div>
-          <div className="canvas-foot">
-            <span>WEB / MOBILE / DATA</span>
-            <span>SELECTED EXPLORATIONS — 01</span>
-          </div>
-        </div>
+        <Link href="/projects/gsg/" className="hero-image" aria-label="G.S. Garments Ltd.">
+          <Image
+            src="/images/hero/gsg-home.webp"
+            width={1920}
+            height={1152}
+            alt="G.S. Garments Ltd. homepage featuring its factory and clothing collections"
+            priority
+            sizes="(min-width: 960px) 560px, 100vw"
+          />
+        </Link>
       </section>
-      <div className="skills-strip">
-        <span>FULL-STACK DEVELOPMENT</span>
-        <b>✳</b>
-        <span>BUSINESS WEBSITES</span>
-        <b>✳</b>
-        <span>ANDROID APPLICATIONS</span>
-        <b>✳</b>
-        <span>DATA & AI</span>
-      </div>
+
       <section className="section wrap">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">01 / SELECTED WORK</span>
-            <h2>
-              Different problems.
-              <br />
-              <em>The same care.</em>
-            </h2>
-          </div>
-          <div className="section-intro">
-            <p>
-              A selection of business tools, native apps, and research projects.
-              Follow the interfaces through to the engineering behind them.
-            </p>
-            <Link className="text-link" href="/projects/">
-              All {projects.length} projects <Arrow diagonal />
-            </Link>
-          </div>
+        <div className="section-head">
+          <h2>
+            <Tx en="Selected work" bn="নির্বাচিত কাজ" />
+          </h2>
+          <Link className="text-link" href="/projects/">
+            <Tx en={`All ${projects.length} projects`} bn={`সব ${projects.length}টি প্রকল্প`} />
+            <Arrow />
+          </Link>
         </div>
-        <div className="project-grid home-grid">
-          {featured.slice(0, 3).map((p, i) => (
-            <ProjectCard key={p.slug} project={p} index={i} />
+        <div className="grid">
+          {featured.slice(0, 3).map((p) => (
+            <ProjectCard key={p.slug} project={p} />
           ))}
         </div>
-        <Link href="/projects/" className="collection-link">
-          Explore the full collection{" "}
-          <span>
-            Web apps, systems, experiments & earlier client work <Arrow />
-          </span>
-        </Link>
       </section>
-      <section className="approach-section">
-        <div className="wrap approach">
-          <div>
-            <span className="eyebrow">02 / HOW I CAN HELP</span>
-            <h2>
-              Useful to your business.
-              <br />
-              <em>Clear to your team.</em>
-            </h2>
-            <p>
-              I work across the interface and the systems behind it, keeping the
-              business workflow in view.
-            </p>
-            <Link className="text-link" href="/contact/">
-              Tell me what you’re building <Arrow diagonal />
-            </Link>
-          </div>
-          <div className="services">
-            {[
-              [
-                "01",
-                "Websites that communicate",
-                "Clear, responsive sites for businesses, services and campaigns.",
-              ],
-              [
-                "02",
-                "Applications that organise",
-                "Catalogues, admin tools and workflows that bring information together.",
-              ],
-              [
-                "03",
-                "Engineering with intention",
-                "Readable code, explicit system boundaries, and practical verification.",
-              ],
-            ].map(([n, t, d]) => (
-              <div key={n}>
-                <span>{n}</span>
-                <div>
-                  <h3>{t}</h3>
-                  <p>{d}</p>
-                </div>
-                <Arrow diagonal />
-              </div>
-            ))}
-          </div>
+
+      <section className="section wrap">
+        <div className="section-head">
+          <h2>
+            <Tx en="How I can help" bn="যেভাবে সাহায্য করতে পারি" />
+          </h2>
         </div>
-      </section>
-      <section className="wrap about-teaser">
-        <span className="eyebrow">THE PERSON BEHIND THE PROJECTS</span>
-        <p>
-          Curious about the problem.
-          <br />
-          Careful with the implementation.
-          <br />
-          <em>Always learning from the next build.</em>
-        </p>
-        <Link className="text-link" href="/about/">
-          Meet Sujoy <Arrow diagonal />
-        </Link>
+        <div className="services">
+          {services.map((s) => (
+            <div key={s.en[0]}>
+              <h3>
+                <Tx en={s.en[0]} bn={s.bn[0]} />
+              </h3>
+              <p>
+                <Tx en={s.en[1]} bn={s.bn[1]} />
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

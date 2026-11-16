@@ -1,20 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "@/data/projects";
-import { Github } from "./Icons";
-export function ProjectCard({
-  project: p,
-  index = 0,
-}: {
-  project: Project;
-  index?: number;
-}) {
+import { groupLabels } from "@/data/labels";
+import { Tx } from "./Tx";
+
+export function ProjectCard({ project: p }: { project: Project }) {
   return (
-    <article className="project-card">
+    <article className="card">
       <Link
         href={`/projects/${p.slug}/`}
-        className="project-image"
-        aria-label={`View ${p.title} case study`}
+        className="card-image"
+        aria-label={p.title}
       >
         <Image
           className={p.thumbnailOverlayBaked ? undefined : "thumbnail-overlay"}
@@ -22,36 +18,18 @@ export function ProjectCard({
           alt={`${p.title} — ${p.imageKind}`}
           width={p.thumbnailWidth}
           height={p.thumbnailHeight}
+          sizes="(min-width: 960px) 360px, (min-width: 600px) 50vw, 100vw"
         />
       </Link>
       <div className="card-meta">
-        <span>{p.group}</span>
-        <span>{String(index + 1).padStart(2, "0")}</span>
+        <Tx en={p.group} bn={groupLabels[p.group] ?? p.group} />
       </div>
       <h3>
         <Link href={`/projects/${p.slug}/`}>{p.title}</Link>
       </h3>
-      <p>{p.pitch}</p>
-      <div className="card-bottom">
-        <span>
-          {p.displayTechnologies.length
-            ? p.displayTechnologies.slice(0, 3).join(" / ")
-            : p.highlights[0]}
-        </span>
-        {p.github && (
-          <a
-            href={p.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="source"
-            aria-label={`${p.title} on GitHub`}
-          >
-            <Github />
-            <span>GitHub</span>
-            <span className="sr-only"> (opens a new tab)</span>
-          </a>
-        )}
-      </div>
+      <p>
+        <Tx en={p.pitch} bn={p.bn.pitch} />
+      </p>
     </article>
   );
 }

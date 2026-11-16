@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { designs } from "@/data/designs";
+import { designs, designBn } from "@/data/designs";
+import { categoryLabels } from "@/data/labels";
+import { Tx } from "@/components/Tx";
 import { Gallery } from "@/components/Gallery";
 import { Arrow } from "@/components/Icons";
 export const dynamicParams = false;
@@ -31,38 +33,43 @@ export default async function DesignPage({
   if (!d) notFound();
   const next = designs[(designs.indexOf(d) + 1) % designs.length];
   return (
-    <main id="main" className="wrap detail-page">
+    <main id="main" className="wrap page detail">
       <Link className="back-link" href="/design/">
-        ← All designs
+        ← <Tx en="All designs" bn="সব ডিজাইন" />
       </Link>
-      <div className="detail-heading">
-        <div>
-          <span className="eyebrow">{d.category.toUpperCase()} / DESIGN</span>
-          <h1>{d.title}</h1>
-          <p>{d.description}</p>
-        </div>
-      </div>
-      <div className="project-cover">
+      <header className="detail-head">
+        <p className="eyebrow">
+          <Tx en={d.category} bn={categoryLabels[d.category] ?? d.category} />
+        </p>
+        <h1>{d.title}</h1>
+        <p className="lead">
+          <Tx en={d.description} bn={designBn[d.slug] ?? d.description} />
+        </p>
+      </header>
+      {d.images.length > 0 ? (
+        <section id="gallery" className="gallery-section no-title">
+          <Gallery key={d.slug} project={d} />
+        </section>
+      ) : (
         <Image
+          className="cover"
           src={d.thumbnail.src}
           alt={`${d.title} — design preview`}
           width={d.thumbnail.width}
           height={d.thumbnail.height}
           priority
+          sizes="(min-width: 1180px) 1100px, 100vw"
         />
-      </div>
-      {d.images.length > 0 && (
-        <section id="gallery" className="gallery-section">
-          <Gallery key={d.slug} project={d} />
-        </section>
       )}
-      <div className="next-project">
-        <span className="eyebrow">NEXT DESIGN</span>
+      <nav className="next-project" aria-label="Next design">
+        <span>
+          <Tx en="Next design" bn="পরের ডিজাইন" />
+        </span>
         <Link href={`/design/${next.slug}/`}>
           {next.title}
-          <Arrow diagonal />
+          <Arrow />
         </Link>
-      </div>
+      </nav>
     </main>
   );
 }

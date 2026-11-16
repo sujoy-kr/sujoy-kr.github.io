@@ -1,12 +1,20 @@
 import Link from "next/link";
+import { Tx } from "@/components/Tx";
+
 export default function NotFound() {
   return (
-    <main id="main" className="wrap empty">
-      <span className="eyebrow">404 / NOT IN THE COLLECTION</span>
-      <h1>This page wandered off.</h1>
-      <p>There’s plenty of work to explore back in the collection.</p>
-      <Link className="button" href="/projects/">
-        Browse projects →
+    <main id="main" className="wrap page">
+      <h1>
+        <Tx en="This page wandered off." bn="পাতাটি হারিয়ে গেছে।" />
+      </h1>
+      <p className="lead">
+        <Tx
+          en="There’s plenty of work to explore back in the collection."
+          bn="সংগ্রহে দেখার মতো আরও অনেক কাজ আছে।"
+        />
+      </p>
+      <Link className="button primary" href="/projects/">
+        <Tx en="Browse projects" bn="প্রকল্পগুলো দেখুন" />
       </Link>
     </main>
   );

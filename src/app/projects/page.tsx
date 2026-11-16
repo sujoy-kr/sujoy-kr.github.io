@@ -1,26 +1,27 @@
 import type { Metadata } from "next";
 import { ProjectExplorer } from "@/components/ProjectExplorer";
+import { Tx } from "@/components/Tx";
+
 export const metadata: Metadata = {
   title: "Projects",
   description:
     "Browse applications, client websites, Android projects, data tools and backend systems. Filter by discipline or search the technology stack.",
 };
+
 export default function Projects() {
   return (
-    <main id="main" className="wrap projects-page">
-      <div className="page-heading">
-        <span className="eyebrow">THE WORK / THE EXPLORATIONS</span>
+    <main id="main" className="wrap page">
+      <header className="page-head">
         <h1>
-          A collection of
-          <br />
-          <em>things I’ve built.</em>
+          <Tx en={<>Things I’ve <em>built.</em></>} bn={<>আমার <em>তৈরি করা কাজ।</em></>} />
         </h1>
-        <p>
-          Business workflows, mobile companions, and ideas explored in code.
-          Start with the featured projects, or find the work that’s relevant to
-          you.
+        <p className="lead">
+          <Tx
+            en="Business workflows, mobile companions, and ideas explored in code."
+            bn="ব্যবসার ওয়ার্কফ্লো, মোবাইল সঙ্গী, আর কোডে যাচাই করা নানা ভাবনা।"
+          />
         </p>
-      </div>
+      </header>
       <ProjectExplorer />
     </main>
   );

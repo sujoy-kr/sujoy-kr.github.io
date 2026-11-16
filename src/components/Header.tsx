@@ -1,38 +1,59 @@
 "use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Arrow } from "./Icons";
+import { Tx } from "./Tx";
+import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeToggle } from "./ThemeToggle";
+
+const links = [
+  { href: "/projects/", en: "Work", bn: "কাজ" },
+  { href: "/design/", en: "Design", bn: "ডিজাইন" },
+  { href: "/about/", en: "About", bn: "পরিচিতি" },
+  { href: "/contact/", en: "Contact", bn: "যোগাযোগ" },
+];
+
 export function Header() {
   const pathname = usePathname();
+  const [menu, setMenu] = useState(false);
+  useEffect(() => setMenu(false), [pathname]);
   return (
-    <header className="header">
-      <Link href="/" className="wordmark" aria-label="Sujoy Karmakar home">
-        sujoy<span>kr.</span>
-      </Link>
-      <nav aria-label="Main navigation">
-        {[
-          ["/projects/", "Work"],
-          ["/design/", "Design"],
-          ["/about/", "About"],
-          ["/contact/", "Contact"],
-        ].map(([href, label]) => (
-          <Link
-            key={href}
-            href={href}
-            aria-current={
-              pathname.startsWith(href.replace(/\/$/, "")) ? "page" : undefined
-            }
-          >
-            {label}
-          </Link>
-        ))}
-      </nav>
-      <div className="header-actions">
-        <ThemeToggle />
-        <Link className="header-cta" href="/contact/">
-          Let’s talk <Arrow diagonal />
+    <header className="header" data-open={menu}>
+      <div className="header-inner">
+        <Link href="/" className="wordmark" aria-label="Sujoy Karmakar">
+          Sujoy Karmakar
         </Link>
+        <nav id="site-nav" aria-label="Main navigation">
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              aria-current={
+                pathname.startsWith(l.href.replace(/\/$/, ""))
+                  ? "page"
+                  : undefined
+              }
+            >
+              <Tx en={l.en} bn={l.bn} />
+            </Link>
+          ))}
+        </nav>
+        <div className="header-actions">
+          <LanguageSwitch />
+          <ThemeToggle />
+          <button
+            type="button"
+            className="menu-button"
+            aria-expanded={menu}
+            aria-controls="site-nav"
+            aria-label="Menu"
+            onClick={() => setMenu((v) => !v)}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+              {menu ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 8h16M4 16h16" />}
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
   );

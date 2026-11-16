@@ -1,8 +1,19 @@
 import { Arrow, Github } from "./Icons";
+import { Tx } from "./Tx";
 import type { Project } from "@/data/projects";
+
+const repoLabels: Record<string, string> = {
+  "View on GitHub": "GitHub-এ দেখুন",
+  Frontend: "ফ্রন্টএন্ড",
+  "Backend API": "ব্যাকএন্ড API",
+  "Public website": "পাবলিক ওয়েবসাইট",
+  "Admin panel": "অ্যাডমিন প্যানেল",
+};
+
 export function RepositoryLinks({ project }: { project: Project }) {
+  if (!project.repositories.length && !project.liveUrl) return null;
   return (
-    <div className="project-source-links">
+    <div className="detail-links">
       {project.repositories.map((repository) => (
         <a
           key={repository.url}
@@ -12,7 +23,7 @@ export function RepositoryLinks({ project }: { project: Project }) {
           rel="noopener noreferrer"
         >
           <Github />
-          {repository.label}
+          <Tx en={repository.label} bn={repoLabels[repository.label] ?? repository.label} />
           <Arrow diagonal />
         </a>
       ))}
@@ -23,7 +34,7 @@ export function RepositoryLinks({ project }: { project: Project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visit website
+          <Tx en="Visit website" bn="ওয়েবসাইট দেখুন" />
           <Arrow diagonal />
         </a>
       )}

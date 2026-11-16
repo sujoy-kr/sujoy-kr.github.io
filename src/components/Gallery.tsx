@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { ProjectImage } from "@/data/projects";
+import { Tx } from "./Tx";
+import { layoutRows } from "@/lib/rows";
 
 type GalleryProject = {
   title: string;
@@ -23,6 +25,17 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
   const [zoom, setZoom] = useState(1);
   const [open, setOpen] = useState(false);
   const current = p.images[selected];
+  const ratios = useMemo(
+    () => p.images.map((i) => (i.width ?? 1440) / (i.height ?? 1000)),
+    [p.images],
+  );
+  const layouts = useMemo(
+    () => ({
+      wide: layoutRows(ratios, { width: 1100, gap: 16, target: 400, tallTarget: 900, maxHeight: 1500, maxPerRow: 4 }),
+      narrow: layoutRows(ratios, { width: 350, gap: 10, target: 300, tallTarget: 700, maxHeight: 1800, maxPerRow: 2 }),
+    }),
+    [ratios],
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -58,40 +71,43 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
 
   return (
     <>
-      <div
-        className={`gallery ${p.images.every((image) => (image.height ?? 0) / (image.width ?? 1) > 1.15) ? "gallery-portraits" : ""}`}
-      >
-        {p.images.map((image, index) => (
-          <figure
-            key={image.src}
-            className={
-              (image.height ?? 0) / (image.width ?? 1) > 2.4
-                ? "gallery-long"
-                : (image.height ?? 0) / (image.width ?? 1) > 1.15
-                  ? "gallery-portrait"
-                  : ""
-            }
-          >
-            <button
-              className="gallery-zoom"
-              aria-label={`Enlarge ${p.title}: ${image.caption}`}
-              onClick={() => {
-                setSelected(index);
-                setZoom(1);
-                setOpen(true);
-                dialog.current?.showModal();
-              }}
+      {(["wide", "narrow"] as const).map((mode) => (
+        <div className={`gallery gallery-${mode}`} key={mode}>
+          {layouts[mode].map((row) => (
+            <div
+              className="gallery-row"
+              style={{ maxWidth: row.max }}
+              key={row.items.join("-")}
             >
-              <Image
-                src={image.src}
-                alt={`${p.title}: ${image.caption}`}
-                width={image.width ?? 1440}
-                height={image.height ?? 1000}
-              />
-            </button>
-          </figure>
-        ))}
-      </div>
+              {row.items.map((index) => {
+                const image = p.images[index];
+                return (
+                  <figure key={image.src} style={{ flexGrow: Math.round(ratios[index] * 1000) }}>
+                    <button
+                      className="gallery-zoom"
+                      aria-label={`Enlarge ${p.title}: ${image.caption}`}
+                      onClick={() => {
+                        setSelected(index);
+                        setZoom(1);
+                        setOpen(true);
+                        dialog.current?.showModal();
+                      }}
+                    >
+                      <Image
+                        src={image.src}
+                        alt={`${p.title}: ${image.caption}`}
+                        width={image.width ?? 1440}
+                        height={image.height ?? 1000}
+                        sizes="(min-width: 720px) 1100px, 100vw"
+                      />
+                    </button>
+                  </figure>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      ))}
       <dialog
         ref={dialog}
         className="lightbox"
@@ -129,7 +145,7 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
       >
         <div className="lightbox-toolbar">
           <a href={current.src} target="_blank" rel="noopener noreferrer">
-            Open original ↗
+            <Tx en="Open original ↗" bn="মূল ছবি ↗" />
           </a>
           <button
             autoFocus
@@ -137,7 +153,7 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
             onClick={() => dialog.current?.close()}
             aria-label="Close enlarged image"
           >
-            Close ×
+            <Tx en="Close ×" bn="বন্ধ ×" />
           </button>
         </div>
         <div
@@ -190,7 +206,7 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
             onClick={() => move(-1)}
             disabled={p.images.length < 2}
           >
-            ← <span>Previous</span>
+            ← <span><Tx en="Previous" bn="আগের" /></span>
           </button>
           <div className="zoom-controls" aria-label="Image zoom controls">
             <button
@@ -224,7 +240,7 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
             onClick={() => move(1)}
             disabled={p.images.length < 2}
           >
-            <span>Next</span> →
+            <span><Tx en="Next" bn="পরের" /></span> →
           </button>
         </div>
         <span className="sr-only" aria-live="polite">

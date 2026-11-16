@@ -1,5 +1,15 @@
 import data from "./projects.json";
 import galleries from "./galleries.json";
+import bnData from "./projects.bn.json";
+
+export type ProjectBn = {
+  pitch: string;
+  highlights: string[];
+  audience: string;
+  overview: string;
+  engineering: string;
+};
+const bnBySlug = bnData as Record<string, ProjectBn>;
 export type ProjectImage = {
   src: string;
   caption: string;
@@ -16,6 +26,7 @@ export type Project = (typeof data)[number] & {
   thumbnailPresentation?: string;
   images: ProjectImage[];
   displayTechnologies: string[];
+  bn: ProjectBn;
 };
 export const projects: Project[] = data.map((project) => {
   const gallery = galleries[project.slug as keyof typeof galleries];
@@ -36,6 +47,13 @@ export const projects: Project[] = data.map((project) => {
       : undefined,
     images: gallery.images,
     displayTechnologies,
+    bn: bnBySlug[project.slug] ?? {
+      pitch: project.pitch,
+      highlights: project.highlights,
+      audience: project.audience,
+      overview: project.overview,
+      engineering: project.engineering,
+    },
   };
 });
 export const featured = projects.filter((p) => p.featured);

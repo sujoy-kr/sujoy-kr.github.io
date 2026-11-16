@@ -1,23 +1,25 @@
 export function Arrow({ diagonal = false }: { diagonal?: boolean }) {
   return (
     <svg
-      width="20"
-      height="20"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.6"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       aria-hidden="true"
     >
-      <path d={diagonal ? "M5 19 19 5M5 5h14v14" : "M4 12h16m-6-6 6 6-6 6"} />
+      <path d={diagonal ? "M7 17 17 7M8 7h9v9" : "M4 12h16m-6-6 6 6-6 6"} />
     </svg>
   );
 }
 export function Github() {
   return (
     <svg
-      width="18"
-      height="18"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
