@@ -1,0 +1,140 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/safoyana-v2.png",
+    "caption": "Safoyana Digital Print · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "landify"
+  },
+  "images": {
+    "image1.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-desktop.png",
+      "caption": "Customer product catalogue · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image2.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png",
+      "caption": "Admin dashboard with revenue and order status charts · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1272
+    },
+    "image3.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-orders-desktop.png",
+      "caption": "Admin order queue and status actions · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image4.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-mobile.png",
+      "caption": "Customer product catalogue on mobile · fictional demo data",
+      "kind": "local",
+      "width": 390,
+      "height": 844
+    },
+    "image5.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/order-detail-desktop.png",
+      "caption": "Customer order detail and product specification · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1068
+    },
+    "image6.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/product-configuration-desktop.png",
+      "caption": "Business card stock, quantity pricing and artwork configuration · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1383
+    },
+    "image7.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/home-desktop.png",
+      "caption": "Customer storefront and product categories · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 2252
+    },
+    "image8.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/category-desktop.png",
+      "caption": "Customer marketing materials category · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image9.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-products-desktop.png",
+      "caption": "Admin product catalogue and variants · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image10.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-categories-desktop.png",
+      "caption": "Admin category management · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image11.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-customers-desktop.png",
+      "caption": "Admin customer directory · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image12.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-order-detail-desktop.png",
+      "caption": "Admin order manifest, customer and payment summary · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image13.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-product-editor-desktop.png",
+      "caption": "Admin product editor with image, variants and volume pricing · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 2062
+    },
+    "image14.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/admin-customer-detail-desktop.png",
+      "caption": "Admin customer details and order history · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image15.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/customer-orders-desktop.png",
+      "caption": "Customer account and order history · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1544
+    },
+    "image16.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/customer-profile-desktop.png",
+      "caption": "Customer profile details · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1047
+    },
+    "image17.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/customer-address-desktop.png",
+      "caption": "Customer delivery address · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image18.webp": {
+      "source": "Safoyana-Digital-Print/docs/screenshots/customer-cart-desktop.png",
+      "caption": "Customer cart with configured business cards and uploaded artwork · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png",
+    "caption": "TalenTrack · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "clipping"
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Home page · existing repository capture",
+      "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 1244
+    },
+    "image2.webp": {
+      "caption": "Admin dashboard page · existing repository capture",
+      "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 1351
+    },
+    "image3.webp": {
+      "caption": "Admin login page · existing repository capture",
+      "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-login-page.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 961
+    },
+    "image4.webp": {
+      "caption": "Ai copilot chat page · existing repository capture",
+      "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png",
+      "kind": "existing",
+      "width": 2000,
+      "height": 1125
+    },
+    "image5.webp": {
+      "caption": "Applicant list page · existing repository capture",
+      "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 961
+    },
+    "image6.webp": {
+      "caption": "Apply for job page · existing repository capture",
+      "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/apply-for-job-page.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 961
+    }
+  }
+}

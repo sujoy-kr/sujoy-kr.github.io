@@ -1,0 +1,140 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/reclaim.html",
+    "caption": "PATH Smoking Resumption Prediction · reference-led artistic screenshot composition",
+    "kind": "artistic-composition",
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "artDirection": "portfolio-nextjs/docs/design/art-direction/reclaim.png",
+    "reference": "landify"
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Probability timeline desktop · fictional demo data",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/probability-timeline-desktop.png",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image2.webp": {
+      "caption": "Contributing factors desktop · fictional demo data",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/contributing-factors-desktop.png",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image3.webp": {
+      "caption": "Fictional assessment desktop · fictional demo data",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/fictional-assessment-desktop.png",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image4.webp": {
+      "caption": "Outlook desktop · fictional demo data",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-desktop.png",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image5.webp": {
+      "caption": "Outlook mobile · fictional demo data",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-mobile.png",
+      "kind": "local",
+      "width": 390,
+      "height": 844
+    },
+    "image6.webp": {
+      "caption": "Earlier research report · baseline calibration",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/baseline_calibration.png",
+      "kind": "report",
+      "width": 1635,
+      "height": 585
+    },
+    "image7.webp": {
+      "caption": "Earlier research report · calibration",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/calibration.png",
+      "kind": "report",
+      "width": 1335,
+      "height": 735
+    },
+    "image8.webp": {
+      "caption": "Earlier research report · confusion matrix",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/confusion_matrix.png",
+      "kind": "report",
+      "width": 656,
+      "height": 585
+    },
+    "image9.webp": {
+      "caption": "Earlier research report · feature distributions",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/feature_distributions.png",
+      "kind": "report",
+      "width": 1842,
+      "height": 1104
+    },
+    "image10.webp": {
+      "caption": "Earlier research report · followup availability",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/followup_availability.png",
+      "kind": "report",
+      "width": 1168,
+      "height": 548
+    },
+    "image11.webp": {
+      "caption": "Earlier research report · interval prevalence",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/interval_prevalence.png",
+      "kind": "report",
+      "width": 960,
+      "height": 548
+    },
+    "image12.webp": {
+      "caption": "Earlier research report · missingness",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/missingness.png",
+      "kind": "report",
+      "width": 1417,
+      "height": 1168
+    },
+    "image13.webp": {
+      "caption": "Earlier research report · output global explanations",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_global_explanations.png",
+      "kind": "report",
+      "width": 1485,
+      "height": 735
+    },
+    "image14.webp": {
+      "caption": "Earlier research report · output risk categories",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_risk_categories.png",
+      "kind": "report",
+      "width": 1035,
+      "height": 585
+    },
+    "image15.webp": {
+      "caption": "Earlier research report · quit recency",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/quit_recency.png",
+      "kind": "report",
+      "width": 1245,
+      "height": 656
+    },
+    "image16.webp": {
+      "caption": "Earlier research report · repeated observations",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/repeated_observations.png",
+      "kind": "report",
+      "width": 876,
+      "height": 548
+    },
+    "image17.webp": {
+      "caption": "Earlier research report · risk categories",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/risk_categories.png",
+      "kind": "report",
+      "width": 1035,
+      "height": 585
+    },
+    "image18.webp": {
+      "caption": "Earlier research report · tree comparison calibration",
+      "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/tree_comparison_calibration.png",
+      "kind": "report",
+      "width": 1035,
+      "height": 735
+    }
+  }
+}

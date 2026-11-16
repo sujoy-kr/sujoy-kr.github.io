@@ -1,0 +1,32 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/groupchat/groupchat-cover.png",
+    "caption": "Group Chat · Previous portfolio archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/groupchat/groupchat-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/groupchat/1.png",
+      "kind": "archive",
+      "width": 800,
+      "height": 600
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/groupchat/2.png",
+      "kind": "archive",
+      "width": 905,
+      "height": 680
+    }
+  }
+}

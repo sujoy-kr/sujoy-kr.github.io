@@ -1,0 +1,45 @@
+{
+  "thumbnail": {
+    "source": "Original code-native portfolio illustration",
+    "caption": "Beauty commerce · storefront · Repository artwork",
+    "width": null,
+    "height": null
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Original design asset · dermacaremedi banner 1 (not an application screenshot)",
+      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 1.jpg",
+      "kind": "asset",
+      "width": 1200,
+      "height": 300
+    },
+    "image2.webp": {
+      "caption": "Original design asset · dermacaremedi banner 2 (not an application screenshot)",
+      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 2.jpg",
+      "kind": "asset",
+      "width": 1200,
+      "height": 300
+    },
+    "image3.webp": {
+      "caption": "Original design asset · dermacaremedi banner 3 (not an application screenshot)",
+      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 3.jpg",
+      "kind": "asset",
+      "width": 1200,
+      "height": 300
+    },
+    "image4.webp": {
+      "caption": "Original design asset · dermacaremedi banner 4 (not an application screenshot)",
+      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 4.jpg",
+      "kind": "asset",
+      "width": 2000,
+      "height": 500
+    },
+    "image5.webp": {
+      "caption": "Original design asset · dermacaremedi banner 5 (not an application screenshot)",
+      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 5.jpg",
+      "kind": "asset",
+      "width": 1200,
+      "height": 300
+    }
+  }
+}

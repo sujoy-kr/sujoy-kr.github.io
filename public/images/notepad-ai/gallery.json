@@ -1,0 +1,35 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png",
+    "caption": "Notepad AI · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "clipping"
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Saved notes desktop · fictional demo data",
+      "source": "Notepad-AI/docs/screenshots/saved-notes-desktop.png",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image2.webp": {
+      "caption": "Release checklist desktop · fictional demo data",
+      "source": "Notepad-AI/docs/screenshots/release-checklist-desktop.png",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image3.webp": {
+      "caption": "App screenshot · existing repository capture",
+      "source": "Notepad-AI/docs/app-screenshot.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 961
+    }
+  }
+}

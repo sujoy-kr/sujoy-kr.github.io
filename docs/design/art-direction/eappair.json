@@ -1,0 +1,11 @@
+{
+  "slug": "eappair",
+  "ref": "plaidea",
+  "prompt": "Use case: compositing. Create an artistic landscape 16:9 portfolio thumbnail. Image 1 is the user's existing cover, a STYLE REFERENCE ONLY. Images 2\u20135 are genuine cropped sections of the target project's full-page website screenshot.\nMatch the reference's flat graphic-design language carefully: pure black background, square-edged page fragments, asymmetric hierarchy, clean black gutters and dramatic edge crops. No added browser chrome, shadows, rounded-window frames, device mockups, project title, captions or decorative objects. Preserve the original screenshot content, typography, colors, images and records; do not invent a new interface or add claims.\nApply ONE uniform translucent BLACK veil at about 30% opacity across the ENTIRE composition, edge-to-edge, matching the reference's darkened presentation. Keep underlying details crisp. Deliver the highest supported image quality.\nProject-specific art direction: Create an asymmetric, axis-aligned editorial mosaic for eAppair, closely following Plaidea. Place a dominant purple website hero toward the upper-left, a narrower services fragment with the original telecom/megaphone imagery on the right, a smaller customer-stories fragment below or between them, and a wide purple contact fragment near the bottom. Mix panel sizes and maintain black gutters. Use actual page sections as flat fragments; no tilt, 3D, added headlines or UI.",
+  "files": [
+    "portfolio-nextjs/docs/design/art-direction/inputs/eappair-0.png",
+    "portfolio-nextjs/docs/design/art-direction/inputs/eappair-1.png",
+    "portfolio-nextjs/docs/design/art-direction/inputs/eappair-2.png",
+    "portfolio-nextjs/docs/design/art-direction/inputs/eappair-3.png"
+  ]
+}

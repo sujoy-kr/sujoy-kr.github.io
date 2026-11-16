@@ -1,0 +1,52 @@
+# Reference-led artistic covers
+
+Nine projects with actual interface captures have new covers: Safoyana, Reclaim, Notepad AI, TalenTrack, P2P File Stream, Secure Note Taking, Canteen Manager, Regro Media and eAppair. The earlier covers have been restored for eleven projects without interface captures, including the scripts and API-only projects. Mobile covers, other Client work entries and the six existing collage covers remain unchanged. Regro Media and eAppair are the two explicitly requested Client work exceptions.
+
+## Reference analysis
+
+Clipping, Portability, Stay Low Key and Plaidea use asymmetric mosaics of flat, square-edged page fragments with varied sizes and clean black gutters. Landify uses bold parallel diagonal page fragments. They have no added browser frames, rounded windows, drop shadows, source-code panels or invented architecture. A single translucent black veil tones the complete image. The new covers follow those specific differences instead of repeating one tilted-card template.
+
+## Art direction and final assets
+
+The built-in imagegen tool produced a separate reference-led art direction for each project, using the user's existing cover as a style reference and the original project screenshots as supporting inserts. Generated art directions and exact prompts are saved as `docs/design/art-direction/<slug>.png` and `<slug>.json`.
+
+The final covers were recomposed from the original screenshots at **3200 × 1800**, following those art directions, so interface text and records remain authentic. The smaller generated concept images were not enlarged into website thumbnails. Cropped screenshot plates retain original pixels; the final browser render supersamples diagonal edges. A single exact **30% black overlay** covers the entire artwork. The complete export is encoded as **lossless WebP**, preserving the PNG master's decoded pixels. Raw gallery screenshots remain clear and unchanged.
+
+- Website assets: `public/images/<slug>/thumbnail.webp`.
+- Full-resolution PNG masters and editable HTML: `docs/design/covers/`.
+- Reference mapping, source crops and layouts: `scripts/cover-specs.json`.
+- Native finishing layout: `scripts/cover-layout.css`.
+- Original covers and provenance: `docs/design/thumbnail-sources/`.
+
+Collection cards use each thumbnail’s original dimensions and natural aspect ratio, showing the complete image without a fixed-ratio crop or stretching. Rounded corners and hover zoom are retained.
+
+## Reproduce the final exports
+
+With Playwright installed in the supplied development package directory:
+
+```sh
+node scripts/render-covers.mjs --playwright-dir /path/to/node_modules
+# Regenerate one finished cover:
+node scripts/render-covers.mjs --playwright-dir /path/to/node_modules --slug safoyana
+npm run images
+npm run build
+```
+
+The renderer’s allowlist includes only the nine screenshot-backed projects. Regro Media and eAppair are explicit Client work exceptions; other client projects and all mobile projects remain protected. It cannot regenerate the restored scripts/API covers. Earlier rejected composition files for other projects are retained as historical working artifacts and are not referenced by the website.
+
+## Safoyana captures
+
+The eighteen original application captures remain available (seventeen desktop views and one mobile catalogue). Its dashboard capture waits for CSS fade-in and Recharts animations to finish; the intentional black overlay applies only to the artistic cover.
+
+## Finished covers and exact imagegen prompts
+
+- safoyana: [finished WebP](../public/images/safoyana/thumbnail.webp), [exact prompt and references](design/art-direction/safoyana.json).
+- reclaim: [finished WebP](../public/images/reclaim/thumbnail.webp), [exact prompt and references](design/art-direction/reclaim.json).
+- notepad-ai: [finished WebP](../public/images/notepad-ai/thumbnail.webp), [exact prompt and references](design/art-direction/notepad-ai.json).
+- talentrack-ai-powered-recruitment-platform: [finished WebP](../public/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp), [exact prompt and references](design/art-direction/talentrack-ai-powered-recruitment-platform.json).
+- p2p-file-stream: [finished WebP](../public/images/p2p-file-stream/thumbnail.webp), [exact prompt and references](design/art-direction/p2p-file-stream.json).
+- secure-note-taking: [finished WebP](../public/images/secure-note-taking/thumbnail.webp), [exact prompt and references](design/art-direction/secure-note-taking.json).
+- cse302-project: [finished WebP](../public/images/cse302-project/thumbnail.webp), [exact prompt and references](design/art-direction/cse302-project.json).
+
+- regro-media: [finished WebP](../public/images/regro-media/thumbnail.webp), [exact prompt and references](design/art-direction/regro-media.json).
+- eappair: [finished WebP](../public/images/eappair/thumbnail.webp), [exact prompt and references](design/art-direction/eappair.json).

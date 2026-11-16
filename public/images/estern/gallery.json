@@ -1,0 +1,46 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/estern/estern-cover.png",
+    "caption": "Estern · Previous client-work archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/estern/estern-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/estern/1.png",
+      "kind": "archive",
+      "width": 1900,
+      "height": 1080
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/estern/2.png",
+      "kind": "archive",
+      "width": 1903,
+      "height": 1080
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/estern/3.png",
+      "kind": "archive",
+      "width": 1901,
+      "height": 1080
+    },
+    "image5.webp": {
+      "caption": "Archived interface · complete page",
+      "source": "sujoykr/assets/img/single-portfolio/estern/full.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 4329
+    }
+  }
+}

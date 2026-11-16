@@ -1,0 +1,74 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/clipping/clipping-cover.png",
+    "caption": "Clipping · Previous client-work archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/clipping-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/1.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 999
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/2.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/3.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    },
+    "image5.webp": {
+      "caption": "Archived interface · screen 4",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/4.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    },
+    "image6.webp": {
+      "caption": "Archived interface · screen 5",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/5.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    },
+    "image7.webp": {
+      "caption": "Archived interface · screen 6",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/6.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    },
+    "image8.webp": {
+      "caption": "Archived interface · screen 7",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/7.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    },
+    "image9.webp": {
+      "caption": "Archived interface · screen 8",
+      "source": "sujoykr/assets/img/single-portfolio/clipping/8.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 912
+    }
+  }
+}

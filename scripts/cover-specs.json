@@ -1,0 +1,547 @@
+[
+  {
+    "slug": "safoyana",
+    "reference": "plaidea",
+    "panels": [
+      {
+        "file": "Safoyana-Digital-Print/docs/screenshots/catalogue-desktop.png",
+        "x": 60,
+        "y": 28,
+        "width": 850,
+        "height": 570
+      },
+      {
+        "file": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png",
+        "x": 970,
+        "y": 28,
+        "width": 560,
+        "height": 320,
+        "crop": [
+          0,
+          0,
+          1440,
+          930
+        ]
+      },
+      {
+        "file": "Safoyana-Digital-Print/docs/screenshots/product-configuration-desktop.png",
+        "x": 930,
+        "y": 375,
+        "width": 600,
+        "height": 495
+      },
+      {
+        "file": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png",
+        "x": 60,
+        "y": 640,
+        "width": 330,
+        "height": 230,
+        "crop": [
+          900,
+          475,
+          500,
+          410
+        ]
+      },
+      {
+        "file": "Safoyana-Digital-Print/docs/screenshots/admin-categories-desktop.png",
+        "x": 435,
+        "y": 640,
+        "width": 440,
+        "height": 230,
+        "crop": [
+          250,
+          40,
+          1190,
+          720
+        ]
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "reclaim",
+    "reference": "landify",
+    "board": {
+      "width": 1565,
+      "columns": 2,
+      "gap": 45,
+      "rotation": -38
+    },
+    "panels": [
+      {
+        "file": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/fictional-assessment-desktop.png",
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 455,
+        "crop": [
+          0,
+          0,
+          1440,
+          850
+        ]
+      },
+      {
+        "file": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/probability-timeline-desktop.png",
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 455,
+        "crop": [
+          0,
+          0,
+          1440,
+          850
+        ]
+      },
+      {
+        "file": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-desktop.png",
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 455,
+        "crop": [
+          0,
+          0,
+          1440,
+          850
+        ]
+      },
+      {
+        "file": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/contributing-factors-desktop.png",
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 455,
+        "crop": [
+          0,
+          0,
+          1440,
+          850
+        ]
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "notepad-ai",
+    "reference": "clipping",
+    "panels": [
+      {
+        "file": "Notepad-AI/docs/screenshots/saved-notes-desktop.png",
+        "x": 25,
+        "y": -10,
+        "width": 900,
+        "height": 135,
+        "crop": [
+          300,
+          0,
+          1140,
+          160
+        ]
+      },
+      {
+        "file": "Notepad-AI/docs/app-screenshot.png",
+        "x": 380,
+        "y": 155,
+        "width": 1190,
+        "height": 525
+      },
+      {
+        "file": "Notepad-AI/docs/screenshots/saved-notes-desktop.png",
+        "x": 65,
+        "y": 195,
+        "width": 250,
+        "height": 280,
+        "crop": [
+          0,
+          30,
+          300,
+          410
+        ]
+      },
+      {
+        "file": "Notepad-AI/docs/app-screenshot.png",
+        "x": 65,
+        "y": 615,
+        "width": 280,
+        "height": 235,
+        "crop": [
+          14,
+          454,
+          348,
+          360
+        ]
+      },
+      {
+        "file": "Notepad-AI/docs/screenshots/release-checklist-desktop.png",
+        "x": 700,
+        "y": 740,
+        "width": 850,
+        "height": 150,
+        "crop": [
+          300,
+          0,
+          1140,
+          200
+        ]
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "talentrack-ai-powered-recruitment-platform",
+    "reference": "staylowkey",
+    "panels": [
+      {
+        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png",
+        "x": 450,
+        "y": 18,
+        "width": 700,
+        "height": 515
+      },
+      {
+        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png",
+        "x": 10,
+        "y": 125,
+        "width": 410,
+        "height": 680,
+        "crop": [
+          0,
+          0,
+          850,
+          1351
+        ]
+      },
+      {
+        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png",
+        "x": 1180,
+        "y": 185,
+        "width": 420,
+        "height": 490,
+        "crop": [
+          0,
+          0,
+          1000,
+          961
+        ]
+      },
+      {
+        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png",
+        "x": 475,
+        "y": 565,
+        "width": 650,
+        "height": 310
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "p2p-file-stream",
+    "reference": "portability",
+    "panels": [
+      {
+        "file": "p2p-file-stream/docs/app-screenshot-3.png",
+        "x": 430,
+        "y": 180,
+        "width": 700,
+        "height": 550,
+        "crop": [
+          560,
+          115,
+          800,
+          660
+        ]
+      },
+      {
+        "file": "p2p-file-stream/docs/app-screenshot-1.png",
+        "x": 60,
+        "y": 55,
+        "width": 330,
+        "height": 505,
+        "crop": [
+          726,
+          71,
+          470,
+          750
+        ]
+      },
+      {
+        "file": "p2p-file-stream/docs/app-screenshot-0.png",
+        "x": 95,
+        "y": 610,
+        "width": 290,
+        "height": 230,
+        "crop": [
+          770,
+          258,
+          380,
+          375
+        ]
+      },
+      {
+        "file": "p2p-file-stream/docs/app-screenshot-2.png",
+        "x": 1170,
+        "y": 150,
+        "width": 385,
+        "height": 290,
+        "crop": [
+          703,
+          271,
+          516,
+          347
+        ]
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "secure-note-taking",
+    "reference": "landify",
+    "board": {
+      "width": 1800,
+      "columns": 1,
+      "gap": 55,
+      "rotation": -32
+    },
+    "panels": [
+      {
+        "file": "Secure-Note-Taking/docs/app-screenshot-1.png",
+        "x": null,
+        "y": null,
+        "width": 1800,
+        "height": 470,
+        "crop": [
+          0,
+          0,
+          1920,
+          740
+        ]
+      },
+      {
+        "file": "Secure-Note-Taking/docs/app-screenshot-2.png",
+        "x": null,
+        "y": null,
+        "width": 1800,
+        "height": 470,
+        "crop": [
+          0,
+          0,
+          1920,
+          740
+        ]
+      },
+      {
+        "file": "Secure-Note-Taking/docs/app-screenshot-3.png",
+        "x": null,
+        "y": null,
+        "width": 1800,
+        "height": 470,
+        "crop": [
+          0,
+          0,
+          1920,
+          740
+        ]
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "cse302-project",
+    "reference": "plaidea",
+    "panels": [
+      {
+        "file": "CSE302-project/docs/screenshots/student-menu-desktop.png",
+        "x": 70,
+        "y": 30,
+        "width": 740,
+        "height": 540,
+        "crop": [
+          0,
+          0,
+          1440,
+          1050
+        ]
+      },
+      {
+        "file": "CSE302-project/docs/screenshots/employee-orders-desktop.png",
+        "x": 855,
+        "y": 80,
+        "width": 670,
+        "height": 370,
+        "crop": [
+          0,
+          0,
+          1440,
+          850
+        ]
+      },
+      {
+        "file": "CSE302-project/docs/screenshots/authority-desktop.png",
+        "x": 130,
+        "y": 605,
+        "width": 630,
+        "height": 255,
+        "crop": [
+          168,
+          460,
+          1104,
+          450
+        ]
+      },
+      {
+        "file": "CSE302-project/docs/screenshots/report-category-revenue-desktop.png",
+        "x": 850,
+        "y": 535,
+        "width": 675,
+        "height": 300,
+        "crop": [
+          168,
+          580,
+          1104,
+          420
+        ]
+      }
+    ],
+    "overlay": 0.3
+  },
+  {
+    "slug": "regro-media",
+    "reference": "landify",
+    "overlay": 0.3,
+    "board": {
+      "width": 1565,
+      "columns": 2,
+      "gap": 45,
+      "rotation": -38
+    },
+    "panels": [
+      {
+        "file": "portfolio-nextjs/public/images/regro-media/image2.webp",
+        "crop": [
+          0,
+          0,
+          1920,
+          1240
+        ],
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 490
+      },
+      {
+        "file": "portfolio-nextjs/public/images/regro-media/image2.webp",
+        "crop": [
+          0,
+          1520,
+          1920,
+          1060
+        ],
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 490
+      },
+      {
+        "file": "portfolio-nextjs/public/images/regro-media/image2.webp",
+        "crop": [
+          200,
+          3740,
+          1520,
+          760
+        ],
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 490
+      },
+      {
+        "file": "portfolio-nextjs/public/images/regro-media/image2.webp",
+        "crop": [
+          0,
+          6500,
+          1920,
+          988
+        ],
+        "x": null,
+        "y": null,
+        "width": 760,
+        "height": 490
+      }
+    ]
+  },
+  {
+    "slug": "eappair",
+    "reference": "plaidea",
+    "overlay": 0.3,
+    "panels": [
+      {
+        "crop": [
+          0,
+          0,
+          1920,
+          850
+        ],
+        "x": 45,
+        "y": 35,
+        "width": 880,
+        "height": 390,
+        "file": "portfolio-nextjs/public/images/eappair/image1.webp"
+      },
+      {
+        "crop": [
+          330,
+          1390,
+          1260,
+          1110
+        ],
+        "x": 975,
+        "y": 75,
+        "width": 575,
+        "height": 485,
+        "file": "portfolio-nextjs/public/images/eappair/image1.webp"
+      },
+      {
+        "crop": [
+          380,
+          740,
+          1160,
+          480
+        ],
+        "x": 70,
+        "y": 475,
+        "width": 495,
+        "height": 205,
+        "file": "portfolio-nextjs/public/images/eappair/image1.webp"
+      },
+      {
+        "crop": [
+          390,
+          2780,
+          1140,
+          400
+        ],
+        "x": 70,
+        "y": 715,
+        "width": 495,
+        "height": 160,
+        "file": "portfolio-nextjs/public/images/eappair/image1.webp"
+      },
+      {
+        "crop": [
+          0,
+          3520,
+          1920,
+          810
+        ],
+        "x": 610,
+        "y": 610,
+        "width": 940,
+        "height": 265,
+        "file": "portfolio-nextjs/public/images/eappair/image1.webp"
+      }
+    ]
+  }
+]

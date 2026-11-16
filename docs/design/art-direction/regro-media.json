@@ -1,0 +1,11 @@
+{
+  "slug": "regro-media",
+  "ref": "landify",
+  "prompt": "Use case: compositing. Create an artistic landscape 16:9 portfolio thumbnail. Image 1 is the user's existing cover, a STYLE REFERENCE ONLY. Images 2\u20135 are genuine cropped sections of the target project's full-page website screenshot.\nMatch the reference's flat graphic-design language carefully: pure black background, square-edged page fragments, asymmetric hierarchy, clean black gutters and dramatic edge crops. No added browser chrome, shadows, rounded-window frames, device mockups, project title, captions or decorative objects. Preserve the original screenshot content, typography, colors, images and records; do not invent a new interface or add claims.\nApply ONE uniform translucent BLACK veil at about 30% opacity across the ENTIRE composition, edge-to-edge, matching the reference's darkened presentation. Keep underlying details crisp. Deliver the highest supported image quality.\nProject-specific art direction: Create bold diagonal page strips for Regro Media. Use a consistent 38\u201345 degree diagonal direction with parallel broad rectangular website fragments and generous black gutters. Feature the green-and-white opening hero, dark service cards, a genuine client case-study fragment and the dark contact/footer section. Build a deliberate visual rhythm of green, white and charcoal surfaces; crop some panels beyond the canvas edges, like Landify. No centered floating browser card or artificial perspective.",
+  "files": [
+    "portfolio-nextjs/docs/design/art-direction/inputs/regro-media-0.png",
+    "portfolio-nextjs/docs/design/art-direction/inputs/regro-media-1.png",
+    "portfolio-nextjs/docs/design/art-direction/inputs/regro-media-2.png",
+    "portfolio-nextjs/docs/design/art-direction/inputs/regro-media-3.png"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "notepad-ai",
+  "ref": "clipping",
+  "files": [
+    "Notepad-AI/docs/app-screenshot.png",
+    "Notepad-AI/docs/screenshots/saved-notes-desktop.png",
+    "Notepad-AI/docs/screenshots/release-checklist-desktop.png"
+  ],
+  "prompt": "Use case: compositing. Artistic editorial portfolio thumbnail, landscape 16:9. Image 1 is the USER'S STYLE REFERENCE ONLY. Remaining inputs are genuine application screenshot inserts for this project.\nStudy the reference carefully. Reproduce its flat graphic-design art direction: pure black background, crisp square-edged screenshot/page fragments, asymmetric scale and spacing, strong negative-space gutters, deliberate edge crops. NO browser frames, borders, rounded cards, drop shadows, devices, 3D perspective, code panels, fake architecture, added headings, captions or icons.\nUse the genuine supplied interfaces faithfully. Preserve existing app typography, layouts, colors and recognizable screen content. Do not invent features, UI, metrics or claims. The source screenshots remain separate in the gallery.\nApply a uniform translucent BLACK veil at about 30% opacity above the ENTIRE composition edge-to-edge. Every fragment must be equally toned as in the reference; retain crisp underlying details and black gutters. This is an art-directed cover, not a screenshot grid or a set of overlapping browser windows. Deliver the highest supported image quality and resolution.\nProject: notepad-ai.\nComposition brief: Emulate Clipping's offset mosaic of flat rectangular application fragments. Compose one substantial dark note-and-assistant view slightly off-center, two wide thin cropped note/editor strips near opposite edges, and two smaller fragments revealing the note list and assistant controls. Use generous pure black gaps and asymmetric balance, not repeated identical rotated windows."
+}

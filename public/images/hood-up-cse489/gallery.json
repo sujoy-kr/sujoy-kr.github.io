@@ -1,0 +1,109 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/hood-up-cover.png",
+    "caption": "Hood Up cover composition using existing Android screenshots",
+    "kind": "cover-composition",
+    "width": 1536,
+    "height": 1024
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Hood Up · Customer home and nearby workshops",
+      "source": "User-provided Screenshot_20261116-184202.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image2.webp": {
+      "caption": "Hood Up · Upcoming bookings",
+      "source": "User-provided Screenshot_20261116-184211.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image4.webp": {
+      "caption": "Hood Up · Workshop details and services",
+      "source": "User-provided Screenshot_20261116-184223.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image5.webp": {
+      "caption": "Hood Up · Book a service",
+      "source": "User-provided Screenshot_20261116-184227.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image6.webp": {
+      "caption": "Hood Up · Mechanic assistant conversation",
+      "source": "User-provided Screenshot_20261116-184237.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image7.webp": {
+      "caption": "Hood Up · Customer login",
+      "source": "User-provided Screenshot_20261116-184303.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image8.webp": {
+      "caption": "Hood Up · Admin dashboard",
+      "source": "User-provided Screenshot_20261116-184314.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image10.webp": {
+      "caption": "Hood Up · Admin bookings",
+      "source": "User-provided Screenshot_20261116-184326.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image11.webp": {
+      "caption": "Hood Up · Workshop management",
+      "source": "User-provided Screenshot_20261116-184333.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image12.webp": {
+      "caption": "Hood Up · New workshop form",
+      "source": "User-provided Screenshot_20261116-184340.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image14.webp": {
+      "caption": "Hood Up · Service management",
+      "source": "User-provided Screenshot_20261116-184353.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image15.webp": {
+      "caption": "Hood Up · New service form",
+      "source": "User-provided Screenshot_20261116-184356.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image16.webp": {
+      "caption": "Hood Up · Mechanic assistant suggestions",
+      "source": "User-provided Screenshot_20261116-184423.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    },
+    "image17.webp": {
+      "caption": "Hood Up · Customer profile and navigation",
+      "source": "User-provided Screenshot_20261116-184437.png",
+      "kind": "user",
+      "width": 1080,
+      "height": 2392
+    }
+  }
+}

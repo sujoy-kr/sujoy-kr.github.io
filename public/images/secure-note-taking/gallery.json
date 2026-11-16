@@ -1,0 +1,42 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/secure-note-taking-v2.png",
+    "caption": "Secure Note Taking · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "landify"
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "App screenshot 1 · existing repository capture",
+      "source": "Secure-Note-Taking/docs/app-screenshot-1.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 1204
+    },
+    "image2.webp": {
+      "caption": "App screenshot 2 · existing repository capture",
+      "source": "Secure-Note-Taking/docs/app-screenshot-2.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 945
+    },
+    "image3.webp": {
+      "caption": "App screenshot 3 · existing repository capture",
+      "source": "Secure-Note-Taking/docs/app-screenshot-3.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 1106
+    },
+    "image4.webp": {
+      "caption": "App screenshot 4 · existing repository capture",
+      "source": "Secure-Note-Taking/docs/app-screenshot-4.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 945
+    }
+  }
+}

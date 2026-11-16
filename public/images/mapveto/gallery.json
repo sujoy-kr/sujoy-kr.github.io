@@ -1,0 +1,32 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/mapveto/mapveto-cover.png",
+    "caption": "Map Veto · Previous portfolio archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/mapveto/mapveto-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/mapveto/1.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 994
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/mapveto/2.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 969
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/p2p-file-stream.html",
+    "caption": "P2P File Stream · reference-led artistic screenshot composition",
+    "kind": "artistic-composition",
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "artDirection": "portfolio-nextjs/docs/design/art-direction/p2p-file-stream.png",
+    "reference": "portability"
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "App screenshot 0 · existing repository capture",
+      "source": "p2p-file-stream/docs/app-screenshot-0.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 890
+    },
+    "image2.webp": {
+      "caption": "App screenshot 1 · existing repository capture",
+      "source": "p2p-file-stream/docs/app-screenshot-1.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 890
+    },
+    "image3.webp": {
+      "caption": "App screenshot 2 · existing repository capture",
+      "source": "p2p-file-stream/docs/app-screenshot-2.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 890
+    },
+    "image4.webp": {
+      "caption": "App screenshot 3 · existing repository capture",
+      "source": "p2p-file-stream/docs/app-screenshot-3.png",
+      "kind": "existing",
+      "width": 1920,
+      "height": 890
+    }
+  }
+}

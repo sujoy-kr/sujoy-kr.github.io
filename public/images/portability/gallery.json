@@ -1,0 +1,60 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/portability/portability-cover.png",
+    "caption": "Portability · Previous client-work archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/portability/portability-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/portability/1.png",
+      "kind": "archive",
+      "width": 1440,
+      "height": 1079
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/portability/2.png",
+      "kind": "archive",
+      "width": 1620,
+      "height": 1079
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/portability/3.png",
+      "kind": "archive",
+      "width": 1620,
+      "height": 1079
+    },
+    "image5.webp": {
+      "caption": "Archived interface · screen 4",
+      "source": "sujoykr/assets/img/single-portfolio/portability/4.png",
+      "kind": "archive",
+      "width": 1440,
+      "height": 1079
+    },
+    "image6.webp": {
+      "caption": "Archived interface · screen 5",
+      "source": "sujoykr/assets/img/single-portfolio/portability/5.png",
+      "kind": "archive",
+      "width": 1440,
+      "height": 1079
+    },
+    "image7.webp": {
+      "caption": "Archived interface · complete page",
+      "source": "sujoykr/assets/img/single-portfolio/portability/full.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 3435
+    }
+  }
+}

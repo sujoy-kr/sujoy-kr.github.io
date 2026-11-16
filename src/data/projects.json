@@ -1,0 +1,1489 @@
+[
+  {
+    "slug": "safoyana",
+    "repo": "Safoyana-Digital-Print",
+    "title": "Safoyana Digital Print",
+    "group": "Web apps",
+    "pitch": "From a print specification to an organised order queue.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "highlights": [
+      "Configurable print products and quantity-based pricing",
+      "Customer orders and a staff management workspace",
+      "JWT roles, ownership checks and server-calculated totals"
+    ],
+    "featured": true,
+    "client": false,
+    "github": null,
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 0,
+    "audience": "print-shop customers specifying an order, and staff organising the order queue",
+    "overview": "Print orders involve more than adding a product to a basket: the paper stock, quantity and specification all matter. This application brings those choices into one customer flow and gives staff a structured workspace for reviewing the resulting orders.",
+    "engineering": "The Next.js storefront communicates with a modular NestJS API. Prisma models users, products and order items in PostgreSQL; the API calculates quantity-based totals and enforces authenticated roles and record ownership. Validated DTOs and relational modelling keep the ordering workflow structured across the customer and staff interfaces.",
+    "sourceRepos": [
+      "Safoyana-Digital-Print"
+    ],
+    "repositories": [],
+    "liveUrl": null
+  },
+  {
+    "slug": "nextset",
+    "repo": "NextSet",
+    "title": "NextSet",
+    "group": "Mobile",
+    "pitch": "A workout companion that keeps going when the connection doesn’t.",
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Room",
+      "Android"
+    ],
+    "highlights": [
+      "Workout templates, weekday plans and repeating sequences",
+      "Recoverable sessions with transactional checkpoints",
+      "Weekly analysis and deterministic domain logic"
+    ],
+    "featured": true,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/NextSet",
+    "imageKind": "Cover composition based on existing Android screenshots",
+    "order": 1,
+    "audience": "people planning routines and tracking workouts offline",
+    "overview": "NextSet is built around the part of a workout that happens away from a desk: choosing a plan, completing sets and returning to a session without losing its structure. It supports fixed weekdays and repeating sequences, alongside a weekly view of planned and completed work.",
+    "engineering": "Kotlin and Jetpack Compose provide the native interface, while Room stores plans and workout history locally. Immutable session snapshots and transactional checkpoints preserve execution state. Scheduling and progress calculations live in deterministic domain logic, supported by 41 unit tests.",
+    "sourceRepos": [
+      "NextSet"
+    ],
+    "repositories": [
+      {
+        "name": "NextSet",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/NextSet"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "gsg",
+    "repo": "GSG-PHP",
+    "title": "G.S. Garments Ltd.",
+    "group": "Client work",
+    "pitch": "A multilingual garment-manufacturer website with product, fabric and content administration.",
+    "technologies": [
+      "PHP",
+      "PDO",
+      "MariaDB",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Searchable products and language-prefixed pages",
+      "Product, event and fabric administration",
+      "Session authentication, CSRF protection and first-party analytics"
+    ],
+    "featured": true,
+    "client": true,
+    "github": null,
+    "imageKind": "Local application captures · fictional demo data",
+    "order": 2,
+    "audience": "buyers exploring garment collections and staff maintaining the catalogue",
+    "overview": "A manufacturer needs a website that can explain its collections to visitors and remain manageable for the people maintaining it. G.S. Garments Ltd. connects a multilingual public catalogue with an authenticated workspace for products, events, fabrics and traffic reports.",
+    "engineering": "The application uses server-rendered PHP with explicit routing, controllers and repositories. PDO handles relational queries and search pagination, while session authentication and CSRF checks protect administration. First-party traffic aggregation gives the management interface its own reporting workflow.",
+    "sourceRepos": [
+      "GSG-PHP"
+    ],
+    "repositories": [],
+    "liveUrl": "https://gsgarmentsltd.com/en"
+  },
+  {
+    "slug": "reclaim",
+    "repo": "PATH-smoking-resumption-prediction-for-CSE366",
+    "title": "PATH Smoking Resumption Prediction",
+    "group": "Data & AI",
+    "pitch": "Making longitudinal research understandable, one outlook at a time.",
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "NumPy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "highlights": [
+      "Separate population models for smoking transitions",
+      "Local JSON-model inference and contribution explanations",
+      "Reproducible checks and explicit uncertainty"
+    ],
+    "featured": true,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/PATH-smoking-resumption-prediction-for-CSE366",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 3,
+    "audience": "researchers exploring smoking transitions, uncertainty and model behaviour",
+    "overview": "Reclaim turns a longitudinal smoking-transition study into an explorable research interface. A fixed-choice questionnaire routes a fictional profile to the relevant population model, then presents cumulative outlooks, uncertainty and contributing factors together with the evidence needed to interpret them.",
+    "engineering": "A fingerprinted plain-JSON survival-model bundle supports local inference. Separate former-, current- and never-established-smoker populations, interval-censored outcomes and grouped explanation contributions make the modelling decisions visible alongside uncertainty and research evidence.",
+    "sourceRepos": [
+      "PATH-smoking-resumption-prediction-for-CSE366"
+    ],
+    "repositories": [
+      {
+        "name": "PATH-smoking-resumption-prediction-for-CSE366",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/PATH-smoking-resumption-prediction-for-CSE366"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "notepad-ai",
+    "repo": "Notepad-AI",
+    "title": "Notepad AI",
+    "group": "Data & AI",
+    "pitch": "A focused writing space, with room for a local AI assistant.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "FastAPI",
+      "SQLite",
+      "Ollama"
+    ],
+    "highlights": [
+      "Persistent note library with a focused writing interface",
+      "Debounced saving backed by SQLite",
+      "Local completions and streamed assistant chat through Ollama"
+    ],
+    "featured": true,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/Notepad-AI",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 4,
+    "audience": "individual writers managing a local note library with optional local-model assistance",
+    "overview": "Notepad AI brings a persistent note library, a focused editor and local AI assistance into one writing workspace. Writers can move between notes, develop ideas with an assistant, and keep their content saved as they work.",
+    "engineering": "A Next.js frontend connects to a FastAPI backend with SQLite persistence. Debounced saving keeps editing fluid, while Ollama powers local completion and streamed chat workflows. The Ollama integration was tested during development, bringing note management and local-model assistance together without requiring a hosted AI provider.",
+    "sourceRepos": [
+      "Notepad-AI"
+    ],
+    "repositories": [
+      {
+        "name": "Notepad-AI",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/Notepad-AI"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "hood-up-cse489",
+    "repo": "Hood-Up-CSE489",
+    "title": "Hood Up",
+    "group": "Mobile",
+    "pitch": "Workshop booking and vehicle service workflows on Android.",
+    "technologies": [
+      "Java",
+      "Android",
+      "Firebase",
+      "Firestore"
+    ],
+    "highlights": [
+      "Workshop booking flows",
+      "Firestore security rules",
+      "Local queue and cache with advisor fallback"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/Hood-Up-CSE489",
+    "imageKind": "Repository artwork",
+    "order": 8,
+    "audience": "people using software on Android devices",
+    "overview": "Hood Up explores vehicle-service booking from an Android application. Workshop discovery and booking sit alongside local queue/cache handling, bringing customer-facing interactions and connectivity concerns into the same mobile project.",
+    "engineering": "Java activities integrate Firebase and Firestore, with repository security rules forming part of the data-access boundary. The local queue and cache provide additional implementation depth beyond a collection of static Android screens.",
+    "sourceRepos": [
+      "Hood-Up-CSE489"
+    ],
+    "repositories": [
+      {
+        "name": "Hood-Up-CSE489",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/Hood-Up-CSE489"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "talentrack-ai-powered-recruitment-platform",
+    "repo": "TalenTrack---AI-Powered-Recruitment-Platform",
+    "title": "TalenTrack",
+    "group": "Data & AI",
+    "pitch": "Recruitment records meet searchable candidate documents.",
+    "technologies": [
+      "React",
+      "Express",
+      "PostgreSQL",
+      "FastAPI",
+      "Chroma",
+      "Ollama"
+    ],
+    "highlights": [
+      "Jobs and applicant records",
+      "PDF ingestion and document retrieval",
+      "Separate web, API and model services"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/TalenTrack---AI-Powered-Recruitment-Platform",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 5,
+    "audience": "teams exploring data, research and local automation",
+    "overview": "TalenTrack brings job openings, applicants and candidate documents into a recruitment workspace. Its scope extends from application forms and applicant records to PDF ingestion and local-model-assisted retrieval, making it a useful example of several services supporting one workflow.",
+    "engineering": "A React frontend connects to Express/PostgreSQL for recruitment records. A separate FastAPI service handles document ingestion with Chroma and Ollama dependencies, keeping conventional record management and model-backed retrieval in distinct service boundaries.",
+    "sourceRepos": [
+      "TalenTrack---AI-Powered-Recruitment-Platform"
+    ],
+    "repositories": [
+      {
+        "name": "TalenTrack---AI-Powered-Recruitment-Platform",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/TalenTrack---AI-Powered-Recruitment-Platform"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "p2p-file-stream",
+    "repo": "p2p-file-stream",
+    "title": "P2P File Stream",
+    "group": "Systems & APIs",
+    "pitch": "Explore files moving directly across the local network.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Socket.IO",
+      "Bonjour"
+    ],
+    "highlights": [
+      "Local network discovery",
+      "Socket-based connection handshakes",
+      "Streaming file transfer"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/p2p-file-stream",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 12,
+    "audience": "engineering teams interested in backend and service design",
+    "overview": "P2P File Stream connects local-network discovery, connection handshakes and file delivery in one workflow. Each stage has a clear responsibility, making it a useful example of how peers find each other and coordinate a transfer.",
+    "engineering": "Bonjour provides local discovery, Socket.IO coordinates peer handshakes, and Node.js streams the transfer. The React frontend presents the connection flow while the receiving side writes files to the native Downloads location.",
+    "sourceRepos": [
+      "p2p-file-stream"
+    ],
+    "repositories": [
+      {
+        "name": "p2p-file-stream",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/p2p-file-stream"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "secure-note-taking",
+    "repo": "Secure-Note-Taking",
+    "title": "Secure Note Taking",
+    "group": "Web apps",
+    "pitch": "Private notes with a community and administration layer.",
+    "technologies": [
+      "React",
+      "Express",
+      "MongoDB",
+      "JWT"
+    ],
+    "highlights": [
+      "Private-note ownership checks",
+      "JWT roles and authenticated routes",
+      "Community and admin interfaces"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/Secure-Note-Taking",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 13,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Secure Note Taking combines private note management with community and administration views. It explores the difference between personal content and shared application data, with authenticated routes and role-aware interfaces supporting those separate uses.",
+    "engineering": "The React client connects to Express controllers and MongoDB records. JWT middleware, roles and explicit ownership checks protect private-note access on the server, where the security boundary belongs.",
+    "sourceRepos": [
+      "Secure-Note-Taking"
+    ],
+    "repositories": [
+      {
+        "name": "Secure-Note-Taking",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/Secure-Note-Taking"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "bdjobs-scraper",
+    "repo": "bdjobs-scraper",
+    "title": "BDJobs Scraper",
+    "group": "Data & AI",
+    "pitch": "Turn job listings into structured, salary-normalised records.",
+    "technologies": [
+      "Node.js",
+      "Puppeteer",
+      "Puppeteer Cluster"
+    ],
+    "highlights": [
+      "Browser-based job extraction",
+      "Salary normalisation",
+      "Saved structured reports"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/bdjobs-scraper",
+    "imageKind": "Repository artwork",
+    "order": 17,
+    "audience": "teams exploring data, research and local automation",
+    "overview": "The job-data collector explores turning browser-rendered listings into structured reports. Salary normalisation is part of the processing step, so extracted values can be compared more consistently than raw page text.",
+    "engineering": "Puppeteer and its cluster tooling coordinate browser extraction in Node.js. The script separates collection and record normalisation from saving report output, while remaining dependent on the structure and availability of the external source site.",
+    "sourceRepos": [
+      "bdjobs-scraper"
+    ],
+    "repositories": [
+      {
+        "name": "bdjobs-scraper",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/bdjobs-scraper"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "medikart",
+    "repo": "medikartFrontend",
+    "title": "Medikart",
+    "group": "Web apps",
+    "pitch": "A pharmacy commerce platform with a SvelteKit storefront and Express API.",
+    "technologies": [
+      "Svelte",
+      "SvelteKit",
+      "JavaScript",
+      "Axios",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redis"
+    ],
+    "highlights": [
+      "Product catalogue, customer accounts and storefront flows",
+      "Staff administration and point-of-sale interfaces",
+      "Inventory, store, order and prescription API routes"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/medikartFrontend",
+    "imageKind": "Repository artwork",
+    "order": 6,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Medikart brings a pharmacy storefront and its API together as one commerce platform. Customer browsing, account routes and product discovery connect to staff administration and point-of-sale screens, with backend records for inventory, stores, orders and prescriptions.",
+    "engineering": "SvelteKit provides the customer and staff interfaces, while Express and Mongoose organise API operations and MongoDB records. Redis supports caching alongside mail-service boundaries. The frontend/backend split gives the business workflow a dedicated interface layer and a separate data and service layer.",
+    "sourceRepos": [
+      "medikartFrontend",
+      "MedikartBackend"
+    ],
+    "repositories": [
+      {
+        "name": "medikartFrontend",
+        "label": "Frontend",
+        "url": "https://github.com/sujoy-kr/medikartFrontend"
+      },
+      {
+        "name": "MedikartBackend",
+        "label": "Backend API",
+        "url": "https://github.com/sujoy-kr/MedikartBackend"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "lab",
+    "repo": "LAB-Main-Svelte",
+    "title": "LAB — Website & Admin Panel",
+    "group": "Web apps",
+    "pitch": "A club’s public website and editorial administration workspace, presented as one project.",
+    "technologies": [
+      "Svelte",
+      "SvelteKit",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Public articles, events and member pages",
+      "Article, event and member administration",
+      "Separate public and editorial applications with shared API integration"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/LAB-Main-Svelte",
+    "imageKind": "Repository artwork",
+    "order": 11,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "LAB combines a public club website and its content-management workspace in one project. Visitors explore articles, events and members, while the administration interface supports the editorial work behind that content. Related article-layout work provides a focused reading experience for longer-form stories.",
+    "engineering": "Two SvelteKit applications serve distinct public and editorial workflows through shared API integrations. The public frontend presents managed records as browseable content, while the admin panel provides article, event and member-management interfaces. The separation keeps content presentation and editing responsibilities clear.",
+    "sourceRepos": [
+      "LAB-Main-Svelte",
+      "LAB-admin-panel"
+    ],
+    "repositories": [
+      {
+        "name": "LAB-Main-Svelte",
+        "label": "Public website",
+        "url": "https://github.com/sujoy-kr/LAB-Main-Svelte"
+      },
+      {
+        "name": "LAB-admin-panel",
+        "label": "Admin panel",
+        "url": "https://github.com/sujoy-kr/LAB-admin-panel"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "finshark-backend",
+    "repo": "finshark-backend",
+    "title": "FinShark Backend",
+    "group": "Systems & APIs",
+    "pitch": "An API exercise in stocks, comments and portfolio data.",
+    "technologies": [
+      "C#",
+      "ASP.NET Core",
+      "Entity Framework",
+      "JWT"
+    ],
+    "highlights": [
+      "Identity and JWT authentication",
+      "Stock and comment repositories",
+      "Portfolio endpoints"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/finshark-backend",
+    "imageKind": "Repository artwork",
+    "order": 26,
+    "audience": "engineering teams interested in backend and service design",
+    "overview": "FinShark organises stock, comment and user-portfolio data behind an authenticated API. Its typed endpoints and explicit persistence structure make it a clear example of backend application organisation.",
+    "engineering": "ASP.NET Identity and JWT authentication sit alongside Entity Framework and repository abstractions. The stock, comment and portfolio areas show how request handling, identity and persistence can be organised into separate responsibilities.",
+    "sourceRepos": [
+      "finshark-backend"
+    ],
+    "repositories": [
+      {
+        "name": "finshark-backend",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/finshark-backend"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "bd-walks",
+    "repo": "BD-Walks",
+    "title": "BD Walks API",
+    "group": "Systems & APIs",
+    "pitch": "Structured region and walking-route data behind a typed API.",
+    "technologies": [
+      "C#",
+      "ASP.NET Core",
+      "Entity Framework"
+    ],
+    "highlights": [
+      "Region, walk and image endpoints",
+      "DTO mapping",
+      "Role-based endpoint policies"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/BD-Walks",
+    "imageKind": "Repository artwork",
+    "order": 27,
+    "audience": "engineering teams interested in backend and service design",
+    "overview": "BD Walks models regions and walking routes behind a structured API. Region, walk and image endpoints connect location-oriented records with typed request handling and role-based access.",
+    "engineering": "ASP.NET Core supplies the typed HTTP layer, Entity Framework handles persistence, and DTO mappings separate transport shapes from stored entities. Role policies add an explicit authorisation layer to protected operations.",
+    "sourceRepos": [
+      "BD-Walks"
+    ],
+    "repositories": [
+      {
+        "name": "BD-Walks",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/BD-Walks"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "dermacare",
+    "repo": "cosmeticsEcom-frontend",
+    "title": "DermaCare",
+    "group": "Web apps",
+    "pitch": "A cosmetics commerce platform combining storefront, store administration and API.",
+    "technologies": [
+      "Svelte",
+      "SvelteKit",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redis"
+    ],
+    "highlights": [
+      "Cosmetics catalogue, cart and wishlist interfaces",
+      "Store administration and product-management views",
+      "Express/MongoDB commerce API with authentication and caching"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/cosmeticsEcom-frontend",
+    "imageKind": "Repository artwork",
+    "order": 7,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "DermaCare combines the cosmetics storefront and its commerce API into one project. Product discovery, cart and wishlist interactions sit alongside store-administration screens, connecting customer-facing shopping flows with the records and operations behind the shop.",
+    "engineering": "A SvelteKit frontend consumes an Express API backed by MongoDB. Authentication middleware, product and commerce routes, Redis caching and mail-service boundaries organise the backend, while reusable frontend components present catalogue, cart, wishlist and administration workflows.",
+    "sourceRepos": [
+      "cosmeticsEcom-frontend",
+      "cosmeticEcom"
+    ],
+    "repositories": [
+      {
+        "name": "cosmeticsEcom-frontend",
+        "label": "Frontend",
+        "url": "https://github.com/sujoy-kr/cosmeticsEcom-frontend"
+      },
+      {
+        "name": "cosmeticEcom",
+        "label": "Backend API",
+        "url": "https://github.com/sujoy-kr/cosmeticEcom"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "medicine-data-scraper-with-proxy-rotation",
+    "repo": "medicine-data-scraper-with-proxy-rotation",
+    "title": "Medicine Data Scraper with Proxy Rotation",
+    "group": "Data & AI",
+    "pitch": "A browser automation pipeline for structured product data.",
+    "technologies": [
+      "Node.js",
+      "Puppeteer",
+      "Axios"
+    ],
+    "highlights": [
+      "Browser-based extraction",
+      "Proxy rotation",
+      "Product API updates"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/medicine-data-scraper-with-proxy-rotation",
+    "imageKind": "Repository artwork",
+    "order": 18,
+    "audience": "teams exploring data, research and local automation",
+    "overview": "This automation utility collects structured medicine-product information and can send updates to a product API. It combines browser extraction and network configuration in a pipeline intended to move data between systems.",
+    "engineering": "Node.js and Puppeteer handle browser-driven collection, with rotating proxy support and Axios requests for the update boundary. That makes live execution operationally different from reading a static dataset.",
+    "sourceRepos": [
+      "medicine-data-scraper-with-proxy-rotation"
+    ],
+    "repositories": [
+      {
+        "name": "medicine-data-scraper-with-proxy-rotation",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/medicine-data-scraper-with-proxy-rotation"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "photo-editor-backend",
+    "repo": "photo-editor-backend",
+    "title": "Photo Editor Backend",
+    "group": "Systems & APIs",
+    "pitch": "An exploration of service boundaries for image workflows.",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "RabbitMQ",
+      "Redis",
+      "Sharp"
+    ],
+    "highlights": [
+      "Gateway, access and image services",
+      "Image processing and notification boundaries",
+      "Containerised observability configuration"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/photo-editor-backend",
+    "imageKind": "Repository artwork",
+    "order": 14,
+    "audience": "engineering teams interested in backend and service design",
+    "overview": "This project explores backend service boundaries for image workflows. Gateway, access, image and notification services organise distinct responsibilities, with image-processing and observability configuration providing a concrete view into the architecture.",
+    "engineering": "Express services use RabbitMQ and Redis alongside Sharp image processing. The gateway provides a single entry point, while service-specific routes separate access, processing and notification concerns. Container and observability configuration makes the infrastructure relationships easier to inspect.",
+    "sourceRepos": [
+      "photo-editor-backend"
+    ],
+    "repositories": [
+      {
+        "name": "photo-editor-backend",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/photo-editor-backend"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "fileshare",
+    "repo": "fileShare",
+    "title": "FileShare API",
+    "group": "Systems & APIs",
+    "pitch": "Authenticated uploads and link-based file sharing.",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "highlights": [
+      "JWT authentication",
+      "Upload controllers",
+      "Share-link routes"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/fileShare",
+    "imageKind": "Repository artwork",
+    "order": 19,
+    "audience": "engineering teams interested in backend and service design",
+    "overview": "FileShare organises authenticated uploads and shareable links behind a focused API. Upload handling, file records and sharing routes provide a clear example of turning a file-management workflow into backend responsibilities.",
+    "engineering": "Express routes use JWT authentication, upload handling and share-link controllers. Prisma/PostgreSQL and Redis dependencies support persistence and caching boundaries around the file workflow.",
+    "sourceRepos": [
+      "fileShare"
+    ],
+    "repositories": [
+      {
+        "name": "fileShare",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/fileShare"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "instagram-clone",
+    "repo": "instagram-clone",
+    "title": "Instagram Clone",
+    "group": "Web apps",
+    "pitch": "A social application exploring feeds and real-time conversations.",
+    "technologies": [
+      "Svelte",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+      "Socket.IO"
+    ],
+    "highlights": [
+      "Posts and social interactions",
+      "Messages and notifications",
+      "Socket event handling"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/instagram-clone",
+    "imageKind": "Previous portfolio archive",
+    "order": 9,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Instagram Clone is an earlier social-application project spanning posts, conversations and notifications. Its archival gallery provides a broader view of the interface, while the source shows how several related social features share user records and real-time events.",
+    "engineering": "A Svelte frontend communicates with Express and Sequelize/PostgreSQL persistence. Socket.IO listeners support the message and notification side of the application, separate from the ordinary request/response routes.",
+    "sourceRepos": [
+      "instagram-clone"
+    ],
+    "repositories": [
+      {
+        "name": "instagram-clone",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/instagram-clone"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "microservice-ecommerce",
+    "repo": "microservice-ecommerce",
+    "title": "Microservice Ecommerce",
+    "group": "Systems & APIs",
+    "pitch": "An exploration of event-driven commerce service boundaries.",
+    "technologies": [
+      "Node.js",
+      "RabbitMQ",
+      "Prisma",
+      "MongoDB",
+      "Redis"
+    ],
+    "highlights": [
+      "Separate user, catalogue, cart and order services",
+      "Message-broker integration",
+      "Independent persistence boundaries"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/microservice-ecommerce",
+    "imageKind": "Repository artwork",
+    "order": 10,
+    "audience": "engineering teams interested in backend and service design",
+    "overview": "Microservice Ecommerce explores a shopping system divided into user, catalogue, cart, order and notification services. Its focus is the coordination of distinct business responsibilities and the data each service owns.",
+    "engineering": "RabbitMQ connects parts of the service architecture, with Prisma, MongoDB and Redis used across different persistence concerns. The repository provides concrete material for discussing message-based coordination, independent data models and service boundaries.",
+    "sourceRepos": [
+      "microservice-ecommerce"
+    ],
+    "repositories": [
+      {
+        "name": "microservice-ecommerce",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/microservice-ecommerce"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "mapveto",
+    "repo": "mapveto",
+    "title": "Map Veto",
+    "group": "Web apps",
+    "pitch": "A small, purpose-built map selection tool for competitive play.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Map-based selection interface",
+      "Client-side veto interactions",
+      "Dedicated selection and view scripts"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/mapveto",
+    "imageKind": "Previous portfolio archive",
+    "order": 28,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Map Veto focuses on a single competitive-play task: narrowing a pool of maps through selection and veto interactions. Its small scope keeps attention on the decision, with map imagery providing an immediate visual reference.",
+    "engineering": "The experience keeps attention on a single decision: which maps remain in play. Clear map imagery and separate selection/results views make the interaction understandable without a larger tournament interface getting in the way.",
+    "sourceRepos": [
+      "mapveto"
+    ],
+    "repositories": [
+      {
+        "name": "mapveto",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/mapveto"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "regro-media",
+    "repo": "regro-media",
+    "title": "Regro Media",
+    "group": "Client work",
+    "pitch": "A service-led website for a marketplace and brand-management agency.",
+    "technologies": [
+      "SvelteKit",
+      "Svelte",
+      "Tailwind CSS"
+    ],
+    "highlights": [
+      "Clear positioning for marketplace and brand-management services",
+      "Strategy sections, case-study media and enquiry calls to action",
+      "Responsive component-based page composition"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/regro-media",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 15,
+    "audience": "businesses needing a clear public web presence",
+    "overview": "Regro Media introduces a marketplace-management agency through a service-led landing page. The page connects a clear opening message with strategy information, client presentation, case-study media and enquiry calls to action, giving prospective customers a structured way to explore the offer.",
+    "engineering": "SvelteKit and reusable Svelte components organise the navigation, hero, service strategy, client, case-study and footer sections. Tailwind utilities keep layout and styling consistent across the page, while the section structure supports a clear visitor journey from introduction to enquiry.",
+    "sourceRepos": [
+      "regro-media"
+    ],
+    "repositories": [
+      {
+        "name": "regro-media",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/regro-media"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "kyra",
+    "repo": "kyra",
+    "title": "Kyra",
+    "group": "Client work",
+    "pitch": "A finance-themed landing page with a bold visual language.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Marketing-page composition",
+      "Bundled visual assets and animation",
+      "Responsive frontend presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/kyra",
+    "imageKind": "Previous portfolio archive",
+    "order": 20,
+    "audience": "businesses needing a clear public web presence",
+    "overview": "Kyra is a finance-themed marketing frontend with a strong visual identity. Its archival screenshots show the landing-page composition, supporting sections and longer page presentation as a piece of web-design implementation.",
+    "engineering": "Illustrations, supporting sections and a distinctive visual identity work together to explain a complex offer. The page pairs a confident introduction with a consistent visual hierarchy, making the service story easier to follow.",
+    "sourceRepos": [
+      "kyra"
+    ],
+    "repositories": [
+      {
+        "name": "kyra",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/kyra"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "eappair",
+    "repo": "eAppair",
+    "title": "eAppair",
+    "group": "Client work",
+    "pitch": "An app landing page built around a distinctive visual identity.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "highlights": [
+      "Landing-page sections",
+      "Particle effects",
+      "Product illustration assets"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/eAppair",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 21,
+    "audience": "businesses needing a clear public web presence",
+    "overview": "eAppair introduces an app concept through a distinctive landing page, using product illustrations and particle effects to establish its visual character. The sections lead visitors through the offer with a clear, consistent presentation.",
+    "engineering": "Product illustrations and motion give the landing page a recognisable identity, while the section structure helps visitors follow the offer. Consistent styling connects the app concept, its features and the visual story across the page.",
+    "sourceRepos": [
+      "eAppair"
+    ],
+    "repositories": [
+      {
+        "name": "eAppair",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/eAppair"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "studio-ghibli-movies",
+    "repo": "Studio-Ghibli-Movies",
+    "title": "Studio Ghibli Movies",
+    "group": "Web apps",
+    "pitch": "A compact way to browse films and explore their details.",
+    "technologies": [
+      "Svelte",
+      "JavaScript",
+      "CSS"
+    ],
+    "highlights": [
+      "Film list and detail views",
+      "Shared frontend store",
+      "External film API integration"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/Studio-Ghibli-Movies",
+    "imageKind": "Previous portfolio archive",
+    "order": 32,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Studio Ghibli Movies is a small film-browsing frontend with list and detail views. It explores presenting external API content as an approachable browsing experience, with shared state connecting the collection and individual film pages.",
+    "engineering": "Svelte components and a shared frontend store organise film information around an external API. Collection and detail views keep browsing connected while presenting each film’s content in a consistent visual structure.",
+    "sourceRepos": [
+      "Studio-Ghibli-Movies"
+    ],
+    "repositories": [
+      {
+        "name": "Studio-Ghibli-Movies",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/Studio-Ghibli-Movies"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "cse302-project",
+    "repo": "CSE302-project",
+    "title": "CSE302 — Canteen Management",
+    "group": "Web apps",
+    "pitch": "Coursework connecting canteen records with staff reports.",
+    "technologies": [
+      "React",
+      "Express",
+      "MySQL"
+    ],
+    "highlights": [
+      "Canteen record management",
+      "Reporting routes",
+      "Relational SQL fixtures"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/CSE302-project",
+    "imageKind": "Reference-led artistic screenshot composition",
+    "order": 29,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Canteen Manager is coursework connecting canteen records with staff-oriented reporting. It demonstrates a practical relational CRUD application, bringing a browser interface, request handlers and SQL fixtures into the same project.",
+    "engineering": "A React frontend talks to an Express backend with MySQL persistence. The included schema/fixtures and reporting routes provide concrete examples of how an academic business workflow maps into relational records.",
+    "sourceRepos": [
+      "CSE302-project"
+    ],
+    "repositories": [
+      {
+        "name": "CSE302-project",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/CSE302-project"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "soundboard",
+    "repo": "soundboard",
+    "title": "Soundboard",
+    "group": "Web apps",
+    "pitch": "A small audio library for uploading and playing sounds.",
+    "technologies": [
+      "Next.js",
+      "Express",
+      "MongoDB"
+    ],
+    "highlights": [
+      "Sound upload and playback",
+      "User controllers",
+      "Separate frontend and API"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/soundboard",
+    "imageKind": "Previous portfolio archive",
+    "order": 31,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Soundboard is a small audio-library application for uploading and playing sounds. User controllers and a separate API extend the scope beyond a static collection of audio buttons, while the archival images document the earlier interface work.",
+    "engineering": "A Next.js frontend connects to Express and MongoDB. The upload and playback flow spans the browser interface and backend records, giving the application a clear media-management boundary.",
+    "sourceRepos": [
+      "soundboard"
+    ],
+    "repositories": [
+      {
+        "name": "soundboard",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/soundboard"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "group-chat",
+    "repo": "group_chat",
+    "title": "Group Chat",
+    "group": "Web apps",
+    "pitch": "A compact real-time conversation app with named rooms.",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "MongoDB"
+    ],
+    "highlights": [
+      "Socket-based rooms",
+      "User and message handling",
+      "Persistent message model"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/group_chat",
+    "imageKind": "Previous portfolio archive",
+    "order": 30,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Group Chat explores real-time conversation through named rooms, users and messages. The interface keeps the scope small enough to focus on room-based interactions instead of the wider social features found in the Instagram Clone project.",
+    "engineering": "Express serves the application while Socket.IO coordinates room and message events. MongoDB provides a persistent message model alongside the real-time transport, separating stored records from transient connections.",
+    "sourceRepos": [
+      "group_chat"
+    ],
+    "repositories": [
+      {
+        "name": "group_chat",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/group_chat"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "sketchbox",
+    "repo": "sketchbox",
+    "title": "Sketchbox",
+    "group": "Web apps",
+    "pitch": "A playful canvas for drawing and experimenting with colour.",
+    "technologies": [
+      "Svelte",
+      "JavaScript",
+      "Canvas"
+    ],
+    "highlights": [
+      "Canvas drawing interactions",
+      "Colour palette",
+      "Small interactive frontend"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/sketchbox",
+    "imageKind": "Previous portfolio archive",
+    "order": 33,
+    "audience": "people managing day-to-day business or personal workflows",
+    "overview": "Sketchbox is a small interactive drawing tool built around a canvas and colour palette. It is a focused example of direct manipulation in the browser, with the visual interaction itself carrying most of the product value.",
+    "engineering": "Svelte and JavaScript coordinate drawing and palette state around the browser Canvas API. The compact interface keeps attention on colour and direct interaction, creating a focused space for visual experimentation.",
+    "sourceRepos": [
+      "sketchbox"
+    ],
+    "repositories": [
+      {
+        "name": "sketchbox",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sketchbox"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "monkeytype-automator",
+    "repo": "Monkeytype-Automator",
+    "title": "Monkeytype Automator",
+    "group": "Data & AI",
+    "pitch": "A small browser automation experiment.",
+    "technologies": [
+      "Node.js",
+      "Puppeteer"
+    ],
+    "highlights": [
+      "Browser control script",
+      "Automated typing interactions"
+    ],
+    "featured": false,
+    "client": false,
+    "github": "https://github.com/sujoy-kr/Monkeytype-Automator",
+    "imageKind": "Repository artwork",
+    "order": 39,
+    "audience": "teams exploring data, research and local automation",
+    "overview": "A compact browser-automation experiment exploring how a script can drive a typing interaction. The project focuses on browser control and repeatable actions, providing a small, inspectable example of task automation.",
+    "engineering": "Node.js and Puppeteer coordinate the browser session and typing actions. The concise script keeps the control flow easy to inspect and provides a focused example of programmatic interaction with a web interface.",
+    "sourceRepos": [
+      "Monkeytype-Automator"
+    ],
+    "repositories": [
+      {
+        "name": "Monkeytype-Automator",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/Monkeytype-Automator"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "clipping",
+    "repo": "sujoykr",
+    "title": "Clipping",
+    "group": "Client work",
+    "pitch": "A photo-services order workspace, from image submission to order summaries.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Image-submission and service-selection interfaces",
+      "Order-summary and account-view layouts",
+      "Consistent frontend structure across the dashboard"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 16,
+    "audience": "photo-services",
+    "overview": "Clipping brings image submission, service selection, order summaries and account views into a consistent photo-services dashboard. Its step-by-step interface turns a detailed order brief into a more approachable customer journey.",
+    "engineering": "The dashboard organises a photo-service order into distinct steps: submitting images, choosing services and reviewing the summary. Consistent form layouts and account views give customers a clear path through a detailed task, while staff-facing layouts keep order information easy to scan.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "portability",
+    "repo": "sujoykr",
+    "title": "Portability",
+    "group": "Client work",
+    "pitch": "A service-led website for discovering local care.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 24,
+    "audience": "local-care discovery",
+    "overview": "Portability presents a local-care service through an information-led frontend. The work centres on making the service proposition and next steps visible within a multi-section landing-page structure.",
+    "engineering": "The page leads with the care-service offer, then uses supporting sections to explain the options and build a clearer picture of the service. The full-page view shows the overall story, while individual views let visitors inspect the information hierarchy and visual consistency.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "staylowkey",
+    "repo": "sujoykr",
+    "title": "Staylowkey",
+    "group": "Client work",
+    "pitch": "A healthcare discovery frontend with clear information hierarchy.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 23,
+    "audience": "healthcare discovery",
+    "overview": "Staylowkey presents healthcare discovery through service listings, specialist information and profile-related interfaces. Clear content hierarchy helps visitors understand the offer and find their next step.",
+    "engineering": "The design connects service discovery with provider information, registration and profile-related layouts. Consistent forms and a clear section hierarchy bring a complex service into a coherent, approachable browsing experience.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "landify",
+    "repo": "sujoykr",
+    "title": "Landify",
+    "group": "Client work",
+    "pitch": "A technology-focused landing page built for clear product storytelling.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 22,
+    "audience": "technology storytelling",
+    "overview": "Landify is a technology-focused landing page arranged around product storytelling. Its sections give the page a progression from an introduction to more detailed supporting content.",
+    "engineering": "The page introduces the product idea, breaks down its offer into supporting sections and carries the visual identity through the full layout. It demonstrates how a technology business can present an unfamiliar service through clear hierarchy, consistent illustration and concise information blocks.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "plaidea",
+    "repo": "sujoykr",
+    "title": "Plaidea",
+    "group": "Client work",
+    "pitch": "A digital agency website with a confident visual identity.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 25,
+    "audience": "digital-agency services",
+    "overview": "Plaidea presents a digital agency through a service-led marketing website. Its visual hierarchy gives the offering and supporting work a consistent structure across the page.",
+    "engineering": "The page gives the agency a consistent visual presence across its introduction, work and service sections. Strong imagery and a clear reading order help visitors understand what is offered and where to go next, without relying on unsupported client statistics or testimonials.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "kerstfeest",
+    "repo": "sujoykr",
+    "title": "Kerstfeest",
+    "group": "Client work",
+    "pitch": "A seasonal campaign page with a festive visual direction.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 37,
+    "audience": "a seasonal campaign",
+    "overview": "Kerstfeest is a Christmas-themed campaign frontend. It uses seasonal visuals and a section-based landing-page structure to give a short-lived promotional idea a cohesive web presentation.",
+    "engineering": "A seasonal visual direction connects the introduction and promotional sections into one campaign page. The work shows how a short-lived offer can still have a complete, considered presentation, with a consistent style from the opening section to the end of the page.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "bizzency",
+    "repo": "sujoykr",
+    "title": "Bizzency",
+    "group": "Client work",
+    "pitch": "A business landing page balancing service information and visual character.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 34,
+    "audience": "business-service presentation",
+    "overview": "Bizzency is a business landing page built around an introduction, service information and supporting sections. It demonstrates balancing a strong visual treatment with content a visitor can scan.",
+    "engineering": "The page balances a memorable opening with sections that explain the business and its services. Consistent spacing, visual hierarchy and supporting imagery help visitors move from an introduction toward more specific information about the offer.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "beatls",
+    "repo": "sujoykr",
+    "title": "Beatls",
+    "group": "Client work",
+    "pitch": "A creative agency frontend focused on work and services.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 36,
+    "audience": "creative-agency presentation",
+    "overview": "Beatls is a compact creative-agency frontend focused on introducing work and services. Its page composition is the main deliverable, giving the business concept a consistent visual presence.",
+    "engineering": "The site introduces the creative agency through a sequence of work, people and service sections. The emphasis is on a coherent visual language and a clear browsing experience that lets the work support the agency’s message.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "estern",
+    "repo": "sujoykr",
+    "title": "Estern",
+    "group": "Client work",
+    "pitch": "A mobile-solutions business website with a clear service structure.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 35,
+    "audience": "mobile-solutions services",
+    "overview": "Estern presents a mobile-solutions business through a service-led website. A strong introduction, supporting sections and consistent visual styling help visitors understand the company’s focus and explore its offer.",
+    "engineering": "The page translates a mobile-solutions offer into an accessible business presentation. A strong opening, service sections and consistent visual styling give visitors a way to understand the company’s focus without needing detailed technical knowledge.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  },
+  {
+    "slug": "valentina",
+    "repo": "sujoykr",
+    "title": "Valentina",
+    "group": "Client work",
+    "pitch": "A themed campaign page for Valentine’s Day.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap"
+    ],
+    "highlights": [
+      "Frontend layout and visual implementation",
+      "Section-based content and navigation",
+      "Business-focused presentation"
+    ],
+    "featured": false,
+    "client": true,
+    "github": "https://github.com/sujoy-kr/sujoykr",
+    "imageKind": "Previous client-work archive",
+    "order": 38,
+    "audience": "a themed campaign",
+    "overview": "Valentina is a Valentine’s Day-themed frontend, built as a cohesive promotional page. Visual character and section composition are the focus of this earlier website work.",
+    "engineering": "The seasonal theme runs through the imagery and section composition, giving the campaign a consistent character. The page carries the visual direction from its opening section through the supporting content, creating a complete promotional presentation.",
+    "sourceRepos": [
+      "sujoykr"
+    ],
+    "repositories": [
+      {
+        "name": "sujoykr",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/sujoykr"
+      }
+    ],
+    "liveUrl": null
+  }
+]

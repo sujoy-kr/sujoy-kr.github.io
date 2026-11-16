@@ -1,0 +1,60 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/sketchbox-cover.png",
+    "caption": "Sketchbox · Previous portfolio archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/sketchbox-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/1.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1980
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/2.png",
+      "kind": "archive",
+      "width": 1356,
+      "height": 929
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/3.png",
+      "kind": "archive",
+      "width": 1186,
+      "height": 793
+    },
+    "image5.webp": {
+      "caption": "Archived interface · screen 4",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/4.png",
+      "kind": "archive",
+      "width": 1215,
+      "height": 646
+    },
+    "image6.webp": {
+      "caption": "Archived interface · screen 5",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/5.png",
+      "kind": "archive",
+      "width": 1213,
+      "height": 678
+    },
+    "image7.webp": {
+      "caption": "Archived interface · screen 6",
+      "source": "sujoykr/assets/img/single-portfolio/sketchbox/6.png",
+      "kind": "archive",
+      "width": 1279,
+      "height": 734
+    }
+  }
+}

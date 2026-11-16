@@ -1,0 +1,88 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/nextset-cover.png",
+    "caption": "NextSet cover composition using existing Android screenshots",
+    "kind": "cover-composition",
+    "width": 1536,
+    "height": 1024
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Home · existing repository capture",
+      "source": "NextSet/docs/images/home.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image2.webp": {
+      "caption": "Duration settings · existing repository capture",
+      "source": "NextSet/docs/images/duration-settings.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image3.webp": {
+      "caption": "Exercise · existing repository capture",
+      "source": "NextSet/docs/images/exercise.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image4.webp": {
+      "caption": "Rest complete · existing repository capture",
+      "source": "NextSet/docs/images/rest-complete.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image5.webp": {
+      "caption": "Sequence preview · existing repository capture",
+      "source": "NextSet/docs/images/sequence-preview.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image6.webp": {
+      "caption": "Sequence · existing repository capture",
+      "source": "NextSet/docs/images/sequence.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image7.webp": {
+      "caption": "Settings dark · existing repository capture",
+      "source": "NextSet/docs/images/settings-dark.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image8.webp": {
+      "caption": "Sound settings · existing repository capture",
+      "source": "NextSet/docs/images/sound-settings.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image9.webp": {
+      "caption": "Week · existing repository capture",
+      "source": "NextSet/docs/images/week.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image10.webp": {
+      "caption": "Weekly analysis · existing repository capture",
+      "source": "NextSet/docs/images/weekly-analysis.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    },
+    "image11.webp": {
+      "caption": "Workouts · existing repository capture",
+      "source": "NextSet/docs/images/workouts.png",
+      "kind": "existing",
+      "width": 720,
+      "height": 1280
+    }
+  }
+}

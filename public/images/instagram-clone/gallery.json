@@ -1,0 +1,151 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/instagram-clone/instagram-clone-cover.png",
+    "caption": "Social Feed · Previous portfolio archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/instagram-clone-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/1.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/2.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/3.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image5.webp": {
+      "caption": "Archived interface · screen 4",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/4.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image6.webp": {
+      "caption": "Archived interface · screen 5",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/5.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image7.webp": {
+      "caption": "Archived interface · screen 6",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/6.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image8.webp": {
+      "caption": "Archived interface · screen 7",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/7.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image9.webp": {
+      "caption": "Archived interface · screen 8",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/8.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image10.webp": {
+      "caption": "Archived interface · screen 9",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/9.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image11.webp": {
+      "caption": "Archived interface · screen 10",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/10.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image12.webp": {
+      "caption": "Archived interface · screen 11",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/11.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image13.webp": {
+      "caption": "Archived interface · screen 12",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/12.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image14.webp": {
+      "caption": "Archived interface · screen 13",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/13.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image15.webp": {
+      "caption": "Archived interface · screen 14",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/14.png",
+      "kind": "archive",
+      "width": 1454,
+      "height": 1064
+    },
+    "image16.webp": {
+      "caption": "Archived interface · screen 15",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/15.png",
+      "kind": "archive",
+      "width": 1988,
+      "height": 1064
+    },
+    "image17.webp": {
+      "caption": "Archived interface · screen 16",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/16.png",
+      "kind": "archive",
+      "width": 1024,
+      "height": 971
+    },
+    "image18.webp": {
+      "caption": "Archived interface · screen 17",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/17.png",
+      "kind": "archive",
+      "width": 1024,
+      "height": 600
+    },
+    "image19.webp": {
+      "caption": "Archived interface · screen 18",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/18.png",
+      "kind": "archive",
+      "width": 1024,
+      "height": 600
+    },
+    "image20.webp": {
+      "caption": "Archived interface · screen 19",
+      "source": "sujoykr/assets/img/single-portfolio/instagram-clone/19.png",
+      "kind": "archive",
+      "width": 1024,
+      "height": 754
+    }
+  }
+}

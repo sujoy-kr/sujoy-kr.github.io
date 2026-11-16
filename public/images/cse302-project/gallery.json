@@ -1,0 +1,105 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/cse302-project.html",
+    "caption": "CSE302 — Canteen Management · reference-led artistic screenshot composition",
+    "kind": "artistic-composition",
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "artDirection": "portfolio-nextjs/docs/design/art-direction/cse302-project.png",
+    "reference": "plaidea"
+  },
+  "images": {
+    "image1.webp": {
+      "source": "CSE302-project/docs/screenshots/student-login-desktop.png",
+      "caption": "Student login and registration · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image2.webp": {
+      "source": "CSE302-project/docs/screenshots/student-menu-desktop.png",
+      "caption": "Student food menu and feedback · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1370
+    },
+    "image3.webp": {
+      "source": "CSE302-project/docs/screenshots/employee-orders-desktop.png",
+      "caption": "Employee pending and completed orders · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image4.webp": {
+      "source": "CSE302-project/docs/screenshots/supplier-desktop.png",
+      "caption": "Supplier food deliveries and supplier directory · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1233
+    },
+    "image5.webp": {
+      "source": "CSE302-project/docs/screenshots/authority-desktop.png",
+      "caption": "Authority records: students, employees, supplies, transactions and feedback · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 2656
+    },
+    "image6.webp": {
+      "source": "CSE302-project/docs/screenshots/report-top-food-desktop.png",
+      "caption": "Authority report · Top Food · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image7.webp": {
+      "source": "CSE302-project/docs/screenshots/report-popular-department-desktop.png",
+      "caption": "Authority report · Popular Department · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image8.webp": {
+      "source": "CSE302-project/docs/screenshots/report-category-revenue-desktop.png",
+      "caption": "Authority report · Revenue by Category · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image9.webp": {
+      "source": "CSE302-project/docs/screenshots/report-top-students-desktop.png",
+      "caption": "Authority report · Top Students · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image10.webp": {
+      "source": "CSE302-project/docs/screenshots/report-top-suppliers-desktop.png",
+      "caption": "Authority report · Top Suppliers · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image11.webp": {
+      "source": "CSE302-project/docs/screenshots/report-daily-revenue-desktop.png",
+      "caption": "Authority report · Daily Revenue · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image12.webp": {
+      "source": "CSE302-project/docs/screenshots/report-employee-average-rating-desktop.png",
+      "caption": "Authority report · Employee Avg Rating · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    },
+    "image13.webp": {
+      "source": "CSE302-project/docs/screenshots/report-top-food-per-department-desktop.png",
+      "caption": "Authority report · Top Food Per Dept · fictional demo data",
+      "kind": "local",
+      "width": 1440,
+      "height": 1000
+    }
+  }
+}

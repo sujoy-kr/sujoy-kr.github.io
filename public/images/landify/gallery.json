@@ -1,0 +1,60 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png",
+    "caption": "Landify · Previous client-work archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/1.png",
+      "kind": "archive",
+      "width": 1895,
+      "height": 1078
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/2.png",
+      "kind": "archive",
+      "width": 1894,
+      "height": 1078
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/3.png",
+      "kind": "archive",
+      "width": 1894,
+      "height": 1078
+    },
+    "image5.webp": {
+      "caption": "Archived interface · screen 4",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/4.png",
+      "kind": "archive",
+      "width": 1894,
+      "height": 1078
+    },
+    "image6.webp": {
+      "caption": "Archived interface · screen 5",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/5.png",
+      "kind": "archive",
+      "width": 1894,
+      "height": 1078
+    },
+    "image7.webp": {
+      "caption": "Archived interface · complete page",
+      "source": "sujoykr/assets/img/single-portfolio/Landify/full.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 5033
+    }
+  }
+}

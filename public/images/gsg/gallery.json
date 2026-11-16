@@ -1,0 +1,77 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/gsg-v2.png",
+    "caption": "G.S. Garments Ltd. · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "regro-media"
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "G.S. Garments Ltd. · Homepage",
+      "source": "User-provided screencapture-gsgarmentsltd-en-2026-11-16-18_29_59.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 4200
+    },
+    "image2.webp": {
+      "caption": "G.S. Garments Ltd. · Business",
+      "source": "User-provided screencapture-gsgarmentsltd-en-business-2026-11-16-18_30_08.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 5765
+    },
+    "image3.webp": {
+      "caption": "G.S. Garments Ltd. · Products",
+      "source": "User-provided screencapture-gsgarmentsltd-en-products-2026-11-16-18_30_17.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 2876
+    },
+    "image4.webp": {
+      "caption": "G.S. Garments Ltd. · Fabrics",
+      "source": "User-provided Screenshot From 2026-11-16 18-30-45.png",
+      "kind": "user",
+      "width": 2880,
+      "height": 1620
+    },
+    "image5.webp": {
+      "caption": "G.S. Garments Ltd. · About",
+      "source": "User-provided screencapture-gsgarmentsltd-en-about-2026-11-16-18_30_56.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 3904
+    },
+    "image6.webp": {
+      "caption": "G.S. Garments Ltd. · Contact",
+      "source": "User-provided screencapture-gsgarmentsltd-en-contact-2026-11-16-18_31_06.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 1404
+    },
+    "image7.webp": {
+      "caption": "G.S. Garments Ltd. · Admin dashboard",
+      "source": "User-provided screencapture-gsgarmentsltd-en-admin-2026-11-16-18_31_18.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 3275
+    },
+    "image8.webp": {
+      "caption": "G.S. Garments Ltd. · Admin products",
+      "source": "User-provided screencapture-gsgarmentsltd-en-admin-products-2026-11-16-18_31_29.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 2277
+    },
+    "image9.webp": {
+      "caption": "G.S. Garments Ltd. · Admin images",
+      "source": "User-provided screencapture-gsgarmentsltd-en-admin-images-2026-11-16-18_31_50.png",
+      "kind": "user",
+      "width": 1920,
+      "height": 1468
+    }
+  }
+}

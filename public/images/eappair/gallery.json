@@ -1,0 +1,21 @@
+{
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/eappair.html",
+    "caption": "eAppair · reference-led artistic screenshot composition",
+    "kind": "artistic-composition",
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "artDirection": "portfolio-nextjs/docs/design/art-direction/eappair.png",
+    "reference": "plaidea"
+  },
+  "images": {
+    "image1.webp": {
+      "source": "User-provided screencapture-127-0-0-1-5500-eAppair-index-html-2026-11-16-18_37_23.png",
+      "caption": "Complete eAppair homepage",
+      "width": 1920,
+      "height": 4330,
+      "kind": "user"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "thumbnail": {
+    "source": "sujoykr/assets/img/single-portfolio/valentina/valentina-cover.png",
+    "caption": "Valentina · Previous client-work archive",
+    "width": 1200,
+    "height": 675,
+    "overlayBaked": true
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Archived project presentation",
+      "source": "sujoykr/assets/img/single-portfolio/valentina/valentina-cover.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 1080
+    },
+    "image2.webp": {
+      "caption": "Archived interface · screen 1",
+      "source": "sujoykr/assets/img/single-portfolio/valentina/1.png",
+      "kind": "archive",
+      "width": 1905,
+      "height": 1080
+    },
+    "image3.webp": {
+      "caption": "Archived interface · screen 2",
+      "source": "sujoykr/assets/img/single-portfolio/valentina/2.png",
+      "kind": "archive",
+      "width": 1899,
+      "height": 1080
+    },
+    "image4.webp": {
+      "caption": "Archived interface · screen 3",
+      "source": "sujoykr/assets/img/single-portfolio/valentina/3.png",
+      "kind": "archive",
+      "width": 1902,
+      "height": 1080
+    },
+    "image5.webp": {
+      "caption": "Archived interface · complete page",
+      "source": "sujoykr/assets/img/single-portfolio/valentina/full.png",
+      "kind": "archive",
+      "width": 1920,
+      "height": 2898
+    }
+  }
+}

@@ -1,0 +1,28 @@
+# Dependencies
+/node_modules/
+
+# Next.js build output and generated types
+/.next/
+/out/
+/next-env.d.ts
+*.tsbuildinfo
+
+# Local environment variables (keep example files versioned)
+.env*
+!.env.example
+!.env.*.example
+
+# Local credentials and tool settings
+/.aws/
+/.codex/
+
+# Logs
+*.log
+
+# Python cache from utility scripts
+__pycache__/
+*.py[cod]
+
+# Operating system files
+.DS_Store
+Thumbs.db
