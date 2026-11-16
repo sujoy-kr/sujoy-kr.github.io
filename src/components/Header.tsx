@@ -13,6 +13,7 @@ export function Header() {
       <nav aria-label="Main navigation">
         {[
           ["/projects/", "Work"],
+          ["/design/", "Design"],
           ["/about/", "About"],
           ["/contact/", "Contact"],
         ].map(([href, label]) => (

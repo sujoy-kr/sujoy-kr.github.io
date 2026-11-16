@@ -1,0 +1,17 @@
+{
+  "thumbnail": {
+    "source": "dribbble/Studio Website Client Project/thumbnail.png",
+    "width": 2400,
+    "height": 1800,
+    "overlayBaked": false
+  },
+  "images": {
+    "image1.webp": {
+      "caption": "Full-page design",
+      "source": "dribbble/Studio Website Client Project/image-02.png",
+      "kind": "design",
+      "width": 1549,
+      "height": 6871
+    }
+  }
+}

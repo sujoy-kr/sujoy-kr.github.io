@@ -2,9 +2,14 @@
 
 import Image from "next/image";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import type { Project } from "@/data/projects";
+import type { ProjectImage } from "@/data/projects";
 
-export function Gallery({ project: p }: { project: Project }) {
+type GalleryProject = {
+  title: string;
+  images: Pick<ProjectImage, "src" | "caption" | "width" | "height">[];
+};
+
+export function Gallery({ project: p }: { project: GalleryProject }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const previousZoom = useRef(1);

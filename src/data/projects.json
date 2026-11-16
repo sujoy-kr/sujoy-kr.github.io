@@ -1485,5 +1485,31 @@
       }
     ],
     "liveUrl": null
+  },
+  {
+    "slug": "studio-website",
+    "repo": "studio-website",
+    "title": "Studio Website",
+    "group": "Client work",
+    "pitch": "A website design for a studio client, from homepage to full-page layout.",
+    "technologies": [
+      "UI Design",
+      "Web Design"
+    ],
+    "highlights": [
+      "Homepage and full-page layout designed for a client brief",
+      "Clear visual hierarchy across a long-form page"
+    ],
+    "featured": false,
+    "client": true,
+    "github": null,
+    "imageKind": "Design mockups",
+    "order": 40,
+    "audience": "studio visitors learning what the studio does and how to get in touch",
+    "overview": "A studio needs a website that presents its work and services clearly to visitors. This client project covers the design of the homepage and the complete page layout, shared as a case study on Dribbble.",
+    "engineering": "This project is a design deliverable rather than a coded application. The work focuses on layout, typography and visual hierarchy, with the homepage and a full-page view showing how sections flow from introduction through to the closing call to action.",
+    "sourceRepos": [],
+    "repositories": [],
+    "liveUrl": null
   }
 ]

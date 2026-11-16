@@ -556,6 +556,10 @@
     "source": "portfolio-nextjs/docs/design/covers/regro-media.html"
   },
   {
+    "file": "images/regro-media/image1.png",
+    "source": "User-maintained local asset"
+  },
+  {
     "file": "images/regro-media/image2.webp",
     "source": "User-provided Regro Media full-page screenshot"
   },
@@ -986,6 +990,14 @@
   {
     "file": "images/valentina/image5.webp",
     "source": "sujoykr/assets/img/single-portfolio/valentina/full.png"
+  },
+  {
+    "file": "images/studio-website/thumbnail.webp",
+    "source": "dribbble/Studio Website Client Project/thumbnail.png"
+  },
+  {
+    "file": "images/studio-website/image1.webp",
+    "source": "dribbble/Studio Website Client Project/image-02.png"
   },
   {
     "file": "images/profile/portrait.webp",

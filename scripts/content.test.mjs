@@ -19,7 +19,7 @@ const galleries = JSON.parse(
   readFileSync(path.join(root, "src/data/galleries.json"), "utf8"),
 );
 const projects = data.map((p) => ({ ...p, ...galleries[p.slug] }));
-test("curated collection includes the requested 40 projects and 14 client works", () => {
+test("curated collection includes the requested 41 projects and 15 client works", () => {
   const excluded = new Set(["lab-article-html", "sujoykr", "medikart-android", "DermaCare-android"]);
   const repos = readFileSync(path.join(root, "../repolist.txt"), "utf8")
     .trim()
@@ -27,9 +27,9 @@ test("curated collection includes the requested 40 projects and 14 client works"
     .map((url) => url.split("/").at(-1))
     .filter((repo) => !excluded.has(repo));
   const repositoryProjects = projects.filter(
-    (project) => project.repo !== "sujoykr",
+    (project) => !["sujoykr", "studio-website"].includes(project.repo),
   );
-  assert.equal(projects.length, 40);
+  assert.equal(projects.length, 41);
   assert.equal(
     repositoryProjects.flatMap((project) => project.sourceRepos).length,
     repos.length,
@@ -38,7 +38,7 @@ test("curated collection includes the requested 40 projects and 14 client works"
     new Set(repositoryProjects.flatMap((project) => project.sourceRepos)),
     new Set(repos),
   );
-  assert.equal(projects.filter((project) => project.client).length, 14);
+  assert.equal(projects.filter((project) => project.client).length, 15);
   for (const slug of ["kyra", "eappair", "regro-media", "gsg"]) {
     const project = projects.find((project) => project.slug === slug);
     assert.equal(project.group, "Client work");
@@ -70,7 +70,7 @@ test("unique routes have substantive overview and implementation sections", () =
 });
 test("only Safoyana and GSG omit public source buttons", () => {
   for (const p of projects) {
-    if (["Safoyana-Digital-Print", "GSG-PHP"].includes(p.repo))
+    if (["Safoyana-Digital-Print", "GSG-PHP", "studio-website"].includes(p.repo))
       assert.equal(p.github, null);
     else assert.equal(p.github, `https://github.com/sujoy-kr/${p.repo}`);
   }

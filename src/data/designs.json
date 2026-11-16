@@ -1,0 +1,308 @@
+[
+  {
+    "slug": "agency-website-landing-page-design",
+    "title": "Agency Website Landing Page Design",
+    "category": "Landing page",
+    "description": "A landing page concept for a creative agency, built around bold typography and clear service sections.",
+    "thumbnail": {
+      "src": "/images/design/agency-website-landing-page-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": [
+      {
+        "src": "/images/design/agency-website-landing-page-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "apex-footwear-ltd-landing-page-design",
+    "title": "Apex Footwear Ltd. Landing Page Design",
+    "category": "Landing page",
+    "description": "A landing page for a footwear brand that puts product photography and a clear call to action first.",
+    "thumbnail": {
+      "src": "/images/design/apex-footwear-ltd-landing-page-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": [
+      {
+        "src": "/images/design/apex-footwear-ltd-landing-page-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "apple-iphone-13-alpine-green-product-page-ui-design",
+    "title": "Apple iPhone 13 Alpine Green Product Page UI Design",
+    "category": "Product page",
+    "description": "A product page concept for the iPhone 13 in Alpine Green, focused on the device and its key features.",
+    "thumbnail": {
+      "src": "/images/design/apple-iphone-13-alpine-green-product-page-ui-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": []
+  },
+  {
+    "slug": "csgo-knife-marketplace-concept-design",
+    "title": "CSGO Knife Marketplace Concept Design",
+    "category": "Marketplace concept",
+    "description": "A marketplace concept for browsing and buying CS:GO knife skins, with a dark, game-inspired interface.",
+    "thumbnail": {
+      "src": "/images/design/csgo-knife-marketplace-concept-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": [
+      {
+        "src": "/images/design/csgo-knife-marketplace-concept-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "finance-website-ui-design",
+    "title": "Finance Website UI Design",
+    "category": "Website UI",
+    "description": "A finance website interface that presents products and figures in a clean, trustworthy layout.",
+    "thumbnail": {
+      "src": "/images/design/finance-website-ui-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": [
+      {
+        "src": "/images/design/finance-website-ui-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "headphone-product-page-ui-design",
+    "title": "Headphone Product Page UI Design",
+    "category": "Product page",
+    "description": "A product page concept for a pair of headphones, built around large imagery and focused product detail.",
+    "thumbnail": {
+      "src": "/images/design/headphone-product-page-ui-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": []
+  },
+  {
+    "slug": "honda-cbr-landing-page",
+    "title": "Honda CBR landing page",
+    "category": "Landing page",
+    "description": "A landing page concept for the Honda CBR sport motorcycle, with a strong hero and clear specification sections.",
+    "thumbnail": {
+      "src": "/images/design/honda-cbr-landing-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": [
+      {
+        "src": "/images/design/honda-cbr-landing-page/image1.webp",
+        "width": 2400,
+        "height": 1559
+      }
+    ]
+  },
+  {
+    "slug": "ios-weather-app-design",
+    "title": "IOS Weather App Design",
+    "category": "Mobile app",
+    "description": "An iOS weather app concept with a clear current-conditions view and forecast details.",
+    "thumbnail": {
+      "src": "/images/design/ios-weather-app-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": [
+      {
+        "src": "/images/design/ios-weather-app-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "interior-design-website-landing-page",
+    "title": "Interior Design Website Landing Page",
+    "category": "Landing page",
+    "description": "A landing page for an interior design studio, with a calm layout that lets the spaces lead.",
+    "thumbnail": {
+      "src": "/images/design/interior-design-website-landing-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": [
+      {
+        "src": "/images/design/interior-design-website-landing-page/image1.webp",
+        "width": 2400,
+        "height": 1707
+      }
+    ]
+  },
+  {
+    "slug": "jack-daniels-whisky-product-page",
+    "title": "Jack Daniels Whisky Product Page",
+    "category": "Product page",
+    "description": "A product page concept for Jack Daniel's whisky, using dark tones and strong product presentation.",
+    "thumbnail": {
+      "src": "/images/design/jack-daniels-whisky-product-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": [
+      {
+        "src": "/images/design/jack-daniels-whisky-product-page/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "mv-agusta-rush-motorcycle-product-page",
+    "title": "MV Agusta Rush Motorcycle Product Page",
+    "category": "Product page",
+    "description": "A product page concept for the MV Agusta Rush motorcycle, built to show off the bike's design.",
+    "thumbnail": {
+      "src": "/images/design/mv-agusta-rush-motorcycle-product-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": []
+  },
+  {
+    "slug": "pottery-website-product-page",
+    "title": "Pottery website product page",
+    "category": "Product page",
+    "description": "A product page for a handmade pottery shop, with soft colours and room for each piece.",
+    "thumbnail": {
+      "src": "/images/design/pottery-website-product-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1793
+    },
+    "images": [
+      {
+        "src": "/images/design/pottery-website-product-page/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "prothom-alo-landing-page",
+    "title": "Prothom Alo Landing Page",
+    "category": "Landing page",
+    "description": "A landing page redesign concept for the Bangla news site Prothom Alo, built for readability and clear hierarchy.",
+    "thumbnail": {
+      "src": "/images/design/prothom-alo-landing-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1791
+    },
+    "images": [
+      {
+        "src": "/images/design/prothom-alo-landing-page/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "real-estate-landing-page",
+    "title": "Real Estate Landing Page",
+    "category": "Landing page",
+    "description": "A real estate landing page that puts property listings and search at the centre.",
+    "thumbnail": {
+      "src": "/images/design/real-estate-landing-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1795
+    },
+    "images": [
+      {
+        "src": "/images/design/real-estate-landing-page/image1.webp",
+        "width": 2400,
+        "height": 1549
+      }
+    ]
+  },
+  {
+    "slug": "unique-404-error-page-design",
+    "title": "Unique 404 Error Page Design",
+    "category": "Error page",
+    "description": "A 404 error page designed to turn a dead end into a friendly, memorable moment.",
+    "thumbnail": {
+      "src": "/images/design/unique-404-error-page-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": [
+      {
+        "src": "/images/design/unique-404-error-page-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "veloce-bike-home-page",
+    "title": "Veloce Bike Home Page",
+    "category": "Home page",
+    "description": "A home page concept for Veloce, a bicycle brand, with a hero that shows off the bike.",
+    "thumbnail": {
+      "src": "/images/design/veloce-bike-home-page/thumbnail.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    "images": [
+      {
+        "src": "/images/design/veloce-bike-home-page/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  },
+  {
+    "slug": "web-dashboard-ui-design",
+    "title": "Web Dashboard UI Design",
+    "category": "Dashboard",
+    "description": "A web dashboard interface that organises data into clear panels and charts.",
+    "thumbnail": {
+      "src": "/images/design/web-dashboard-ui-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": [
+      {
+        "src": "/images/design/web-dashboard-ui-design/image1.webp",
+        "width": 2400,
+        "height": 1707
+      }
+    ]
+  },
+  {
+    "slug": "white-slate-cube-product-page-ui-design",
+    "title": "White Slate Cube Product Page UI Design",
+    "category": "Product page",
+    "description": "A product page concept for the White Slate Cube, presented with clean, minimal styling.",
+    "thumbnail": {
+      "src": "/images/design/white-slate-cube-product-page-ui-design/thumbnail.webp",
+      "width": 2400,
+      "height": 1801
+    },
+    "images": [
+      {
+        "src": "/images/design/white-slate-cube-product-page-ui-design/image1.webp",
+        "width": 2400,
+        "height": 1551
+      }
+    ]
+  }
+]

@@ -1132,6 +1132,14 @@
     "thumbnailSource": "portfolio-nextjs/docs/design/covers/regro-media.html",
     "images": [
       {
+        "src": "/images/regro-media/image1.png",
+        "caption": "Project image 1",
+        "kind": "user",
+        "width": 1440,
+        "height": 1000,
+        "source": "User-maintained local asset"
+      },
+      {
         "src": "/images/regro-media/image2.webp",
         "caption": "Complete Regro Media landing page",
         "kind": "local",
@@ -2013,6 +2021,23 @@
         "width": 1920,
         "height": 2898,
         "source": "sujoykr/assets/img/single-portfolio/valentina/full.png"
+      }
+    ]
+  },
+  "studio-website": {
+    "thumbnail": "/images/studio-website/thumbnail.webp",
+    "thumbnailWidth": 2400,
+    "thumbnailHeight": 1800,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "dribbble/Studio Website Client Project/thumbnail.png",
+    "images": [
+      {
+        "src": "/images/studio-website/image1.webp",
+        "caption": "Full-page design",
+        "kind": "design",
+        "width": 1549,
+        "height": 6871,
+        "source": "dribbble/Studio Website Client Project/image-02.png"
       }
     ]
   }
