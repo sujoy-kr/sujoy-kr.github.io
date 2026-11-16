@@ -21,6 +21,8 @@ npm run build
 # Static deployment output: out/
 ```
 
+**Cloudflare Pages:** framework preset "Next.js (Static HTML Export)", build command `npm run build`, output directory `out`, Node 22 (pinned by `.node-version`). Set `NEXT_PUBLIC_SITE_URL` to the production origin in the project's environment variables.
+
 The application uses Next.js App Router and static export. The theme follows the operating system on a first visit; the header switch saves an explicit light/dark preference in browser storage. It continues to work when storage is unavailable. Contact links open an email client; there is no implied form backend. Nothing was deployed.
 
 ## Change project images
@@ -84,7 +86,7 @@ The images are local copies, so editing them does not alter the original project
 
 Edit `src/data/projects.json` for titles, short pitches, audiences, overviews, engineering details, highlights, technologies and presentation order. `order`, `group` and `featured` control the collection presentation. Image filenames belong in their project folders, not in this content file. Basic HTML/CSS/JavaScript/Bootstrap labels are omitted from the public technology displays. Projects using only that stack show their design approach and client-facing purpose instead; the original stack remains in the content data for reference.
 
-Every project has a case-study page. Public source buttons remain omitted for Safoyana and GSG as requested. The ten earlier frontend/client entries link to the old portfolio repository containing their material.
+Every project has a case-study page. Public source buttons remain omitted for GSG as requested. The ten earlier frontend/client entries link to the old portfolio repository containing their material.
 
 ## Image context
 

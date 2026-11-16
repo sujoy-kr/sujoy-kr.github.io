@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
+import { JsonLd } from "@/components/JsonLd";
+import { NAME, PORTRAIT, SITE_URL, SAME_AS, person } from "@/lib/seo";
 import "./globals.css";
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -20,19 +22,51 @@ const bangla = Hind_Siliguri({
   display: "swap",
 });
 
+const DESCRIPTION =
+  "Sujoy Karmakar is a full-stack developer from Bangladesh. Explore his websites, web applications, Android apps, backend systems and UI designs.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sujoy Karmakar — Full-stack developer",
+    default: "Sujoy Karmakar — Full-stack Developer & Designer from Bangladesh",
     template: "%s — Sujoy Karmakar",
   },
-  description:
-    "Thoughtful websites, useful applications, and the engineering behind them. Explore full-stack, Android, and data projects by Sujoy Karmakar.",
+  description: DESCRIPTION,
+  applicationName: NAME,
+  keywords: [
+    "Sujoy Karmakar",
+    "Sujoy Kr",
+    "sujoy-kr",
+    "Sujoy Karmakar portfolio",
+    "full-stack developer Bangladesh",
+    "Next.js developer",
+    "Android developer",
+    "web developer portfolio",
+  ],
+  authors: [{ name: NAME, url: SITE_URL }],
+  creator: NAME,
+  publisher: NAME,
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Sujoy Karmakar — Full-stack developer",
-    description: "Websites, applications, and the engineering behind them.",
+    title: "Sujoy Karmakar — Full-stack Developer & Designer",
+    description: DESCRIPTION,
+    url: "/",
+    siteName: NAME,
+    locale: "en_US",
     type: "website",
+    images: [{ url: PORTRAIT.src, width: PORTRAIT.width, height: PORTRAIT.height, alt: NAME }],
   },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sujoy Karmakar — Full-stack Developer & Designer",
+    description: DESCRIPTION,
+    images: [PORTRAIT.src],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
 };
 export const viewport: Viewport = {
   width: "device-width",
@@ -54,6 +88,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: init }} />
+        <JsonLd
+          data={[
+            person,
+            {
+              "@type": "WebSite",
+              "@id": `${SITE_URL}/#website`,
+              url: `${SITE_URL}/`,
+              name: `${NAME} — Portfolio`,
+              alternateName: NAME,
+              inLanguage: ["en", "bn"],
+              publisher: { "@id": `${SITE_URL}/#person` },
+              about: { "@id": `${SITE_URL}/#person` },
+            },
+          ]}
+        />
       </head>
       <body>
         <a className="skip-link" href="#main">
@@ -68,17 +117,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Tx en="Let’s make it work." bn="চলুন কাজটা দাঁড় করাই।" />
                 <Arrow diagonal />
               </Link>
-              <a className="footer-mail" href="mailto:hello@sujoykr.com">
-                hello@sujoykr.com
+              <a className="footer-mail" href="mailto:thesujoykr@gmail.com">
+                thesujoykr@gmail.com
               </a>
             </div>
             <div className="footer-bottom">
               <span>© {new Date().getFullYear()} Sujoy Karmakar</span>
               <div>
-                <a href="https://github.com/sujoy-kr" target="_blank" rel="noopener noreferrer">
+                <a href={SAME_AS[0]} target="_blank" rel="me noopener noreferrer">
                   GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/sujoykarmakar" target="_blank" rel="noopener noreferrer">
+                <a href={SAME_AS[1]} target="_blank" rel="me noopener noreferrer">
                   LinkedIn
                 </a>
               </div>

@@ -68,9 +68,9 @@ test("unique routes have substantive overview and implementation sections", () =
     assert.ok(p.audience.length > 10);
   }
 });
-test("only Safoyana and GSG omit public source buttons", () => {
+test("only GSG and the studio website omit public source buttons", () => {
   for (const p of projects) {
-    if (["Safoyana-Digital-Print", "GSG-PHP", "studio-website"].includes(p.repo))
+    if (["GSG-PHP", "studio-website"].includes(p.repo))
       assert.equal(p.github, null);
     else assert.equal(p.github, `https://github.com/sujoy-kr/${p.repo}`);
   }

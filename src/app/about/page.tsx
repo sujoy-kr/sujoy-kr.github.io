@@ -3,8 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
+import { JsonLd } from "@/components/JsonLd";
+import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "About" };
+export const metadata: Metadata = pageMetadata({
+  title: "About",
+  description: `${NAME} is a full-stack developer based in Bangladesh, working across websites, applications and backend systems. Open to freelance work and engineering roles.`,
+  path: "/about/",
+  type: "profile",
+  keywords: ["about Sujoy Karmakar", "Sujoy Karmakar developer", "Sujoy Karmakar Bangladesh"],
+});
 
 const stack = [
   {
@@ -24,6 +32,21 @@ const stack = [
 export default function About() {
   return (
     <main id="main" className="wrap page">
+      <JsonLd
+        data={[
+          {
+            "@type": "AboutPage",
+            url: abs("/about/"),
+            name: `About ${NAME}`,
+            mainEntity: { "@id": `${SITE_URL}/#person` },
+            isPartOf: { "@id": `${SITE_URL}/#website` },
+          },
+          breadcrumbs([
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about/" },
+          ]),
+        ]}
+      />
       <div className="about-layout">
         <div>
           <h1>

@@ -19,7 +19,7 @@
     ],
     "featured": true,
     "client": false,
-    "github": null,
+    "github": "https://github.com/sujoy-kr/Safoyana-Digital-Print",
     "imageKind": "Reference-led artistic screenshot composition",
     "order": 0,
     "audience": "print-shop customers specifying an order, and staff organising the order queue",
@@ -28,7 +28,13 @@
     "sourceRepos": [
       "Safoyana-Digital-Print"
     ],
-    "repositories": [],
+    "repositories": [
+      {
+        "name": "Safoyana-Digital-Print",
+        "label": "View on GitHub",
+        "url": "https://github.com/sujoy-kr/Safoyana-Digital-Print"
+      }
+    ],
     "liveUrl": null
   },
   {

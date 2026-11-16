@@ -1,12 +1,34 @@
 import type { Metadata } from "next";
 import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
+import { JsonLd } from "@/components/JsonLd";
+import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Contact" };
+export const metadata: Metadata = pageMetadata({
+  title: "Contact",
+  description: `Get in touch with ${NAME} about a website, application or engineering role. Email, GitHub and LinkedIn.`,
+  path: "/contact/",
+  keywords: ["contact Sujoy Karmakar", "hire Sujoy Karmakar"],
+});
 
 export default function Contact() {
   return (
     <main id="main" className="wrap page">
+      <JsonLd
+        data={[
+          {
+            "@type": "ContactPage",
+            url: abs("/contact/"),
+            name: `Contact ${NAME}`,
+            mainEntity: { "@id": `${SITE_URL}/#person` },
+            isPartOf: { "@id": `${SITE_URL}/#website` },
+          },
+          breadcrumbs([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact/" },
+          ]),
+        ]}
+      />
       <h1>
         <Tx
           en={<>Great work starts<br />with <em>a conversation.</em></>}
@@ -19,8 +41,8 @@ export default function Contact() {
           bn="ব্যবসার কোনো ওয়ার্কফ্লো উন্নত করতে চান, ওয়েবসাইট বানাতে চান, কিংবা আপনার দলে আমাকে চান? আমি শুনতে আগ্রহী।"
         />
       </p>
-      <a className="contact-email" href="mailto:hello@sujoykr.com">
-        hello@sujoykr.com <Arrow diagonal />
+      <a className="contact-email" href="mailto:thesujoykr@gmail.com">
+        thesujoykr@gmail.com <Arrow diagonal />
       </a>
       <div className="contact-details">
         <div>

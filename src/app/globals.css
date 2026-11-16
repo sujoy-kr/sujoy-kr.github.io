@@ -326,11 +326,10 @@ h3 {
 
 /* Home */
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  align-items: center;
-  gap: clamp(32px, 6vw, 80px);
-  padding-block: clamp(48px, 9vw, 112px);
+  padding-block: clamp(64px, 12vw, 152px) clamp(32px, 6vw, 72px);
+}
+.hero-copy {
+  max-width: 780px;
 }
 .availability {
   display: flex;
@@ -348,7 +347,8 @@ h3 {
   box-shadow: 0 0 0 4px #4e9a7829;
 }
 .hero h1 {
-  margin-bottom: 24px;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  margin-bottom: 28px;
 }
 .hero-lead {
   color: var(--muted);
@@ -361,11 +361,6 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   gap: 16px 28px;
-}
-.hero-image img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
 }
 .section {
   padding-block: clamp(40px, 7vw, 88px);
@@ -402,6 +397,48 @@ h3 {
 }
 .card {
   min-width: 0;
+}
+.card-media {
+  position: relative;
+}
+.card-repos {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+.card-media:hover .card-repos,
+.card-media:focus-within .card-repos {
+  opacity: 1;
+  transform: none;
+}
+@media (hover: none) {
+  .card-repos {
+    opacity: 1;
+    transform: none;
+  }
+}
+.card-repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 14px 0 11px;
+  border-radius: 999px;
+  background: #161a18eb;
+  color: #fff;
+  font-size: 0.85rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 16px #0000004d;
+  transition: background 0.2s, color 0.2s;
+}
+.card-repo:hover {
+  background: #fff;
+  color: #161a18;
 }
 .card-image {
   display: block;
@@ -600,6 +637,10 @@ h3 {
 }
 .detail-head h1 {
   margin-bottom: 18px;
+}
+.github-button {
+  padding: 13px 24px;
+  font-weight: 500;
 }
 .detail-links {
   display: flex;
@@ -873,12 +914,8 @@ h3 {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .hero,
   .about-layout {
     grid-template-columns: minmax(0, 1fr);
-  }
-  .hero-image {
-    order: 2;
   }
   .portrait {
     max-width: 420px;

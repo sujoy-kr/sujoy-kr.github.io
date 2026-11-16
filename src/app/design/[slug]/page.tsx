@@ -6,6 +6,8 @@ import { designs, designBn } from "@/data/designs";
 import { categoryLabels } from "@/data/labels";
 import { Tx } from "@/components/Tx";
 import { Gallery } from "@/components/Gallery";
+import { JsonLd } from "@/components/JsonLd";
+import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
 import { Arrow } from "@/components/Icons";
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -18,10 +20,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const design = designs.find((d) => d.slug === slug);
-  return {
-    title: design?.title ?? "Design not found",
-    description: design?.description,
-  };
+  if (!design) return { title: "Design not found" };
+  return pageMetadata({
+    title: design.title,
+    description: `${design.title}, a ${design.category.toLowerCase()} UI design by ${NAME}. ${design.description}`,
+    path: `/design/${design.slug}/`,
+    type: "article",
+    image: { ...design.thumbnail, alt: `${design.title} — UI design by ${NAME}` },
+    keywords: [design.title, `${design.title} ${NAME}`, design.category],
+  });
 }
 export default async function DesignPage({
   params,
@@ -34,6 +41,30 @@ export default async function DesignPage({
   const next = designs[(designs.indexOf(d) + 1) % designs.length];
   return (
     <main id="main" className="wrap page detail">
+      <JsonLd
+        data={[
+          {
+            "@type": "ImageObject",
+            name: d.title,
+            description: d.description,
+            contentUrl: abs(d.thumbnail.src),
+            thumbnailUrl: abs(d.thumbnail.src),
+            width: d.thumbnail.width,
+            height: d.thumbnail.height,
+            url: abs(`/design/${d.slug}/`),
+            creator: { "@id": `${SITE_URL}/#person` },
+            author: { "@id": `${SITE_URL}/#person` },
+            copyrightHolder: { "@id": `${SITE_URL}/#person` },
+            creditText: NAME,
+            genre: d.category,
+          },
+          breadcrumbs([
+            { name: "Home", path: "/" },
+            { name: "Design", path: "/design/" },
+            { name: d.title, path: `/design/${d.slug}/` },
+          ]),
+        ]}
+      />
       <Link className="back-link" href="/design/">
         ← <Tx en="All designs" bn="সব ডিজাইন" />
       </Link>

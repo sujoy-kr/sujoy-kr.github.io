@@ -1,9 +1,18 @@
 import Link from "next/link";
-import Image from "next/image";
 import { featured, projects } from "@/data/projects";
 import { Arrow } from "@/components/Icons";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Tx } from "@/components/Tx";
+import { JsonLd } from "@/components/JsonLd";
+import { NAME, SITE_URL, abs } from "@/lib/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: { absolute: "Sujoy Karmakar — Full-stack Developer & Designer from Bangladesh" },
+  description:
+    "Sujoy Karmakar is a full-stack developer from Bangladesh. Explore his websites, web applications, Android apps, backend systems and UI designs.",
+  alternates: { canonical: "/" },
+};
 
 const services = [
   {
@@ -23,6 +32,22 @@ const services = [
 export default function Home() {
   return (
     <main id="main">
+      <JsonLd
+        data={{
+          "@type": "ProfilePage",
+          "@id": `${SITE_URL}/#webpage`,
+          url: `${SITE_URL}/`,
+          name: `${NAME} — Full-stack Developer & Designer`,
+          mainEntity: { "@id": `${SITE_URL}/#person` },
+          isPartOf: { "@id": `${SITE_URL}/#website` },
+          primaryImageOfPage: abs("/images/profile/portrait.webp"),
+          hasPart: featured.slice(0, 3).map((p) => ({
+            "@type": "CreativeWork",
+            name: p.title,
+            url: abs(`/projects/${p.slug}/`),
+          })),
+        }}
+      />
       <section className="hero wrap">
         <div className="hero-copy">
           <p className="availability">
@@ -37,8 +62,8 @@ export default function Home() {
           </h1>
           <p className="hero-lead">
             <Tx
-              en="I’m Sujoy, a full-stack developer turning business problems into websites and applications people can actually use."
-              bn="আমি সুজয়, একজন ফুল-স্ট্যাক ডেভেলপার। ব্যবসার সমস্যাকে এমন ওয়েবসাইট ও অ্যাপ্লিকেশনে রূপ দিই, যা মানুষ সত্যিই ব্যবহার করতে পারে।"
+              en="I’m Sujoy Karmakar, a full-stack developer turning business problems into websites and applications people can actually use."
+              bn="আমি সুজয় কর্মকার (Sujoy Karmakar), একজন ফুল-স্ট্যাক ডেভেলপার। ব্যবসার সমস্যাকে এমন ওয়েবসাইট ও অ্যাপ্লিকেশনে রূপ দিই, যা মানুষ সত্যিই ব্যবহার করতে পারে।"
             />
           </p>
           <div className="actions">
@@ -51,16 +76,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Link href="/projects/gsg/" className="hero-image" aria-label="G.S. Garments Ltd.">
-          <Image
-            src="/images/hero/gsg-home.webp"
-            width={1920}
-            height={1152}
-            alt="G.S. Garments Ltd. homepage featuring its factory and clothing collections"
-            priority
-            sizes="(min-width: 960px) 560px, 100vw"
-          />
-        </Link>
       </section>
 
       <section className="section wrap">

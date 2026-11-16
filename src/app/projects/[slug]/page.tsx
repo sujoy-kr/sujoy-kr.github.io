@@ -8,6 +8,8 @@ import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
 import { groupLabels } from "@/data/labels";
 import { RepositoryLinks } from "@/components/RepositoryLinks";
+import { JsonLd } from "@/components/JsonLd";
+import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -19,10 +21,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
-  return {
-    title: project?.title ?? "Project not found",
-    description: project?.pitch,
-  };
+  if (!project) return { title: "Project not found" };
+  return pageMetadata({
+    title: project.title,
+    description: `${project.title}, a project by ${NAME}. ${project.pitch} Built with ${project.displayTechnologies.join(", ") || "HTML and CSS"}.`,
+    path: `/projects/${project.slug}/`,
+    type: "article",
+    image: {
+      src: project.thumbnail,
+      width: project.thumbnailWidth,
+      height: project.thumbnailHeight,
+      alt: `${project.title} — project by ${NAME}`,
+    },
+    keywords: [project.title, `${project.title} ${NAME}`, ...project.displayTechnologies],
+  });
 }
 export default async function ProjectPage({
   params,
@@ -35,6 +47,31 @@ export default async function ProjectPage({
   const next = projects[(projects.indexOf(p) + 1) % projects.length];
   return (
     <main id="main" className="wrap page detail">
+      <JsonLd
+        data={[
+          {
+            "@type": "CreativeWork",
+            "@id": abs(`/projects/${p.slug}/`) + "#project",
+            name: p.title,
+            headline: p.title,
+            description: `${p.pitch} ${p.overview}`,
+            url: abs(`/projects/${p.slug}/`),
+            image: abs(p.thumbnail),
+            thumbnailUrl: abs(p.thumbnail),
+            author: { "@id": `${SITE_URL}/#person` },
+            creator: { "@id": `${SITE_URL}/#person` },
+            keywords: p.displayTechnologies.join(", "),
+            genre: p.group,
+            inLanguage: "en",
+            sameAs: [p.github, p.liveUrl].filter(Boolean),
+          },
+          breadcrumbs([
+            { name: "Home", path: "/" },
+            { name: "Projects", path: "/projects/" },
+            { name: p.title, path: `/projects/${p.slug}/` },
+          ]),
+        ]}
+      />
       <Link className="back-link" href="/projects/">
         ← <Tx en="All projects" bn="সব প্রকল্প" />
       </Link>
