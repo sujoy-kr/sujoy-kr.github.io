@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 /** Set NEXT_PUBLIC_SITE_URL at build time to the production origin. */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sujoykarmakar.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sujoykr.pages.dev"
 ).replace(/\/$/, "");
 export const NAME = "Sujoy Karmakar";
 export const JOB_TITLE = "Full-stack developer";

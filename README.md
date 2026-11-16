@@ -21,7 +21,7 @@ npm run build
 # Static deployment output: out/
 ```
 
-**Cloudflare Pages:** framework preset "Next.js (Static HTML Export)", build command `npm run build`, output directory `out`, Node 22 (pinned by `.node-version`). Set `NEXT_PUBLIC_SITE_URL` to the production origin in the project's environment variables.
+**Cloudflare Pages:** framework preset "Next.js (Static HTML Export)", build command `npm run build`, output directory `out`, Node 22 (pinned by `.node-version`). Set `NEXT_PUBLIC_SITE_URL` if the production origin differs from the default `https://sujoykr.pages.dev`.
 
 The application uses Next.js App Router and static export. The theme follows the operating system on a first visit; the header switch saves an explicit light/dark preference in browser storage. It continues to work when storage is unavailable. Contact links open an email client; there is no implied form backend. Nothing was deployed.
 
@@ -106,7 +106,6 @@ python3 scripts/browser_check.py
 
 Chrome defaults to `/usr/bin/google-chrome`; override with `CHROME_PATH`. Set `PORTFOLIO_URL` to test another local address. Review screenshots are in `docs/screenshots/`; the dark version is shown in `home-dark-desktop.png`.
 
-See [VERIFICATION.md](VERIFICATION.md) for actual results. Original application code was left unchanged; capture files were added under project documentation. Personal details and profile links came from the previous portfolio; mailbox delivery and remote-account ownership were not independently checked.
 
 The public case studies focus on implemented functionality, design choices and practical value. Temporary portfolio-capture setup notes and audit panels are kept out of the site. Notepad AI’s Ollama testing was confirmed by the project developer, and its cover uses the original repository screenshot showing a local model and assistant response.
 
