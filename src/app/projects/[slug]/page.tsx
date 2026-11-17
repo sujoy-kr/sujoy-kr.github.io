@@ -10,7 +10,8 @@ import { groupLabels } from "@/data/labels";
 import { RepositoryLinks } from "@/components/RepositoryLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
-const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset"]);
+const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset", "medikart", "dermacare"]);
+const THREE_COLUMN_GALLERIES = new Set(["medikart", "dermacare"]);
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -147,7 +148,7 @@ export default async function ProjectPage({
           <h2>
             <Tx en="Gallery" bn="গ্যালারি" />
           </h2>
-          <Gallery key={p.slug} project={p} compact={COMPACT_GALLERIES.has(p.slug)} />
+          <Gallery key={p.slug} project={p} compact={COMPACT_GALLERIES.has(p.slug)} wideColumns={THREE_COLUMN_GALLERIES.has(p.slug) ? 3 : 4} />
         </section>
       )}
       <nav className="next-project" aria-label="Next project">

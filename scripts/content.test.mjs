@@ -68,9 +68,9 @@ test("unique routes have substantive overview and implementation sections", () =
     assert.ok(p.audience.length > 10);
   }
 });
-test("only GSG and the studio website omit public source buttons", () => {
+test("only private-repo and studio projects omit public source buttons", () => {
   for (const p of projects) {
-    if (["GSG-PHP", "studio-website"].includes(p.repo))
+    if (["GSG-PHP", "studio-website", "LAB-Main-Svelte", "Safoyana-Digital-Print", "mapveto", "medikartFrontend", "cosmeticsEcom-frontend"].includes(p.repo))
       assert.equal(p.github, null);
     else assert.equal(p.github, `https://github.com/sujoy-kr/${p.repo}`);
   }
@@ -279,7 +279,7 @@ test("public content describes the projects without portfolio setup audit notes"
   );
 });
 
-test("frontend/backend pairs are combined and keep both source links", () => {
+test("frontend/backend pairs are combined and record both source repos but hide private links", () => {
   const pairs = {
     lab: ["LAB-Main-Svelte", "LAB-admin-panel"],
     medikart: ["medikartFrontend", "MedikartBackend"],
@@ -288,12 +288,9 @@ test("frontend/backend pairs are combined and keep both source links", () => {
   for (const [slug, repos] of Object.entries(pairs)) {
     const p = projects.find((project) => project.slug === slug);
     assert.deepEqual(p.sourceRepos, repos);
-    assert.deepEqual(
-      p.repositories.map((repository) => repository.name),
-      repos,
-    );
-    for (const repo of p.repositories)
-      assert.equal(repo.url, `https://github.com/sujoy-kr/${repo.name}`);
+    // Private repositories: no public source buttons.
+    assert.deepEqual(p.repositories, []);
+    assert.equal(p.github, null);
   }
   const renamed = {
     "microservice-ecommerce": "Microservice Ecommerce",

@@ -1,5 +1,11 @@
 import Link from "next/link";
 import { featured, projects } from "@/data/projects";
+
+const EXTRA_HOME_SLUGS = ["talentrack-ai-powered-recruitment-platform", "medikart", "lab"];
+const homeProjects = [
+  ...featured.slice(0, 3),
+  ...EXTRA_HOME_SLUGS.flatMap((slug) => projects.filter((p) => p.slug === slug)),
+];
 import { Arrow } from "@/components/Icons";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Tx } from "@/components/Tx";
@@ -41,7 +47,7 @@ export default function Home() {
           mainEntity: { "@id": `${SITE_URL}/#person` },
           isPartOf: { "@id": `${SITE_URL}/#website` },
           primaryImageOfPage: abs("/images/profile/portrait.webp"),
-          hasPart: featured.slice(0, 3).map((p) => ({
+          hasPart: homeProjects.map((p) => ({
             "@type": "CreativeWork",
             name: p.title,
             url: abs(`/projects/${p.slug}/`),
@@ -89,7 +95,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid">
-          {featured.slice(0, 3).map((p) => (
+          {homeProjects.map((p) => (
             <ProjectCard key={p.slug} project={p} />
           ))}
         </div>

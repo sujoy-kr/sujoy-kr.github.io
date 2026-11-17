@@ -19,7 +19,7 @@
     ],
     "featured": true,
     "client": false,
-    "github": "https://github.com/sujoy-kr/Safoyana-Digital-Print",
+    "github": null,
     "imageKind": "Reference-led artistic screenshot composition",
     "order": 0,
     "audience": "print-shop customers specifying an order, and staff organising the order queue",
@@ -28,14 +28,9 @@
     "sourceRepos": [
       "Safoyana-Digital-Print"
     ],
-    "repositories": [
-      {
-        "name": "Safoyana-Digital-Print",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/Safoyana-Digital-Print"
-      }
-    ],
-    "liveUrl": null
+    "repositories": [],
+    "liveUrl": null,
+    "privateRepository": true
   },
   {
     "slug": "nextset",
@@ -370,7 +365,7 @@
   {
     "slug": "medikart",
     "repo": "medikartFrontend",
-    "title": "Medikart",
+    "title": "MediKart BD",
     "group": "Client work",
     "pitch": "A pharmacy commerce platform with a SvelteKit storefront and Express API.",
     "technologies": [
@@ -390,29 +385,19 @@
     ],
     "featured": false,
     "client": false,
-    "github": "https://github.com/sujoy-kr/medikartFrontend",
+    "github": null,
     "imageKind": "Repository artwork",
     "order": 6,
     "audience": "people managing day-to-day business or personal workflows",
-    "overview": "Medikart brings a pharmacy storefront and its API together as one commerce platform. Customer browsing, account routes and product discovery connect to staff administration and point-of-sale screens, with backend records for inventory, stores, orders and prescriptions.",
+    "overview": "MediKart BD brings a pharmacy storefront and its API together as one commerce platform. Customer browsing, account routes and product discovery connect to staff administration and point-of-sale screens, with backend records for inventory, stores, orders and prescriptions.",
     "engineering": "SvelteKit provides the customer and staff interfaces, while Express and Mongoose organise API operations and MongoDB records. Redis supports caching alongside mail-service boundaries. The frontend/backend split gives the business workflow a dedicated interface layer and a separate data and service layer.",
     "sourceRepos": [
       "medikartFrontend",
       "MedikartBackend"
     ],
-    "repositories": [
-      {
-        "name": "medikartFrontend",
-        "label": "Frontend",
-        "url": "https://github.com/sujoy-kr/medikartFrontend"
-      },
-      {
-        "name": "MedikartBackend",
-        "label": "Backend API",
-        "url": "https://github.com/sujoy-kr/MedikartBackend"
-      }
-    ],
-    "liveUrl": null
+    "repositories": [],
+    "liveUrl": null,
+    "privateRepository": true
   },
   {
     "slug": "lab",
@@ -432,7 +417,7 @@
     ],
     "featured": false,
     "client": false,
-    "github": "https://github.com/sujoy-kr/LAB-Main-Svelte",
+    "github": null,
     "imageKind": "Repository artwork",
     "order": 11,
     "audience": "people managing day-to-day business or personal workflows",
@@ -442,19 +427,9 @@
       "LAB-Main-Svelte",
       "LAB-admin-panel"
     ],
-    "repositories": [
-      {
-        "name": "LAB-Main-Svelte",
-        "label": "Public website",
-        "url": "https://github.com/sujoy-kr/LAB-Main-Svelte"
-      },
-      {
-        "name": "LAB-admin-panel",
-        "label": "Admin panel",
-        "url": "https://github.com/sujoy-kr/LAB-admin-panel"
-      }
-    ],
-    "liveUrl": null
+    "repositories": [],
+    "liveUrl": null,
+    "privateRepository": true
   },
   {
     "slug": "finshark-backend",
@@ -551,7 +526,7 @@
     ],
     "featured": false,
     "client": false,
-    "github": "https://github.com/sujoy-kr/cosmeticsEcom-frontend",
+    "github": null,
     "imageKind": "Repository artwork",
     "order": 7,
     "audience": "people managing day-to-day business or personal workflows",
@@ -561,19 +536,9 @@
       "cosmeticsEcom-frontend",
       "cosmeticEcom"
     ],
-    "repositories": [
-      {
-        "name": "cosmeticsEcom-frontend",
-        "label": "Frontend",
-        "url": "https://github.com/sujoy-kr/cosmeticsEcom-frontend"
-      },
-      {
-        "name": "cosmeticEcom",
-        "label": "Backend API",
-        "url": "https://github.com/sujoy-kr/cosmeticEcom"
-      }
-    ],
-    "liveUrl": null
+    "repositories": [],
+    "liveUrl": null,
+    "privateRepository": true
   },
   {
     "slug": "medicine-data-scraper-with-proxy-rotation",
@@ -781,7 +746,7 @@
     ],
     "featured": false,
     "client": false,
-    "github": "https://github.com/sujoy-kr/mapveto",
+    "github": null,
     "imageKind": "Previous portfolio archive",
     "order": 28,
     "audience": "people managing day-to-day business or personal workflows",
@@ -790,13 +755,7 @@
     "sourceRepos": [
       "mapveto"
     ],
-    "repositories": [
-      {
-        "name": "mapveto",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/mapveto"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {

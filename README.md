@@ -113,7 +113,7 @@ The current collection has 40 projects and 14 Client work entries, including Kyr
 
 ## Combined projects and source links
 
-LAB (`lab`) combines the public website and admin panel. Medikart (`medikart`) combines its storefront and API. DermaCare (`dermacare`) combines the cosmetics storefront and commerce API. Each case study includes both GitHub repositories, defined by its `repositories` array; `sourceRepos` preserves the original repository IDs. The `github` field remains the primary source link used on collection cards. Existing unreferenced image folders are retained so earlier assets are preserved.
+LAB (`lab`) combines the public website and admin panel. MediKart BD (`medikart`) combines its storefront and API. DermaCare (`dermacare`) combines the cosmetics storefront and commerce API. Each case study includes both GitHub repositories, defined by its `repositories` array; `sourceRepos` preserves the original repository IDs. The `github` field remains the primary source link used on collection cards. Existing unreferenced image folders are retained so earlier assets are preserved.
 
 The live GSG website is linked from its case study. Its nine latest user-provided captures are kept at full dimensions in the gallery, including the homepage and three admin views. A separate top-section homepage crop provides the thumbnail. NextSet uses a generated cover composition, with its real Android screens retained separately. See [cover generation details and final prompt](docs/NEXTSET-COVER.md).
 

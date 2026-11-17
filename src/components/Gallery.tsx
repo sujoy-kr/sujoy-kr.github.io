@@ -14,9 +14,11 @@ type GalleryProject = {
 export function Gallery({
   project: p,
   compact = false,
+  wideColumns = 4,
 }: {
   project: GalleryProject;
   compact?: boolean;
+  wideColumns?: number;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const stage = useRef<HTMLDivElement>(null);
@@ -44,8 +46,8 @@ export function Gallery({
     [ratios],
   );
   const columns = useMemo(
-    () => ({ wide: layoutColumns(ratios, 4), narrow: layoutColumns(ratios, 3) }),
-    [ratios],
+    () => ({ wide: layoutColumns(ratios, wideColumns), narrow: layoutColumns(ratios, 3) }),
+    [ratios, wideColumns],
   );
   const open_ = (index: number) => {
     setSelected(index);

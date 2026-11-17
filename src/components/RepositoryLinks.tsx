@@ -4,7 +4,8 @@ import { repoLabels } from "@/data/labels";
 import type { Project } from "@/data/projects";
 
 export function RepositoryLinks({ project }: { project: Project }) {
-  if (!project.repositories.length && !project.liveUrl) return null;
+  const isPrivate = "privateRepository" in project && project.privateRepository === true;
+  if (!project.repositories.length && !project.liveUrl && !isPrivate) return null;
   const multi = project.repositories.length > 1;
   return (
     <div className="detail-links">
@@ -24,6 +25,14 @@ export function RepositoryLinks({ project }: { project: Project }) {
           <Arrow diagonal />
         </a>
       ))}
+      {isPrivate && (
+        <p className="private-note">
+          <Tx
+            en="The GitHub repository is private due to a contract."
+            bn="চুক্তির কারণে এই GitHub রিপোজিটরিটি প্রাইভেট।"
+          />
+        </p>
+      )}
       {project.liveUrl && (
         <a
           className="button"
