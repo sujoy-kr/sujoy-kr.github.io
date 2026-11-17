@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Hind_Siliguri, Inter, Newsreader } from "next/font/google";
 import Link from "next/link";
-import { CustomCursor } from "@/components/CustomCursor";
 import { EasterEggs } from "@/components/EasterEggs";
 import { Header } from "@/components/Header";
 import { Arrow } from "@/components/Icons";
@@ -112,7 +111,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="scroll-progress" aria-hidden="true" />
         <Header />
         <EasterEggs />
-        <CustomCursor />
         {children}
         <footer className="footer">
           <div className="wrap footer-inner">
