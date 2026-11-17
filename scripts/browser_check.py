@@ -62,6 +62,10 @@ async def main():
         await page.get_by_role('button', name='Client work', exact=True).click()
         assert await page.locator('main .grid .card').count() == sum(p['group'] == 'Client work' for p in PROJECTS)
         await page.get_by_role('button', name='All work').click()
+        await page.get_by_role('button', name='Desktop', exact=True).click()
+        assert await page.locator('main .grid .card').count() == 1
+        assert await page.locator('main .grid .card h3').inner_text() == 'Car Shop Management System'
+        await page.get_by_role('button', name='All work').click()
         await page.get_by_role('searchbox', name='Search projects').fill('Kotlin')
         assert await page.locator('main .grid .card').count() == 1
         await page.get_by_role('searchbox', name='Search projects').fill('no-such-technology')

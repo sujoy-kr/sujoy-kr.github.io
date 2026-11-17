@@ -7,13 +7,6 @@
     "overlayBaked": true
   },
   "images": {
-    "image1.webp": {
-      "caption": "Archived project presentation",
-      "source": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png",
-      "kind": "archive",
-      "width": 1920,
-      "height": 1080
-    },
     "image2.webp": {
       "caption": "Archived interface · screen 1",
       "source": "sujoykr/assets/img/single-portfolio/Landify/1.png",

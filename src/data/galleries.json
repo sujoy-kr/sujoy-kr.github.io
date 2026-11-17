@@ -1618,6 +1618,80 @@
       }
     ]
   },
+  "car-shop-management-system": {
+    "thumbnail": "/images/car-shop-management-system/thumbnail.webp",
+    "thumbnailWidth": 3200,
+    "thumbnailHeight": 1800,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/car-shop-management-system.html",
+    "images": [
+      {
+        "src": "/images/car-shop-management-system/image1.webp",
+        "caption": "Customer profile · fictional demo details",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 01-customer-profile.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image2.webp",
+        "caption": "Customer showroom · commuter vehicles",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 02-customer-showroom.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image3.webp",
+        "caption": "Administration · inventory statistics and vehicle entry",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 03-inventory-dashboard.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image4.webp",
+        "caption": "Administration · sports-car entry with fictional demo values",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 04-sports-car-form.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image5.webp",
+        "caption": "Customer showroom · sports vehicles and cost tools",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 05-sports-showroom.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image6.webp",
+        "caption": "Sports car · quarter-mile performance estimate",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 06-performance-estimate.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image7.webp",
+        "caption": "Customer purchase · confirmation dialog",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 07-purchase-confirmation.png"
+      },
+      {
+        "src": "/images/car-shop-management-system/image8.webp",
+        "caption": "Administration · customer purchase log and updated inventory",
+        "kind": "local",
+        "width": 2400,
+        "height": 1800,
+        "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 08-customer-purchase-log.png"
+      }
+    ]
+  },
   "microservice-ecommerce": {
     "thumbnail": "/images/microservice-ecommerce/thumbnail.svg",
     "thumbnailWidth": 1200,

@@ -1,6 +1,6 @@
 // Finish reference-led art directions using original screenshots, not compressed drafts.
 // node scripts/render-covers.mjs --playwright-dir /path/to/node_modules [--slug project]
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
@@ -65,7 +65,9 @@ try {
       caption: `${project.title} · reference-led artistic screenshot composition`,
       kind: 'artistic-composition', width: 3200, height: 1800,
       overlay: spec.overlay,
-      artDirection: `portfolio-nextjs/docs/design/art-direction/${spec.slug}.png`,
+      ...(existsSync(path.join(root, 'docs/design/art-direction', `${spec.slug}.png`))
+        ? { artDirection: `portfolio-nextjs/docs/design/art-direction/${spec.slug}.png` }
+        : {}),
       reference: spec.reference,
     };
     writeFileSync(path.join(folder, 'gallery.json'), JSON.stringify(metadata, null, 2) + '\n');

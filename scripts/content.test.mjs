@@ -19,7 +19,7 @@ const galleries = JSON.parse(
   readFileSync(path.join(root, "src/data/galleries.json"), "utf8"),
 );
 const projects = data.map((p) => ({ ...p, ...galleries[p.slug] }));
-test("curated collection includes the requested 41 projects and 15 client works", () => {
+test("curated collection includes 42 projects and 15 client works", () => {
   const excluded = new Set(["lab-article-html", "sujoykr", "medikart-android", "DermaCare-android"]);
   const repos = readFileSync(path.join(root, "scripts/fixtures/repolist.txt"), "utf8")
     .trim()
@@ -29,7 +29,7 @@ test("curated collection includes the requested 41 projects and 15 client works"
   const repositoryProjects = projects.filter(
     (project) => !["sujoykr", "studio-website"].includes(project.repo),
   );
-  assert.equal(projects.length, 41);
+  assert.equal(projects.length, 42);
   assert.equal(
     repositoryProjects.flatMap((project) => project.sourceRepos).length,
     repos.length,
@@ -121,6 +121,7 @@ test("all available screenshot sets are included, rather than the earlier partia
     "secure-note-taking": 5,
     "talentrack-ai-powered-recruitment-platform": 7,
     "instagram-clone": 20,
+    "car-shop-management-system": 9,
     clipping: 9,
     landify: 7,
     staylowkey: 8,

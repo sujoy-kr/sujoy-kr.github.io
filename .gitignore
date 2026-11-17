@@ -1,6 +1,9 @@
 # Dependencies
 /node_modules/
 
+# Downloaded project sources used for local screenshot capture
+/.local-projects/
+
 # Next.js build output and generated types
 /.next/
 /out/

@@ -1,6 +1,6 @@
 # Reference-led artistic covers
 
-Nine projects with actual interface captures have new covers: Safoyana, Reclaim, Notepad AI, TalenTrack, P2P File Stream, Secure Note Taking, Canteen Manager, Regro Media and eAppair. The earlier covers have been restored for eleven projects without interface captures, including the scripts and API-only projects. Mobile covers, other Client work entries and the six existing collage covers remain unchanged. Regro Media and eAppair are the two explicitly requested Client work exceptions.
+Ten projects with actual interface captures have new covers: Safoyana, Reclaim, Notepad AI, TalenTrack, P2P File Stream, Secure Note Taking, Canteen Manager, Regro Media, eAppair and Car Shop Management System. The earlier covers have been restored for eleven projects without interface captures, including the scripts and API-only projects. Mobile covers, other Client work entries and the six existing collage covers remain unchanged. Regro Media and eAppair are the two explicitly requested Client work exceptions.
 
 ## Reference analysis
 
@@ -8,7 +8,7 @@ Clipping, Portability, Stay Low Key and Plaidea use asymmetric mosaics of flat, 
 
 ## Art direction and final assets
 
-The built-in imagegen tool produced a separate reference-led art direction for each project, using the user's existing cover as a style reference and the original project screenshots as supporting inserts. Generated art directions and exact prompts are saved as `docs/design/art-direction/<slug>.png` and `<slug>.json`.
+The built-in imagegen tool produced a separate reference-led art direction for each of the original nine projects, using the user's existing cover as a style reference and the original project screenshots as supporting inserts. Generated art directions and exact prompts are saved as `docs/design/art-direction/<slug>.png` and `<slug>.json`.
 
 The final covers were recomposed from the original screenshots at **3200 × 1800**, following those art directions, so interface text and records remain authentic. The smaller generated concept images were not enlarged into website thumbnails. Cropped screenshot plates retain original pixels; the final browser render supersamples diagonal edges. A single exact **30% black overlay** covers the entire artwork. The complete export is encoded as **lossless WebP**, preserving the PNG master's decoded pixels. Raw gallery screenshots remain clear and unchanged.
 
@@ -16,7 +16,6 @@ The final covers were recomposed from the original screenshots at **3200 × 1800
 - Full-resolution PNG masters and editable HTML: `docs/design/covers/`.
 - Reference mapping, source crops and layouts: `scripts/cover-specs.json`.
 - Native finishing layout: `scripts/cover-layout.css`.
-- Original covers and provenance: `docs/design/thumbnail-sources/`.
 
 Collection cards use each thumbnail’s original dimensions and natural aspect ratio, showing the complete image without a fixed-ratio crop or stretching. Rounded corners and hover zoom are retained.
 
@@ -32,7 +31,7 @@ npm run images
 npm run build
 ```
 
-The renderer’s allowlist includes only the nine screenshot-backed projects. Regro Media and eAppair are explicit Client work exceptions; other client projects and all mobile projects remain protected. It cannot regenerate the restored scripts/API covers. Earlier rejected composition files for other projects are retained as historical working artifacts and are not referenced by the website.
+The renderer’s allowlist includes only the ten screenshot-backed projects. Regro Media and eAppair are explicit Client work exceptions; other client projects and all mobile projects remain protected. It cannot regenerate the restored scripts/API covers. Rejected composition files and unused source-thumbnail backups have been removed; active cover sources and regeneration inputs are retained.
 
 ## Safoyana captures
 
@@ -50,3 +49,7 @@ The eighteen original application captures remain available (seventeen desktop v
 
 - regro-media: [finished WebP](../public/images/regro-media/thumbnail.webp), [exact prompt and references](design/art-direction/regro-media.json).
 - eappair: [finished WebP](../public/images/eappair/thumbnail.webp), [exact prompt and references](design/art-direction/eappair.json).
+
+## Car Shop Management System
+
+The Java desktop app uses a native screenshot mosaic following Plaidea, with the same square-edged crops, black gutters, 30% overlay and 3200 × 1800 lossless export. Its eight lossless Swing captures remain separate in the gallery and also supply the cover renderer. This cover is composed directly from those captures without a generated concept image. See [capture provenance, reproduction and verification](CAR-SHOP.md).

@@ -3,6 +3,7 @@ export const groupLabels: Record<string, string> = {
   Featured: "নির্বাচিত",
   "Web apps": "ওয়েব অ্যাপ",
   Mobile: "মোবাইল",
+  Desktop: "ডেস্কটপ",
   "Data & AI": "ডেটা ও এআই",
   "Systems & APIs": "সিস্টেম ও এপিআই",
   "Client work": "ক্লায়েন্টের কাজ",

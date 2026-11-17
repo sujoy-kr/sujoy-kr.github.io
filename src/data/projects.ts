@@ -63,6 +63,7 @@ export const groups = [
   "Featured",
   "Web apps",
   "Mobile",
+  "Desktop",
   "Data & AI",
   "Systems & APIs",
   "Client work",

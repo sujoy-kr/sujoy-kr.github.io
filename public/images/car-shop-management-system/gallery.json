@@ -1,0 +1,69 @@
+{
+  "images": {
+    "image1.webp": {
+      "caption": "Customer profile · fictional demo details",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 01-customer-profile.png"
+    },
+    "image2.webp": {
+      "caption": "Customer showroom · commuter vehicles",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 02-customer-showroom.png"
+    },
+    "image3.webp": {
+      "caption": "Administration · inventory statistics and vehicle entry",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 03-inventory-dashboard.png"
+    },
+    "image4.webp": {
+      "caption": "Administration · sports-car entry with fictional demo values",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 04-sports-car-form.png"
+    },
+    "image5.webp": {
+      "caption": "Customer showroom · sports vehicles and cost tools",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 05-sports-showroom.png"
+    },
+    "image6.webp": {
+      "caption": "Sports car · quarter-mile performance estimate",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 06-performance-estimate.png"
+    },
+    "image7.webp": {
+      "caption": "Customer purchase · confirmation dialog",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 07-purchase-confirmation.png"
+    },
+    "image8.webp": {
+      "caption": "Administration · customer purchase log and updated inventory",
+      "kind": "local",
+      "width": 2400,
+      "height": 1800,
+      "source": "Car-shop-management-system-GUI @ 71ddc4f7775a71face7902d12bf6497d68734a7f · local Swing capture · 08-customer-purchase-log.png"
+    }
+  },
+  "thumbnail": {
+    "source": "portfolio-nextjs/docs/design/covers/car-shop-management-system.html",
+    "caption": "Car Shop Management System · reference-led artistic screenshot composition",
+    "kind": "artistic-composition",
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "reference": "plaidea"
+  }
+}
