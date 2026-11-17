@@ -375,7 +375,7 @@
     "thumbnail": "/images/nextset/thumbnail.webp",
     "thumbnailWidth": 1536,
     "thumbnailHeight": 1024,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "portfolio-nextjs/docs/design/nextset-cover.png",
     "images": [
       {
@@ -624,11 +624,11 @@
   },
   "talentrack-ai-powered-recruitment-platform": {
     "thumbnail": "/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 3200,
+    "thumbnailHeight": 1800,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform.html",
     "images": [
       {
         "src": "/images/talentrack-ai-powered-recruitment-platform/image1.webp",
@@ -1465,11 +1465,11 @@
   },
   "notepad-ai": {
     "thumbnail": "/images/notepad-ai/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 1600,
+    "thumbnailHeight": 900,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/notepad-ai.html",
     "images": [
       {
         "src": "/images/notepad-ai/image1.webp",
@@ -1501,7 +1501,7 @@
     "thumbnail": "/images/hood-up-cse489/thumbnail.webp",
     "thumbnailWidth": 1536,
     "thumbnailHeight": 1024,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "portfolio-nextjs/docs/design/hood-up-cover.png",
     "images": [
       {
@@ -1696,7 +1696,7 @@
     "thumbnail": "/images/microservice-ecommerce/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -1788,7 +1788,7 @@
     "thumbnail": "/images/bdjobs-scraper/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -1796,7 +1796,7 @@
     "thumbnail": "/images/regro-media/thumbnail.webp",
     "thumbnailWidth": 2400,
     "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "portfolio-nextjs/scripts/build-regro-thumbnail.mjs",
     "images": [
       {
@@ -2007,7 +2007,7 @@
     "thumbnail": "/images/fileshare/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -2015,7 +2015,7 @@
     "thumbnail": "/images/photo-editor-backend/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -2023,7 +2023,7 @@
     "thumbnail": "/images/finshark-backend/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -2031,7 +2031,7 @@
     "thumbnail": "/images/bd-walks/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -2039,7 +2039,7 @@
     "thumbnail": "/images/medicine-data-scraper-with-proxy-rotation/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
@@ -2114,7 +2114,7 @@
     "thumbnail": "/images/studio-website/thumbnail.webp",
     "thumbnailWidth": 2400,
     "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "dribbble/Studio Website Client Project/thumbnail.png",
     "images": [
       {
@@ -2858,7 +2858,7 @@
     "thumbnail": "/images/monkeytype-automator/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
+    "thumbnailOverlayBaked": true,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   }

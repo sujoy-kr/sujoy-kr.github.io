@@ -26,5 +26,6 @@ for (const s of slices) {
   layers.push({ input: await sharp(crop).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer(), left: s.x, top: s.y });
 }
 await sharp({ create: { width: W, height: H, channels: 3, background: BACKGROUND } })
-  .composite(layers).webp({ quality: 92, effort: 6 }).toFile(path.join(folder, 'thumbnail.webp'));
+  .composite([...layers, { input: { create: { width: W, height: H, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0.3 } } } }]) // 30% black veil like the other covers
+  .webp({ quality: 92, effort: 6 }).toFile(path.join(folder, 'thumbnail.webp'));
 console.log(`regro-media thumbnail ${W}×${H}`);

@@ -4,7 +4,9 @@
     "caption": "NextSet cover composition using existing Android screenshots",
     "kind": "cover-composition",
     "width": 1536,
-    "height": 1024
+    "height": 1024,
+    "overlay": 0.3,
+    "overlayBaked": true
   },
   "images": {
     "image1.webp": {

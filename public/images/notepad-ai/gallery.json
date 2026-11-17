@@ -1,13 +1,12 @@
 {
   "thumbnail": {
-    "source": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png",
-    "caption": "Notepad AI · artistic screenshot collage",
+    "source": "portfolio-nextjs/docs/design/covers/notepad-ai.html",
+    "caption": "Notepad AI · reference-led artistic screenshot composition",
     "kind": "artistic-composition",
-    "width": 1448,
-    "height": 1086,
-    "overlay": 0.15,
-    "overlayBaked": true,
-    "reference": "clipping"
+    "width": 1600,
+    "height": 900,
+    "overlay": 0.3,
+    "reference": "plaidea"
   },
   "images": {
     "image1.webp": {

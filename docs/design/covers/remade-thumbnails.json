@@ -5,19 +5,5 @@
     "method": "built-in image_gen",
     "source": "docs/design/covers/secure-note-taking-v2.png",
     "thumbnail": "public/images/secure-note-taking/thumbnail.webp"
-  },
-  {
-    "slug": "talentrack-ai-powered-recruitment-platform",
-    "prompt": "Use case: compositing. Asset: TalenTrack artistic portfolio thumbnail, landscape 4:3. Image 1 Clipping is STYLE ONLY: black void, asymmetric flat screen fragments, strong clean gutters and deliberate edge crops. Images 2–4 are actual project screenshots: TalenTrack job portal, AdminPortal dashboard, recruitment copilot. Make a sophisticated editorial screenshot collage, dramatically different from a plain screenshot: dominant large job-portal hero cropped to its logo, Discover Your Next Career Opportunity heading and job cards in upper left / center; tall copilot conversation crop on right; dashboard fragment across bottom left. Offset the fragments with varied scale, generous pure-black channels, some fragments exit canvas. Flat sharp rectangular boundaries; slight consistent -8 degree rotation of the whole composition for energy. Preserve exact actual UI branding, dark charcoal and periwinkle/violet accents, original job cards and chat; do not invent metrics, UI features or words. No new headings, captions, devices, browser frames, shadows or 3D perspective. Maintain readable large heading and recognizable interfaces inside central 80% of canvas. Rich visible dark interface details, subtle uniform 15% black veil, high resolution. Do not use any Clipping app content.",
-    "method": "built-in image_gen",
-    "source": "docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png",
-    "thumbnail": "public/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp"
-  },
-  {
-    "slug": "notepad-ai",
-    "prompt": "Use case: compositing. Asset: Notepad AI artistic portfolio cover, landscape 4:3, sharp high resolution. Image 1 is STYLE REFERENCE ONLY: Clipping's asymmetric offset mosaic of flat screenshot fragments on pure-black ground. Images 2–4 are actual Notepad AI screens; use only their real UI as content. Create a bold editorial collage with five uneven rectangular fragments and broad clean black gutters: a dominant centered editor-and-Document Assistant view from image 2 filling about 65% of frame, a tall enlarged sidebar fragment with orange New Note button at left, a horizontal release checklist crop crossing bottom, a small preferences/model selector detail near lower left, and an editor heading strip disappearing through top right. Deliberate artful asymmetric balance; large UI details readable at card size, edge crops, no equal-sized grid, no duplicate full screenshots. Mostly axis-aligned rectangular fragments with one subtly tilted strip. Preserve charcoal original app surfaces and orange/gold buttons, white monospace editor text and assistant panel; title Notepad AI remains visible. Preserve existing content faithfully; don't fabricate features, claims, text or response content. No added cover heading, labels, icons, devices, browser frames, borders, 3D or drop shadows. Pure-black gaps, original image proportions, subtle uniform 15% black tonal veil without losing legibility. Do not include Clipping content.",
-    "method": "built-in image_gen",
-    "source": "docs/design/covers/notepad-ai-v2.png",
-    "thumbnail": "public/images/notepad-ai/thumbnail.webp"
   }
 ]

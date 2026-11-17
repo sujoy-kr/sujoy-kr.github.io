@@ -40,8 +40,6 @@ The eighteen original application captures remain available (seventeen desktop v
 ## Finished covers and exact imagegen prompts
 
 - reclaim: [finished WebP](../public/images/reclaim/thumbnail.webp), [exact prompt and references](design/art-direction/reclaim.json).
-- notepad-ai: [finished WebP](../public/images/notepad-ai/thumbnail.webp), [exact prompt and references](design/art-direction/notepad-ai.json).
-- talentrack-ai-powered-recruitment-platform: [finished WebP](../public/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp), [exact prompt and references](design/art-direction/talentrack-ai-powered-recruitment-platform.json).
 - p2p-file-stream: [finished WebP](../public/images/p2p-file-stream/thumbnail.webp), [exact prompt and references](design/art-direction/p2p-file-stream.json).
 - secure-note-taking: [finished WebP](../public/images/secure-note-taking/thumbnail.webp), [exact prompt and references](design/art-direction/secure-note-taking.json).
 - cse302-project: [finished WebP](../public/images/cse302-project/thumbnail.webp), [exact prompt and references](design/art-direction/cse302-project.json).

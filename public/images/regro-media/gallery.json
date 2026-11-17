@@ -4,7 +4,8 @@
     "caption": "Regro Media · full-page slices (Studio Website style)",
     "width": 2400,
     "height": 1800,
-    "overlayBaked": false
+    "overlayBaked": true,
+    "overlay": 0.3
   },
   "images": {
     "image1.webp": {

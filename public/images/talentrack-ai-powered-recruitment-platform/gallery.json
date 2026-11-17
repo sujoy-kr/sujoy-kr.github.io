@@ -1,13 +1,12 @@
 {
   "thumbnail": {
-    "source": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png",
-    "caption": "TalenTrack · artistic screenshot collage",
+    "source": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform.html",
+    "caption": "TalenTrack · reference-led artistic screenshot composition",
     "kind": "artistic-composition",
-    "width": 1448,
-    "height": 1086,
-    "overlay": 0.15,
-    "overlayBaked": true,
-    "reference": "clipping"
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "reference": "plaidea"
   },
   "images": {
     "image1.webp": {

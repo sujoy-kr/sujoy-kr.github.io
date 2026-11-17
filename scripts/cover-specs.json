@@ -139,65 +139,72 @@
   },
   {
     "slug": "notepad-ai",
-    "reference": "clipping",
+    "reference": "plaidea",
+    "dpr": 1,
     "panels": [
       {
-        "file": "Notepad-AI/docs/screenshots/saved-notes-desktop.png",
-        "x": 25,
-        "y": -10,
-        "width": 900,
-        "height": 135,
+        "file": "portfolio-nextjs/public/images/notepad-ai/image1.webp",
+        "x": 40,
+        "y": 35,
+        "width": 830,
+        "height": 540,
         "crop": [
-          300,
           0,
-          1140,
-          160
+          0,
+          1440,
+          938
         ]
       },
       {
-        "file": "Notepad-AI/docs/app-screenshot.png",
-        "x": 380,
-        "y": 155,
-        "width": 1190,
-        "height": 525
-      },
-      {
-        "file": "Notepad-AI/docs/screenshots/saved-notes-desktop.png",
-        "x": 65,
-        "y": 195,
-        "width": 250,
-        "height": 280,
+        "file": "portfolio-nextjs/public/images/notepad-ai/image3.webp",
+        "x": 915,
+        "y": 35,
+        "width": 645,
+        "height": 300,
         "crop": [
           0,
-          30,
-          300,
-          410
+          0,
+          1920,
+          893
         ]
       },
       {
-        "file": "Notepad-AI/docs/app-screenshot.png",
-        "x": 65,
+        "file": "portfolio-nextjs/public/images/notepad-ai/image2.webp",
+        "x": 915,
+        "y": 375,
+        "width": 645,
+        "height": 490,
+        "crop": [
+          0,
+          0,
+          1290,
+          980
+        ]
+      },
+      {
+        "file": "portfolio-nextjs/public/images/notepad-ai/image2.webp",
+        "x": 40,
         "y": 615,
-        "width": 280,
-        "height": 235,
+        "width": 400,
+        "height": 250,
         "crop": [
-          14,
-          454,
-          348,
-          360
+          0,
+          0,
+          1429,
+          893
         ]
       },
       {
-        "file": "Notepad-AI/docs/screenshots/release-checklist-desktop.png",
-        "x": 700,
-        "y": 740,
-        "width": 850,
-        "height": 150,
+        "file": "portfolio-nextjs/public/images/notepad-ai/image3.webp",
+        "x": 480,
+        "y": 615,
+        "width": 390,
+        "height": 250,
         "crop": [
-          300,
           0,
-          1140,
-          200
+          0,
+          1500,
+          961
         ]
       }
     ],
@@ -205,47 +212,73 @@
   },
   {
     "slug": "talentrack-ai-powered-recruitment-platform",
-    "reference": "staylowkey",
+    "reference": "plaidea",
+    "dpr": 2,
     "panels": [
       {
-        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png",
-        "x": 450,
-        "y": 18,
-        "width": 700,
-        "height": 515
-      },
-      {
-        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png",
-        "x": 10,
-        "y": 125,
-        "width": 410,
-        "height": 680,
+        "file": "portfolio-nextjs/public/images/talentrack-ai-powered-recruitment-platform/image1.webp",
+        "x": 40,
+        "y": 35,
+        "width": 830,
+        "height": 540,
         "crop": [
           0,
           0,
-          850,
-          1351
+          1912,
+          1244
         ]
       },
       {
-        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png",
-        "x": 1180,
-        "y": 185,
-        "width": 420,
+        "file": "portfolio-nextjs/public/images/talentrack-ai-powered-recruitment-platform/image4.webp",
+        "x": 915,
+        "y": 35,
+        "width": 645,
+        "height": 300,
+        "crop": [
+          0,
+          0,
+          2000,
+          930
+        ]
+      },
+      {
+        "file": "portfolio-nextjs/public/images/talentrack-ai-powered-recruitment-platform/image2.webp",
+        "x": 915,
+        "y": 375,
+        "width": 645,
         "height": 490,
         "crop": [
           0,
           0,
-          1000,
+          1777,
+          1350
+        ]
+      },
+      {
+        "file": "portfolio-nextjs/public/images/talentrack-ai-powered-recruitment-platform/image5.webp",
+        "x": 40,
+        "y": 615,
+        "width": 400,
+        "height": 250,
+        "crop": [
+          0,
+          0,
+          1538,
           961
         ]
       },
       {
-        "file": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png",
-        "x": 475,
-        "y": 565,
-        "width": 650,
-        "height": 310
+        "file": "portfolio-nextjs/public/images/talentrack-ai-powered-recruitment-platform/image6.webp",
+        "x": 480,
+        "y": 615,
+        "width": 390,
+        "height": 250,
+        "crop": [
+          0,
+          0,
+          1500,
+          961
+        ]
       }
     ],
     "overlay": 0.3
