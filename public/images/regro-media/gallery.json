@@ -10,6 +10,13 @@
     "reference": "landify"
   },
   "images": {
+    "image1.png": {
+      "source": "User-provided Regro Media full-page screenshot (long capture)",
+      "caption": "Complete Regro Media landing page · full length",
+      "kind": "user",
+      "width": 1920,
+      "height": 12013
+    },
     "image2.webp": {
       "source": "User-provided Regro Media full-page screenshot",
       "caption": "Complete Regro Media landing page",

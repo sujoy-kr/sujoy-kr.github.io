@@ -17,6 +17,8 @@ type Options = {
   tallTarget: number; // ideal height for rows made only of tall (page-length) images
   maxHeight: number;
   maxPerRow: number;
+  /** Page-length captures are never drawn narrower than this (px, capped at the container width). */
+  tallMinWidth?: number;
 };
 
 const TALL = 0.7;
@@ -56,7 +58,12 @@ export function layoutRows(ratios: number[], o: Options): Row[] {
     const items = Array.from({ length: j - i }, (_, k) => i + k);
     rows.unshift({
       items,
-      max: Math.round(span(i, j).sum * o.maxHeight + o.gap * (items.length - 1)),
+      max: Math.round(
+        Math.max(
+          span(i, j).sum * o.maxHeight + o.gap * (items.length - 1),
+          span(i, j).tall ? Math.min(o.width, o.tallMinWidth ?? 0) : 0,
+        ),
+      ),
     });
   }
   return rows;

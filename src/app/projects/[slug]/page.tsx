@@ -7,11 +7,19 @@ import { Gallery } from "@/components/Gallery";
 import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
 import { groupLabels } from "@/data/labels";
+import { ReclaimReadme } from "@/components/ReclaimReadme";
 import { RepositoryLinks } from "@/components/RepositoryLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
-const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset", "medikart", "dermacare", "safoyana"]);
-const THREE_COLUMN_GALLERIES = new Set(["medikart", "dermacare", "safoyana"]);
+const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset", "medikart", "dermacare", "safoyana", "p2p-file-stream", "cse302-project", "reclaim"]);
+const GALLERY_COLUMNS: Record<string, number> = {
+  medikart: 3,
+  dermacare: 3,
+  safoyana: 3,
+  "cse302-project": 3,
+  "p2p-file-stream": 2,
+  reclaim: 4,
+};
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -146,12 +154,13 @@ export default async function ProjectPage({
           )}
         </div>
       </section>
+      {p.slug === "reclaim" && <ReclaimReadme />}
       {p.images.length > 0 && (
         <section id="gallery" className="gallery-section">
           <h2>
             <Tx en="Gallery" bn="গ্যালারি" />
           </h2>
-          <Gallery key={p.slug} project={p} compact={COMPACT_GALLERIES.has(p.slug)} wideColumns={THREE_COLUMN_GALLERIES.has(p.slug) ? 3 : 4} />
+          <Gallery key={p.slug} project={p} compact={COMPACT_GALLERIES.has(p.slug)} wideColumns={GALLERY_COLUMNS[p.slug] ?? 4} />
         </section>
       )}
       <nav className="next-project" aria-label="Next project">

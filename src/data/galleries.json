@@ -1728,11 +1728,11 @@
     "images": [
       {
         "src": "/images/regro-media/image1.png",
-        "caption": "Project image 1",
+        "caption": "Complete Regro Media landing page · full length",
         "kind": "user",
-        "width": 1440,
-        "height": 1000,
-        "source": "User-maintained local asset"
+        "width": 1920,
+        "height": 12013,
+        "source": "User-provided Regro Media full-page screenshot (long capture)"
       },
       {
         "src": "/images/regro-media/image2.webp",

@@ -41,13 +41,13 @@ export function Gallery({
   const gap = compact ? { wide: 6, narrow: 4 } : { wide: 16, narrow: 10 };
   const layouts = useMemo(
     () => ({
-      wide: layoutRows(ratios, { width: 1100, gap: 16, target: 400, tallTarget: 650, maxHeight: 1500, maxPerRow: 4 }),
-      narrow: layoutRows(ratios, { width: 350, gap: 10, target: 300, tallTarget: 700, maxHeight: 1800, maxPerRow: 2 }),
+      wide: layoutRows(ratios, { width: 1100, gap: 16, target: 400, tallTarget: 650, maxHeight: 1500, maxPerRow: 4, tallMinWidth: 665 }),
+      narrow: layoutRows(ratios, { width: 350, gap: 10, target: 300, tallTarget: 700, maxHeight: 1800, maxPerRow: 2, tallMinWidth: 350 }),
     }),
     [ratios],
   );
   const columns = useMemo(
-    () => ({ wide: layoutColumns(ratios, wideColumns), narrow: layoutColumns(ratios, 3) }),
+    () => ({ wide: layoutColumns(ratios, wideColumns), narrow: layoutColumns(ratios, Math.min(3, wideColumns)) }),
     [ratios, wideColumns],
   );
   const open_ = (index: number) => {
