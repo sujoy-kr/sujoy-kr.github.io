@@ -57,6 +57,8 @@ export default async function ProjectPage({
   const { slug } = await params;
   const p = projects.find((p) => p.slug === slug);
   if (!p) notFound();
+  // Projects without bespoke artwork use a generated SVG card; give them a gradient instead.
+  const hasArtwork = !p.thumbnail.endsWith(".svg");
   const next = projects[(projects.indexOf(p) + 1) % projects.length];
   return (
     <main id="main" className="wrap page detail">
@@ -88,10 +90,26 @@ export default async function ProjectPage({
           ]),
         ]}
       />
+      <div
+        className={`detail-backdrop ${hasArtwork ? "" : "detail-backdrop-gradient"}`}
+        aria-hidden="true"
+      >
+        {hasArtwork && (
+          <Image
+            className={`detail-backdrop-img ${p.thumbnailOverlayBaked ? "" : "thumbnail-overlay"}`}
+            src={p.thumbnail}
+            alt=""
+            width={p.thumbnailWidth}
+            height={p.thumbnailHeight}
+            priority
+            sizes="100vw"
+          />
+        )}
+      </div>
       <Link className="back-link" href="/projects/">
         ← <Tx en="All projects" bn="সব প্রকল্প" />
       </Link>
-      <header className="detail-head">
+      <header className={`detail-head ${hasArtwork ? "" : "detail-head-compact"}`}>
         <p className="eyebrow">
           <Tx en={p.group} bn={groupLabels[p.group] ?? p.group} />
         </p>
@@ -101,15 +119,6 @@ export default async function ProjectPage({
         </p>
         <RepositoryLinks project={p} />
       </header>
-      <Image
-        className={`cover ${p.thumbnailOverlayBaked ? "" : "thumbnail-overlay"}`}
-        src={p.thumbnail}
-        alt={`${p.title} — ${p.imageKind}`}
-        width={p.thumbnailWidth}
-        height={p.thumbnailHeight}
-        priority
-        sizes="(min-width: 1180px) 1100px, 100vw"
-      />
       <section className="story">
         <div>
           <h2>

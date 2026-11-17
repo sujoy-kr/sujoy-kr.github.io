@@ -108,9 +108,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <a className="skip-link" href="#main">
-          <Tx en="Skip to content" bn="মূল অংশে যান" />
-        </a>
         <div className="scroll-progress" aria-hidden="true" />
         <Header />
         <EasterEggs />
