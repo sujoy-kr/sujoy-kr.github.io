@@ -92,15 +92,7 @@ export function syncImages() {
   provenance.push(
     { file: "images/education/ewu.webp", source: "ewubd.edu · logo.png, emblem crop" },
     { file: "images/education/gsc.webp", source: "en.wikipedia.org · File:GOVT. SCIENCE COLLEGE DHAKA LOGO.png" },
-    { file: "images/education/cit.webp", source: "creativeitinstitute.com · favicon.png" },
-    {
-      file: "images/hero/gsg-home.webp",
-      source: "portfolio-nextjs/public/images/gsg/image1.webp · homepage crop",
-    },
-    {
-      file: "images/hero/hood-up-workshop.webp",
-      source: "portfolio-nextjs/public/images/hood-up-cse489/image4.webp · workshop screen",
-    },
+    { file: "images/education/cit.webp", source: "creativeitinstitute.com · favicon.png" }
   );
   writeIfChanged(path.join(root, "src/data/galleries.json"), galleries);
   writeIfChanged(path.join(root, "public/asset-sources.json"), provenance);

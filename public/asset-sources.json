@@ -1386,13 +1386,5 @@
   {
     "file": "images/education/cit.webp",
     "source": "creativeitinstitute.com · favicon.png"
-  },
-  {
-    "file": "images/hero/gsg-home.webp",
-    "source": "portfolio-nextjs/public/images/gsg/image1.webp · homepage crop"
-  },
-  {
-    "file": "images/hero/hood-up-workshop.webp",
-    "source": "portfolio-nextjs/public/images/hood-up-cse489/image4.webp · workshop screen"
   }
 ]
