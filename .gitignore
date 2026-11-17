@@ -29,3 +29,10 @@ __pycache__/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Local design/cover tooling and working files (kept on disk, not published)
+/docs/
+/scripts/*
+!/scripts/sync-images.mjs
+!/scripts/content.test.mjs
+/public/asset-sources.json

@@ -1,9 +1,0 @@
-[
-  {
-    "slug": "secure-note-taking",
-    "prompt": "Use case: compositing. Asset: Secure Note Taking portfolio thumbnail, landscape 4:3. Input 1 is STYLE REFERENCE ONLY (Landify): flat diagonal screenshot collage on pure black, art-directed cropping and thick black gutters. Inputs 2–4 are actual SecureNotes interfaces to use as content. Remake as an artistic editorial collage: one large private-notes interface crossing the center diagonally at about -22 degrees, a community-feed fragment entering from upper right, and a smaller admin users fragment entering bottom left. Use different scales and intentional crops with visual rhythm; fill most of the canvas while retaining black breathing room. Preserve original navy/slate surfaces, violet and emerald accents and actual recognizable UI content. Crisp flat 2D rectangular fragments, consistent rotation, no perspective distortion, no devices, no invented UI, no added headings or decorative icons, no gradients outside original screenshots. Do not use the purple reference site's content. Avoid equal-sized grid or single screenshot cover. Keep main note interface visible within central 80% of 4:3 frame; use high resolution and sharp typography. Tonal finish: subtle uniform 15% black veil, retain visible details.",
-    "method": "built-in image_gen",
-    "source": "docs/design/covers/secure-note-taking-v2.png",
-    "thumbnail": "public/images/secure-note-taking/thumbnail.webp"
-  }
-]
