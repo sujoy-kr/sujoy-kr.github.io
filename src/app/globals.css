@@ -1980,3 +1980,18 @@ html[data-disco] {
 .readme-pair figure {
   flex-basis: 260px;
 }
+
+/* Custom scrollbar */
+:root {
+  scrollbar-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent;
+  scrollbar-width: thin;
+}
+
+/* Themed text selection */
+::selection {
+  background: color-mix(in srgb, var(--accent) 38%, transparent);
+  color: var(--ink);
+}
+img::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
