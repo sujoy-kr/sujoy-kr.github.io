@@ -255,7 +255,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 6,
     "audience": "photo-services",
@@ -264,13 +264,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1076,7 +1070,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 27,
     "audience": "digital-agency services",
@@ -1085,13 +1079,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1113,7 +1101,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 28,
     "audience": "technology storytelling",
@@ -1122,13 +1110,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1150,7 +1132,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 29,
     "audience": "business-service presentation",
@@ -1159,13 +1141,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1187,7 +1163,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 30,
     "audience": "creative-agency presentation",
@@ -1196,13 +1172,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1224,7 +1194,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 31,
     "audience": "mobile-solutions services",
@@ -1233,13 +1203,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1261,7 +1225,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 32,
     "audience": "local-care discovery",
@@ -1270,13 +1234,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1298,7 +1256,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 33,
     "audience": "healthcare discovery",
@@ -1307,13 +1265,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1335,7 +1287,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 34,
     "audience": "a seasonal campaign",
@@ -1344,13 +1296,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
@@ -1372,7 +1318,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/sujoykr",
+    "github": null,
     "imageKind": "Previous client-work archive",
     "order": 35,
     "audience": "a themed campaign",
@@ -1381,13 +1327,7 @@
     "sourceRepos": [
       "sujoykr"
     ],
-    "repositories": [
-      {
-        "name": "sujoykr",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/sujoykr"
-      }
-    ],
+    "repositories": [],
     "liveUrl": null
   },
   {
