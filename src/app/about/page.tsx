@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import { PortraitBackdrop } from "@/components/PortraitBackdrop";
 import { Arrow } from "@/components/Icons";
 import { BrandBadge } from "@/components/BrandBadge";
 import { Tx } from "@/components/Tx";
@@ -18,6 +18,8 @@ export const metadata: Metadata = pageMetadata({
 
 export default function About() {
   return (
+    <div className="backdrop-host">
+    <PortraitBackdrop />
     <main id="main" className="wrap page">
       <JsonLd
         data={[
@@ -65,15 +67,6 @@ export default function About() {
             <Arrow />
           </Link>
         </div>
-        <Image
-          className="portrait"
-          src="/images/profile/portrait.webp"
-          width={700}
-          height={900}
-          alt="Sujoy Karmakar"
-          priority
-          sizes="(min-width: 960px) 420px, 100vw"
-        />
       </div>
       <section className="stack">
         {stack.map((group) => (
@@ -131,5 +124,6 @@ export default function About() {
         ))}
       </section>
     </main>
+    </div>
   );
 }

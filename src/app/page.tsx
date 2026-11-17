@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PortraitBackdrop } from "@/components/PortraitBackdrop";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import { designs } from "@/data/designs";
@@ -15,7 +16,7 @@ import { CardLinks, ProjectCard } from "@/components/ProjectCard";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
 import { groupLabels } from "@/data/labels";
-import { NAME, PORTRAIT, PROFILES, SITE_URL, abs } from "@/lib/seo";
+import { NAME, PROFILES, SITE_URL, abs } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -42,7 +43,8 @@ const services = [
 
 export default function Home() {
   return (
-    <main id="main">
+    <main id="main" className="backdrop-host">
+      <PortraitBackdrop />
       <JsonLd
         data={{
           "@type": "ProfilePage",
@@ -60,7 +62,6 @@ export default function Home() {
         }}
       />
       <section className="hero wrap">
-        <div className="hero-grid">
         <div className="hero-copy">
           <p className="availability">
             <i />
@@ -90,16 +91,6 @@ export default function Home() {
               <Tx en="About me" bn="আমার কথা" />
             </Link>
           </div>
-        </div>
-        <Image
-          className="portrait hero-portrait"
-          src={PORTRAIT.src}
-          width={PORTRAIT.width}
-          height={PORTRAIT.height}
-          alt={NAME}
-          priority
-          sizes="(min-width: 960px) 360px, 70vw"
-        />
         </div>
       </section>
 

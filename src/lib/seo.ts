@@ -19,7 +19,7 @@ export const PROFILES = [
 export const SAME_AS = PROFILES.map((p) => p.href);
 export const PORTRAIT = {
   src: "/images/profile/portrait.webp",
-  width: 700,
+  width: 1600,
   height: 900,
 };
 

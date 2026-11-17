@@ -1134,14 +1134,42 @@ h3 {
 }
 
 /* Home additions */
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 340px);
-  gap: clamp(32px, 6vw, 80px);
-  align-items: center;
+.backdrop-host {
+  position: relative;
+  overflow-x: clip;
 }
-.hero-portrait {
-  box-shadow: var(--shadow);
+.backdrop-host > :not(.portrait-backdrop) {
+  position: relative;
+  z-index: 1;
+}
+.portrait-backdrop {
+  position: absolute;
+  top: 0;
+  right: -12vw; /* hair ends ~75% across the photo, so this shift never crops it */
+  z-index: 0;
+  width: min(100%, 1800px);
+  aspect-ratio: 16 / 9;
+  pointer-events: none;
+  opacity: 0.9;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%),
+    linear-gradient(to right, transparent 15%, #000 58%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent 100%),
+    linear-gradient(to right, transparent 15%, #000 58%);
+  mask-composite: intersect;
+}
+.portrait-backdrop-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+:root[data-theme="dark"] .portrait-backdrop {
+  opacity: 0.7;
+}
+.hero {
+  min-height: clamp(520px, 78vh, 760px);
 }
 .proof {
   padding-block: 8px clamp(24px, 5vw, 56px);
@@ -1270,14 +1298,22 @@ h3 {
   }
 }
 @media (max-width: 960px) {
-  .hero-grid,
   .home-about {
     grid-template-columns: minmax(0, 1fr);
   }
-  .portrait.hero-portrait {
-    max-width: 240px;
-    aspect-ratio: 4 / 5;
-    order: -1;
+  .portrait-backdrop {
+    right: 0;
+    aspect-ratio: auto;
+    height: 420px;
+    opacity: 0.4;
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+  }
+  .portrait-backdrop-img {
+    object-position: 50% center;
+  }
+  :root[data-theme="dark"] .portrait-backdrop {
+    opacity: 0.3;
   }
 }
 @media (max-width: 720px) {
