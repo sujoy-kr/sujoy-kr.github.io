@@ -263,12 +263,13 @@ export function Gallery({
               left: event.currentTarget.scrollLeft,
               top: event.currentTarget.scrollTop,
             };
-            event.currentTarget.setPointerCapture(event.pointerId);
           }}
           onPointerMove={(event) => {
             if (!drag.current) return;
-            if (Math.hypot(event.clientX - drag.current.x, event.clientY - drag.current.y) > 4)
+            if (Math.hypot(event.clientX - drag.current.x, event.clientY - drag.current.y) > 4) {
               dragged.current = true;
+              event.currentTarget.setPointerCapture(event.pointerId);
+            }
             event.currentTarget.scrollLeft =
               drag.current.left - (event.clientX - drag.current.x);
             event.currentTarget.scrollTop =
@@ -278,6 +279,13 @@ export function Gallery({
             drag.current = null;
             if (event.currentTarget.hasPointerCapture(event.pointerId))
               event.currentTarget.releasePointerCapture(event.pointerId);
+          }}
+          onPointerLeave={() => {
+            // Before capture starts, leaving the image cancels a pending drag.
+            if (!dragged.current) drag.current = null;
+          }}
+          onLostPointerCapture={() => {
+            drag.current = null;
           }}
           onPointerCancel={() => {
             drag.current = null;
