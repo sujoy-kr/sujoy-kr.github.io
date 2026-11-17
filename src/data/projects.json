@@ -776,7 +776,7 @@
     ],
     "featured": false,
     "client": true,
-    "github": "https://github.com/sujoy-kr/regro-media",
+    "github": null,
     "imageKind": "Reference-led artistic screenshot composition",
     "order": 15,
     "audience": "businesses needing a clear public web presence",
@@ -785,14 +785,9 @@
     "sourceRepos": [
       "regro-media"
     ],
-    "repositories": [
-      {
-        "name": "regro-media",
-        "label": "View on GitHub",
-        "url": "https://github.com/sujoy-kr/regro-media"
-      }
-    ],
-    "liveUrl": null
+    "repositories": [],
+    "liveUrl": null,
+    "privateRepository": true
   },
   {
     "slug": "kyra",

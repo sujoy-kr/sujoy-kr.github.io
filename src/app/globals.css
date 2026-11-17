@@ -44,6 +44,7 @@ html:not([lang="bn"]) [data-l="bn"] {
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
   -webkit-text-size-adjust: 100%;
 }
 body {
@@ -935,6 +936,7 @@ h3 {
 }
 .lightbox-stage {
   overflow: auto;
+  overscroll-behavior: contain;
   padding: 0 var(--gutter);
 }
 .lightbox-stage[data-zoomed="true"] {
@@ -1090,6 +1092,15 @@ h3 {
   }
 }
 @media (max-width: 600px) {
+  .search {
+    font-size: 16px; /* prevents iOS Safari zooming the page on focus */
+  }
+  .lightbox button {
+    min-height: 40px;
+  }
+  .header nav a {
+    min-height: 44px;
+  }
   .grid {
     grid-template-columns: minmax(0, 1fr);
   }

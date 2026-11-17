@@ -10,8 +10,8 @@ import { groupLabels } from "@/data/labels";
 import { RepositoryLinks } from "@/components/RepositoryLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
-const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset", "medikart", "dermacare"]);
-const THREE_COLUMN_GALLERIES = new Set(["medikart", "dermacare"]);
+const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset", "medikart", "dermacare", "safoyana"]);
+const THREE_COLUMN_GALLERIES = new Set(["medikart", "dermacare", "safoyana"]);
 
 export const dynamicParams = false;
 export function generateStaticParams() {

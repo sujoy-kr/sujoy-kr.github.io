@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Tx } from "./Tx";
@@ -16,9 +16,30 @@ const links = [
 export function Header() {
   const pathname = usePathname();
   const [menu, setMenu] = useState(false);
+  const header = useRef<HTMLElement>(null);
   useEffect(() => setMenu(false), [pathname]);
+  useEffect(() => {
+    if (!menu) return;
+    const onPointerDown = (event: PointerEvent) => {
+      if (!header.current?.contains(event.target as Node)) setMenu(false);
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenu(false);
+    };
+    const onResize = () => {
+      if (window.matchMedia("(min-width: 821px)").matches) setMenu(false);
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    window.addEventListener("resize", onResize);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [menu]);
   return (
-    <header className="header" data-open={menu}>
+    <header className="header" data-open={menu} ref={header}>
       <div className="header-inner">
         <Link href="/" className="wordmark" aria-label="Sujoy Karmakar">
           Sujoy Karmakar
@@ -46,7 +67,7 @@ export function Header() {
             className="menu-button"
             aria-expanded={menu}
             aria-controls="site-nav"
-            aria-label="Menu"
+            aria-label={menu ? "Close menu" : "Open menu"}
             onClick={() => setMenu((v) => !v)}
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">

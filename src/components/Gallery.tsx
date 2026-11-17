@@ -23,6 +23,7 @@ export function Gallery({
   const dialog = useRef<HTMLDialogElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const previousZoom = useRef(1);
+  const dragged = useRef(false);
   const drag = useRef<{
     x: number;
     y: number;
@@ -63,6 +64,23 @@ export function Gallery({
     return () => {
       document.body.style.overflow = overflow;
     };
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const viewport = stage.current;
+    if (!viewport) return;
+    // React's onWheel is passive, so a native non-passive listener is needed to stop page scroll.
+    const onWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? 400 : 1;
+      const delta = Math.max(-100, Math.min(100, event.deltaY * unit));
+      setZoom((value) =>
+        Math.min(8, Math.max(1, Math.round(value * Math.exp(-delta * 0.0025) * 100) / 100)),
+      );
+    };
+    viewport.addEventListener("wheel", onWheel, { passive: false });
+    return () => viewport.removeEventListener("wheel", onWheel);
   }, [open]);
 
   useLayoutEffect(() => {
@@ -207,7 +225,32 @@ export function Gallery({
           className="lightbox-stage"
           data-zoomed={zoom > 1}
           onDoubleClick={() => setZoom((value) => (value === 1 ? 2 : 1))}
+          onClick={(event) => {
+            if (dragged.current) {
+              dragged.current = false;
+              return;
+            }
+            // Clicking the empty backdrop area around the picture closes the lightbox.
+            const img = event.target instanceof HTMLImageElement ? event.target : null;
+            if (img && img.naturalWidth) {
+              const box = img.getBoundingClientRect();
+              const scale = Math.min(box.width / img.naturalWidth, box.height / img.naturalHeight);
+              const w = img.naturalWidth * scale;
+              const h = img.naturalHeight * scale;
+              const left = box.left + (box.width - w) / 2;
+              const top = box.top + (box.height - h) / 2;
+              if (
+                event.clientX >= left &&
+                event.clientX <= left + w &&
+                event.clientY >= top &&
+                event.clientY <= top + h
+              )
+                return;
+            }
+            dialog.current?.close();
+          }}
           onPointerDown={(event) => {
+            dragged.current = false;
             if (
               zoom <= 1 ||
               event.pointerType !== "mouse" ||
@@ -224,6 +267,8 @@ export function Gallery({
           }}
           onPointerMove={(event) => {
             if (!drag.current) return;
+            if (Math.hypot(event.clientX - drag.current.x, event.clientY - drag.current.y) > 4)
+              dragged.current = true;
             event.currentTarget.scrollLeft =
               drag.current.left - (event.clientX - drag.current.x);
             event.currentTarget.scrollTop =

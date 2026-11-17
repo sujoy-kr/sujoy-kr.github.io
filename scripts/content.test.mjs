@@ -70,7 +70,7 @@ test("unique routes have substantive overview and implementation sections", () =
 });
 test("only private-repo and studio projects omit public source buttons", () => {
   for (const p of projects) {
-    if (["GSG-PHP", "studio-website", "LAB-Main-Svelte", "Safoyana-Digital-Print", "mapveto", "medikartFrontend", "cosmeticsEcom-frontend"].includes(p.repo))
+    if (["GSG-PHP", "studio-website", "LAB-Main-Svelte", "Safoyana-Digital-Print", "mapveto", "regro-media", "medikartFrontend", "cosmeticsEcom-frontend"].includes(p.repo))
       assert.equal(p.github, null);
     else assert.equal(p.github, `https://github.com/sujoy-kr/${p.repo}`);
   }
