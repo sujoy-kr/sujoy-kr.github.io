@@ -8,6 +8,7 @@ export type ProjectBn = {
   audience: string;
   overview: string;
   engineering: string;
+  details?: string[];
 };
 const bnBySlug = bnData as Record<string, ProjectBn>;
 export type ProjectImage = {

@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
 const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset", "medikart", "dermacare", "safoyana", "p2p-file-stream", "cse302-project", "reclaim"]);
 const GALLERY_COLUMNS: Record<string, number> = {
+  gsg: 3,
   medikart: 3,
   dermacare: 3,
   safoyana: 3,
@@ -145,6 +146,15 @@ export default async function ProjectPage({
           <p className="story-body">
             <Tx en={p.engineering} bn={p.bn.engineering} />
           </p>
+          {p.details && p.details.length > 0 && (
+            <ul className="highlights">
+              {p.details.map((d, i) => (
+                <li key={d}>
+                  <Tx en={d} bn={p.bn.details?.[i] ?? d} />
+                </li>
+              ))}
+            </ul>
+          )}
           {p.displayTechnologies.length > 0 && (
             <ul className="tags">
               {p.displayTechnologies.map((t) => (

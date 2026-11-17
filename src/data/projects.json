@@ -28,7 +28,13 @@
       "GSG-PHP"
     ],
     "repositories": [],
-    "liveUrl": "https://gsgarmentsltd.com/en"
+    "liveUrl": "https://gsgarmentsltd.com/en",
+    "details": [
+      "Public pages are language-prefixed with JSON translation dictionaries for 12 languages, plus theme controls and responsive templates.",
+      "Searchable, paginated product and event catalogues, image galleries, fabric content and a downloadable company profile.",
+      "A versioned MySQL schema, first-party traffic aggregation with CSV export, contact-form validation and throttling.",
+      "Plain PHP 8.1+ with a small front controller and router; no Composer or Node build step is required."
+    ]
   },
   {
     "slug": "medikart",
@@ -102,7 +108,13 @@
         "url": "https://github.com/sujoy-kr/NextSet"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Fully offline: no account, ads, analytics or cloud services, on Android 7.0 and above.",
+      "Supersets with unequal set counts, and rest overrides for individual sets, including the last set and zero rest.",
+      "Holding for one second completes a set; the rest countdown turns red and waits for acknowledgment, with pause, skip and undo available.",
+      "Optional adaptive or manual reminders, light, dark and large-text support, and workout duration estimates from configured rests and time per set."
+    ]
   },
   {
     "slug": "safoyana",
@@ -135,7 +147,13 @@
     ],
     "repositories": [],
     "liveUrl": null,
-    "privateRepository": true
+    "privateRepository": true,
+    "details": [
+      "Customers choose stock, quantity and artwork; uploaded artwork is attached to the order configuration.",
+      "Totals are calculated on the server from stored quantity price tiers instead of trusting submitted values.",
+      "Updating order items runs in a Prisma transaction, and customers can change or cancel only pending orders.",
+      "Built with Next.js 16, React 19 and Zustand on the front and NestJS 11 with Prisma 7 behind it. There is no payment gateway or shipping integration."
+    ]
   },
   {
     "slug": "talentrack-ai-powered-recruitment-platform",
@@ -148,7 +166,7 @@
       "Express",
       "PostgreSQL",
       "FastAPI",
-      "Chroma",
+      "pgvector",
       "Ollama"
     ],
     "highlights": [
@@ -163,7 +181,7 @@
     "order": 4,
     "audience": "teams exploring data, research and local automation",
     "overview": "TalenTrack brings job openings, applicants and candidate documents into a recruitment workspace. Its scope extends from application forms and applicant records to PDF ingestion and local-model-assisted retrieval, making it a useful example of several services supporting one workflow.",
-    "engineering": "A React frontend connects to Express/PostgreSQL for recruitment records. A separate FastAPI service handles document ingestion with Chroma and Ollama dependencies, keeping conventional record management and model-backed retrieval in distinct service boundaries.",
+    "engineering": "A React frontend connects to Express/PostgreSQL for recruitment records. A separate FastAPI service handles document ingestion with pgvector embeddings and local Ollama models, keeping conventional record management and model-backed retrieval in distinct service boundaries.",
     "sourceRepos": [
       "TalenTrack---AI-Powered-Recruitment-Platform"
     ],
@@ -174,7 +192,13 @@
         "url": "https://github.com/sujoy-kr/TalenTrack---AI-Powered-Recruitment-Platform"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Candidates browse open jobs and apply with a PDF resume; recruiters log in to manage postings and applicants.",
+      "Uploaded resumes are parsed, embedded and stored in PostgreSQL with pgvector, so recruiters can ask the AI chatbox questions across all candidates.",
+      "Inference runs locally through Ollama (all-minilm embeddings, llama3.2:1b), and Docker Compose starts every service together.",
+      "A seeding script generates realistic jobs and 15 detailed sample resumes for testing."
+    ]
   },
   {
     "slug": "dermacare",
@@ -355,7 +379,13 @@
         "url": "https://github.com/sujoy-kr/Notepad-AI"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Notes are created, renamed, edited and deleted through a FastAPI API backed by SQLite, with debounced autosave after about 1.2 seconds.",
+      "Inline completions are accepted with Tab, and a chat panel can use the open document as context.",
+      "Model selection, downloads and streaming all go through a local Ollama instance, with adjustable debounce, output length and context size.",
+      "Designed as a single-user local tool: there is no authentication or per-user isolation."
+    ]
   },
   {
     "slug": "hood-up-cse489",
@@ -392,7 +422,13 @@
         "url": "https://github.com/sujoy-kr/Hood-Up-CSE489"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Customers browse workshops, add cars, book services and track appointments; admins manage services and workshops from a dashboard.",
+      "Cloud Firestore holds online data while SQLite provides local storage and offline caching.",
+      "An Ask chatbot gives service suggestions through the Gemini API, with local fallback suggestions when no key is available.",
+      "Android services, background threads, broadcasts and notifications support appointment reminders."
+    ]
   },
   {
     "slug": "microservice-ecommerce",
@@ -430,7 +466,12 @@
         "url": "https://github.com/sujoy-kr/microservice-ecommerce"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Five services with their own stores: users, products (MongoDB with Elasticsearch search), cart (Redis), orders (PostgreSQL via Prisma) and notifications.",
+      "Placing an order publishes a RabbitMQ message that the notification service turns into a confirmation email.",
+      "JWT with user and admin roles, bcrypt password hashing, Joi validation, rate limiting and Helmet; PM2 and concurrently manage the services."
+    ]
   },
   {
     "slug": "p2p-file-stream",
@@ -467,7 +508,12 @@
         "url": "https://github.com/sujoy-kr/p2p-file-stream"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Devices on the same Wi-Fi are discovered automatically through mDNS (Bonjour), with no configuration.",
+      "Files stream directly between devices over Axios, with no intermediate server storage.",
+      "Socket.io drives live progress bars for large transfers, and received files are saved to the Downloads folder."
+    ]
   },
   {
     "slug": "secure-note-taking",
@@ -504,7 +550,13 @@
         "url": "https://github.com/sujoy-kr/Secure-Note-Taking"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "One login serves users and admins; the app decodes the JWT to show the matching view.",
+      "Users keep private notes with full CRUD, fully separated from other accounts, and can read and post in a public community feed.",
+      "Admins manage users, moderate content and see database statistics from MongoDB aggregations, such as grouping users by shared interests.",
+      "The whole stack runs in Docker Compose, with Swagger/OpenAPI documentation."
+    ]
   },
   {
     "slug": "bdjobs-scraper",
@@ -540,7 +592,13 @@
         "url": "https://github.com/sujoy-kr/bdjobs-scraper"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Collects company, title, URL, salary and mentioned technologies from BDJobs IT listings.",
+      "Classifies each job by primary stack (Node.js, Java, PHP, .NET or Python) and records when other stacks are mentioned.",
+      "Groups salaries into predefined buckets per stack and writes both a JSON dataset and a readable text report.",
+      "Stealth plugin, clustered workers, random delays and periodic checkpoints keep long runs steady. It is a personal project built to answer the author's own questions."
+    ]
   },
   {
     "slug": "regro-media",
@@ -684,7 +742,12 @@
         "url": "https://github.com/sujoy-kr/fileShare"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Accounts must confirm their email before uploading files.",
+      "Each file can be shared through a unique, time-limited link backed by a signed token.",
+      "Redis caches file paths; Joi validates input, Helmet sets secure headers and a rate limiter guards against spam."
+    ]
   },
   {
     "slug": "photo-editor-backend",
@@ -722,7 +785,13 @@
         "url": "https://github.com/sujoy-kr/photo-editor-backend"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Real-time collaborative editing: several users work on an image at once over socket.io, with a JWT checked on every WebSocket message.",
+      "User service (PostgreSQL, Prisma), image service (MongoDB, Multer, Sharp) and notification service (Redis, Nodemailer) communicate through RabbitMQ.",
+      "Docker Compose runs the full stack behind an Nginx reverse proxy and an API gateway, monitored with Prometheus and Grafana.",
+      "Known limitation: WebSocket connections work only directly against the image service, not through Nginx or the gateway."
+    ]
   },
   {
     "slug": "finshark-backend",
@@ -759,7 +828,12 @@
         "url": "https://github.com/sujoy-kr/finshark-backend"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "A .NET 9 Web API structured with controllers, services, repositories, DTOs and interfaces.",
+      "Separate account, stock, comment and portfolio controllers, with ASP.NET Core Identity issuing JWTs.",
+      "Entity Framework Core persistence and auto-generated Swagger documentation."
+    ]
   },
   {
     "slug": "bd-walks",
@@ -795,7 +869,12 @@
         "url": "https://github.com/sujoy-kr/BD-Walks"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "A .NET 9 API for managing walking tracks and regions in Bangladesh, including image upload to local storage.",
+      "JWT authentication with Reader and Writer roles over CRUD for regions, walks and images.",
+      "AutoMapper DTO mapping, action-filter validation, central exception-handling middleware, Serilog logging and Swagger documentation."
+    ]
   },
   {
     "slug": "medicine-data-scraper-with-proxy-rotation",
@@ -831,7 +910,12 @@
         "url": "https://github.com/sujoy-kr/medicine-data-scraper-with-proxy-rotation"
       }
     ],
-    "liveUrl": null
+    "liveUrl": null,
+    "details": [
+      "Collects generic name, strength, brand and price for tablets and capsules from medex.com.bd.",
+      "Each session rotates its proxy, viewport and user agent, scrolls like a person and restarts automatically after failures.",
+      "Scraped records are pushed to a backend API, which also needs a working proxy list to avoid Cloudflare blocking."
+    ]
   },
   {
     "slug": "eappair",
