@@ -10,6 +10,8 @@ import { groupLabels } from "@/data/labels";
 import { RepositoryLinks } from "@/components/RepositoryLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
+const COMPACT_GALLERIES = new Set(["lab", "gsg", "nextset"]);
+
 export const dynamicParams = false;
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -145,7 +147,7 @@ export default async function ProjectPage({
           <h2>
             <Tx en="Gallery" bn="গ্যালারি" />
           </h2>
-          <Gallery key={p.slug} project={p} />
+          <Gallery key={p.slug} project={p} compact={COMPACT_GALLERIES.has(p.slug)} />
         </section>
       )}
       <nav className="next-project" aria-label="Next project">

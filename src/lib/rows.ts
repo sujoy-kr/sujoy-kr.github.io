@@ -61,3 +61,18 @@ export function layoutRows(ratios: number[], o: Options): Row[] {
   }
   return rows;
 }
+
+/**
+ * Masonry packing: each image goes to the currently shortest column, so
+ * uncropped images of any shape interlock with no gaps, like puzzle pieces.
+ * Deterministic, so the server and client agree.
+ */
+export function layoutColumns(ratios: number[], count: number): number[][] {
+  const cols = Array.from({ length: count }, () => ({ h: 0, items: [] as number[] }));
+  ratios.forEach((ratio, index) => {
+    const col = cols.reduce((a, b) => (b.h < a.h - 1e-9 ? b : a));
+    col.items.push(index);
+    col.h += 1 / ratio;
+  });
+  return cols.map((c) => c.items);
+}

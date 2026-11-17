@@ -867,6 +867,20 @@ h3 {
   width: 100%;
   height: auto;
 }
+.gallery-compact {
+  flex-direction: row;
+  align-items: flex-start;
+}
+.gallery-col {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-width: 0;
+}
+.gallery-compact .gallery-zoom {
+  border-radius: 6px;
+  box-shadow: none;
+}
 
 /* Lightbox */
 .lightbox {

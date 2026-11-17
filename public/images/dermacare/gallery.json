@@ -1,45 +1,168 @@
 {
   "thumbnail": {
-    "source": "Original code-native portfolio illustration",
-    "caption": "Beauty commerce · storefront · Repository artwork",
-    "width": null,
-    "height": null
+    "source": "portfolio-nextjs/docs/design/covers/dermacare.png",
+    "caption": "DermaCare · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "gsg"
   },
   "images": {
     "image1.webp": {
-      "caption": "Original design asset · dermacaremedi banner 1 (not an application screenshot)",
-      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 1.jpg",
-      "kind": "asset",
-      "width": 1200,
-      "height": 300
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 01-home.png",
+      "caption": "Storefront · Home · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
     },
     "image2.webp": {
-      "caption": "Original design asset · dermacaremedi banner 2 (not an application screenshot)",
-      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 2.jpg",
-      "kind": "asset",
-      "width": 1200,
-      "height": 300
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 02-all-products.png",
+      "caption": "Storefront · All Products · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
     },
     "image3.webp": {
-      "caption": "Original design asset · dermacaremedi banner 3 (not an application screenshot)",
-      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 3.jpg",
-      "kind": "asset",
-      "width": 1200,
-      "height": 300
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 03-category.png",
+      "caption": "Storefront · Category · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 662
     },
     "image4.webp": {
-      "caption": "Original design asset · dermacaremedi banner 4 (not an application screenshot)",
-      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 4.jpg",
-      "kind": "asset",
-      "width": 2000,
-      "height": 500
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 04-product-detail.png",
+      "caption": "Storefront · Product Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 748
     },
     "image5.webp": {
-      "caption": "Original design asset · dermacaremedi banner 5 (not an application screenshot)",
-      "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 5.jpg",
-      "kind": "asset",
-      "width": 1200,
-      "height": 300
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 05-search.png",
+      "caption": "Storefront · Search · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1165
+    },
+    "image6.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 06-cart.png",
+      "caption": "Storefront · Cart · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1108
+    },
+    "image7.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 07-about.png",
+      "caption": "Storefront · About · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 807
+    },
+    "image8.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 08-login.png",
+      "caption": "Storefront · Login · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 655
+    },
+    "image9.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 09-register.png",
+      "caption": "Storefront · Register · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image10.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 10-account.png",
+      "caption": "Customer account · Account · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 655
+    },
+    "image11.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 11-account-orders.png",
+      "caption": "Customer account · Orders · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image12.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 12-account-wishlist.png",
+      "caption": "Customer account · Wishlist · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image13.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 13-admin-login.png",
+      "caption": "Admin panel · Login · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image14.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 14-admin-dashboard.png",
+      "caption": "Admin panel · Dashboard · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 643
+    },
+    "image15.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 15-admin-products.png",
+      "caption": "Admin panel · Products · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
+    },
+    "image16.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 16-admin-product-add.png",
+      "caption": "Admin panel · Product Add · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1065
+    },
+    "image17.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 17-admin-product-edit.png",
+      "caption": "Admin panel · Product Edit · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1061
+    },
+    "image18.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 18-admin-categories.png",
+      "caption": "Admin panel · Categories · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 848
+    },
+    "image19.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 19-admin-customers.png",
+      "caption": "Admin panel · Customers · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 901
+    },
+    "image20.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 20-admin-customer-detail.png",
+      "caption": "Admin panel · Customer Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image21.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 21-admin-orders.png",
+      "caption": "Admin panel · Orders · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
+    },
+    "image22.webp": {
+      "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 22-admin-order-detail.png",
+      "caption": "Admin panel · Order Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 675
     }
   }
 }

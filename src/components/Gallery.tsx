@@ -4,14 +4,20 @@ import Image from "next/image";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { ProjectImage } from "@/data/projects";
 import { Tx } from "./Tx";
-import { layoutRows } from "@/lib/rows";
+import { layoutColumns, layoutRows } from "@/lib/rows";
 
 type GalleryProject = {
   title: string;
   images: Pick<ProjectImage, "src" | "caption" | "width" | "height">[];
 };
 
-export function Gallery({ project: p }: { project: GalleryProject }) {
+export function Gallery({
+  project: p,
+  compact = false,
+}: {
+  project: GalleryProject;
+  compact?: boolean;
+}) {
   const dialog = useRef<HTMLDialogElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const previousZoom = useRef(1);
@@ -29,13 +35,24 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
     () => p.images.map((i) => (i.width ?? 1440) / (i.height ?? 1000)),
     [p.images],
   );
+  const gap = compact ? { wide: 6, narrow: 4 } : { wide: 16, narrow: 10 };
   const layouts = useMemo(
     () => ({
-      wide: layoutRows(ratios, { width: 1100, gap: 16, target: 400, tallTarget: 900, maxHeight: 1500, maxPerRow: 4 }),
+      wide: layoutRows(ratios, { width: 1100, gap: 16, target: 400, tallTarget: 650, maxHeight: 1500, maxPerRow: 4 }),
       narrow: layoutRows(ratios, { width: 350, gap: 10, target: 300, tallTarget: 700, maxHeight: 1800, maxPerRow: 2 }),
     }),
     [ratios],
   );
+  const columns = useMemo(
+    () => ({ wide: layoutColumns(ratios, 4), narrow: layoutColumns(ratios, 3) }),
+    [ratios],
+  );
+  const open_ = (index: number) => {
+    setSelected(index);
+    setZoom(1);
+    setOpen(true);
+    dialog.current?.showModal();
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -71,43 +88,70 @@ export function Gallery({ project: p }: { project: GalleryProject }) {
 
   return (
     <>
-      {(["wide", "narrow"] as const).map((mode) => (
-        <div className={`gallery gallery-${mode}`} key={mode}>
-          {layouts[mode].map((row) => (
-            <div
-              className="gallery-row"
-              style={{ maxWidth: row.max }}
-              key={row.items.join("-")}
-            >
-              {row.items.map((index) => {
-                const image = p.images[index];
-                return (
-                  <figure key={image.src} style={{ flexGrow: Math.round(ratios[index] * 1000) }}>
+      {(["wide", "narrow"] as const).map((mode) =>
+        compact ? (
+          <div
+            className={`gallery gallery-${mode} gallery-compact`}
+            key={mode}
+            style={{ gap: gap[mode] }}
+          >
+            {columns[mode].map((col) => (
+              <div className="gallery-col" style={{ gap: gap[mode] }} key={col.join("-")}>
+                {col.map((index) => {
+                  const image = p.images[index];
+                  return (
                     <button
+                      key={image.src}
                       className="gallery-zoom"
                       aria-label={`Enlarge ${p.title}: ${image.caption}`}
-                      onClick={() => {
-                        setSelected(index);
-                        setZoom(1);
-                        setOpen(true);
-                        dialog.current?.showModal();
-                      }}
+                      onClick={() => open_(index)}
                     >
                       <Image
                         src={image.src}
                         alt={`${p.title}: ${image.caption}`}
                         width={image.width ?? 1440}
                         height={image.height ?? 1000}
-                        sizes="(min-width: 720px) 1100px, 100vw"
+                        sizes="(min-width: 720px) 275px, 33vw"
                       />
                     </button>
-                  </figure>
-                );
-              })}
-            </div>
-          ))}
-        </div>
-      ))}
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className={`gallery gallery-${mode}`} key={mode}>
+            {layouts[mode].map((row) => (
+              <div
+                className="gallery-row"
+                style={{ maxWidth: row.max }}
+                key={row.items.join("-")}
+              >
+                {row.items.map((index) => {
+                  const image = p.images[index];
+                  return (
+                    <figure key={image.src} style={{ flexGrow: Math.round(ratios[index] * 1000) }}>
+                      <button
+                        className="gallery-zoom"
+                        aria-label={`Enlarge ${p.title}: ${image.caption}`}
+                        onClick={() => open_(index)}
+                      >
+                        <Image
+                          src={image.src}
+                          alt={`${p.title}: ${image.caption}`}
+                          width={image.width ?? 1440}
+                          height={image.height ?? 1000}
+                          sizes="(min-width: 720px) 1100px, 100vw"
+                        />
+                      </button>
+                    </figure>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        ),
+      )}
       <dialog
         ref={dialog}
         className="lightbox"

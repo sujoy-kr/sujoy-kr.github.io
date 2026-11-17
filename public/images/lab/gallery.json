@@ -1,9 +1,329 @@
 {
   "thumbnail": {
-    "source": "Original code-native portfolio illustration",
-    "caption": "LAB · public website · Repository artwork",
-    "width": null,
-    "height": null
+    "source": "portfolio-nextjs/docs/design/covers/lab.png",
+    "caption": "Lovebird Association of Bangladesh · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "gsg"
   },
-  "images": {}
+  "images": {
+    "image1.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 01-home.png",
+      "caption": "Public website · Home · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1871
+    },
+    "image2.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 02-about-us.png",
+      "caption": "Public website · About Us · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1673
+    },
+    "image3.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 03-membership.png",
+      "caption": "Public website · Membership · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1158
+    },
+    "image4.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 04-announcement.png",
+      "caption": "Public website · Announcement · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 790
+    },
+    "image5.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 05-article-categories.png",
+      "caption": "Public website · Article Categories · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1019
+    },
+    "image6.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 06-article-list-breeding.png",
+      "caption": "Public website · Article List Breeding · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1068
+    },
+    "image7.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 07-article-list-genetics.png",
+      "caption": "Public website · Article List Genetics · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1068
+    },
+    "image8.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 08-article-detail.png",
+      "caption": "Public website · Article Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1955
+    },
+    "image9.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 09-events.png",
+      "caption": "Public website · Events · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1433
+    },
+    "image10.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 10-event-detail.png",
+      "caption": "Public website · Event Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1383
+    },
+    "image11.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 11-event-register.png",
+      "caption": "Public website · Event Register · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1467
+    },
+    "image12.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 12-event-register-payment.png",
+      "caption": "Public website · Event Register Payment · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1981
+    },
+    "image13.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 13-gallery-folders.png",
+      "caption": "Public website · Gallery Folders · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 969
+    },
+    "image14.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 14-gallery-folder.png",
+      "caption": "Public website · Gallery Folder · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1278
+    },
+    "image15.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 15-management.png",
+      "caption": "Public website · Management · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1957
+    },
+    "image16.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 16-login.png",
+      "caption": "Public website · Login · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image17.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 17-register.png",
+      "caption": "Public website · Register · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1712
+    },
+    "image18.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 18-register-user-details.png",
+      "caption": "Public website · Register User Details · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1630
+    },
+    "image19.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 19-register-payment.png",
+      "caption": "Public website · Register Payment · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1086
+    },
+    "image20.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 20-register-payment-renew.png",
+      "caption": "Public website · Register Payment Renew · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1086
+    },
+    "image21.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 21-profile.png",
+      "caption": "Public website · Profile · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 781
+    },
+    "image22.webp": {
+      "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 22-profile-full.png",
+      "caption": "Public website · Profile Full · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1343
+    },
+    "image23.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 01-login.png",
+      "caption": "Admin panel · Login · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image24.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 02-dashboard.png",
+      "caption": "Admin panel · Dashboard · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image25.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 03-members.png",
+      "caption": "Admin panel · Members · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1303
+    },
+    "image26.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 04-member-add-details.png",
+      "caption": "Admin panel · Member Add Details · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1210
+    },
+    "image27.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 05-member-add-payment.png",
+      "caption": "Admin panel · Member Add Payment · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 671
+    },
+    "image28.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 06-member-detail.png",
+      "caption": "Admin panel · Member Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1481
+    },
+    "image29.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 07-events.png",
+      "caption": "Admin panel · Events · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 877
+    },
+    "image30.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 08-event-add.png",
+      "caption": "Admin panel · Event Add · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1167
+    },
+    "image31.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 09-event-detail.png",
+      "caption": "Admin panel · Event Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1794
+    },
+    "image32.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 10-event-edit.png",
+      "caption": "Admin panel · Event Edit · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1637
+    },
+    "image33.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 11-event-participant.png",
+      "caption": "Admin panel · Event Participant · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1127
+    },
+    "image34.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 12-articles.png",
+      "caption": "Admin panel · Articles · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1587
+    },
+    "image35.webp": {
+      "source": "lab-article-html/article.html · local desktop capture",
+      "caption": "Admin panel · Article Editor (rich-text page) · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 505
+    },
+    "image36.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 14-gallery.png",
+      "caption": "Admin panel · Gallery · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 2315
+    },
+    "image37.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 15-gallery-add.png",
+      "caption": "Admin panel · Gallery Add · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image38.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 16-announcements.png",
+      "caption": "Admin panel · Announcements · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 666
+    },
+    "image39.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 17-management.png",
+      "caption": "Admin panel · Management · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 917
+    },
+    "image40.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 18-management-add.png",
+      "caption": "Admin panel · Management Add · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 650
+    },
+    "image41.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 19-transactions.png",
+      "caption": "Admin panel · Transactions · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 2600
+    },
+    "image42.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 20-payments.png",
+      "caption": "Admin panel · Payments · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 653
+    },
+    "image43.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 21-terms.png",
+      "caption": "Admin panel · Terms · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 693
+    },
+    "image44.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 22-slides.png",
+      "caption": "Admin panel · Slides · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1281
+    },
+    "image45.webp": {
+      "source": "LAB-admin-panel · local desktop capture (1440 px) · 23-profile.png",
+      "caption": "Admin panel · Profile · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1087
+    }
+  }
 }

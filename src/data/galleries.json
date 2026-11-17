@@ -792,53 +792,664 @@
     "images": []
   },
   "medikart": {
-    "thumbnail": "/images/medikart/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
+    "thumbnail": "/images/medikart/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/medikart.png",
     "images": [
       {
         "src": "/images/medikart/image1.webp",
-        "caption": "Original design asset · medikartbd banner 1 (not an application screenshot)",
-        "kind": "asset",
-        "width": 2000,
-        "height": 512,
-        "source": "medikartFrontend/static/medikartbd banner 1.jpg"
+        "caption": "Storefront · Home · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 01-home.png"
       },
       {
         "src": "/images/medikart/image2.webp",
-        "caption": "Original design asset · medikartbd banner 2 (not an application screenshot)",
-        "kind": "asset",
-        "width": 2000,
-        "height": 512,
-        "source": "medikartFrontend/static/medikartbd banner 2.jpg"
+        "caption": "Storefront · All Products · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 02-all-products.png"
       },
       {
         "src": "/images/medikart/image3.webp",
-        "caption": "Original design asset · medikartbd banner 3 (not an application screenshot)",
-        "kind": "asset",
-        "width": 2000,
-        "height": 512,
-        "source": "medikartFrontend/static/medikartbd banner 3.jpg"
+        "caption": "Storefront · Category · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 663,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 03-category.png"
       },
       {
         "src": "/images/medikart/image4.webp",
-        "caption": "Original design asset · medikartbd banner 4 (not an application screenshot)",
-        "kind": "asset",
-        "width": 2000,
-        "height": 512,
-        "source": "medikartFrontend/static/medikartbd banner 4.jpg"
+        "caption": "Storefront · Product Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1118,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 04-product-detail.png"
+      },
+      {
+        "src": "/images/medikart/image5.webp",
+        "caption": "Storefront · Alternate Brands · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 05-alternate-brands.png"
+      },
+      {
+        "src": "/images/medikart/image6.webp",
+        "caption": "Storefront · Search · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 06-search.png"
+      },
+      {
+        "src": "/images/medikart/image7.webp",
+        "caption": "Storefront · Cart · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1107,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 07-cart.png"
+      },
+      {
+        "src": "/images/medikart/image8.webp",
+        "caption": "Storefront · About · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 841,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 08-about.png"
+      },
+      {
+        "src": "/images/medikart/image9.webp",
+        "caption": "Storefront · Privacy Policy · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 920,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 09-privacy-policy.png"
+      },
+      {
+        "src": "/images/medikart/image10.webp",
+        "caption": "Storefront · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 653,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 10-login.png"
+      },
+      {
+        "src": "/images/medikart/image11.webp",
+        "caption": "Storefront · Register · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 11-register.png"
+      },
+      {
+        "src": "/images/medikart/image12.webp",
+        "caption": "Customer account · Account · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 12-account.png"
+      },
+      {
+        "src": "/images/medikart/image13.webp",
+        "caption": "Customer account · Orders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 683,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 13-account-orders.png"
+      },
+      {
+        "src": "/images/medikart/image14.webp",
+        "caption": "Customer account · Wishlist · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 14-account-wishlist.png"
+      },
+      {
+        "src": "/images/medikart/image15.webp",
+        "caption": "Customer account · Prescriptions · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 15-account-prescriptions.png"
+      },
+      {
+        "src": "/images/medikart/image16.webp",
+        "caption": "Admin panel · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 16-admin-login.png"
+      },
+      {
+        "src": "/images/medikart/image17.webp",
+        "caption": "Admin panel · Dashboard · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 643,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 17-admin-dashboard.png"
+      },
+      {
+        "src": "/images/medikart/image18.webp",
+        "caption": "Admin panel · Products · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 18-admin-products.png"
+      },
+      {
+        "src": "/images/medikart/image19.webp",
+        "caption": "Admin panel · Product Add · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1193,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 19-admin-product-add.png"
+      },
+      {
+        "src": "/images/medikart/image20.webp",
+        "caption": "Admin panel · Product Edit · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1088,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 20-admin-product-edit.png"
+      },
+      {
+        "src": "/images/medikart/image21.webp",
+        "caption": "Admin panel · Search · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1271,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 21-admin-search.png"
+      },
+      {
+        "src": "/images/medikart/image22.webp",
+        "caption": "Admin panel · Categories · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 913,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 22-admin-categories.png"
+      },
+      {
+        "src": "/images/medikart/image23.webp",
+        "caption": "Admin panel · Customers · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1069,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 23-admin-customers.png"
+      },
+      {
+        "src": "/images/medikart/image24.webp",
+        "caption": "Admin panel · Customer Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 24-admin-customer-detail.png"
+      },
+      {
+        "src": "/images/medikart/image25.webp",
+        "caption": "Admin panel · Orders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 25-admin-orders.png"
+      },
+      {
+        "src": "/images/medikart/image26.webp",
+        "caption": "Admin panel · Order Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 633,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 26-admin-order-detail.png"
+      },
+      {
+        "src": "/images/medikart/image27.webp",
+        "caption": "Admin panel · Prescription Order · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 27-admin-prescription-order.png"
+      },
+      {
+        "src": "/images/medikart/image28.webp",
+        "caption": "Admin panel · Images · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 28-admin-images.png"
+      },
+      {
+        "src": "/images/medikart/image29.webp",
+        "caption": "Admin panel · Trash · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 29-admin-trash.png"
+      },
+      {
+        "src": "/images/medikart/image30.webp",
+        "caption": "Admin POS · Pos · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 30-admin-pos.png"
+      },
+      {
+        "src": "/images/medikart/image31.webp",
+        "caption": "Admin POS · Store · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 31-admin-pos-store.png"
+      },
+      {
+        "src": "/images/medikart/image32.webp",
+        "caption": "Admin POS · Sale · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1436,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 32-admin-pos-sale.png"
+      },
+      {
+        "src": "/images/medikart/image33.webp",
+        "caption": "Admin POS · Inventory · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 33-admin-pos-inventory.png"
+      },
+      {
+        "src": "/images/medikart/image34.webp",
+        "caption": "Admin POS · Purchases · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1411,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 34-admin-pos-purchases.png"
+      },
+      {
+        "src": "/images/medikart/image35.webp",
+        "caption": "Admin POS · Reports · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "medikartFrontend · local desktop capture (1440 px) · 35-admin-pos-reports.png"
       }
     ]
   },
   "lab": {
-    "thumbnail": "/images/lab/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
-    "images": []
+    "thumbnail": "/images/lab/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/lab.png",
+    "images": [
+      {
+        "src": "/images/lab/image1.webp",
+        "caption": "Public website · Home · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1871,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 01-home.png"
+      },
+      {
+        "src": "/images/lab/image2.webp",
+        "caption": "Public website · About Us · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1673,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 02-about-us.png"
+      },
+      {
+        "src": "/images/lab/image3.webp",
+        "caption": "Public website · Membership · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1158,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 03-membership.png"
+      },
+      {
+        "src": "/images/lab/image4.webp",
+        "caption": "Public website · Announcement · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 790,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 04-announcement.png"
+      },
+      {
+        "src": "/images/lab/image5.webp",
+        "caption": "Public website · Article Categories · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1019,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 05-article-categories.png"
+      },
+      {
+        "src": "/images/lab/image6.webp",
+        "caption": "Public website · Article List Breeding · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1068,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 06-article-list-breeding.png"
+      },
+      {
+        "src": "/images/lab/image7.webp",
+        "caption": "Public website · Article List Genetics · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1068,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 07-article-list-genetics.png"
+      },
+      {
+        "src": "/images/lab/image8.webp",
+        "caption": "Public website · Article Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1955,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 08-article-detail.png"
+      },
+      {
+        "src": "/images/lab/image9.webp",
+        "caption": "Public website · Events · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1433,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 09-events.png"
+      },
+      {
+        "src": "/images/lab/image10.webp",
+        "caption": "Public website · Event Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1383,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 10-event-detail.png"
+      },
+      {
+        "src": "/images/lab/image11.webp",
+        "caption": "Public website · Event Register · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1467,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 11-event-register.png"
+      },
+      {
+        "src": "/images/lab/image12.webp",
+        "caption": "Public website · Event Register Payment · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1981,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 12-event-register-payment.png"
+      },
+      {
+        "src": "/images/lab/image13.webp",
+        "caption": "Public website · Gallery Folders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 969,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 13-gallery-folders.png"
+      },
+      {
+        "src": "/images/lab/image14.webp",
+        "caption": "Public website · Gallery Folder · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1278,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 14-gallery-folder.png"
+      },
+      {
+        "src": "/images/lab/image15.webp",
+        "caption": "Public website · Management · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1957,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 15-management.png"
+      },
+      {
+        "src": "/images/lab/image16.webp",
+        "caption": "Public website · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 16-login.png"
+      },
+      {
+        "src": "/images/lab/image17.webp",
+        "caption": "Public website · Register · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1712,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 17-register.png"
+      },
+      {
+        "src": "/images/lab/image18.webp",
+        "caption": "Public website · Register User Details · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1630,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 18-register-user-details.png"
+      },
+      {
+        "src": "/images/lab/image19.webp",
+        "caption": "Public website · Register Payment · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1086,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 19-register-payment.png"
+      },
+      {
+        "src": "/images/lab/image20.webp",
+        "caption": "Public website · Register Payment Renew · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1086,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 20-register-payment-renew.png"
+      },
+      {
+        "src": "/images/lab/image21.webp",
+        "caption": "Public website · Profile · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 781,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 21-profile.png"
+      },
+      {
+        "src": "/images/lab/image22.webp",
+        "caption": "Public website · Profile Full · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1343,
+        "source": "LAB-Main-Svelte · local desktop capture (1440 px) · 22-profile-full.png"
+      },
+      {
+        "src": "/images/lab/image23.webp",
+        "caption": "Admin panel · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 01-login.png"
+      },
+      {
+        "src": "/images/lab/image24.webp",
+        "caption": "Admin panel · Dashboard · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 02-dashboard.png"
+      },
+      {
+        "src": "/images/lab/image25.webp",
+        "caption": "Admin panel · Members · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1303,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 03-members.png"
+      },
+      {
+        "src": "/images/lab/image26.webp",
+        "caption": "Admin panel · Member Add Details · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1210,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 04-member-add-details.png"
+      },
+      {
+        "src": "/images/lab/image27.webp",
+        "caption": "Admin panel · Member Add Payment · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 671,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 05-member-add-payment.png"
+      },
+      {
+        "src": "/images/lab/image28.webp",
+        "caption": "Admin panel · Member Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1481,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 06-member-detail.png"
+      },
+      {
+        "src": "/images/lab/image29.webp",
+        "caption": "Admin panel · Events · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 877,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 07-events.png"
+      },
+      {
+        "src": "/images/lab/image30.webp",
+        "caption": "Admin panel · Event Add · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1167,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 08-event-add.png"
+      },
+      {
+        "src": "/images/lab/image31.webp",
+        "caption": "Admin panel · Event Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1794,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 09-event-detail.png"
+      },
+      {
+        "src": "/images/lab/image32.webp",
+        "caption": "Admin panel · Event Edit · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1637,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 10-event-edit.png"
+      },
+      {
+        "src": "/images/lab/image33.webp",
+        "caption": "Admin panel · Event Participant · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1127,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 11-event-participant.png"
+      },
+      {
+        "src": "/images/lab/image34.webp",
+        "caption": "Admin panel · Articles · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1587,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 12-articles.png"
+      },
+      {
+        "src": "/images/lab/image35.webp",
+        "caption": "Admin panel · Article Editor (rich-text page) · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 505,
+        "source": "lab-article-html/article.html · local desktop capture"
+      },
+      {
+        "src": "/images/lab/image36.webp",
+        "caption": "Admin panel · Gallery · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 2315,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 14-gallery.png"
+      },
+      {
+        "src": "/images/lab/image37.webp",
+        "caption": "Admin panel · Gallery Add · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 15-gallery-add.png"
+      },
+      {
+        "src": "/images/lab/image38.webp",
+        "caption": "Admin panel · Announcements · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 666,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 16-announcements.png"
+      },
+      {
+        "src": "/images/lab/image39.webp",
+        "caption": "Admin panel · Management · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 917,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 17-management.png"
+      },
+      {
+        "src": "/images/lab/image40.webp",
+        "caption": "Admin panel · Management Add · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 650,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 18-management-add.png"
+      },
+      {
+        "src": "/images/lab/image41.webp",
+        "caption": "Admin panel · Transactions · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 2600,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 19-transactions.png"
+      },
+      {
+        "src": "/images/lab/image42.webp",
+        "caption": "Admin panel · Payments · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 653,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 20-payments.png"
+      },
+      {
+        "src": "/images/lab/image43.webp",
+        "caption": "Admin panel · Terms · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 693,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 21-terms.png"
+      },
+      {
+        "src": "/images/lab/image44.webp",
+        "caption": "Admin panel · Slides · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1281,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 22-slides.png"
+      },
+      {
+        "src": "/images/lab/image45.webp",
+        "caption": "Admin panel · Profile · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1087,
+        "source": "LAB-admin-panel · local desktop capture (1440 px) · 23-profile.png"
+      }
+    ]
   },
   "finshark-backend": {
     "thumbnail": "/images/finshark-backend/thumbnail.svg",
@@ -857,51 +1468,188 @@
     "images": []
   },
   "dermacare": {
-    "thumbnail": "/images/dermacare/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
+    "thumbnail": "/images/dermacare/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/dermacare.png",
     "images": [
       {
         "src": "/images/dermacare/image1.webp",
-        "caption": "Original design asset · dermacaremedi banner 1 (not an application screenshot)",
-        "kind": "asset",
-        "width": 1200,
-        "height": 300,
-        "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 1.jpg"
+        "caption": "Storefront · Home · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 01-home.png"
       },
       {
         "src": "/images/dermacare/image2.webp",
-        "caption": "Original design asset · dermacaremedi banner 2 (not an application screenshot)",
-        "kind": "asset",
-        "width": 1200,
-        "height": 300,
-        "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 2.jpg"
+        "caption": "Storefront · All Products · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 02-all-products.png"
       },
       {
         "src": "/images/dermacare/image3.webp",
-        "caption": "Original design asset · dermacaremedi banner 3 (not an application screenshot)",
-        "kind": "asset",
-        "width": 1200,
-        "height": 300,
-        "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 3.jpg"
+        "caption": "Storefront · Category · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 662,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 03-category.png"
       },
       {
         "src": "/images/dermacare/image4.webp",
-        "caption": "Original design asset · dermacaremedi banner 4 (not an application screenshot)",
-        "kind": "asset",
-        "width": 2000,
-        "height": 500,
-        "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 4.jpg"
+        "caption": "Storefront · Product Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 748,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 04-product-detail.png"
       },
       {
         "src": "/images/dermacare/image5.webp",
-        "caption": "Original design asset · dermacaremedi banner 5 (not an application screenshot)",
-        "kind": "asset",
-        "width": 1200,
-        "height": 300,
-        "source": "cosmeticsEcom-frontend/static/dermacaremedi banner 5.jpg"
+        "caption": "Storefront · Search · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1165,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 05-search.png"
+      },
+      {
+        "src": "/images/dermacare/image6.webp",
+        "caption": "Storefront · Cart · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1108,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 06-cart.png"
+      },
+      {
+        "src": "/images/dermacare/image7.webp",
+        "caption": "Storefront · About · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 807,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 07-about.png"
+      },
+      {
+        "src": "/images/dermacare/image8.webp",
+        "caption": "Storefront · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 655,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 08-login.png"
+      },
+      {
+        "src": "/images/dermacare/image9.webp",
+        "caption": "Storefront · Register · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 09-register.png"
+      },
+      {
+        "src": "/images/dermacare/image10.webp",
+        "caption": "Customer account · Account · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 655,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 10-account.png"
+      },
+      {
+        "src": "/images/dermacare/image11.webp",
+        "caption": "Customer account · Orders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 11-account-orders.png"
+      },
+      {
+        "src": "/images/dermacare/image12.webp",
+        "caption": "Customer account · Wishlist · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 12-account-wishlist.png"
+      },
+      {
+        "src": "/images/dermacare/image13.webp",
+        "caption": "Admin panel · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 13-admin-login.png"
+      },
+      {
+        "src": "/images/dermacare/image14.webp",
+        "caption": "Admin panel · Dashboard · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 643,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 14-admin-dashboard.png"
+      },
+      {
+        "src": "/images/dermacare/image15.webp",
+        "caption": "Admin panel · Products · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 15-admin-products.png"
+      },
+      {
+        "src": "/images/dermacare/image16.webp",
+        "caption": "Admin panel · Product Add · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1065,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 16-admin-product-add.png"
+      },
+      {
+        "src": "/images/dermacare/image17.webp",
+        "caption": "Admin panel · Product Edit · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1061,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 17-admin-product-edit.png"
+      },
+      {
+        "src": "/images/dermacare/image18.webp",
+        "caption": "Admin panel · Categories · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 848,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 18-admin-categories.png"
+      },
+      {
+        "src": "/images/dermacare/image19.webp",
+        "caption": "Admin panel · Customers · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 901,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 19-admin-customers.png"
+      },
+      {
+        "src": "/images/dermacare/image20.webp",
+        "caption": "Admin panel · Customer Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 20-admin-customer-detail.png"
+      },
+      {
+        "src": "/images/dermacare/image21.webp",
+        "caption": "Admin panel · Orders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 21-admin-orders.png"
+      },
+      {
+        "src": "/images/dermacare/image22.webp",
+        "caption": "Admin panel · Order Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 675,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 22-admin-order-detail.png"
       }
     ]
   },

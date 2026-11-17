@@ -1,38 +1,259 @@
 {
   "thumbnail": {
-    "source": "Original code-native portfolio illustration",
-    "caption": "Medikart · storefront · Repository artwork",
-    "width": null,
-    "height": null
+    "source": "portfolio-nextjs/docs/design/covers/medikart.png",
+    "caption": "Medikart · artistic screenshot collage",
+    "kind": "artistic-composition",
+    "width": 1448,
+    "height": 1086,
+    "overlay": 0.15,
+    "overlayBaked": true,
+    "reference": "gsg"
   },
   "images": {
     "image1.webp": {
-      "caption": "Original design asset · medikartbd banner 1 (not an application screenshot)",
-      "source": "medikartFrontend/static/medikartbd banner 1.jpg",
-      "kind": "asset",
-      "width": 2000,
-      "height": 512
+      "source": "medikartFrontend · local desktop capture (1440 px) · 01-home.png",
+      "caption": "Storefront · Home · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
     },
     "image2.webp": {
-      "caption": "Original design asset · medikartbd banner 2 (not an application screenshot)",
-      "source": "medikartFrontend/static/medikartbd banner 2.jpg",
-      "kind": "asset",
-      "width": 2000,
-      "height": 512
+      "source": "medikartFrontend · local desktop capture (1440 px) · 02-all-products.png",
+      "caption": "Storefront · All Products · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
     },
     "image3.webp": {
-      "caption": "Original design asset · medikartbd banner 3 (not an application screenshot)",
-      "source": "medikartFrontend/static/medikartbd banner 3.jpg",
-      "kind": "asset",
-      "width": 2000,
-      "height": 512
+      "source": "medikartFrontend · local desktop capture (1440 px) · 03-category.png",
+      "caption": "Storefront · Category · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 663
     },
     "image4.webp": {
-      "caption": "Original design asset · medikartbd banner 4 (not an application screenshot)",
-      "source": "medikartFrontend/static/medikartbd banner 4.jpg",
-      "kind": "asset",
-      "width": 2000,
-      "height": 512
+      "source": "medikartFrontend · local desktop capture (1440 px) · 04-product-detail.png",
+      "caption": "Storefront · Product Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1118
+    },
+    "image5.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 05-alternate-brands.png",
+      "caption": "Storefront · Alternate Brands · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image6.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 06-search.png",
+      "caption": "Storefront · Search · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image7.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 07-cart.png",
+      "caption": "Storefront · Cart · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1107
+    },
+    "image8.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 08-about.png",
+      "caption": "Storefront · About · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 841
+    },
+    "image9.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 09-privacy-policy.png",
+      "caption": "Storefront · Privacy Policy · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 920
+    },
+    "image10.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 10-login.png",
+      "caption": "Storefront · Login · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 653
+    },
+    "image11.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 11-register.png",
+      "caption": "Storefront · Register · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image12.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 12-account.png",
+      "caption": "Customer account · Account · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image13.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 13-account-orders.png",
+      "caption": "Customer account · Orders · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 683
+    },
+    "image14.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 14-account-wishlist.png",
+      "caption": "Customer account · Wishlist · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image15.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 15-account-prescriptions.png",
+      "caption": "Customer account · Prescriptions · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image16.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 16-admin-login.png",
+      "caption": "Admin panel · Login · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image17.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 17-admin-dashboard.png",
+      "caption": "Admin panel · Dashboard · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 643
+    },
+    "image18.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 18-admin-products.png",
+      "caption": "Admin panel · Products · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
+    },
+    "image19.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 19-admin-product-add.png",
+      "caption": "Admin panel · Product Add · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1193
+    },
+    "image20.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 20-admin-product-edit.png",
+      "caption": "Admin panel · Product Edit · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1088
+    },
+    "image21.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 21-admin-search.png",
+      "caption": "Admin panel · Search · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1271
+    },
+    "image22.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 22-admin-categories.png",
+      "caption": "Admin panel · Categories · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 913
+    },
+    "image23.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 23-admin-customers.png",
+      "caption": "Admin panel · Customers · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1069
+    },
+    "image24.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 24-admin-customer-detail.png",
+      "caption": "Admin panel · Customer Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image25.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 25-admin-orders.png",
+      "caption": "Admin panel · Orders · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
+    },
+    "image26.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 26-admin-order-detail.png",
+      "caption": "Admin panel · Order Detail · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 633
+    },
+    "image27.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 27-admin-prescription-order.png",
+      "caption": "Admin panel · Prescription Order · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image28.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 28-admin-images.png",
+      "caption": "Admin panel · Images · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
+    },
+    "image29.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 29-admin-trash.png",
+      "caption": "Admin panel · Trash · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image30.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 30-admin-pos.png",
+      "caption": "Admin POS · Pos · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image31.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 31-admin-pos-store.png",
+      "caption": "Admin POS · Store · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 600
+    },
+    "image32.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 32-admin-pos-sale.png",
+      "caption": "Admin POS · Sale · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1436
+    },
+    "image33.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 33-admin-pos-inventory.png",
+      "caption": "Admin POS · Inventory · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
+    },
+    "image34.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 34-admin-pos-purchases.png",
+      "caption": "Admin POS · Purchases · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1411
+    },
+    "image35.webp": {
+      "source": "medikartFrontend · local desktop capture (1440 px) · 35-admin-pos-reports.png",
+      "caption": "Admin POS · Reports · seeded demo data",
+      "kind": "local",
+      "width": 960,
+      "height": 1867
     }
   }
 }
