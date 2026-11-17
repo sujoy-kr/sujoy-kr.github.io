@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-/** Set NEXT_PUBLIC_SITE_URL at build time to the production origin. */
+/** Resolved at build time in next.config.ts (env override, GitHub Pages owner, or Cloudflare default). */
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://sujoykr.pages.dev"
 ).replace(/\/$/, "");
