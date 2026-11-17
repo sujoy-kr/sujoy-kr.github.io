@@ -404,10 +404,23 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(36px, 5vw, 56px) clamp(20px, 3vw, 32px);
+  gap: clamp(20px, 3vw, 32px);
 }
 .card {
   min-width: 0;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 6px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.card:hover,
+.card:focus-within {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+.card > :last-child {
+  margin-bottom: 0;
 }
 .card-media {
   position: relative;
@@ -1287,7 +1300,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(20px, 3vw, 32px);
-  margin-bottom: clamp(36px, 5vw, 56px);
+  margin-bottom: clamp(20px, 3vw, 32px);
 }
 .spotlight-card .card-image {
   aspect-ratio: 16 / 10;
@@ -1309,13 +1322,6 @@ h3 {
   border-radius: 999px;
   color: var(--muted);
   font-size: 0.8rem;
-}
-.card-image {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.card-image:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
 }
 .home-stack {
   margin-top: 0;
