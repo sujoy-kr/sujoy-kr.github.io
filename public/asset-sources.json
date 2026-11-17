@@ -1,7 +1,7 @@
 [
   {
     "file": "images/gsg/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/gsg-v2.png"
+    "source": "portfolio-nextjs/docs/design/covers/gsg.html"
   },
   {
     "file": "images/gsg/image1.webp",
@@ -41,7 +41,7 @@
   },
   {
     "file": "images/medikart/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/medikart.png"
+    "source": "portfolio-nextjs/docs/design/covers/medikart.html"
   },
   {
     "file": "images/medikart/image1.webp",
@@ -233,7 +233,7 @@
   },
   {
     "file": "images/safoyana/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/safoyana-v2.png"
+    "source": "portfolio-nextjs/docs/design/covers/safoyana.html"
   },
   {
     "file": "images/safoyana/image1.webp",
@@ -337,7 +337,7 @@
   },
   {
     "file": "images/dermacare/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/dermacare.png"
+    "source": "portfolio-nextjs/docs/design/covers/dermacare.html"
   },
   {
     "file": "images/dermacare/image1.webp",
@@ -465,7 +465,7 @@
   },
   {
     "file": "images/lab/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/lab.png"
+    "source": "portfolio-nextjs/docs/design/covers/lab.html"
   },
   {
     "file": "images/lab/image1.webp",
@@ -885,10 +885,10 @@
   },
   {
     "file": "images/regro-media/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/regro-media.html"
+    "source": "portfolio-nextjs/scripts/build-regro-thumbnail.mjs"
   },
   {
-    "file": "images/regro-media/image1.png",
+    "file": "images/regro-media/image1.webp",
     "source": "User-provided Regro Media full-page screenshot (long capture)"
   },
   {

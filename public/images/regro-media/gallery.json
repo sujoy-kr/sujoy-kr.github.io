@@ -1,16 +1,13 @@
 {
   "thumbnail": {
-    "source": "portfolio-nextjs/docs/design/covers/regro-media.html",
-    "caption": "Regro Media · reference-led artistic screenshot composition",
-    "kind": "artistic-composition",
-    "width": 3200,
+    "source": "portfolio-nextjs/scripts/build-regro-thumbnail.mjs",
+    "caption": "Regro Media · full-page slices (Studio Website style)",
+    "width": 2400,
     "height": 1800,
-    "overlay": 0.3,
-    "artDirection": "portfolio-nextjs/docs/design/art-direction/regro-media.png",
-    "reference": "landify"
+    "overlayBaked": false
   },
   "images": {
-    "image1.png": {
+    "image1.webp": {
       "source": "User-provided Regro Media full-page screenshot (long capture)",
       "caption": "Complete Regro Media landing page · full length",
       "kind": "user",

@@ -19,19 +19,5 @@
     "method": "built-in image_gen",
     "source": "docs/design/covers/notepad-ai-v2.png",
     "thumbnail": "public/images/notepad-ai/thumbnail.webp"
-  },
-  {
-    "slug": "gsg",
-    "prompt": "Use case: compositing. Asset: G.S. Garments Ltd. artistic portfolio thumbnail, landscape 4:3 high resolution. Image 1 Regro Media is STYLE REFERENCE ONLY: dramatic flat diagonal arrangement of large website fragments on pure black with thick black gutters and bold edge crops. Images 2–4 are real G.S. Garments website captures: homepage with GSG gold logo and glass building, products catalogue with apparel on white, and textured fabric catalogue. Build a beautiful editorial collage of these actual website fragments: dominant homepage HERO crop with gold GSG mark, exact heading G.S. GARMENTS LTD. and building, diagonally across middle at -24 degrees; a wide product-grid strip showing blue jackets and turquoise shorts entering lower right, a fabric texture catalogue strip entering upper right, a smaller outdoor collection photograph fragment entering lower left. All pieces follow the same rotation, rigid square corners, broad pure-black gaps. Strong dramatic asymmetry with varying sizes; crop full-page screenshots to relevant sections rather than shrinking long pages. Keep original branding, navy/gold colors, actual photos and typography faithfully. No fabricated clothing, architecture, metrics, awards or UI; do not use reference site's content. No added headings, captions, device frames, shadows, perspective or decorative objects. Main brand and building should read in central 80% and be recognizable at thumbnail size. Flat crisp 2D screenshot montage, restrained uniform 15% black veil across composition with visible details.",
-    "method": "built-in image_gen",
-    "source": "docs/design/covers/gsg-v2.png",
-    "thumbnail": "public/images/gsg/thumbnail.webp"
-  },
-  {
-    "slug": "safoyana",
-    "prompt": "Use case: compositing. Asset: Safoyana Digital Print artistic portfolio thumbnail, landscape 4:3 high resolution. Image 1 Landify is STYLE REFERENCE ONLY for flat diagonal page-fragment collage, pure black void and thick black gutters. Images 2–4 are actual Safoyana project screens: print catalogue, administration charts and business-card configuration. Remake into an energetic refined editorial collage, not an ordinary screenshot grid: dominant catalogue fragment running diagonally at about +18 degrees across upper-left and center with Safoyana Digital Print logo, All Products heading and photographic stationery cards visible; a large business-card configuration fragment with navy Northline cards entering from lower right; an admin dashboard fragment showing revenue chart and colorful status donut cropped into upper right / bottom left to balance. Use 3–4 bold unequal fragments, consistent parallel rotation, wide pure black gaps, deliberate oversize crops exiting canvas. Preserve actual stationery photography, black app surfaces, clean white headings and colorful small print products, original UI, text and real metrics. Do not fabricate products, features or claims. No Landify content. No added title, labels, decorative icons, gradients, devices, shadows, browser frames or 3D distortion. Main catalogue and stationery imagery should read well inside central 80% of 4:3 canvas at small portfolio card size. Sharply resolved typography, rich visible details with restrained uniform 15% black veil. Each screenshot keeps original proportions.",
-    "method": "built-in image_gen",
-    "source": "docs/design/covers/safoyana-v2.png",
-    "thumbnail": "public/images/safoyana/thumbnail.webp"
   }
 ]

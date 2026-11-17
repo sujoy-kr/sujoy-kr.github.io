@@ -14,7 +14,7 @@ const { chromium } = require('playwright');
 const specs = JSON.parse(readFileSync(path.join(root, 'scripts/cover-specs.json')));
 const projects = JSON.parse(readFileSync(path.join(root, 'src/data/projects.json')));
 // Explicit user-requested exceptions; other Client work covers remain protected.
-const clientCoverExceptions = new Set(['regro-media', 'eappair']);
+const clientCoverExceptions = new Set(['eappair', 'gsg']);
 const directory = path.join(root, 'docs/design/covers');
 const selected = argument('--slug');
 if (selected && !specs.some(s => s.slug === selected)) throw new Error(`Unknown cover: ${selected}`);
@@ -39,13 +39,19 @@ async function composition(spec, project) {
   const board = spec.board;
   const content = board ? `<div class="board" style="width:${board.width}px;grid-template-columns:repeat(${board.columns},1fr);gap:${board.gap}px;transform:translate(-50%,-50%) rotate(${board.rotation}deg)">${fragments}</div>` : fragments;
   const css = readFileSync(path.join(root, 'scripts/cover-layout.css'), 'utf8');
-  return `<!doctype html><html lang="en"><meta charset="utf-8"><title>${escape(project.title)} artistic cover</title><style>${css}</style><body>${content}<div class="veil" aria-hidden="true" style="background:rgba(0,0,0,${spec.overlay})"></div></body></html>`;
+  const canvas = spec.canvas ?? { width: 1600, height: 900 };
+  const presentation = spec.presentation === 'studio'
+    ? 'html,body{background:#b1d9bd}figure{border-radius:28px;box-shadow:0 18px 38px rgba(15,52,29,.22)}'
+    : '';
+  return `<!doctype html><html lang="en"><meta charset="utf-8"><title>${escape(project.title)} artistic cover</title><style>${css}\nhtml,body{width:${canvas.width}px;height:${canvas.height}px}${presentation}</style><body>${content}<div class="veil" aria-hidden="true" style="background:rgba(0,0,0,${spec.overlay})"></div></body></html>`;
 }
 
 const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome', headless: true, args: ['--no-sandbox'] });
 try {
-  const page = await browser.newPage({ viewport: { width: 1600, height: 900 }, deviceScaleFactor: 2 });
   for (const spec of specs.filter(s => !selected || s.slug === selected)) {
+    const dpr = spec.dpr ?? 2;
+    const canvas = spec.canvas ?? { width: 1600, height: 900 };
+    const page = await browser.newPage({ viewport: canvas, deviceScaleFactor: dpr });
     const project = projects.find(p => p.slug === spec.slug);
     if (!project || project.group === 'Mobile' || (project.client && !clientCoverExceptions.has(spec.slug))) throw new Error(`Protected project: ${spec.slug}`);
     const html = path.join(directory, `${spec.slug}.html`);
@@ -63,7 +69,7 @@ try {
     metadata.thumbnail = {
       source: `portfolio-nextjs/docs/design/covers/${spec.slug}.html`,
       caption: `${project.title} · reference-led artistic screenshot composition`,
-      kind: 'artistic-composition', width: 3200, height: 1800,
+      kind: 'artistic-composition', width: canvas.width * dpr, height: canvas.height * dpr,
       overlay: spec.overlay,
       ...(existsSync(path.join(root, 'docs/design/art-direction', `${spec.slug}.png`))
         ? { artDirection: `portfolio-nextjs/docs/design/art-direction/${spec.slug}.png` }
@@ -71,6 +77,7 @@ try {
       reference: spec.reference,
     };
     writeFileSync(path.join(folder, 'gallery.json'), JSON.stringify(metadata, null, 2) + '\n');
-    console.log(`Finished ${spec.slug}: 3200 × 1800, lossless WebP, 30% full-image black overlay.`);
+    await page.close();
+    console.log(`Finished ${spec.slug}: ${canvas.width * dpr} × ${canvas.height * dpr}, lossless WebP, 30% full-image black overlay.`);
   }
 } finally { await browser.close(); }

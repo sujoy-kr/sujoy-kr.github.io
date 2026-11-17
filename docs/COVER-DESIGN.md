@@ -1,6 +1,6 @@
 # Reference-led artistic covers
 
-Ten projects with actual interface captures have new covers: Safoyana, Reclaim, Notepad AI, TalenTrack, P2P File Stream, Secure Note Taking, Canteen Manager, Regro Media, eAppair and Car Shop Management System. The earlier covers have been restored for eleven projects without interface captures, including the scripts and API-only projects. Mobile covers, other Client work entries and the six existing collage covers remain unchanged. Regro Media and eAppair are the two explicitly requested Client work exceptions.
+Ten projects with actual interface captures have new covers: Safoyana, Reclaim, Notepad AI, TalenTrack, P2P File Stream, Secure Note Taking, Canteen Manager, eAppair and Car Shop Management System. The earlier covers have been restored for eleven projects without interface captures, including the scripts and API-only projects. Mobile covers, other Client work entries and the six existing collage covers remain unchanged. eAppair is the two explicitly requested Client work exceptions.
 
 ## Reference analysis
 
@@ -31,7 +31,7 @@ npm run images
 npm run build
 ```
 
-The renderer’s allowlist includes only the ten screenshot-backed projects. Regro Media and eAppair are explicit Client work exceptions; other client projects and all mobile projects remain protected. It cannot regenerate the restored scripts/API covers. Rejected composition files and unused source-thumbnail backups have been removed; active cover sources and regeneration inputs are retained.
+The renderer’s allowlist includes only the ten screenshot-backed projects. eAppair is an explicit Client work exception; other client projects and all mobile projects remain protected. It cannot regenerate the restored scripts/API covers. Rejected composition files and unused source-thumbnail backups have been removed; active cover sources and regeneration inputs are retained.
 
 ## Safoyana captures
 
@@ -39,7 +39,6 @@ The eighteen original application captures remain available (seventeen desktop v
 
 ## Finished covers and exact imagegen prompts
 
-- safoyana: [finished WebP](../public/images/safoyana/thumbnail.webp), [exact prompt and references](design/art-direction/safoyana.json).
 - reclaim: [finished WebP](../public/images/reclaim/thumbnail.webp), [exact prompt and references](design/art-direction/reclaim.json).
 - notepad-ai: [finished WebP](../public/images/notepad-ai/thumbnail.webp), [exact prompt and references](design/art-direction/notepad-ai.json).
 - talentrack-ai-powered-recruitment-platform: [finished WebP](../public/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp), [exact prompt and references](design/art-direction/talentrack-ai-powered-recruitment-platform.json).
@@ -47,9 +46,12 @@ The eighteen original application captures remain available (seventeen desktop v
 - secure-note-taking: [finished WebP](../public/images/secure-note-taking/thumbnail.webp), [exact prompt and references](design/art-direction/secure-note-taking.json).
 - cse302-project: [finished WebP](../public/images/cse302-project/thumbnail.webp), [exact prompt and references](design/art-direction/cse302-project.json).
 
-- regro-media: [finished WebP](../public/images/regro-media/thumbnail.webp), [exact prompt and references](design/art-direction/regro-media.json).
 - eappair: [finished WebP](../public/images/eappair/thumbnail.webp), [exact prompt and references](design/art-direction/eappair.json).
 
 ## Car Shop Management System
 
 The Java desktop app uses a native screenshot mosaic following Plaidea, with the same square-edged crops, black gutters, 30% overlay and 3200 × 1800 lossless export. Its eight lossless Swing captures remain separate in the gallery and also supply the cover renderer. This cover is composed directly from those captures without a generated concept image. See [capture provenance, reproduction and verification](CAR-SHOP.md).
+
+## Flat mosaic covers: GSG, MediKart, Safoyana, DermaCare, Lovebird (LAB)
+
+Rebuilt in the flat, unrotated style of Plaidea / Staylowkey / eAppair: 5–6 square-edged screenshot fragments on black with a single 30% black veil. Each fragment is a uniform-scale crop of the project's own gallery screenshot (no distortion, no generated art). Layouts and crops live in `scripts/build-cover-specs.mjs` (writes `scripts/cover-specs.json`); render with `scripts/render-covers.mjs`. GSG exports at 3200 × 1800; the others at 1600 × 900 so 960px-wide sources are never upscaled.

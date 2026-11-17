@@ -1,11 +1,11 @@
 {
   "gsg": {
     "thumbnail": "/images/gsg/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 3200,
+    "thumbnailHeight": 1800,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/gsg-v2.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/gsg.html",
     "images": [
       {
         "src": "/images/gsg/image1.webp",
@@ -83,11 +83,11 @@
   },
   "medikart": {
     "thumbnail": "/images/medikart/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 1600,
+    "thumbnailHeight": 900,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/medikart.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/medikart.html",
     "images": [
       {
         "src": "/images/medikart/image1.webp",
@@ -470,11 +470,11 @@
   },
   "safoyana": {
     "thumbnail": "/images/safoyana/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 1600,
+    "thumbnailHeight": 900,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/safoyana-v2.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/safoyana.html",
     "images": [
       {
         "src": "/images/safoyana/image1.webp",
@@ -682,11 +682,11 @@
   },
   "dermacare": {
     "thumbnail": "/images/dermacare/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 1600,
+    "thumbnailHeight": 900,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/dermacare.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/dermacare.html",
     "images": [
       {
         "src": "/images/dermacare/image1.webp",
@@ -941,11 +941,11 @@
   },
   "lab": {
     "thumbnail": "/images/lab/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
+    "thumbnailWidth": 1600,
+    "thumbnailHeight": 900,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/lab.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/lab.html",
     "images": [
       {
         "src": "/images/lab/image1.webp",
@@ -1794,14 +1794,13 @@
   },
   "regro-media": {
     "thumbnail": "/images/regro-media/thumbnail.webp",
-    "thumbnailWidth": 3200,
+    "thumbnailWidth": 2400,
     "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/regro-media.html",
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "portfolio-nextjs/scripts/build-regro-thumbnail.mjs",
     "images": [
       {
-        "src": "/images/regro-media/image1.png",
+        "src": "/images/regro-media/image1.webp",
         "caption": "Complete Regro Media landing page · full length",
         "kind": "user",
         "width": 1920,

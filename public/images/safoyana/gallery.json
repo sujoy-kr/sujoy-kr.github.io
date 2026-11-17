@@ -1,13 +1,12 @@
 {
   "thumbnail": {
-    "source": "portfolio-nextjs/docs/design/covers/safoyana-v2.png",
-    "caption": "Safoyana Digital Print · artistic screenshot collage",
+    "source": "portfolio-nextjs/docs/design/covers/safoyana.html",
+    "caption": "Safoyana Digital Print · reference-led artistic screenshot composition",
     "kind": "artistic-composition",
-    "width": 1448,
-    "height": 1086,
-    "overlay": 0.15,
-    "overlayBaked": true,
-    "reference": "landify"
+    "width": 1600,
+    "height": 900,
+    "overlay": 0.3,
+    "reference": "plaidea"
   },
   "images": {
     "image1.webp": {

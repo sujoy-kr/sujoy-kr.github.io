@@ -1,13 +1,12 @@
 {
   "thumbnail": {
-    "source": "portfolio-nextjs/docs/design/covers/gsg-v2.png",
-    "caption": "G.S. Garments Ltd. · artistic screenshot collage",
+    "source": "portfolio-nextjs/docs/design/covers/gsg.html",
+    "caption": "G.S. Garments Ltd. · reference-led artistic screenshot composition",
     "kind": "artistic-composition",
-    "width": 1448,
-    "height": 1086,
-    "overlay": 0.15,
-    "overlayBaked": true,
-    "reference": "regro-media"
+    "width": 3200,
+    "height": 1800,
+    "overlay": 0.3,
+    "reference": "plaidea"
   },
   "images": {
     "image1.webp": {
