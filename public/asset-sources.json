@@ -1,129 +1,5 @@
 [
   {
-    "file": "images/safoyana/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/safoyana-v2.png"
-  },
-  {
-    "file": "images/safoyana/image1.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image2.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image3.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-orders-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image4.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-mobile.png"
-  },
-  {
-    "file": "images/safoyana/image5.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/order-detail-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image6.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/product-configuration-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image7.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/home-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image8.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/category-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image9.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-products-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image10.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-categories-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image11.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-customers-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image12.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-order-detail-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image13.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-product-editor-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image14.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/admin-customer-detail-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image15.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/customer-orders-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image16.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/customer-profile-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image17.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/customer-address-desktop.png"
-  },
-  {
-    "file": "images/safoyana/image18.webp",
-    "source": "Safoyana-Digital-Print/docs/screenshots/customer-cart-desktop.png"
-  },
-  {
-    "file": "images/nextset/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/nextset-cover.png"
-  },
-  {
-    "file": "images/nextset/image1.webp",
-    "source": "NextSet/docs/images/home.png"
-  },
-  {
-    "file": "images/nextset/image2.webp",
-    "source": "NextSet/docs/images/duration-settings.png"
-  },
-  {
-    "file": "images/nextset/image3.webp",
-    "source": "NextSet/docs/images/exercise.png"
-  },
-  {
-    "file": "images/nextset/image4.webp",
-    "source": "NextSet/docs/images/rest-complete.png"
-  },
-  {
-    "file": "images/nextset/image5.webp",
-    "source": "NextSet/docs/images/sequence-preview.png"
-  },
-  {
-    "file": "images/nextset/image6.webp",
-    "source": "NextSet/docs/images/sequence.png"
-  },
-  {
-    "file": "images/nextset/image7.webp",
-    "source": "NextSet/docs/images/settings-dark.png"
-  },
-  {
-    "file": "images/nextset/image8.webp",
-    "source": "NextSet/docs/images/sound-settings.png"
-  },
-  {
-    "file": "images/nextset/image9.webp",
-    "source": "NextSet/docs/images/week.png"
-  },
-  {
-    "file": "images/nextset/image10.webp",
-    "source": "NextSet/docs/images/weekly-analysis.png"
-  },
-  {
-    "file": "images/nextset/image11.webp",
-    "source": "NextSet/docs/images/workouts.png"
-  },
-  {
     "file": "images/gsg/thumbnail.webp",
     "source": "portfolio-nextjs/docs/design/covers/gsg-v2.png"
   },
@@ -162,230 +38,6 @@
   {
     "file": "images/gsg/image9.webp",
     "source": "User-provided screencapture-gsgarmentsltd-en-admin-images-2026-11-16-18_31_50.png"
-  },
-  {
-    "file": "images/reclaim/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/reclaim.html"
-  },
-  {
-    "file": "images/reclaim/image1.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/probability-timeline-desktop.png"
-  },
-  {
-    "file": "images/reclaim/image2.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/contributing-factors-desktop.png"
-  },
-  {
-    "file": "images/reclaim/image3.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/fictional-assessment-desktop.png"
-  },
-  {
-    "file": "images/reclaim/image4.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-desktop.png"
-  },
-  {
-    "file": "images/reclaim/image5.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-mobile.png"
-  },
-  {
-    "file": "images/reclaim/image6.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/baseline_calibration.png"
-  },
-  {
-    "file": "images/reclaim/image7.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/calibration.png"
-  },
-  {
-    "file": "images/reclaim/image8.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/confusion_matrix.png"
-  },
-  {
-    "file": "images/reclaim/image9.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/feature_distributions.png"
-  },
-  {
-    "file": "images/reclaim/image10.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/followup_availability.png"
-  },
-  {
-    "file": "images/reclaim/image11.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/interval_prevalence.png"
-  },
-  {
-    "file": "images/reclaim/image12.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/missingness.png"
-  },
-  {
-    "file": "images/reclaim/image13.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_global_explanations.png"
-  },
-  {
-    "file": "images/reclaim/image14.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_risk_categories.png"
-  },
-  {
-    "file": "images/reclaim/image15.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/quit_recency.png"
-  },
-  {
-    "file": "images/reclaim/image16.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/repeated_observations.png"
-  },
-  {
-    "file": "images/reclaim/image17.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/risk_categories.png"
-  },
-  {
-    "file": "images/reclaim/image18.webp",
-    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/tree_comparison_calibration.png"
-  },
-  {
-    "file": "images/notepad-ai/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png"
-  },
-  {
-    "file": "images/notepad-ai/image1.webp",
-    "source": "Notepad-AI/docs/screenshots/saved-notes-desktop.png"
-  },
-  {
-    "file": "images/notepad-ai/image2.webp",
-    "source": "Notepad-AI/docs/screenshots/release-checklist-desktop.png"
-  },
-  {
-    "file": "images/notepad-ai/image3.webp",
-    "source": "Notepad-AI/docs/app-screenshot.png"
-  },
-  {
-    "file": "images/hood-up-cse489/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/hood-up-cover.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image1.webp",
-    "source": "User-provided Screenshot_20261116-184202.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image2.webp",
-    "source": "User-provided Screenshot_20261116-184211.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image4.webp",
-    "source": "User-provided Screenshot_20261116-184223.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image5.webp",
-    "source": "User-provided Screenshot_20261116-184227.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image6.webp",
-    "source": "User-provided Screenshot_20261116-184237.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image7.webp",
-    "source": "User-provided Screenshot_20261116-184303.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image8.webp",
-    "source": "User-provided Screenshot_20261116-184314.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image10.webp",
-    "source": "User-provided Screenshot_20261116-184326.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image11.webp",
-    "source": "User-provided Screenshot_20261116-184333.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image12.webp",
-    "source": "User-provided Screenshot_20261116-184340.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image14.webp",
-    "source": "User-provided Screenshot_20261116-184353.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image15.webp",
-    "source": "User-provided Screenshot_20261116-184356.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image16.webp",
-    "source": "User-provided Screenshot_20261116-184423.png"
-  },
-  {
-    "file": "images/hood-up-cse489/image17.webp",
-    "source": "User-provided Screenshot_20261116-184437.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/image1.webp",
-    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/image2.webp",
-    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/image3.webp",
-    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-login-page.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/image4.webp",
-    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/image5.webp",
-    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png"
-  },
-  {
-    "file": "images/talentrack-ai-powered-recruitment-platform/image6.webp",
-    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/apply-for-job-page.png"
-  },
-  {
-    "file": "images/p2p-file-stream/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/p2p-file-stream.html"
-  },
-  {
-    "file": "images/p2p-file-stream/image1.webp",
-    "source": "p2p-file-stream/docs/app-screenshot-0.png"
-  },
-  {
-    "file": "images/p2p-file-stream/image2.webp",
-    "source": "p2p-file-stream/docs/app-screenshot-1.png"
-  },
-  {
-    "file": "images/p2p-file-stream/image3.webp",
-    "source": "p2p-file-stream/docs/app-screenshot-2.png"
-  },
-  {
-    "file": "images/p2p-file-stream/image4.webp",
-    "source": "p2p-file-stream/docs/app-screenshot-3.png"
-  },
-  {
-    "file": "images/secure-note-taking/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/secure-note-taking-v2.png"
-  },
-  {
-    "file": "images/secure-note-taking/image1.webp",
-    "source": "Secure-Note-Taking/docs/app-screenshot-1.png"
-  },
-  {
-    "file": "images/secure-note-taking/image2.webp",
-    "source": "Secure-Note-Taking/docs/app-screenshot-2.png"
-  },
-  {
-    "file": "images/secure-note-taking/image3.webp",
-    "source": "Secure-Note-Taking/docs/app-screenshot-3.png"
-  },
-  {
-    "file": "images/secure-note-taking/image4.webp",
-    "source": "Secure-Note-Taking/docs/app-screenshot-4.png"
-  },
-  {
-    "file": "images/bdjobs-scraper/thumbnail.svg",
-    "source": "Original code-native portfolio illustration"
   },
   {
     "file": "images/medikart/thumbnail.webp",
@@ -530,6 +182,286 @@
   {
     "file": "images/medikart/image35.webp",
     "source": "medikartFrontend · local desktop capture (1440 px) · 35-admin-pos-reports.png"
+  },
+  {
+    "file": "images/nextset/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/nextset-cover.png"
+  },
+  {
+    "file": "images/nextset/image1.webp",
+    "source": "NextSet/docs/images/home.png"
+  },
+  {
+    "file": "images/nextset/image2.webp",
+    "source": "NextSet/docs/images/duration-settings.png"
+  },
+  {
+    "file": "images/nextset/image3.webp",
+    "source": "NextSet/docs/images/exercise.png"
+  },
+  {
+    "file": "images/nextset/image4.webp",
+    "source": "NextSet/docs/images/rest-complete.png"
+  },
+  {
+    "file": "images/nextset/image5.webp",
+    "source": "NextSet/docs/images/sequence-preview.png"
+  },
+  {
+    "file": "images/nextset/image6.webp",
+    "source": "NextSet/docs/images/sequence.png"
+  },
+  {
+    "file": "images/nextset/image7.webp",
+    "source": "NextSet/docs/images/settings-dark.png"
+  },
+  {
+    "file": "images/nextset/image8.webp",
+    "source": "NextSet/docs/images/sound-settings.png"
+  },
+  {
+    "file": "images/nextset/image9.webp",
+    "source": "NextSet/docs/images/week.png"
+  },
+  {
+    "file": "images/nextset/image10.webp",
+    "source": "NextSet/docs/images/weekly-analysis.png"
+  },
+  {
+    "file": "images/nextset/image11.webp",
+    "source": "NextSet/docs/images/workouts.png"
+  },
+  {
+    "file": "images/safoyana/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/safoyana-v2.png"
+  },
+  {
+    "file": "images/safoyana/image1.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image2.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image3.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-orders-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image4.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-mobile.png"
+  },
+  {
+    "file": "images/safoyana/image5.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/order-detail-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image6.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/product-configuration-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image7.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/home-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image8.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/category-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image9.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-products-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image10.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-categories-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image11.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-customers-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image12.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-order-detail-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image13.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-product-editor-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image14.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/admin-customer-detail-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image15.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/customer-orders-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image16.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/customer-profile-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image17.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/customer-address-desktop.png"
+  },
+  {
+    "file": "images/safoyana/image18.webp",
+    "source": "Safoyana-Digital-Print/docs/screenshots/customer-cart-desktop.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/image1.webp",
+    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/image2.webp",
+    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/image3.webp",
+    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-login-page.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/image4.webp",
+    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/image5.webp",
+    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png"
+  },
+  {
+    "file": "images/talentrack-ai-powered-recruitment-platform/image6.webp",
+    "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/apply-for-job-page.png"
+  },
+  {
+    "file": "images/dermacare/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/dermacare.png"
+  },
+  {
+    "file": "images/dermacare/image1.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 01-home.png"
+  },
+  {
+    "file": "images/dermacare/image2.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 02-all-products.png"
+  },
+  {
+    "file": "images/dermacare/image3.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 03-category.png"
+  },
+  {
+    "file": "images/dermacare/image4.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 04-product-detail.png"
+  },
+  {
+    "file": "images/dermacare/image5.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 05-search.png"
+  },
+  {
+    "file": "images/dermacare/image6.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 06-cart.png"
+  },
+  {
+    "file": "images/dermacare/image7.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 07-about.png"
+  },
+  {
+    "file": "images/dermacare/image8.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 08-login.png"
+  },
+  {
+    "file": "images/dermacare/image9.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 09-register.png"
+  },
+  {
+    "file": "images/dermacare/image10.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 10-account.png"
+  },
+  {
+    "file": "images/dermacare/image11.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 11-account-orders.png"
+  },
+  {
+    "file": "images/dermacare/image12.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 12-account-wishlist.png"
+  },
+  {
+    "file": "images/dermacare/image13.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 13-admin-login.png"
+  },
+  {
+    "file": "images/dermacare/image14.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 14-admin-dashboard.png"
+  },
+  {
+    "file": "images/dermacare/image15.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 15-admin-products.png"
+  },
+  {
+    "file": "images/dermacare/image16.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 16-admin-product-add.png"
+  },
+  {
+    "file": "images/dermacare/image17.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 17-admin-product-edit.png"
+  },
+  {
+    "file": "images/dermacare/image18.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 18-admin-categories.png"
+  },
+  {
+    "file": "images/dermacare/image19.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 19-admin-customers.png"
+  },
+  {
+    "file": "images/dermacare/image20.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 20-admin-customer-detail.png"
+  },
+  {
+    "file": "images/dermacare/image21.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 21-admin-orders.png"
+  },
+  {
+    "file": "images/dermacare/image22.webp",
+    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 22-admin-order-detail.png"
+  },
+  {
+    "file": "images/clipping/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/clipping-cover.png"
+  },
+  {
+    "file": "images/clipping/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/1.png"
+  },
+  {
+    "file": "images/clipping/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/2.png"
+  },
+  {
+    "file": "images/clipping/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/3.png"
+  },
+  {
+    "file": "images/clipping/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/4.png"
+  },
+  {
+    "file": "images/clipping/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/5.png"
+  },
+  {
+    "file": "images/clipping/image7.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/6.png"
+  },
+  {
+    "file": "images/clipping/image8.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/7.png"
+  },
+  {
+    "file": "images/clipping/image9.webp",
+    "source": "sujoykr/assets/img/single-portfolio/clipping/8.png"
   },
   {
     "file": "images/lab/thumbnail.webp",
@@ -716,116 +648,216 @@
     "source": "LAB-admin-panel · local desktop capture (1440 px) · 23-profile.png"
   },
   {
-    "file": "images/finshark-backend/thumbnail.svg",
+    "file": "images/reclaim/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/reclaim.html"
+  },
+  {
+    "file": "images/reclaim/image1.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/probability-timeline-desktop.png"
+  },
+  {
+    "file": "images/reclaim/image2.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/contributing-factors-desktop.png"
+  },
+  {
+    "file": "images/reclaim/image3.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/fictional-assessment-desktop.png"
+  },
+  {
+    "file": "images/reclaim/image4.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-desktop.png"
+  },
+  {
+    "file": "images/reclaim/image5.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-mobile.png"
+  },
+  {
+    "file": "images/reclaim/image6.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/baseline_calibration.png"
+  },
+  {
+    "file": "images/reclaim/image7.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/calibration.png"
+  },
+  {
+    "file": "images/reclaim/image8.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/confusion_matrix.png"
+  },
+  {
+    "file": "images/reclaim/image9.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/feature_distributions.png"
+  },
+  {
+    "file": "images/reclaim/image10.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/followup_availability.png"
+  },
+  {
+    "file": "images/reclaim/image11.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/interval_prevalence.png"
+  },
+  {
+    "file": "images/reclaim/image12.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/missingness.png"
+  },
+  {
+    "file": "images/reclaim/image13.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_global_explanations.png"
+  },
+  {
+    "file": "images/reclaim/image14.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_risk_categories.png"
+  },
+  {
+    "file": "images/reclaim/image15.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/quit_recency.png"
+  },
+  {
+    "file": "images/reclaim/image16.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/repeated_observations.png"
+  },
+  {
+    "file": "images/reclaim/image17.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/risk_categories.png"
+  },
+  {
+    "file": "images/reclaim/image18.webp",
+    "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/tree_comparison_calibration.png"
+  },
+  {
+    "file": "images/notepad-ai/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png"
+  },
+  {
+    "file": "images/notepad-ai/image1.webp",
+    "source": "Notepad-AI/docs/screenshots/saved-notes-desktop.png"
+  },
+  {
+    "file": "images/notepad-ai/image2.webp",
+    "source": "Notepad-AI/docs/screenshots/release-checklist-desktop.png"
+  },
+  {
+    "file": "images/notepad-ai/image3.webp",
+    "source": "Notepad-AI/docs/app-screenshot.png"
+  },
+  {
+    "file": "images/hood-up-cse489/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/hood-up-cover.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image1.webp",
+    "source": "User-provided Screenshot_20261116-184202.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image2.webp",
+    "source": "User-provided Screenshot_20261116-184211.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image4.webp",
+    "source": "User-provided Screenshot_20261116-184223.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image5.webp",
+    "source": "User-provided Screenshot_20261116-184227.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image6.webp",
+    "source": "User-provided Screenshot_20261116-184237.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image7.webp",
+    "source": "User-provided Screenshot_20261116-184303.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image8.webp",
+    "source": "User-provided Screenshot_20261116-184314.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image10.webp",
+    "source": "User-provided Screenshot_20261116-184326.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image11.webp",
+    "source": "User-provided Screenshot_20261116-184333.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image12.webp",
+    "source": "User-provided Screenshot_20261116-184340.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image14.webp",
+    "source": "User-provided Screenshot_20261116-184353.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image15.webp",
+    "source": "User-provided Screenshot_20261116-184356.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image16.webp",
+    "source": "User-provided Screenshot_20261116-184423.png"
+  },
+  {
+    "file": "images/hood-up-cse489/image17.webp",
+    "source": "User-provided Screenshot_20261116-184437.png"
+  },
+  {
+    "file": "images/microservice-ecommerce/thumbnail.svg",
     "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/bd-walks/thumbnail.svg",
+    "file": "images/p2p-file-stream/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/p2p-file-stream.html"
+  },
+  {
+    "file": "images/p2p-file-stream/image1.webp",
+    "source": "p2p-file-stream/docs/app-screenshot-0.png"
+  },
+  {
+    "file": "images/p2p-file-stream/image2.webp",
+    "source": "p2p-file-stream/docs/app-screenshot-1.png"
+  },
+  {
+    "file": "images/p2p-file-stream/image3.webp",
+    "source": "p2p-file-stream/docs/app-screenshot-2.png"
+  },
+  {
+    "file": "images/p2p-file-stream/image4.webp",
+    "source": "p2p-file-stream/docs/app-screenshot-3.png"
+  },
+  {
+    "file": "images/secure-note-taking/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/secure-note-taking-v2.png"
+  },
+  {
+    "file": "images/secure-note-taking/image1.webp",
+    "source": "Secure-Note-Taking/docs/app-screenshot-1.png"
+  },
+  {
+    "file": "images/secure-note-taking/image2.webp",
+    "source": "Secure-Note-Taking/docs/app-screenshot-2.png"
+  },
+  {
+    "file": "images/secure-note-taking/image3.webp",
+    "source": "Secure-Note-Taking/docs/app-screenshot-3.png"
+  },
+  {
+    "file": "images/secure-note-taking/image4.webp",
+    "source": "Secure-Note-Taking/docs/app-screenshot-4.png"
+  },
+  {
+    "file": "images/bdjobs-scraper/thumbnail.svg",
     "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/dermacare/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/dermacare.png"
+    "file": "images/regro-media/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/regro-media.html"
   },
   {
-    "file": "images/dermacare/image1.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 01-home.png"
+    "file": "images/regro-media/image1.png",
+    "source": "User-maintained local asset"
   },
   {
-    "file": "images/dermacare/image2.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 02-all-products.png"
-  },
-  {
-    "file": "images/dermacare/image3.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 03-category.png"
-  },
-  {
-    "file": "images/dermacare/image4.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 04-product-detail.png"
-  },
-  {
-    "file": "images/dermacare/image5.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 05-search.png"
-  },
-  {
-    "file": "images/dermacare/image6.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 06-cart.png"
-  },
-  {
-    "file": "images/dermacare/image7.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 07-about.png"
-  },
-  {
-    "file": "images/dermacare/image8.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 08-login.png"
-  },
-  {
-    "file": "images/dermacare/image9.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 09-register.png"
-  },
-  {
-    "file": "images/dermacare/image10.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 10-account.png"
-  },
-  {
-    "file": "images/dermacare/image11.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 11-account-orders.png"
-  },
-  {
-    "file": "images/dermacare/image12.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 12-account-wishlist.png"
-  },
-  {
-    "file": "images/dermacare/image13.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 13-admin-login.png"
-  },
-  {
-    "file": "images/dermacare/image14.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 14-admin-dashboard.png"
-  },
-  {
-    "file": "images/dermacare/image15.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 15-admin-products.png"
-  },
-  {
-    "file": "images/dermacare/image16.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 16-admin-product-add.png"
-  },
-  {
-    "file": "images/dermacare/image17.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 17-admin-product-edit.png"
-  },
-  {
-    "file": "images/dermacare/image18.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 18-admin-categories.png"
-  },
-  {
-    "file": "images/dermacare/image19.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 19-admin-customers.png"
-  },
-  {
-    "file": "images/dermacare/image20.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 20-admin-customer-detail.png"
-  },
-  {
-    "file": "images/dermacare/image21.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 21-admin-orders.png"
-  },
-  {
-    "file": "images/dermacare/image22.webp",
-    "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 22-admin-order-detail.png"
-  },
-  {
-    "file": "images/medicine-data-scraper-with-proxy-rotation/thumbnail.svg",
-    "source": "Original code-native portfolio illustration"
-  },
-  {
-    "file": "images/photo-editor-backend/thumbnail.svg",
-    "source": "Original code-native portfolio illustration"
-  },
-  {
-    "file": "images/fileshare/thumbnail.svg",
-    "source": "Original code-native portfolio illustration"
+    "file": "images/regro-media/image2.webp",
+    "source": "User-provided Regro Media full-page screenshot"
   },
   {
     "file": "images/instagram-clone/thumbnail.webp",
@@ -908,32 +940,44 @@
     "source": "sujoykr/assets/img/single-portfolio/instagram-clone/19.png"
   },
   {
-    "file": "images/microservice-ecommerce/thumbnail.svg",
+    "file": "images/group-chat/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/groupchat/groupchat-cover.png"
+  },
+  {
+    "file": "images/group-chat/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/groupchat/1.png"
+  },
+  {
+    "file": "images/group-chat/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/groupchat/2.png"
+  },
+  {
+    "file": "images/fileshare/thumbnail.svg",
     "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/mapveto/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/mapveto/mapveto-cover.png"
+    "file": "images/photo-editor-backend/thumbnail.svg",
+    "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/mapveto/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/mapveto/1.png"
+    "file": "images/finshark-backend/thumbnail.svg",
+    "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/mapveto/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/mapveto/2.png"
+    "file": "images/bd-walks/thumbnail.svg",
+    "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/regro-media/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/regro-media.html"
+    "file": "images/medicine-data-scraper-with-proxy-rotation/thumbnail.svg",
+    "source": "Original code-native portfolio illustration"
   },
   {
-    "file": "images/regro-media/image1.png",
-    "source": "User-maintained local asset"
+    "file": "images/eappair/thumbnail.webp",
+    "source": "portfolio-nextjs/docs/design/covers/eappair.html"
   },
   {
-    "file": "images/regro-media/image2.webp",
-    "source": "User-provided Regro Media full-page screenshot"
+    "file": "images/eappair/image1.webp",
+    "source": "User-provided screencapture-127-0-0-1-5500-eAppair-index-html-2026-11-16-18_37_23.png"
   },
   {
     "file": "images/kyra/thumbnail.webp",
@@ -960,12 +1004,296 @@
     "source": "sujoykr/assets/img/single-portfolio/kyra/full.png"
   },
   {
-    "file": "images/eappair/thumbnail.webp",
-    "source": "portfolio-nextjs/docs/design/covers/eappair.html"
+    "file": "images/studio-website/thumbnail.webp",
+    "source": "dribbble/Studio Website Client Project/thumbnail.png"
   },
   {
-    "file": "images/eappair/image1.webp",
-    "source": "User-provided screencapture-127-0-0-1-5500-eAppair-index-html-2026-11-16-18_37_23.png"
+    "file": "images/studio-website/image1.webp",
+    "source": "dribbble/Studio Website Client Project/image-02.png"
+  },
+  {
+    "file": "images/plaidea/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/plaidea/plaidea-cover.png"
+  },
+  {
+    "file": "images/plaidea/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/plaidea/1.png"
+  },
+  {
+    "file": "images/plaidea/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/plaidea/2.png"
+  },
+  {
+    "file": "images/plaidea/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/plaidea/3.png"
+  },
+  {
+    "file": "images/plaidea/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/plaidea/4.png"
+  },
+  {
+    "file": "images/plaidea/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/plaidea/full.png"
+  },
+  {
+    "file": "images/landify/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png"
+  },
+  {
+    "file": "images/landify/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/1.png"
+  },
+  {
+    "file": "images/landify/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/2.png"
+  },
+  {
+    "file": "images/landify/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/3.png"
+  },
+  {
+    "file": "images/landify/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/4.png"
+  },
+  {
+    "file": "images/landify/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/5.png"
+  },
+  {
+    "file": "images/landify/image7.webp",
+    "source": "sujoykr/assets/img/single-portfolio/Landify/full.png"
+  },
+  {
+    "file": "images/bizzency/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/bizzency/bizzency-cover.png"
+  },
+  {
+    "file": "images/bizzency/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/bizzency/1.png"
+  },
+  {
+    "file": "images/bizzency/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/bizzency/2.png"
+  },
+  {
+    "file": "images/bizzency/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/bizzency/3.png"
+  },
+  {
+    "file": "images/bizzency/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/bizzency/4.png"
+  },
+  {
+    "file": "images/bizzency/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/bizzency/full.png"
+  },
+  {
+    "file": "images/beatls/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/beatls/beatls-cover.png"
+  },
+  {
+    "file": "images/beatls/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/beatls/1.png"
+  },
+  {
+    "file": "images/beatls/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/beatls/2.png"
+  },
+  {
+    "file": "images/beatls/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/beatls/full.png"
+  },
+  {
+    "file": "images/estern/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/estern/estern-cover.png"
+  },
+  {
+    "file": "images/estern/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/estern/1.png"
+  },
+  {
+    "file": "images/estern/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/estern/2.png"
+  },
+  {
+    "file": "images/estern/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/estern/3.png"
+  },
+  {
+    "file": "images/estern/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/estern/full.png"
+  },
+  {
+    "file": "images/portability/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/portability-cover.png"
+  },
+  {
+    "file": "images/portability/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/1.png"
+  },
+  {
+    "file": "images/portability/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/2.png"
+  },
+  {
+    "file": "images/portability/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/3.png"
+  },
+  {
+    "file": "images/portability/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/4.png"
+  },
+  {
+    "file": "images/portability/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/5.png"
+  },
+  {
+    "file": "images/portability/image7.webp",
+    "source": "sujoykr/assets/img/single-portfolio/portability/full.png"
+  },
+  {
+    "file": "images/staylowkey/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/staylowkey-cover.png"
+  },
+  {
+    "file": "images/staylowkey/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/1.png"
+  },
+  {
+    "file": "images/staylowkey/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/2.png"
+  },
+  {
+    "file": "images/staylowkey/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/3.png"
+  },
+  {
+    "file": "images/staylowkey/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/4.png"
+  },
+  {
+    "file": "images/staylowkey/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/5.png"
+  },
+  {
+    "file": "images/staylowkey/image7.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/6.png"
+  },
+  {
+    "file": "images/staylowkey/image8.webp",
+    "source": "sujoykr/assets/img/single-portfolio/staylowkey/full.png"
+  },
+  {
+    "file": "images/kerstfeest/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/kerstfeest-cover.png"
+  },
+  {
+    "file": "images/kerstfeest/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/1.png"
+  },
+  {
+    "file": "images/kerstfeest/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/2.png"
+  },
+  {
+    "file": "images/kerstfeest/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/3.png"
+  },
+  {
+    "file": "images/kerstfeest/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/4.png"
+  },
+  {
+    "file": "images/kerstfeest/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/full.png"
+  },
+  {
+    "file": "images/valentina/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/valentina/valentina-cover.png"
+  },
+  {
+    "file": "images/valentina/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/valentina/1.png"
+  },
+  {
+    "file": "images/valentina/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/valentina/2.png"
+  },
+  {
+    "file": "images/valentina/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/valentina/3.png"
+  },
+  {
+    "file": "images/valentina/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/valentina/full.png"
+  },
+  {
+    "file": "images/mapveto/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/mapveto/mapveto-cover.png"
+  },
+  {
+    "file": "images/mapveto/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/mapveto/1.png"
+  },
+  {
+    "file": "images/mapveto/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/mapveto/2.png"
+  },
+  {
+    "file": "images/sketchbox/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/sketchbox-cover.png"
+  },
+  {
+    "file": "images/sketchbox/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/1.png"
+  },
+  {
+    "file": "images/sketchbox/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/2.png"
+  },
+  {
+    "file": "images/sketchbox/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/3.png"
+  },
+  {
+    "file": "images/sketchbox/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/4.png"
+  },
+  {
+    "file": "images/sketchbox/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/5.png"
+  },
+  {
+    "file": "images/sketchbox/image7.webp",
+    "source": "sujoykr/assets/img/single-portfolio/sketchbox/6.png"
+  },
+  {
+    "file": "images/soundboard/thumbnail.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/soundboard-cover.png"
+  },
+  {
+    "file": "images/soundboard/image2.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/1.png"
+  },
+  {
+    "file": "images/soundboard/image3.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/2.png"
+  },
+  {
+    "file": "images/soundboard/image4.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/3.png"
+  },
+  {
+    "file": "images/soundboard/image5.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/4.png"
+  },
+  {
+    "file": "images/soundboard/image6.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/5.png"
+  },
+  {
+    "file": "images/soundboard/image7.webp",
+    "source": "sujoykr/assets/img/single-portfolio/soundboard/6.png"
   },
   {
     "file": "images/studio-ghibli-movies/thumbnail.webp",
@@ -1040,336 +1368,8 @@
     "source": "CSE302-project/docs/screenshots/report-top-food-per-department-desktop.png"
   },
   {
-    "file": "images/soundboard/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/soundboard-cover.png"
-  },
-  {
-    "file": "images/soundboard/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/1.png"
-  },
-  {
-    "file": "images/soundboard/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/2.png"
-  },
-  {
-    "file": "images/soundboard/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/3.png"
-  },
-  {
-    "file": "images/soundboard/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/4.png"
-  },
-  {
-    "file": "images/soundboard/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/5.png"
-  },
-  {
-    "file": "images/soundboard/image7.webp",
-    "source": "sujoykr/assets/img/single-portfolio/soundboard/6.png"
-  },
-  {
-    "file": "images/group-chat/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/groupchat/groupchat-cover.png"
-  },
-  {
-    "file": "images/group-chat/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/groupchat/1.png"
-  },
-  {
-    "file": "images/group-chat/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/groupchat/2.png"
-  },
-  {
-    "file": "images/sketchbox/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/sketchbox-cover.png"
-  },
-  {
-    "file": "images/sketchbox/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/1.png"
-  },
-  {
-    "file": "images/sketchbox/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/2.png"
-  },
-  {
-    "file": "images/sketchbox/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/3.png"
-  },
-  {
-    "file": "images/sketchbox/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/4.png"
-  },
-  {
-    "file": "images/sketchbox/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/5.png"
-  },
-  {
-    "file": "images/sketchbox/image7.webp",
-    "source": "sujoykr/assets/img/single-portfolio/sketchbox/6.png"
-  },
-  {
     "file": "images/monkeytype-automator/thumbnail.svg",
     "source": "Original code-native portfolio illustration"
-  },
-  {
-    "file": "images/clipping/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/clipping-cover.png"
-  },
-  {
-    "file": "images/clipping/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/1.png"
-  },
-  {
-    "file": "images/clipping/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/2.png"
-  },
-  {
-    "file": "images/clipping/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/3.png"
-  },
-  {
-    "file": "images/clipping/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/4.png"
-  },
-  {
-    "file": "images/clipping/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/5.png"
-  },
-  {
-    "file": "images/clipping/image7.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/6.png"
-  },
-  {
-    "file": "images/clipping/image8.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/7.png"
-  },
-  {
-    "file": "images/clipping/image9.webp",
-    "source": "sujoykr/assets/img/single-portfolio/clipping/8.png"
-  },
-  {
-    "file": "images/portability/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/portability-cover.png"
-  },
-  {
-    "file": "images/portability/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/1.png"
-  },
-  {
-    "file": "images/portability/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/2.png"
-  },
-  {
-    "file": "images/portability/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/3.png"
-  },
-  {
-    "file": "images/portability/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/4.png"
-  },
-  {
-    "file": "images/portability/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/5.png"
-  },
-  {
-    "file": "images/portability/image7.webp",
-    "source": "sujoykr/assets/img/single-portfolio/portability/full.png"
-  },
-  {
-    "file": "images/staylowkey/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/staylowkey-cover.png"
-  },
-  {
-    "file": "images/staylowkey/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/1.png"
-  },
-  {
-    "file": "images/staylowkey/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/2.png"
-  },
-  {
-    "file": "images/staylowkey/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/3.png"
-  },
-  {
-    "file": "images/staylowkey/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/4.png"
-  },
-  {
-    "file": "images/staylowkey/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/5.png"
-  },
-  {
-    "file": "images/staylowkey/image7.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/6.png"
-  },
-  {
-    "file": "images/staylowkey/image8.webp",
-    "source": "sujoykr/assets/img/single-portfolio/staylowkey/full.png"
-  },
-  {
-    "file": "images/landify/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png"
-  },
-  {
-    "file": "images/landify/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/1.png"
-  },
-  {
-    "file": "images/landify/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/2.png"
-  },
-  {
-    "file": "images/landify/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/3.png"
-  },
-  {
-    "file": "images/landify/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/4.png"
-  },
-  {
-    "file": "images/landify/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/5.png"
-  },
-  {
-    "file": "images/landify/image7.webp",
-    "source": "sujoykr/assets/img/single-portfolio/Landify/full.png"
-  },
-  {
-    "file": "images/plaidea/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/plaidea/plaidea-cover.png"
-  },
-  {
-    "file": "images/plaidea/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/plaidea/1.png"
-  },
-  {
-    "file": "images/plaidea/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/plaidea/2.png"
-  },
-  {
-    "file": "images/plaidea/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/plaidea/3.png"
-  },
-  {
-    "file": "images/plaidea/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/plaidea/4.png"
-  },
-  {
-    "file": "images/plaidea/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/plaidea/full.png"
-  },
-  {
-    "file": "images/kerstfeest/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/kerstfeest-cover.png"
-  },
-  {
-    "file": "images/kerstfeest/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/1.png"
-  },
-  {
-    "file": "images/kerstfeest/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/2.png"
-  },
-  {
-    "file": "images/kerstfeest/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/3.png"
-  },
-  {
-    "file": "images/kerstfeest/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/4.png"
-  },
-  {
-    "file": "images/kerstfeest/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/kerstfeest/full.png"
-  },
-  {
-    "file": "images/bizzency/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/bizzency/bizzency-cover.png"
-  },
-  {
-    "file": "images/bizzency/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/bizzency/1.png"
-  },
-  {
-    "file": "images/bizzency/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/bizzency/2.png"
-  },
-  {
-    "file": "images/bizzency/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/bizzency/3.png"
-  },
-  {
-    "file": "images/bizzency/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/bizzency/4.png"
-  },
-  {
-    "file": "images/bizzency/image6.webp",
-    "source": "sujoykr/assets/img/single-portfolio/bizzency/full.png"
-  },
-  {
-    "file": "images/beatls/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/beatls/beatls-cover.png"
-  },
-  {
-    "file": "images/beatls/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/beatls/1.png"
-  },
-  {
-    "file": "images/beatls/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/beatls/2.png"
-  },
-  {
-    "file": "images/beatls/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/beatls/full.png"
-  },
-  {
-    "file": "images/estern/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/estern/estern-cover.png"
-  },
-  {
-    "file": "images/estern/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/estern/1.png"
-  },
-  {
-    "file": "images/estern/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/estern/2.png"
-  },
-  {
-    "file": "images/estern/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/estern/3.png"
-  },
-  {
-    "file": "images/estern/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/estern/full.png"
-  },
-  {
-    "file": "images/valentina/thumbnail.webp",
-    "source": "sujoykr/assets/img/single-portfolio/valentina/valentina-cover.png"
-  },
-  {
-    "file": "images/valentina/image2.webp",
-    "source": "sujoykr/assets/img/single-portfolio/valentina/1.png"
-  },
-  {
-    "file": "images/valentina/image3.webp",
-    "source": "sujoykr/assets/img/single-portfolio/valentina/2.png"
-  },
-  {
-    "file": "images/valentina/image4.webp",
-    "source": "sujoykr/assets/img/single-portfolio/valentina/3.png"
-  },
-  {
-    "file": "images/valentina/image5.webp",
-    "source": "sujoykr/assets/img/single-portfolio/valentina/full.png"
-  },
-  {
-    "file": "images/studio-website/thumbnail.webp",
-    "source": "dribbble/Studio Website Client Project/thumbnail.png"
-  },
-  {
-    "file": "images/studio-website/image1.webp",
-    "source": "dribbble/Studio Website Client Project/image-02.png"
   },
   {
     "file": "images/profile/portrait.webp",

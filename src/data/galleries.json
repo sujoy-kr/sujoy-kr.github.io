@@ -1,255 +1,4 @@
 {
-  "safoyana": {
-    "thumbnail": "/images/safoyana/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/safoyana-v2.png",
-    "images": [
-      {
-        "src": "/images/safoyana/image1.webp",
-        "caption": "Customer product catalogue · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image2.webp",
-        "caption": "Admin dashboard with revenue and order status charts · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1272,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image3.webp",
-        "caption": "Admin order queue and status actions · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-orders-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image4.webp",
-        "caption": "Customer product catalogue on mobile · fictional demo data",
-        "kind": "local",
-        "width": 390,
-        "height": 844,
-        "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-mobile.png"
-      },
-      {
-        "src": "/images/safoyana/image5.webp",
-        "caption": "Customer order detail and product specification · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1068,
-        "source": "Safoyana-Digital-Print/docs/screenshots/order-detail-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image6.webp",
-        "caption": "Business card stock, quantity pricing and artwork configuration · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1383,
-        "source": "Safoyana-Digital-Print/docs/screenshots/product-configuration-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image7.webp",
-        "caption": "Customer storefront and product categories · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 2252,
-        "source": "Safoyana-Digital-Print/docs/screenshots/home-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image8.webp",
-        "caption": "Customer marketing materials category · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/category-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image9.webp",
-        "caption": "Admin product catalogue and variants · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-products-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image10.webp",
-        "caption": "Admin category management · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-categories-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image11.webp",
-        "caption": "Admin customer directory · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-customers-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image12.webp",
-        "caption": "Admin order manifest, customer and payment summary · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-order-detail-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image13.webp",
-        "caption": "Admin product editor with image, variants and volume pricing · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 2062,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-product-editor-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image14.webp",
-        "caption": "Admin customer details and order history · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/admin-customer-detail-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image15.webp",
-        "caption": "Customer account and order history · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1544,
-        "source": "Safoyana-Digital-Print/docs/screenshots/customer-orders-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image16.webp",
-        "caption": "Customer profile details · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1047,
-        "source": "Safoyana-Digital-Print/docs/screenshots/customer-profile-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image17.webp",
-        "caption": "Customer delivery address · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/customer-address-desktop.png"
-      },
-      {
-        "src": "/images/safoyana/image18.webp",
-        "caption": "Customer cart with configured business cards and uploaded artwork · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Safoyana-Digital-Print/docs/screenshots/customer-cart-desktop.png"
-      }
-    ]
-  },
-  "nextset": {
-    "thumbnail": "/images/nextset/thumbnail.webp",
-    "thumbnailWidth": 1536,
-    "thumbnailHeight": 1024,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "portfolio-nextjs/docs/design/nextset-cover.png",
-    "images": [
-      {
-        "src": "/images/nextset/image1.webp",
-        "caption": "Home · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/home.png"
-      },
-      {
-        "src": "/images/nextset/image2.webp",
-        "caption": "Duration settings · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/duration-settings.png"
-      },
-      {
-        "src": "/images/nextset/image3.webp",
-        "caption": "Exercise · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/exercise.png"
-      },
-      {
-        "src": "/images/nextset/image4.webp",
-        "caption": "Rest complete · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/rest-complete.png"
-      },
-      {
-        "src": "/images/nextset/image5.webp",
-        "caption": "Sequence preview · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/sequence-preview.png"
-      },
-      {
-        "src": "/images/nextset/image6.webp",
-        "caption": "Sequence · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/sequence.png"
-      },
-      {
-        "src": "/images/nextset/image7.webp",
-        "caption": "Settings dark · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/settings-dark.png"
-      },
-      {
-        "src": "/images/nextset/image8.webp",
-        "caption": "Sound settings · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/sound-settings.png"
-      },
-      {
-        "src": "/images/nextset/image9.webp",
-        "caption": "Week · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/week.png"
-      },
-      {
-        "src": "/images/nextset/image10.webp",
-        "caption": "Weekly analysis · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/weekly-analysis.png"
-      },
-      {
-        "src": "/images/nextset/image11.webp",
-        "caption": "Workouts · existing repository capture",
-        "kind": "existing",
-        "width": 720,
-        "height": 1280,
-        "source": "NextSet/docs/images/workouts.png"
-      }
-    ]
-  },
   "gsg": {
     "thumbnail": "/images/gsg/thumbnail.webp",
     "thumbnailWidth": 1448,
@@ -331,465 +80,6 @@
         "source": "User-provided screencapture-gsgarmentsltd-en-admin-images-2026-11-16-18_31_50.png"
       }
     ]
-  },
-  "reclaim": {
-    "thumbnail": "/images/reclaim/thumbnail.webp",
-    "thumbnailWidth": 3200,
-    "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/reclaim.html",
-    "images": [
-      {
-        "src": "/images/reclaim/image1.webp",
-        "caption": "Probability timeline desktop · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/probability-timeline-desktop.png"
-      },
-      {
-        "src": "/images/reclaim/image2.webp",
-        "caption": "Contributing factors desktop · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/contributing-factors-desktop.png"
-      },
-      {
-        "src": "/images/reclaim/image3.webp",
-        "caption": "Fictional assessment desktop · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/fictional-assessment-desktop.png"
-      },
-      {
-        "src": "/images/reclaim/image4.webp",
-        "caption": "Outlook desktop · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-desktop.png"
-      },
-      {
-        "src": "/images/reclaim/image5.webp",
-        "caption": "Outlook mobile · fictional demo data",
-        "kind": "local",
-        "width": 390,
-        "height": 844,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-mobile.png"
-      },
-      {
-        "src": "/images/reclaim/image6.webp",
-        "caption": "Earlier research report · baseline calibration",
-        "kind": "report",
-        "width": 1635,
-        "height": 585,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/baseline_calibration.png"
-      },
-      {
-        "src": "/images/reclaim/image7.webp",
-        "caption": "Earlier research report · calibration",
-        "kind": "report",
-        "width": 1335,
-        "height": 735,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/calibration.png"
-      },
-      {
-        "src": "/images/reclaim/image8.webp",
-        "caption": "Earlier research report · confusion matrix",
-        "kind": "report",
-        "width": 656,
-        "height": 585,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/confusion_matrix.png"
-      },
-      {
-        "src": "/images/reclaim/image9.webp",
-        "caption": "Earlier research report · feature distributions",
-        "kind": "report",
-        "width": 1842,
-        "height": 1104,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/feature_distributions.png"
-      },
-      {
-        "src": "/images/reclaim/image10.webp",
-        "caption": "Earlier research report · followup availability",
-        "kind": "report",
-        "width": 1168,
-        "height": 548,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/followup_availability.png"
-      },
-      {
-        "src": "/images/reclaim/image11.webp",
-        "caption": "Earlier research report · interval prevalence",
-        "kind": "report",
-        "width": 960,
-        "height": 548,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/interval_prevalence.png"
-      },
-      {
-        "src": "/images/reclaim/image12.webp",
-        "caption": "Earlier research report · missingness",
-        "kind": "report",
-        "width": 1417,
-        "height": 1168,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/missingness.png"
-      },
-      {
-        "src": "/images/reclaim/image13.webp",
-        "caption": "Earlier research report · output global explanations",
-        "kind": "report",
-        "width": 1485,
-        "height": 735,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_global_explanations.png"
-      },
-      {
-        "src": "/images/reclaim/image14.webp",
-        "caption": "Earlier research report · output risk categories",
-        "kind": "report",
-        "width": 1035,
-        "height": 585,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_risk_categories.png"
-      },
-      {
-        "src": "/images/reclaim/image15.webp",
-        "caption": "Earlier research report · quit recency",
-        "kind": "report",
-        "width": 1245,
-        "height": 656,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/quit_recency.png"
-      },
-      {
-        "src": "/images/reclaim/image16.webp",
-        "caption": "Earlier research report · repeated observations",
-        "kind": "report",
-        "width": 876,
-        "height": 548,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/repeated_observations.png"
-      },
-      {
-        "src": "/images/reclaim/image17.webp",
-        "caption": "Earlier research report · risk categories",
-        "kind": "report",
-        "width": 1035,
-        "height": 585,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/risk_categories.png"
-      },
-      {
-        "src": "/images/reclaim/image18.webp",
-        "caption": "Earlier research report · tree comparison calibration",
-        "kind": "report",
-        "width": 1035,
-        "height": 735,
-        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/tree_comparison_calibration.png"
-      }
-    ]
-  },
-  "notepad-ai": {
-    "thumbnail": "/images/notepad-ai/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png",
-    "images": [
-      {
-        "src": "/images/notepad-ai/image1.webp",
-        "caption": "Saved notes desktop · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Notepad-AI/docs/screenshots/saved-notes-desktop.png"
-      },
-      {
-        "src": "/images/notepad-ai/image2.webp",
-        "caption": "Release checklist desktop · fictional demo data",
-        "kind": "local",
-        "width": 1440,
-        "height": 1000,
-        "source": "Notepad-AI/docs/screenshots/release-checklist-desktop.png"
-      },
-      {
-        "src": "/images/notepad-ai/image3.webp",
-        "caption": "App screenshot · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 961,
-        "source": "Notepad-AI/docs/app-screenshot.png"
-      }
-    ]
-  },
-  "hood-up-cse489": {
-    "thumbnail": "/images/hood-up-cse489/thumbnail.webp",
-    "thumbnailWidth": 1536,
-    "thumbnailHeight": 1024,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "portfolio-nextjs/docs/design/hood-up-cover.png",
-    "images": [
-      {
-        "src": "/images/hood-up-cse489/image1.webp",
-        "caption": "Hood Up · Customer home and nearby workshops",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184202.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image2.webp",
-        "caption": "Hood Up · Upcoming bookings",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184211.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image4.webp",
-        "caption": "Hood Up · Workshop details and services",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184223.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image5.webp",
-        "caption": "Hood Up · Book a service",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184227.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image6.webp",
-        "caption": "Hood Up · Mechanic assistant conversation",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184237.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image7.webp",
-        "caption": "Hood Up · Customer login",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184303.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image8.webp",
-        "caption": "Hood Up · Admin dashboard",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184314.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image10.webp",
-        "caption": "Hood Up · Admin bookings",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184326.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image11.webp",
-        "caption": "Hood Up · Workshop management",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184333.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image12.webp",
-        "caption": "Hood Up · New workshop form",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184340.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image14.webp",
-        "caption": "Hood Up · Service management",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184353.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image15.webp",
-        "caption": "Hood Up · New service form",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184356.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image16.webp",
-        "caption": "Hood Up · Mechanic assistant suggestions",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184423.png"
-      },
-      {
-        "src": "/images/hood-up-cse489/image17.webp",
-        "caption": "Hood Up · Customer profile and navigation",
-        "kind": "user",
-        "width": 1080,
-        "height": 2392,
-        "source": "User-provided Screenshot_20261116-184437.png"
-      }
-    ]
-  },
-  "talentrack-ai-powered-recruitment-platform": {
-    "thumbnail": "/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png",
-    "images": [
-      {
-        "src": "/images/talentrack-ai-powered-recruitment-platform/image1.webp",
-        "caption": "Home page · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 1244,
-        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png"
-      },
-      {
-        "src": "/images/talentrack-ai-powered-recruitment-platform/image2.webp",
-        "caption": "Admin dashboard page · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 1351,
-        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png"
-      },
-      {
-        "src": "/images/talentrack-ai-powered-recruitment-platform/image3.webp",
-        "caption": "Admin login page · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 961,
-        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-login-page.png"
-      },
-      {
-        "src": "/images/talentrack-ai-powered-recruitment-platform/image4.webp",
-        "caption": "Ai copilot chat page · existing repository capture",
-        "kind": "existing",
-        "width": 2000,
-        "height": 1125,
-        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png"
-      },
-      {
-        "src": "/images/talentrack-ai-powered-recruitment-platform/image5.webp",
-        "caption": "Applicant list page · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 961,
-        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png"
-      },
-      {
-        "src": "/images/talentrack-ai-powered-recruitment-platform/image6.webp",
-        "caption": "Apply for job page · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 961,
-        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/apply-for-job-page.png"
-      }
-    ]
-  },
-  "p2p-file-stream": {
-    "thumbnail": "/images/p2p-file-stream/thumbnail.webp",
-    "thumbnailWidth": 3200,
-    "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/p2p-file-stream.html",
-    "images": [
-      {
-        "src": "/images/p2p-file-stream/image1.webp",
-        "caption": "App screenshot 0 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 890,
-        "source": "p2p-file-stream/docs/app-screenshot-0.png"
-      },
-      {
-        "src": "/images/p2p-file-stream/image2.webp",
-        "caption": "App screenshot 1 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 890,
-        "source": "p2p-file-stream/docs/app-screenshot-1.png"
-      },
-      {
-        "src": "/images/p2p-file-stream/image3.webp",
-        "caption": "App screenshot 2 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 890,
-        "source": "p2p-file-stream/docs/app-screenshot-2.png"
-      },
-      {
-        "src": "/images/p2p-file-stream/image4.webp",
-        "caption": "App screenshot 3 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 890,
-        "source": "p2p-file-stream/docs/app-screenshot-3.png"
-      }
-    ]
-  },
-  "secure-note-taking": {
-    "thumbnail": "/images/secure-note-taking/thumbnail.webp",
-    "thumbnailWidth": 1448,
-    "thumbnailHeight": 1086,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/secure-note-taking-v2.png",
-    "images": [
-      {
-        "src": "/images/secure-note-taking/image1.webp",
-        "caption": "App screenshot 1 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 1204,
-        "source": "Secure-Note-Taking/docs/app-screenshot-1.png"
-      },
-      {
-        "src": "/images/secure-note-taking/image2.webp",
-        "caption": "App screenshot 2 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 945,
-        "source": "Secure-Note-Taking/docs/app-screenshot-2.png"
-      },
-      {
-        "src": "/images/secure-note-taking/image3.webp",
-        "caption": "App screenshot 3 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 1106,
-        "source": "Secure-Note-Taking/docs/app-screenshot-3.png"
-      },
-      {
-        "src": "/images/secure-note-taking/image4.webp",
-        "caption": "App screenshot 4 · existing repository capture",
-        "kind": "existing",
-        "width": 1920,
-        "height": 945,
-        "source": "Secure-Note-Taking/docs/app-screenshot-4.png"
-      }
-    ]
-  },
-  "bdjobs-scraper": {
-    "thumbnail": "/images/bdjobs-scraper/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
-    "images": []
   },
   "medikart": {
     "thumbnail": "/images/medikart/thumbnail.webp",
@@ -1078,6 +368,574 @@
         "width": 960,
         "height": 1867,
         "source": "medikartFrontend · local desktop capture (1440 px) · 35-admin-pos-reports.png"
+      }
+    ]
+  },
+  "nextset": {
+    "thumbnail": "/images/nextset/thumbnail.webp",
+    "thumbnailWidth": 1536,
+    "thumbnailHeight": 1024,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "portfolio-nextjs/docs/design/nextset-cover.png",
+    "images": [
+      {
+        "src": "/images/nextset/image1.webp",
+        "caption": "Home · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/home.png"
+      },
+      {
+        "src": "/images/nextset/image2.webp",
+        "caption": "Duration settings · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/duration-settings.png"
+      },
+      {
+        "src": "/images/nextset/image3.webp",
+        "caption": "Exercise · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/exercise.png"
+      },
+      {
+        "src": "/images/nextset/image4.webp",
+        "caption": "Rest complete · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/rest-complete.png"
+      },
+      {
+        "src": "/images/nextset/image5.webp",
+        "caption": "Sequence preview · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/sequence-preview.png"
+      },
+      {
+        "src": "/images/nextset/image6.webp",
+        "caption": "Sequence · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/sequence.png"
+      },
+      {
+        "src": "/images/nextset/image7.webp",
+        "caption": "Settings dark · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/settings-dark.png"
+      },
+      {
+        "src": "/images/nextset/image8.webp",
+        "caption": "Sound settings · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/sound-settings.png"
+      },
+      {
+        "src": "/images/nextset/image9.webp",
+        "caption": "Week · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/week.png"
+      },
+      {
+        "src": "/images/nextset/image10.webp",
+        "caption": "Weekly analysis · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/weekly-analysis.png"
+      },
+      {
+        "src": "/images/nextset/image11.webp",
+        "caption": "Workouts · existing repository capture",
+        "kind": "existing",
+        "width": 720,
+        "height": 1280,
+        "source": "NextSet/docs/images/workouts.png"
+      }
+    ]
+  },
+  "safoyana": {
+    "thumbnail": "/images/safoyana/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/safoyana-v2.png",
+    "images": [
+      {
+        "src": "/images/safoyana/image1.webp",
+        "caption": "Customer product catalogue · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image2.webp",
+        "caption": "Admin dashboard with revenue and order status charts · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1272,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-dashboard-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image3.webp",
+        "caption": "Admin order queue and status actions · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-orders-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image4.webp",
+        "caption": "Customer product catalogue on mobile · fictional demo data",
+        "kind": "local",
+        "width": 390,
+        "height": 844,
+        "source": "Safoyana-Digital-Print/docs/screenshots/catalogue-mobile.png"
+      },
+      {
+        "src": "/images/safoyana/image5.webp",
+        "caption": "Customer order detail and product specification · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1068,
+        "source": "Safoyana-Digital-Print/docs/screenshots/order-detail-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image6.webp",
+        "caption": "Business card stock, quantity pricing and artwork configuration · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1383,
+        "source": "Safoyana-Digital-Print/docs/screenshots/product-configuration-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image7.webp",
+        "caption": "Customer storefront and product categories · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 2252,
+        "source": "Safoyana-Digital-Print/docs/screenshots/home-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image8.webp",
+        "caption": "Customer marketing materials category · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/category-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image9.webp",
+        "caption": "Admin product catalogue and variants · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-products-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image10.webp",
+        "caption": "Admin category management · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-categories-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image11.webp",
+        "caption": "Admin customer directory · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-customers-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image12.webp",
+        "caption": "Admin order manifest, customer and payment summary · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-order-detail-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image13.webp",
+        "caption": "Admin product editor with image, variants and volume pricing · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 2062,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-product-editor-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image14.webp",
+        "caption": "Admin customer details and order history · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/admin-customer-detail-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image15.webp",
+        "caption": "Customer account and order history · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1544,
+        "source": "Safoyana-Digital-Print/docs/screenshots/customer-orders-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image16.webp",
+        "caption": "Customer profile details · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1047,
+        "source": "Safoyana-Digital-Print/docs/screenshots/customer-profile-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image17.webp",
+        "caption": "Customer delivery address · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/customer-address-desktop.png"
+      },
+      {
+        "src": "/images/safoyana/image18.webp",
+        "caption": "Customer cart with configured business cards and uploaded artwork · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "Safoyana-Digital-Print/docs/screenshots/customer-cart-desktop.png"
+      }
+    ]
+  },
+  "talentrack-ai-powered-recruitment-platform": {
+    "thumbnail": "/images/talentrack-ai-powered-recruitment-platform/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/talentrack-ai-powered-recruitment-platform-v2.png",
+    "images": [
+      {
+        "src": "/images/talentrack-ai-powered-recruitment-platform/image1.webp",
+        "caption": "Home page · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 1244,
+        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/home-page.png"
+      },
+      {
+        "src": "/images/talentrack-ai-powered-recruitment-platform/image2.webp",
+        "caption": "Admin dashboard page · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 1351,
+        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-dashboard-page.png"
+      },
+      {
+        "src": "/images/talentrack-ai-powered-recruitment-platform/image3.webp",
+        "caption": "Admin login page · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 961,
+        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/admin-login-page.png"
+      },
+      {
+        "src": "/images/talentrack-ai-powered-recruitment-platform/image4.webp",
+        "caption": "Ai copilot chat page · existing repository capture",
+        "kind": "existing",
+        "width": 2000,
+        "height": 1125,
+        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/ai-copilot-chat-page.png"
+      },
+      {
+        "src": "/images/talentrack-ai-powered-recruitment-platform/image5.webp",
+        "caption": "Applicant list page · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 961,
+        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/applicant-list-page.png"
+      },
+      {
+        "src": "/images/talentrack-ai-powered-recruitment-platform/image6.webp",
+        "caption": "Apply for job page · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 961,
+        "source": "TalenTrack---AI-Powered-Recruitment-Platform/docs/application-screenshots/apply-for-job-page.png"
+      }
+    ]
+  },
+  "dermacare": {
+    "thumbnail": "/images/dermacare/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/dermacare.png",
+    "images": [
+      {
+        "src": "/images/dermacare/image1.webp",
+        "caption": "Storefront · Home · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 01-home.png"
+      },
+      {
+        "src": "/images/dermacare/image2.webp",
+        "caption": "Storefront · All Products · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 02-all-products.png"
+      },
+      {
+        "src": "/images/dermacare/image3.webp",
+        "caption": "Storefront · Category · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 662,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 03-category.png"
+      },
+      {
+        "src": "/images/dermacare/image4.webp",
+        "caption": "Storefront · Product Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 748,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 04-product-detail.png"
+      },
+      {
+        "src": "/images/dermacare/image5.webp",
+        "caption": "Storefront · Search · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1165,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 05-search.png"
+      },
+      {
+        "src": "/images/dermacare/image6.webp",
+        "caption": "Storefront · Cart · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1108,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 06-cart.png"
+      },
+      {
+        "src": "/images/dermacare/image7.webp",
+        "caption": "Storefront · About · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 807,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 07-about.png"
+      },
+      {
+        "src": "/images/dermacare/image8.webp",
+        "caption": "Storefront · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 655,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 08-login.png"
+      },
+      {
+        "src": "/images/dermacare/image9.webp",
+        "caption": "Storefront · Register · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 09-register.png"
+      },
+      {
+        "src": "/images/dermacare/image10.webp",
+        "caption": "Customer account · Account · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 655,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 10-account.png"
+      },
+      {
+        "src": "/images/dermacare/image11.webp",
+        "caption": "Customer account · Orders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 11-account-orders.png"
+      },
+      {
+        "src": "/images/dermacare/image12.webp",
+        "caption": "Customer account · Wishlist · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 12-account-wishlist.png"
+      },
+      {
+        "src": "/images/dermacare/image13.webp",
+        "caption": "Admin panel · Login · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 13-admin-login.png"
+      },
+      {
+        "src": "/images/dermacare/image14.webp",
+        "caption": "Admin panel · Dashboard · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 643,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 14-admin-dashboard.png"
+      },
+      {
+        "src": "/images/dermacare/image15.webp",
+        "caption": "Admin panel · Products · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 15-admin-products.png"
+      },
+      {
+        "src": "/images/dermacare/image16.webp",
+        "caption": "Admin panel · Product Add · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1065,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 16-admin-product-add.png"
+      },
+      {
+        "src": "/images/dermacare/image17.webp",
+        "caption": "Admin panel · Product Edit · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1061,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 17-admin-product-edit.png"
+      },
+      {
+        "src": "/images/dermacare/image18.webp",
+        "caption": "Admin panel · Categories · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 848,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 18-admin-categories.png"
+      },
+      {
+        "src": "/images/dermacare/image19.webp",
+        "caption": "Admin panel · Customers · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 901,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 19-admin-customers.png"
+      },
+      {
+        "src": "/images/dermacare/image20.webp",
+        "caption": "Admin panel · Customer Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 600,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 20-admin-customer-detail.png"
+      },
+      {
+        "src": "/images/dermacare/image21.webp",
+        "caption": "Admin panel · Orders · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 1867,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 21-admin-orders.png"
+      },
+      {
+        "src": "/images/dermacare/image22.webp",
+        "caption": "Admin panel · Order Detail · seeded demo data",
+        "kind": "local",
+        "width": 960,
+        "height": 675,
+        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 22-admin-order-detail.png"
+      }
+    ]
+  },
+  "clipping": {
+    "thumbnail": "/images/clipping/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/clipping/clipping-cover.png",
+    "images": [
+      {
+        "src": "/images/clipping/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1920,
+        "height": 999,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/1.png"
+      },
+      {
+        "src": "/images/clipping/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/2.png"
+      },
+      {
+        "src": "/images/clipping/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/3.png"
+      },
+      {
+        "src": "/images/clipping/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/4.png"
+      },
+      {
+        "src": "/images/clipping/image6.webp",
+        "caption": "Archived interface · screen 5",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/5.png"
+      },
+      {
+        "src": "/images/clipping/image7.webp",
+        "caption": "Archived interface · screen 6",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/6.png"
+      },
+      {
+        "src": "/images/clipping/image8.webp",
+        "caption": "Archived interface · screen 7",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/7.png"
+      },
+      {
+        "src": "/images/clipping/image9.webp",
+        "caption": "Archived interface · screen 8",
+        "kind": "archive",
+        "width": 1920,
+        "height": 912,
+        "source": "sujoykr/assets/img/single-portfolio/clipping/8.png"
       }
     ]
   },
@@ -1451,231 +1309,440 @@
       }
     ]
   },
-  "finshark-backend": {
-    "thumbnail": "/images/finshark-backend/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
-    "images": []
+  "reclaim": {
+    "thumbnail": "/images/reclaim/thumbnail.webp",
+    "thumbnailWidth": 3200,
+    "thumbnailHeight": 1800,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/reclaim.html",
+    "images": [
+      {
+        "src": "/images/reclaim/image1.webp",
+        "caption": "Probability timeline desktop · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/probability-timeline-desktop.png"
+      },
+      {
+        "src": "/images/reclaim/image2.webp",
+        "caption": "Contributing factors desktop · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/contributing-factors-desktop.png"
+      },
+      {
+        "src": "/images/reclaim/image3.webp",
+        "caption": "Fictional assessment desktop · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/fictional-assessment-desktop.png"
+      },
+      {
+        "src": "/images/reclaim/image4.webp",
+        "caption": "Outlook desktop · fictional demo data",
+        "kind": "local",
+        "width": 1440,
+        "height": 1000,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-desktop.png"
+      },
+      {
+        "src": "/images/reclaim/image5.webp",
+        "caption": "Outlook mobile · fictional demo data",
+        "kind": "local",
+        "width": 390,
+        "height": 844,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/docs/screenshots/outlook-mobile.png"
+      },
+      {
+        "src": "/images/reclaim/image6.webp",
+        "caption": "Earlier research report · baseline calibration",
+        "kind": "report",
+        "width": 1635,
+        "height": 585,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/baseline_calibration.png"
+      },
+      {
+        "src": "/images/reclaim/image7.webp",
+        "caption": "Earlier research report · calibration",
+        "kind": "report",
+        "width": 1335,
+        "height": 735,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/calibration.png"
+      },
+      {
+        "src": "/images/reclaim/image8.webp",
+        "caption": "Earlier research report · confusion matrix",
+        "kind": "report",
+        "width": 656,
+        "height": 585,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/confusion_matrix.png"
+      },
+      {
+        "src": "/images/reclaim/image9.webp",
+        "caption": "Earlier research report · feature distributions",
+        "kind": "report",
+        "width": 1842,
+        "height": 1104,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/feature_distributions.png"
+      },
+      {
+        "src": "/images/reclaim/image10.webp",
+        "caption": "Earlier research report · followup availability",
+        "kind": "report",
+        "width": 1168,
+        "height": 548,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/followup_availability.png"
+      },
+      {
+        "src": "/images/reclaim/image11.webp",
+        "caption": "Earlier research report · interval prevalence",
+        "kind": "report",
+        "width": 960,
+        "height": 548,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/interval_prevalence.png"
+      },
+      {
+        "src": "/images/reclaim/image12.webp",
+        "caption": "Earlier research report · missingness",
+        "kind": "report",
+        "width": 1417,
+        "height": 1168,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/missingness.png"
+      },
+      {
+        "src": "/images/reclaim/image13.webp",
+        "caption": "Earlier research report · output global explanations",
+        "kind": "report",
+        "width": 1485,
+        "height": 735,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_global_explanations.png"
+      },
+      {
+        "src": "/images/reclaim/image14.webp",
+        "caption": "Earlier research report · output risk categories",
+        "kind": "report",
+        "width": 1035,
+        "height": 585,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/output_risk_categories.png"
+      },
+      {
+        "src": "/images/reclaim/image15.webp",
+        "caption": "Earlier research report · quit recency",
+        "kind": "report",
+        "width": 1245,
+        "height": 656,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/quit_recency.png"
+      },
+      {
+        "src": "/images/reclaim/image16.webp",
+        "caption": "Earlier research report · repeated observations",
+        "kind": "report",
+        "width": 876,
+        "height": 548,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/development_v1/repeated_observations.png"
+      },
+      {
+        "src": "/images/reclaim/image17.webp",
+        "caption": "Earlier research report · risk categories",
+        "kind": "report",
+        "width": 1035,
+        "height": 585,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/final_evaluation_v1/risk_categories.png"
+      },
+      {
+        "src": "/images/reclaim/image18.webp",
+        "caption": "Earlier research report · tree comparison calibration",
+        "kind": "report",
+        "width": 1035,
+        "height": 735,
+        "source": "PATH-smoking-resumption-prediction-for-CSE366/reports/tree_comparison_calibration.png"
+      }
+    ]
   },
-  "bd-walks": {
-    "thumbnail": "/images/bd-walks/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
-    "images": []
-  },
-  "dermacare": {
-    "thumbnail": "/images/dermacare/thumbnail.webp",
+  "notepad-ai": {
+    "thumbnail": "/images/notepad-ai/thumbnail.webp",
     "thumbnailWidth": 1448,
     "thumbnailHeight": 1086,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/dermacare.png",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/notepad-ai-v2.png",
     "images": [
       {
-        "src": "/images/dermacare/image1.webp",
-        "caption": "Storefront · Home · seeded demo data",
+        "src": "/images/notepad-ai/image1.webp",
+        "caption": "Saved notes desktop · fictional demo data",
         "kind": "local",
-        "width": 960,
-        "height": 1867,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 01-home.png"
+        "width": 1440,
+        "height": 1000,
+        "source": "Notepad-AI/docs/screenshots/saved-notes-desktop.png"
       },
       {
-        "src": "/images/dermacare/image2.webp",
-        "caption": "Storefront · All Products · seeded demo data",
+        "src": "/images/notepad-ai/image2.webp",
+        "caption": "Release checklist desktop · fictional demo data",
         "kind": "local",
-        "width": 960,
-        "height": 1867,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 02-all-products.png"
+        "width": 1440,
+        "height": 1000,
+        "source": "Notepad-AI/docs/screenshots/release-checklist-desktop.png"
       },
       {
-        "src": "/images/dermacare/image3.webp",
-        "caption": "Storefront · Category · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 662,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 03-category.png"
-      },
-      {
-        "src": "/images/dermacare/image4.webp",
-        "caption": "Storefront · Product Detail · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 748,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 04-product-detail.png"
-      },
-      {
-        "src": "/images/dermacare/image5.webp",
-        "caption": "Storefront · Search · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 1165,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 05-search.png"
-      },
-      {
-        "src": "/images/dermacare/image6.webp",
-        "caption": "Storefront · Cart · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 1108,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 06-cart.png"
-      },
-      {
-        "src": "/images/dermacare/image7.webp",
-        "caption": "Storefront · About · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 807,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 07-about.png"
-      },
-      {
-        "src": "/images/dermacare/image8.webp",
-        "caption": "Storefront · Login · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 655,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 08-login.png"
-      },
-      {
-        "src": "/images/dermacare/image9.webp",
-        "caption": "Storefront · Register · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 600,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 09-register.png"
-      },
-      {
-        "src": "/images/dermacare/image10.webp",
-        "caption": "Customer account · Account · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 655,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 10-account.png"
-      },
-      {
-        "src": "/images/dermacare/image11.webp",
-        "caption": "Customer account · Orders · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 600,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 11-account-orders.png"
-      },
-      {
-        "src": "/images/dermacare/image12.webp",
-        "caption": "Customer account · Wishlist · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 600,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 12-account-wishlist.png"
-      },
-      {
-        "src": "/images/dermacare/image13.webp",
-        "caption": "Admin panel · Login · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 600,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 13-admin-login.png"
-      },
-      {
-        "src": "/images/dermacare/image14.webp",
-        "caption": "Admin panel · Dashboard · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 643,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 14-admin-dashboard.png"
-      },
-      {
-        "src": "/images/dermacare/image15.webp",
-        "caption": "Admin panel · Products · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 1867,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 15-admin-products.png"
-      },
-      {
-        "src": "/images/dermacare/image16.webp",
-        "caption": "Admin panel · Product Add · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 1065,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 16-admin-product-add.png"
-      },
-      {
-        "src": "/images/dermacare/image17.webp",
-        "caption": "Admin panel · Product Edit · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 1061,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 17-admin-product-edit.png"
-      },
-      {
-        "src": "/images/dermacare/image18.webp",
-        "caption": "Admin panel · Categories · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 848,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 18-admin-categories.png"
-      },
-      {
-        "src": "/images/dermacare/image19.webp",
-        "caption": "Admin panel · Customers · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 901,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 19-admin-customers.png"
-      },
-      {
-        "src": "/images/dermacare/image20.webp",
-        "caption": "Admin panel · Customer Detail · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 600,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 20-admin-customer-detail.png"
-      },
-      {
-        "src": "/images/dermacare/image21.webp",
-        "caption": "Admin panel · Orders · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 1867,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 21-admin-orders.png"
-      },
-      {
-        "src": "/images/dermacare/image22.webp",
-        "caption": "Admin panel · Order Detail · seeded demo data",
-        "kind": "local",
-        "width": 960,
-        "height": 675,
-        "source": "cosmeticsEcom-frontend · local desktop capture (1440 px) · 22-admin-order-detail.png"
+        "src": "/images/notepad-ai/image3.webp",
+        "caption": "App screenshot · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 961,
+        "source": "Notepad-AI/docs/app-screenshot.png"
       }
     ]
   },
-  "medicine-data-scraper-with-proxy-rotation": {
-    "thumbnail": "/images/medicine-data-scraper-with-proxy-rotation/thumbnail.svg",
+  "hood-up-cse489": {
+    "thumbnail": "/images/hood-up-cse489/thumbnail.webp",
+    "thumbnailWidth": 1536,
+    "thumbnailHeight": 1024,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "portfolio-nextjs/docs/design/hood-up-cover.png",
+    "images": [
+      {
+        "src": "/images/hood-up-cse489/image1.webp",
+        "caption": "Hood Up · Customer home and nearby workshops",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184202.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image2.webp",
+        "caption": "Hood Up · Upcoming bookings",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184211.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image4.webp",
+        "caption": "Hood Up · Workshop details and services",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184223.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image5.webp",
+        "caption": "Hood Up · Book a service",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184227.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image6.webp",
+        "caption": "Hood Up · Mechanic assistant conversation",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184237.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image7.webp",
+        "caption": "Hood Up · Customer login",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184303.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image8.webp",
+        "caption": "Hood Up · Admin dashboard",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184314.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image10.webp",
+        "caption": "Hood Up · Admin bookings",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184326.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image11.webp",
+        "caption": "Hood Up · Workshop management",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184333.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image12.webp",
+        "caption": "Hood Up · New workshop form",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184340.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image14.webp",
+        "caption": "Hood Up · Service management",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184353.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image15.webp",
+        "caption": "Hood Up · New service form",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184356.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image16.webp",
+        "caption": "Hood Up · Mechanic assistant suggestions",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184423.png"
+      },
+      {
+        "src": "/images/hood-up-cse489/image17.webp",
+        "caption": "Hood Up · Customer profile and navigation",
+        "kind": "user",
+        "width": 1080,
+        "height": 2392,
+        "source": "User-provided Screenshot_20261116-184437.png"
+      }
+    ]
+  },
+  "microservice-ecommerce": {
+    "thumbnail": "/images/microservice-ecommerce/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
     "thumbnailOverlayBaked": false,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
-  "photo-editor-backend": {
-    "thumbnail": "/images/photo-editor-backend/thumbnail.svg",
+  "p2p-file-stream": {
+    "thumbnail": "/images/p2p-file-stream/thumbnail.webp",
+    "thumbnailWidth": 3200,
+    "thumbnailHeight": 1800,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/p2p-file-stream.html",
+    "images": [
+      {
+        "src": "/images/p2p-file-stream/image1.webp",
+        "caption": "App screenshot 0 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 890,
+        "source": "p2p-file-stream/docs/app-screenshot-0.png"
+      },
+      {
+        "src": "/images/p2p-file-stream/image2.webp",
+        "caption": "App screenshot 1 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 890,
+        "source": "p2p-file-stream/docs/app-screenshot-1.png"
+      },
+      {
+        "src": "/images/p2p-file-stream/image3.webp",
+        "caption": "App screenshot 2 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 890,
+        "source": "p2p-file-stream/docs/app-screenshot-2.png"
+      },
+      {
+        "src": "/images/p2p-file-stream/image4.webp",
+        "caption": "App screenshot 3 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 890,
+        "source": "p2p-file-stream/docs/app-screenshot-3.png"
+      }
+    ]
+  },
+  "secure-note-taking": {
+    "thumbnail": "/images/secure-note-taking/thumbnail.webp",
+    "thumbnailWidth": 1448,
+    "thumbnailHeight": 1086,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/secure-note-taking-v2.png",
+    "images": [
+      {
+        "src": "/images/secure-note-taking/image1.webp",
+        "caption": "App screenshot 1 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 1204,
+        "source": "Secure-Note-Taking/docs/app-screenshot-1.png"
+      },
+      {
+        "src": "/images/secure-note-taking/image2.webp",
+        "caption": "App screenshot 2 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 945,
+        "source": "Secure-Note-Taking/docs/app-screenshot-2.png"
+      },
+      {
+        "src": "/images/secure-note-taking/image3.webp",
+        "caption": "App screenshot 3 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 1106,
+        "source": "Secure-Note-Taking/docs/app-screenshot-3.png"
+      },
+      {
+        "src": "/images/secure-note-taking/image4.webp",
+        "caption": "App screenshot 4 · existing repository capture",
+        "kind": "existing",
+        "width": 1920,
+        "height": 945,
+        "source": "Secure-Note-Taking/docs/app-screenshot-4.png"
+      }
+    ]
+  },
+  "bdjobs-scraper": {
+    "thumbnail": "/images/bdjobs-scraper/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
     "thumbnailOverlayBaked": false,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
-  "fileshare": {
-    "thumbnail": "/images/fileshare/thumbnail.svg",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "Original code-native portfolio illustration",
-    "images": []
+  "regro-media": {
+    "thumbnail": "/images/regro-media/thumbnail.webp",
+    "thumbnailWidth": 3200,
+    "thumbnailHeight": 1800,
+    "thumbnailOverlayBaked": true,
+    "thumbnailPresentation": "artistic",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/regro-media.html",
+    "images": [
+      {
+        "src": "/images/regro-media/image1.png",
+        "caption": "Project image 1",
+        "kind": "user",
+        "width": 1440,
+        "height": 1000,
+        "source": "User-maintained local asset"
+      },
+      {
+        "src": "/images/regro-media/image2.webp",
+        "caption": "Complete Regro Media landing page",
+        "kind": "local",
+        "width": 1920,
+        "height": 7488,
+        "source": "User-provided Regro Media full-page screenshot"
+      }
+    ]
   },
   "instagram-clone": {
     "thumbnail": "/images/instagram-clone/thumbnail.webp",
@@ -1838,62 +1905,86 @@
       }
     ]
   },
-  "microservice-ecommerce": {
-    "thumbnail": "/images/microservice-ecommerce/thumbnail.svg",
+  "group-chat": {
+    "thumbnail": "/images/group-chat/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/groupchat/groupchat-cover.png",
+    "images": [
+      {
+        "src": "/images/group-chat/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 800,
+        "height": 600,
+        "source": "sujoykr/assets/img/single-portfolio/groupchat/1.png"
+      },
+      {
+        "src": "/images/group-chat/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 905,
+        "height": 680,
+        "source": "sujoykr/assets/img/single-portfolio/groupchat/2.png"
+      }
+    ]
+  },
+  "fileshare": {
+    "thumbnail": "/images/fileshare/thumbnail.svg",
     "thumbnailWidth": 1200,
     "thumbnailHeight": 800,
     "thumbnailOverlayBaked": false,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
   },
-  "mapveto": {
-    "thumbnail": "/images/mapveto/thumbnail.webp",
+  "photo-editor-backend": {
+    "thumbnail": "/images/photo-editor-backend/thumbnail.svg",
     "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/mapveto/mapveto-cover.png",
-    "images": [
-      {
-        "src": "/images/mapveto/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1920,
-        "height": 994,
-        "source": "sujoykr/assets/img/single-portfolio/mapveto/1.png"
-      },
-      {
-        "src": "/images/mapveto/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/mapveto/2.png"
-      }
-    ]
+    "thumbnailHeight": 800,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "Original code-native portfolio illustration",
+    "images": []
   },
-  "regro-media": {
-    "thumbnail": "/images/regro-media/thumbnail.webp",
+  "finshark-backend": {
+    "thumbnail": "/images/finshark-backend/thumbnail.svg",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 800,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "Original code-native portfolio illustration",
+    "images": []
+  },
+  "bd-walks": {
+    "thumbnail": "/images/bd-walks/thumbnail.svg",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 800,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "Original code-native portfolio illustration",
+    "images": []
+  },
+  "medicine-data-scraper-with-proxy-rotation": {
+    "thumbnail": "/images/medicine-data-scraper-with-proxy-rotation/thumbnail.svg",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 800,
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "Original code-native portfolio illustration",
+    "images": []
+  },
+  "eappair": {
+    "thumbnail": "/images/eappair/thumbnail.webp",
     "thumbnailWidth": 3200,
     "thumbnailHeight": 1800,
     "thumbnailOverlayBaked": true,
     "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/regro-media.html",
+    "thumbnailSource": "portfolio-nextjs/docs/design/covers/eappair.html",
     "images": [
       {
-        "src": "/images/regro-media/image1.png",
-        "caption": "Project image 1",
+        "src": "/images/eappair/image1.webp",
+        "caption": "Complete eAppair homepage",
         "kind": "user",
-        "width": 1440,
-        "height": 1000,
-        "source": "User-maintained local asset"
-      },
-      {
-        "src": "/images/regro-media/image2.webp",
-        "caption": "Complete Regro Media landing page",
-        "kind": "local",
         "width": 1920,
-        "height": 7488,
-        "source": "User-provided Regro Media full-page screenshot"
+        "height": 4330,
+        "source": "User-provided screencapture-127-0-0-1-5500-eAppair-index-html-2026-11-16-18_37_23.png"
       }
     ]
   },
@@ -1946,21 +2037,600 @@
       }
     ]
   },
-  "eappair": {
-    "thumbnail": "/images/eappair/thumbnail.webp",
-    "thumbnailWidth": 3200,
+  "studio-website": {
+    "thumbnail": "/images/studio-website/thumbnail.webp",
+    "thumbnailWidth": 2400,
     "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": true,
-    "thumbnailPresentation": "artistic",
-    "thumbnailSource": "portfolio-nextjs/docs/design/covers/eappair.html",
+    "thumbnailOverlayBaked": false,
+    "thumbnailSource": "dribbble/Studio Website Client Project/thumbnail.png",
     "images": [
       {
-        "src": "/images/eappair/image1.webp",
-        "caption": "Complete eAppair homepage",
-        "kind": "user",
+        "src": "/images/studio-website/image1.webp",
+        "caption": "Full-page design",
+        "kind": "design",
+        "width": 1549,
+        "height": 6871,
+        "source": "dribbble/Studio Website Client Project/image-02.png"
+      }
+    ]
+  },
+  "plaidea": {
+    "thumbnail": "/images/plaidea/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/plaidea/plaidea-cover.png",
+    "images": [
+      {
+        "src": "/images/plaidea/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/plaidea/1.png"
+      },
+      {
+        "src": "/images/plaidea/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/plaidea/2.png"
+      },
+      {
+        "src": "/images/plaidea/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/plaidea/3.png"
+      },
+      {
+        "src": "/images/plaidea/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1893,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/plaidea/4.png"
+      },
+      {
+        "src": "/images/plaidea/image6.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
         "width": 1920,
-        "height": 4330,
-        "source": "User-provided screencapture-127-0-0-1-5500-eAppair-index-html-2026-11-16-18_37_23.png"
+        "height": 3737,
+        "source": "sujoykr/assets/img/single-portfolio/plaidea/full.png"
+      }
+    ]
+  },
+  "landify": {
+    "thumbnail": "/images/landify/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png",
+    "images": [
+      {
+        "src": "/images/landify/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1895,
+        "height": 1078,
+        "source": "sujoykr/assets/img/single-portfolio/Landify/1.png"
+      },
+      {
+        "src": "/images/landify/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1894,
+        "height": 1078,
+        "source": "sujoykr/assets/img/single-portfolio/Landify/2.png"
+      },
+      {
+        "src": "/images/landify/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1894,
+        "height": 1078,
+        "source": "sujoykr/assets/img/single-portfolio/Landify/3.png"
+      },
+      {
+        "src": "/images/landify/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1894,
+        "height": 1078,
+        "source": "sujoykr/assets/img/single-portfolio/Landify/4.png"
+      },
+      {
+        "src": "/images/landify/image6.webp",
+        "caption": "Archived interface · screen 5",
+        "kind": "archive",
+        "width": 1894,
+        "height": 1078,
+        "source": "sujoykr/assets/img/single-portfolio/Landify/5.png"
+      },
+      {
+        "src": "/images/landify/image7.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 5033,
+        "source": "sujoykr/assets/img/single-portfolio/Landify/full.png"
+      }
+    ]
+  },
+  "bizzency": {
+    "thumbnail": "/images/bizzency/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/bizzency/bizzency-cover.png",
+    "images": [
+      {
+        "src": "/images/bizzency/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1900,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/bizzency/1.png"
+      },
+      {
+        "src": "/images/bizzency/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/bizzency/2.png"
+      },
+      {
+        "src": "/images/bizzency/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/bizzency/3.png"
+      },
+      {
+        "src": "/images/bizzency/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1902,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/bizzency/4.png"
+      },
+      {
+        "src": "/images/bizzency/image6.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 4847,
+        "source": "sujoykr/assets/img/single-portfolio/bizzency/full.png"
+      }
+    ]
+  },
+  "beatls": {
+    "thumbnail": "/images/beatls/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/beatls/beatls-cover.png",
+    "images": [
+      {
+        "src": "/images/beatls/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1899,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/beatls/1.png"
+      },
+      {
+        "src": "/images/beatls/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/beatls/2.png"
+      },
+      {
+        "src": "/images/beatls/image4.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 2357,
+        "source": "sujoykr/assets/img/single-portfolio/beatls/full.png"
+      }
+    ]
+  },
+  "estern": {
+    "thumbnail": "/images/estern/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/estern/estern-cover.png",
+    "images": [
+      {
+        "src": "/images/estern/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1900,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/estern/1.png"
+      },
+      {
+        "src": "/images/estern/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1903,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/estern/2.png"
+      },
+      {
+        "src": "/images/estern/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1901,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/estern/3.png"
+      },
+      {
+        "src": "/images/estern/image5.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 4329,
+        "source": "sujoykr/assets/img/single-portfolio/estern/full.png"
+      }
+    ]
+  },
+  "portability": {
+    "thumbnail": "/images/portability/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/portability/portability-cover.png",
+    "images": [
+      {
+        "src": "/images/portability/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1440,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/portability/1.png"
+      },
+      {
+        "src": "/images/portability/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1620,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/portability/2.png"
+      },
+      {
+        "src": "/images/portability/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1620,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/portability/3.png"
+      },
+      {
+        "src": "/images/portability/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1440,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/portability/4.png"
+      },
+      {
+        "src": "/images/portability/image6.webp",
+        "caption": "Archived interface · screen 5",
+        "kind": "archive",
+        "width": 1440,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/portability/5.png"
+      },
+      {
+        "src": "/images/portability/image7.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 3435,
+        "source": "sujoykr/assets/img/single-portfolio/portability/full.png"
+      }
+    ]
+  },
+  "staylowkey": {
+    "thumbnail": "/images/staylowkey/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/staylowkey/staylowkey-cover.png",
+    "images": [
+      {
+        "src": "/images/staylowkey/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1440,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/1.png"
+      },
+      {
+        "src": "/images/staylowkey/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1440,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/2.png"
+      },
+      {
+        "src": "/images/staylowkey/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1440,
+        "height": 1079,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/3.png"
+      },
+      {
+        "src": "/images/staylowkey/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1193,
+        "height": 895,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/4.png"
+      },
+      {
+        "src": "/images/staylowkey/image6.webp",
+        "caption": "Archived interface · screen 5",
+        "kind": "archive",
+        "width": 1126,
+        "height": 844,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/5.png"
+      },
+      {
+        "src": "/images/staylowkey/image7.webp",
+        "caption": "Archived interface · screen 6",
+        "kind": "archive",
+        "width": 1667,
+        "height": 893,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/6.png"
+      },
+      {
+        "src": "/images/staylowkey/image8.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 4973,
+        "source": "sujoykr/assets/img/single-portfolio/staylowkey/full.png"
+      }
+    ]
+  },
+  "kerstfeest": {
+    "thumbnail": "/images/kerstfeest/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/kerstfeest/kerstfeest-cover.png",
+    "images": [
+      {
+        "src": "/images/kerstfeest/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1902,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/1.png"
+      },
+      {
+        "src": "/images/kerstfeest/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/2.png"
+      },
+      {
+        "src": "/images/kerstfeest/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1902,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/3.png"
+      },
+      {
+        "src": "/images/kerstfeest/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1908,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/4.png"
+      },
+      {
+        "src": "/images/kerstfeest/image6.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 5115,
+        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/full.png"
+      }
+    ]
+  },
+  "valentina": {
+    "thumbnail": "/images/valentina/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/valentina/valentina-cover.png",
+    "images": [
+      {
+        "src": "/images/valentina/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1905,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/valentina/1.png"
+      },
+      {
+        "src": "/images/valentina/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1899,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/valentina/2.png"
+      },
+      {
+        "src": "/images/valentina/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1902,
+        "height": 1080,
+        "source": "sujoykr/assets/img/single-portfolio/valentina/3.png"
+      },
+      {
+        "src": "/images/valentina/image5.webp",
+        "caption": "Archived interface · complete page",
+        "kind": "archive",
+        "width": 1920,
+        "height": 2898,
+        "source": "sujoykr/assets/img/single-portfolio/valentina/full.png"
+      }
+    ]
+  },
+  "mapveto": {
+    "thumbnail": "/images/mapveto/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/mapveto/mapveto-cover.png",
+    "images": [
+      {
+        "src": "/images/mapveto/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1920,
+        "height": 994,
+        "source": "sujoykr/assets/img/single-portfolio/mapveto/1.png"
+      },
+      {
+        "src": "/images/mapveto/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1920,
+        "height": 969,
+        "source": "sujoykr/assets/img/single-portfolio/mapveto/2.png"
+      }
+    ]
+  },
+  "sketchbox": {
+    "thumbnail": "/images/sketchbox/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/sketchbox/sketchbox-cover.png",
+    "images": [
+      {
+        "src": "/images/sketchbox/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1920,
+        "height": 1980,
+        "source": "sujoykr/assets/img/single-portfolio/sketchbox/1.png"
+      },
+      {
+        "src": "/images/sketchbox/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1356,
+        "height": 929,
+        "source": "sujoykr/assets/img/single-portfolio/sketchbox/2.png"
+      },
+      {
+        "src": "/images/sketchbox/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1186,
+        "height": 793,
+        "source": "sujoykr/assets/img/single-portfolio/sketchbox/3.png"
+      },
+      {
+        "src": "/images/sketchbox/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1215,
+        "height": 646,
+        "source": "sujoykr/assets/img/single-portfolio/sketchbox/4.png"
+      },
+      {
+        "src": "/images/sketchbox/image6.webp",
+        "caption": "Archived interface · screen 5",
+        "kind": "archive",
+        "width": 1213,
+        "height": 678,
+        "source": "sujoykr/assets/img/single-portfolio/sketchbox/5.png"
+      },
+      {
+        "src": "/images/sketchbox/image7.webp",
+        "caption": "Archived interface · screen 6",
+        "kind": "archive",
+        "width": 1279,
+        "height": 734,
+        "source": "sujoykr/assets/img/single-portfolio/sketchbox/6.png"
+      }
+    ]
+  },
+  "soundboard": {
+    "thumbnail": "/images/soundboard/thumbnail.webp",
+    "thumbnailWidth": 1200,
+    "thumbnailHeight": 675,
+    "thumbnailOverlayBaked": true,
+    "thumbnailSource": "sujoykr/assets/img/single-portfolio/soundboard/soundboard-cover.png",
+    "images": [
+      {
+        "src": "/images/soundboard/image2.webp",
+        "caption": "Archived interface · screen 1",
+        "kind": "archive",
+        "width": 1140,
+        "height": 855,
+        "source": "sujoykr/assets/img/single-portfolio/soundboard/1.png"
+      },
+      {
+        "src": "/images/soundboard/image3.webp",
+        "caption": "Archived interface · screen 2",
+        "kind": "archive",
+        "width": 1140,
+        "height": 802,
+        "source": "sujoykr/assets/img/single-portfolio/soundboard/2.png"
+      },
+      {
+        "src": "/images/soundboard/image4.webp",
+        "caption": "Archived interface · screen 3",
+        "kind": "archive",
+        "width": 1140,
+        "height": 802,
+        "source": "sujoykr/assets/img/single-portfolio/soundboard/3.png"
+      },
+      {
+        "src": "/images/soundboard/image5.webp",
+        "caption": "Archived interface · screen 4",
+        "kind": "archive",
+        "width": 1140,
+        "height": 802,
+        "source": "sujoykr/assets/img/single-portfolio/soundboard/4.png"
+      },
+      {
+        "src": "/images/soundboard/image6.webp",
+        "caption": "Archived interface · screen 5",
+        "kind": "archive",
+        "width": 1140,
+        "height": 802,
+        "source": "sujoykr/assets/img/single-portfolio/soundboard/5.png"
+      },
+      {
+        "src": "/images/soundboard/image7.webp",
+        "caption": "Archived interface · screen 6",
+        "kind": "archive",
+        "width": 1140,
+        "height": 802,
+        "source": "sujoykr/assets/img/single-portfolio/soundboard/6.png"
       }
     ]
   },
@@ -2111,145 +2781,6 @@
       }
     ]
   },
-  "soundboard": {
-    "thumbnail": "/images/soundboard/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/soundboard/soundboard-cover.png",
-    "images": [
-      {
-        "src": "/images/soundboard/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1140,
-        "height": 855,
-        "source": "sujoykr/assets/img/single-portfolio/soundboard/1.png"
-      },
-      {
-        "src": "/images/soundboard/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1140,
-        "height": 802,
-        "source": "sujoykr/assets/img/single-portfolio/soundboard/2.png"
-      },
-      {
-        "src": "/images/soundboard/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1140,
-        "height": 802,
-        "source": "sujoykr/assets/img/single-portfolio/soundboard/3.png"
-      },
-      {
-        "src": "/images/soundboard/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1140,
-        "height": 802,
-        "source": "sujoykr/assets/img/single-portfolio/soundboard/4.png"
-      },
-      {
-        "src": "/images/soundboard/image6.webp",
-        "caption": "Archived interface · screen 5",
-        "kind": "archive",
-        "width": 1140,
-        "height": 802,
-        "source": "sujoykr/assets/img/single-portfolio/soundboard/5.png"
-      },
-      {
-        "src": "/images/soundboard/image7.webp",
-        "caption": "Archived interface · screen 6",
-        "kind": "archive",
-        "width": 1140,
-        "height": 802,
-        "source": "sujoykr/assets/img/single-portfolio/soundboard/6.png"
-      }
-    ]
-  },
-  "group-chat": {
-    "thumbnail": "/images/group-chat/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/groupchat/groupchat-cover.png",
-    "images": [
-      {
-        "src": "/images/group-chat/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 800,
-        "height": 600,
-        "source": "sujoykr/assets/img/single-portfolio/groupchat/1.png"
-      },
-      {
-        "src": "/images/group-chat/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 905,
-        "height": 680,
-        "source": "sujoykr/assets/img/single-portfolio/groupchat/2.png"
-      }
-    ]
-  },
-  "sketchbox": {
-    "thumbnail": "/images/sketchbox/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/sketchbox/sketchbox-cover.png",
-    "images": [
-      {
-        "src": "/images/sketchbox/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1920,
-        "height": 1980,
-        "source": "sujoykr/assets/img/single-portfolio/sketchbox/1.png"
-      },
-      {
-        "src": "/images/sketchbox/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1356,
-        "height": 929,
-        "source": "sujoykr/assets/img/single-portfolio/sketchbox/2.png"
-      },
-      {
-        "src": "/images/sketchbox/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1186,
-        "height": 793,
-        "source": "sujoykr/assets/img/single-portfolio/sketchbox/3.png"
-      },
-      {
-        "src": "/images/sketchbox/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1215,
-        "height": 646,
-        "source": "sujoykr/assets/img/single-portfolio/sketchbox/4.png"
-      },
-      {
-        "src": "/images/sketchbox/image6.webp",
-        "caption": "Archived interface · screen 5",
-        "kind": "archive",
-        "width": 1213,
-        "height": 678,
-        "source": "sujoykr/assets/img/single-portfolio/sketchbox/5.png"
-      },
-      {
-        "src": "/images/sketchbox/image7.webp",
-        "caption": "Archived interface · screen 6",
-        "kind": "archive",
-        "width": 1279,
-        "height": 734,
-        "source": "sujoykr/assets/img/single-portfolio/sketchbox/6.png"
-      }
-    ]
-  },
   "monkeytype-automator": {
     "thumbnail": "/images/monkeytype-automator/thumbnail.svg",
     "thumbnailWidth": 1200,
@@ -2257,536 +2788,5 @@
     "thumbnailOverlayBaked": false,
     "thumbnailSource": "Original code-native portfolio illustration",
     "images": []
-  },
-  "clipping": {
-    "thumbnail": "/images/clipping/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/clipping/clipping-cover.png",
-    "images": [
-      {
-        "src": "/images/clipping/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1920,
-        "height": 999,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/1.png"
-      },
-      {
-        "src": "/images/clipping/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/2.png"
-      },
-      {
-        "src": "/images/clipping/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/3.png"
-      },
-      {
-        "src": "/images/clipping/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/4.png"
-      },
-      {
-        "src": "/images/clipping/image6.webp",
-        "caption": "Archived interface · screen 5",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/5.png"
-      },
-      {
-        "src": "/images/clipping/image7.webp",
-        "caption": "Archived interface · screen 6",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/6.png"
-      },
-      {
-        "src": "/images/clipping/image8.webp",
-        "caption": "Archived interface · screen 7",
-        "kind": "archive",
-        "width": 1920,
-        "height": 969,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/7.png"
-      },
-      {
-        "src": "/images/clipping/image9.webp",
-        "caption": "Archived interface · screen 8",
-        "kind": "archive",
-        "width": 1920,
-        "height": 912,
-        "source": "sujoykr/assets/img/single-portfolio/clipping/8.png"
-      }
-    ]
-  },
-  "portability": {
-    "thumbnail": "/images/portability/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/portability/portability-cover.png",
-    "images": [
-      {
-        "src": "/images/portability/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1440,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/portability/1.png"
-      },
-      {
-        "src": "/images/portability/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1620,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/portability/2.png"
-      },
-      {
-        "src": "/images/portability/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1620,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/portability/3.png"
-      },
-      {
-        "src": "/images/portability/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1440,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/portability/4.png"
-      },
-      {
-        "src": "/images/portability/image6.webp",
-        "caption": "Archived interface · screen 5",
-        "kind": "archive",
-        "width": 1440,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/portability/5.png"
-      },
-      {
-        "src": "/images/portability/image7.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 3435,
-        "source": "sujoykr/assets/img/single-portfolio/portability/full.png"
-      }
-    ]
-  },
-  "staylowkey": {
-    "thumbnail": "/images/staylowkey/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/staylowkey/staylowkey-cover.png",
-    "images": [
-      {
-        "src": "/images/staylowkey/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1440,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/1.png"
-      },
-      {
-        "src": "/images/staylowkey/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1440,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/2.png"
-      },
-      {
-        "src": "/images/staylowkey/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1440,
-        "height": 1079,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/3.png"
-      },
-      {
-        "src": "/images/staylowkey/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1193,
-        "height": 895,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/4.png"
-      },
-      {
-        "src": "/images/staylowkey/image6.webp",
-        "caption": "Archived interface · screen 5",
-        "kind": "archive",
-        "width": 1126,
-        "height": 844,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/5.png"
-      },
-      {
-        "src": "/images/staylowkey/image7.webp",
-        "caption": "Archived interface · screen 6",
-        "kind": "archive",
-        "width": 1667,
-        "height": 893,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/6.png"
-      },
-      {
-        "src": "/images/staylowkey/image8.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 4973,
-        "source": "sujoykr/assets/img/single-portfolio/staylowkey/full.png"
-      }
-    ]
-  },
-  "landify": {
-    "thumbnail": "/images/landify/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/Landify/landify-cover.png",
-    "images": [
-      {
-        "src": "/images/landify/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1895,
-        "height": 1078,
-        "source": "sujoykr/assets/img/single-portfolio/Landify/1.png"
-      },
-      {
-        "src": "/images/landify/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1894,
-        "height": 1078,
-        "source": "sujoykr/assets/img/single-portfolio/Landify/2.png"
-      },
-      {
-        "src": "/images/landify/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1894,
-        "height": 1078,
-        "source": "sujoykr/assets/img/single-portfolio/Landify/3.png"
-      },
-      {
-        "src": "/images/landify/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1894,
-        "height": 1078,
-        "source": "sujoykr/assets/img/single-portfolio/Landify/4.png"
-      },
-      {
-        "src": "/images/landify/image6.webp",
-        "caption": "Archived interface · screen 5",
-        "kind": "archive",
-        "width": 1894,
-        "height": 1078,
-        "source": "sujoykr/assets/img/single-portfolio/Landify/5.png"
-      },
-      {
-        "src": "/images/landify/image7.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 5033,
-        "source": "sujoykr/assets/img/single-portfolio/Landify/full.png"
-      }
-    ]
-  },
-  "plaidea": {
-    "thumbnail": "/images/plaidea/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/plaidea/plaidea-cover.png",
-    "images": [
-      {
-        "src": "/images/plaidea/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/plaidea/1.png"
-      },
-      {
-        "src": "/images/plaidea/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/plaidea/2.png"
-      },
-      {
-        "src": "/images/plaidea/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/plaidea/3.png"
-      },
-      {
-        "src": "/images/plaidea/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1893,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/plaidea/4.png"
-      },
-      {
-        "src": "/images/plaidea/image6.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 3737,
-        "source": "sujoykr/assets/img/single-portfolio/plaidea/full.png"
-      }
-    ]
-  },
-  "kerstfeest": {
-    "thumbnail": "/images/kerstfeest/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/kerstfeest/kerstfeest-cover.png",
-    "images": [
-      {
-        "src": "/images/kerstfeest/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1902,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/1.png"
-      },
-      {
-        "src": "/images/kerstfeest/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/2.png"
-      },
-      {
-        "src": "/images/kerstfeest/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1902,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/3.png"
-      },
-      {
-        "src": "/images/kerstfeest/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1908,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/4.png"
-      },
-      {
-        "src": "/images/kerstfeest/image6.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 5115,
-        "source": "sujoykr/assets/img/single-portfolio/kerstfeest/full.png"
-      }
-    ]
-  },
-  "bizzency": {
-    "thumbnail": "/images/bizzency/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/bizzency/bizzency-cover.png",
-    "images": [
-      {
-        "src": "/images/bizzency/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1900,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/bizzency/1.png"
-      },
-      {
-        "src": "/images/bizzency/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/bizzency/2.png"
-      },
-      {
-        "src": "/images/bizzency/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/bizzency/3.png"
-      },
-      {
-        "src": "/images/bizzency/image5.webp",
-        "caption": "Archived interface · screen 4",
-        "kind": "archive",
-        "width": 1902,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/bizzency/4.png"
-      },
-      {
-        "src": "/images/bizzency/image6.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 4847,
-        "source": "sujoykr/assets/img/single-portfolio/bizzency/full.png"
-      }
-    ]
-  },
-  "beatls": {
-    "thumbnail": "/images/beatls/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/beatls/beatls-cover.png",
-    "images": [
-      {
-        "src": "/images/beatls/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1899,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/beatls/1.png"
-      },
-      {
-        "src": "/images/beatls/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/beatls/2.png"
-      },
-      {
-        "src": "/images/beatls/image4.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 2357,
-        "source": "sujoykr/assets/img/single-portfolio/beatls/full.png"
-      }
-    ]
-  },
-  "estern": {
-    "thumbnail": "/images/estern/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/estern/estern-cover.png",
-    "images": [
-      {
-        "src": "/images/estern/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1900,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/estern/1.png"
-      },
-      {
-        "src": "/images/estern/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1903,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/estern/2.png"
-      },
-      {
-        "src": "/images/estern/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1901,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/estern/3.png"
-      },
-      {
-        "src": "/images/estern/image5.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 4329,
-        "source": "sujoykr/assets/img/single-portfolio/estern/full.png"
-      }
-    ]
-  },
-  "valentina": {
-    "thumbnail": "/images/valentina/thumbnail.webp",
-    "thumbnailWidth": 1200,
-    "thumbnailHeight": 675,
-    "thumbnailOverlayBaked": true,
-    "thumbnailSource": "sujoykr/assets/img/single-portfolio/valentina/valentina-cover.png",
-    "images": [
-      {
-        "src": "/images/valentina/image2.webp",
-        "caption": "Archived interface · screen 1",
-        "kind": "archive",
-        "width": 1905,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/valentina/1.png"
-      },
-      {
-        "src": "/images/valentina/image3.webp",
-        "caption": "Archived interface · screen 2",
-        "kind": "archive",
-        "width": 1899,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/valentina/2.png"
-      },
-      {
-        "src": "/images/valentina/image4.webp",
-        "caption": "Archived interface · screen 3",
-        "kind": "archive",
-        "width": 1902,
-        "height": 1080,
-        "source": "sujoykr/assets/img/single-portfolio/valentina/3.png"
-      },
-      {
-        "src": "/images/valentina/image5.webp",
-        "caption": "Archived interface · complete page",
-        "kind": "archive",
-        "width": 1920,
-        "height": 2898,
-        "source": "sujoykr/assets/img/single-portfolio/valentina/full.png"
-      }
-    ]
-  },
-  "studio-website": {
-    "thumbnail": "/images/studio-website/thumbnail.webp",
-    "thumbnailWidth": 2400,
-    "thumbnailHeight": 1800,
-    "thumbnailOverlayBaked": false,
-    "thumbnailSource": "dribbble/Studio Website Client Project/thumbnail.png",
-    "images": [
-      {
-        "src": "/images/studio-website/image1.webp",
-        "caption": "Full-page design",
-        "kind": "design",
-        "width": 1549,
-        "height": 6871,
-        "source": "dribbble/Studio Website Client Project/image-02.png"
-      }
-    ]
   }
 }

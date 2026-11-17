@@ -170,7 +170,7 @@ test("new image files are discovered in numeric order without editing project da
 test("the audited five projects still lead the collection", () => {
   assert.deepEqual(
     projects.filter((p) => p.featured).map((p) => p.slug),
-    ["safoyana", "nextset", "gsg", "reclaim", "notepad-ai"],
+    ["gsg", "nextset", "safoyana", "reclaim", "notepad-ai"],
   );
 });
 

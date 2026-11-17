@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Hind_Siliguri, Inter, Newsreader } from "next/font/google";
 import Link from "next/link";
+import { EasterEggs } from "@/components/EasterEggs";
 import { Header } from "@/components/Header";
 import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
@@ -108,7 +109,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a className="skip-link" href="#main">
           <Tx en="Skip to content" bn="মূল অংশে যান" />
         </a>
+        <div className="scroll-progress" aria-hidden="true" />
         <Header />
+        <EasterEggs />
         {children}
         <footer className="footer">
           <div className="wrap footer-inner">
