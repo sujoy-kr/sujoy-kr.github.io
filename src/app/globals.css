@@ -219,6 +219,7 @@ h3 {
   border-color: var(--accent);
 }
 .header-actions {
+  order: 1;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -1035,6 +1036,9 @@ h3 {
   }
 }
 @media (max-width: 820px) {
+  .header-actions {
+    order: 0;
+  }
   .menu-button {
     display: inline-flex;
   }
@@ -1047,6 +1051,9 @@ h3 {
     flex-direction: column;
     gap: 0;
     padding: 8px var(--gutter) 20px;
+    max-height: calc(100dvh - 68px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     background: var(--bg);
     border-bottom: 1px solid var(--line);
   }
@@ -1092,11 +1099,81 @@ h3 {
   }
 }
 @media (max-width: 600px) {
+  .header-inner {
+    gap: 8px;
+  }
+  .header-actions {
+    gap: 2px;
+    flex-shrink: 0;
+  }
+  .theme-toggle,
+  .menu-button,
+  .lang-button {
+    min-width: 44px;
+    height: 44px;
+    justify-content: center;
+    padding-inline: 8px;
+  }
+  .lang-button > svg:last-child {
+    display: none;
+  }
+  .lang-menu {
+    z-index: 1;
+  }
+  .lang-menu button,
+  .filters button,
+  .card-repo,
+  .text-link,
+  .back-link,
+  .footer-bottom a {
+    min-height: 44px;
+  }
+  .back-link,
+  .footer-bottom a {
+    display: inline-flex;
+    align-items: center;
+  }
+  .explorer-tools {
+    align-items: stretch;
+  }
+  .explorer-tools .search {
+    order: -1;
+  }
+  .contact-email {
+    max-width: 100%;
+    font-size: clamp(1.25rem, 6vw, 1.6rem);
+    overflow-wrap: anywhere;
+  }
+  .contact-email svg,
+  .footer-title svg,
+  .next-project svg {
+    flex-shrink: 0;
+  }
+  h1,
+  .next-project a,
+  .tags li {
+    overflow-wrap: anywhere;
+  }
+  .lightbox-bottom {
+    gap: 6px;
+    padding-inline: 12px;
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+  .lightbox-toolbar {
+    padding-top: max(14px, env(safe-area-inset-top));
+  }
+  .lightbox-toolbar a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
   .search {
     font-size: 16px; /* prevents iOS Safari zooming the page on focus */
   }
   .lightbox button {
-    min-height: 40px;
+    min-height: 44px;
+    min-width: 44px;
+    padding-inline: 10px;
   }
   .header nav a {
     min-height: 44px;
@@ -1317,6 +1394,22 @@ h3 {
   }
 }
 @media (max-width: 720px) {
+  .portrait-backdrop,
+  :root[data-theme="dark"] .portrait-backdrop {
+    opacity: 0.14;
+  }
+  /* Long mobile sections should remain visible without waiting for a scroll reveal. */
+  .reveal {
+    animation: none;
+  }
+  .hero {
+    min-height: auto;
+    padding-top: 48px;
+  }
+  .home-timeline .timeline-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
   .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

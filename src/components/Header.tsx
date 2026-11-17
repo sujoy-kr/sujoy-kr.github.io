@@ -17,6 +17,7 @@ export function Header() {
   const pathname = usePathname();
   const [menu, setMenu] = useState(false);
   const header = useRef<HTMLElement>(null);
+  const menuButton = useRef<HTMLButtonElement>(null);
   useEffect(() => setMenu(false), [pathname]);
   useEffect(() => {
     if (!menu) return;
@@ -24,7 +25,10 @@ export function Header() {
       if (!header.current?.contains(event.target as Node)) setMenu(false);
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setMenu(false);
+      if (event.key === "Escape") {
+        setMenu(false);
+        if (document.activeElement?.closest("#site-nav")) menuButton.current?.focus();
+      }
     };
     const onResize = () => {
       if (window.matchMedia("(min-width: 821px)").matches) setMenu(false);
@@ -39,11 +43,35 @@ export function Header() {
     };
   }, [menu]);
   return (
-    <header className="header" data-open={menu} ref={header}>
+    <header
+      className="header"
+      data-open={menu}
+      ref={header}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setMenu(false);
+      }}
+    >
       <div className="header-inner">
         <Link href="/" className="wordmark" aria-label="Sujoy Karmakar">
           Sujoy Karmakar
         </Link>
+        <div className="header-actions">
+          <LanguageSwitch />
+          <ThemeToggle />
+          <button
+            type="button"
+            ref={menuButton}
+            className="menu-button"
+            aria-expanded={menu}
+            aria-controls="site-nav"
+            aria-label={menu ? "Close menu" : "Open menu"}
+            onClick={() => setMenu((v) => !v)}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+              {menu ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 8h16M4 16h16" />}
+            </svg>
+          </button>
+        </div>
         <nav id="site-nav" aria-label="Main navigation">
           {links.map((l) => (
             <Link
@@ -60,22 +88,6 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="header-actions">
-          <LanguageSwitch />
-          <ThemeToggle />
-          <button
-            type="button"
-            className="menu-button"
-            aria-expanded={menu}
-            aria-controls="site-nav"
-            aria-label={menu ? "Close menu" : "Open menu"}
-            onClick={() => setMenu((v) => !v)}
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
-              {menu ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 8h16M4 16h16" />}
-            </svg>
-          </button>
-        </div>
       </div>
     </header>
   );

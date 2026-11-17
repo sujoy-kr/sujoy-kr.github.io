@@ -47,7 +47,7 @@ export function Gallery({
     [ratios],
   );
   const columns = useMemo(
-    () => ({ wide: layoutColumns(ratios, wideColumns), narrow: layoutColumns(ratios, Math.min(3, wideColumns)) }),
+    () => ({ wide: layoutColumns(ratios, wideColumns), narrow: layoutColumns(ratios, Math.min(2, wideColumns)) }),
     [ratios, wideColumns],
   );
   const open_ = (index: number) => {
@@ -131,7 +131,7 @@ export function Gallery({
                         alt={`${p.title}: ${image.caption}`}
                         width={image.width ?? 1440}
                         height={image.height ?? 1000}
-                        sizes="(min-width: 720px) 275px, 33vw"
+                        sizes="(min-width: 720px) 275px, 50vw"
                       />
                     </button>
                   );

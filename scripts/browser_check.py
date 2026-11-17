@@ -172,6 +172,38 @@ async def main():
         await page.get_by_role('option', name='English', exact=True).click()
         assert await page.locator('html').get_attribute('lang') == 'en'
 
+        # Narrow phones, tablets, both languages, and short landscape navigation.
+        for width in [320, 375, 600, 820]:
+            await page.set_viewport_size({'width': width, 'height': 740})
+            for lang in ['en', 'bn']:
+                for route in ['/', '/contact/', '/projects/', '/about/', '/projects/nextset/']:
+                    await visit(route + '?lang=' + lang)
+                    assert await page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (width, lang, route)
+                    if width <= 600:
+                        for selector in ['.menu-button', '.theme-toggle', '.lang-button']:
+                            box = await page.locator(selector).bounding_box()
+                            assert box['width'] >= 44 and box['height'] >= 44, (width, selector, box)
+
+        await page.set_viewport_size({'width': 568, 'height': 280})
+        await visit('/?lang=en')
+        await page.get_by_role('button', name='Open menu', exact=True).click()
+        await page.keyboard.press('Tab')
+        assert await page.locator('#site-nav a').first.evaluate('(el) => el === document.activeElement')
+        await page.keyboard.press('Escape')
+        assert await page.locator('.menu-button').evaluate('(el) => el === document.activeElement')
+        await page.get_by_role('button', name='Open menu', exact=True).click()
+        await page.locator('#site-nav').get_by_role('link', name='Contact', exact=True).click()
+        await page.wait_for_url('**/contact/')
+        assert await page.locator('.menu-button').get_attribute('aria-expanded') == 'false'
+
+        await page.set_viewport_size({'width': 320, 'height': 740})
+        await visit('/projects/nextset/')
+        await page.get_by_role('button', name='Enlarge', exact=False).first.click()
+        assert await page.locator('.lightbox').evaluate('(el) => el.scrollWidth <= innerWidth')
+        await page.get_by_role('button', name='Zoom in', exact=True).click()
+        assert await page.get_by_role('button', name='Reset zoom', exact=True).inner_text() == '150%'
+        await page.get_by_role('button', name='Close enlarged image', exact=True).click()
+
         response = await page.goto(BASE + '/projects/nonexistent-project/', wait_until='networkidle')
         assert response.status == 404, response.status
         assert not errors, errors
