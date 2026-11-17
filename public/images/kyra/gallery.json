@@ -4,7 +4,8 @@
     "caption": "Kyra · Previous portfolio archive",
     "width": 1200,
     "height": 675,
-    "overlayBaked": true
+    "overlayBaked": true,
+    "overlay": 0.3
   },
   "images": {
     "image2.webp": {
