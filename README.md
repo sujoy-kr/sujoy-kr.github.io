@@ -1,6 +1,6 @@
 # Sujoy Karmakar · portfolio
 
-A Next.js / React / TypeScript portfolio for client conversations and engineering applications. Includes 40 case studies, larger readable typography, light/dark themes, searchable category filters and 207 additional gallery images.
+A Next.js / React / TypeScript portfolio for client conversations and engineering applications. Includes 41 case studies, larger readable typography, light/dark themes, searchable category filters and 302 additional gallery images.
 
 ![Portfolio desktop preview](docs/screenshots/home-desktop.png)
 
@@ -19,6 +19,8 @@ npm test
 npm run typecheck
 npm run build
 # Static deployment output: out/
+npm start
+# Preview the export at http://127.0.0.1:3000
 ```
 
 **Cloudflare Pages:** framework preset "Next.js (Static HTML Export)", build command `npm run build`, output directory `out`, Node 22 (pinned by `.node-version`). Set `NEXT_PUBLIC_SITE_URL` if the production origin differs from the default `https://sujoykr.pages.dev`.
@@ -96,7 +98,7 @@ Screenshots, archival captures, earlier research reports, design assets and orig
 
 ## Verification
 
-`npm test` checks repository coverage, complete content, source-button rules, local image paths/provenance, expanded galleries and automatic discovery/numeric ordering of newly added files. `scripts/browser_check.py` checks all 40 exported case studies and their complete galleries, theme persistence, search/filter/sort, keyboard gallery navigation, and mobile layouts in both themes.
+`npm test` checks repository coverage, complete content, source-button rules, local image paths/provenance, expanded galleries and automatic discovery/numeric ordering of newly added files. `scripts/browser_check.py` checks all 41 exported case studies and 18 design pages and their complete galleries, theme persistence, search/filter, keyboard gallery navigation, and mobile layouts in both themes.
 
 ```sh
 python3 -m http.server 3400 --bind 127.0.0.1 --directory out
@@ -104,12 +106,12 @@ python3 -m http.server 3400 --bind 127.0.0.1 --directory out
 python3 scripts/browser_check.py
 ```
 
-Chrome defaults to `/usr/bin/google-chrome`; override with `CHROME_PATH`. Set `PORTFOLIO_URL` to test another local address. Review screenshots are in `docs/screenshots/`; the dark version is shown in `home-dark-desktop.png`.
+Chrome defaults to `/usr/bin/google-chrome`; override with `CHROME_PATH`. Set `PORTFOLIO_URL` to test another local address. Browser checks save screenshots to `/tmp/portfolio-audit-screenshots/` (override with `PORTFOLIO_SCREENSHOTS`). Earlier review screenshots are in `docs/screenshots/`.
 
 
 The public case studies focus on implemented functionality, design choices and practical value. Temporary portfolio-capture setup notes and audit panels are kept out of the site. Notepad AI’s Ollama testing was confirmed by the project developer, and its cover uses the original repository screenshot showing a local model and assistant response.
 
-The current collection has 40 projects and 14 Client work entries, including Kyra, eAppair, Regro Media and GSG. The LAB article layout is represented within LAB, and the previous portfolio is no longer a separate case study. Regro’s latest user-provided full-page capture is stored at `public/images/regro-media/image2.webp` at its original 1920 × 7488 resolution. The older 1440 × 6334 capture remains archived under `../regro-media/docs/screenshots/`. Talentrack’s gallery uses the current screenshot files; metadata for the deleted diagrams and hero asset has been removed.
+The current collection has 41 projects and 15 Client work entries, including Kyra, eAppair, Regro Media and GSG. The LAB article layout is represented within LAB, and the previous portfolio is no longer a separate case study. Regro’s latest user-provided full-page capture is stored at `public/images/regro-media/image2.webp` at its original 1920 × 7488 resolution. The older 1440 × 6334 capture remains archived under `../regro-media/docs/screenshots/`. Talentrack’s gallery uses the current screenshot files; metadata for the deleted diagrams and hero asset has been removed.
 
 ## Combined projects and source links
 

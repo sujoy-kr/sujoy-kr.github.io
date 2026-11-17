@@ -49,6 +49,7 @@ export function Header() {
             <Link
               key={l.href}
               href={l.href}
+              onClick={() => setMenu(false)}
               aria-current={
                 pathname.startsWith(l.href.replace(/\/$/, ""))
                   ? "page"

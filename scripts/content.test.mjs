@@ -21,7 +21,7 @@ const galleries = JSON.parse(
 const projects = data.map((p) => ({ ...p, ...galleries[p.slug] }));
 test("curated collection includes the requested 41 projects and 15 client works", () => {
   const excluded = new Set(["lab-article-html", "sujoykr", "medikart-android", "DermaCare-android"]);
-  const repos = readFileSync(path.join(root, "../repolist.txt"), "utf8")
+  const repos = readFileSync(path.join(root, "scripts/fixtures/repolist.txt"), "utf8")
     .trim()
     .split(/\r?\n/)
     .map((url) => url.split("/").at(-1))

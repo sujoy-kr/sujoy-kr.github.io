@@ -6,7 +6,7 @@ import { Header } from "@/components/Header";
 import { Arrow } from "@/components/Icons";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
-import { NAME, PORTRAIT, SITE_URL, SAME_AS, person } from "@/lib/seo";
+import { NAME, PORTRAIT, SITE_URL, PROFILES, person } from "@/lib/seo";
 import "./globals.css";
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -129,12 +129,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="footer-bottom">
               <span>© {new Date().getFullYear()} Sujoy Karmakar</span>
               <div>
-                <a href={SAME_AS[0]} target="_blank" rel="me noopener noreferrer">
-                  GitHub
-                </a>
-                <a href={SAME_AS[1]} target="_blank" rel="me noopener noreferrer">
-                  LinkedIn
-                </a>
+                {PROFILES.filter(({ label }) => label === "GitHub" || label === "LinkedIn")
+                  .map(({ label, href }) => (
+                    <a key={label} href={href} target="_blank" rel="me noopener noreferrer">
+                      {label}
+                    </a>
+                  ))}
               </div>
             </div>
           </div>
