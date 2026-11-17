@@ -7,10 +7,16 @@ export const SITE_URL = (
 export const NAME = "Sujoy Karmakar";
 export const JOB_TITLE = "Full-stack developer";
 export const EMAIL = "thesujoykr@gmail.com";
-export const SAME_AS = [
-  "https://github.com/sujoy-kr",
-  "https://www.linkedin.com/in/sujoykarmakar",
+export const PROFILES = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/sujoykarmakar" },
+  { label: "GitHub", href: "https://github.com/sujoy-kr" },
+  { label: "LeetCode", href: "https://leetcode.com/u/sujoykr" },
+  { label: "Dribbble", href: "https://dribbble.com/sujoykr" },
+  { label: "Behance", href: "https://www.behance.net/sujoykr" },
+  { label: "Monkeytype", href: "https://monkeytype.com/profile/sujoy" },
+  { label: "Discord", href: "https://discord.com/users/536253628646948865" },
 ];
+export const SAME_AS = PROFILES.map((p) => p.href);
 export const PORTRAIT = {
   src: "/images/profile/portrait.webp",
   width: 700,

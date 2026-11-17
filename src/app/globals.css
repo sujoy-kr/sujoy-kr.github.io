@@ -594,6 +594,96 @@ h3 {
 .contact-details a:hover {
   color: var(--accent);
 }
+.badge {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.badge-logo {
+  background: #fff;
+  overflow: hidden;
+}
+.badge-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.badge svg {
+  width: 15px;
+  height: 15px;
+}
+.badge-initials {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.chips,
+.profile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chips li,
+.profile-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 12px 3px 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+.profile-list a:hover {
+  border-color: var(--accent);
+}
+.edu-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.edu-name h3 {
+  margin: 0;
+}
+.edu-name .badge {
+  width: 40px;
+  height: 40px;
+}
+.timeline {
+  margin-top: clamp(56px, 9vw, 112px);
+}
+.timeline > h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.timeline-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  gap: 32px;
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+}
+.timeline-row h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+.timeline-row h3 span,
+.timeline-row p {
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+.timeline-row h3 span {
+  font-weight: 400;
+}
 .page > h1 {
   margin-bottom: 24px;
 }
@@ -970,6 +1060,10 @@ h3 {
   .contact-details {
     grid-template-columns: minmax(0, 1fr);
     gap: 28px;
+  }
+  .timeline-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
   }
   .lightbox-bottom button span {
     display: none;

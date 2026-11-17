@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Arrow } from "@/components/Icons";
+import { BrandBadge } from "@/components/BrandBadge";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
-import { NAME, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
+import { NAME, PROFILES, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contact",
@@ -57,15 +58,16 @@ export default function Contact() {
           <h2>
             <Tx en="Elsewhere" bn="অন্যত্র" />
           </h2>
-          <p>
-            <a href="https://www.linkedin.com/in/sujoykarmakar" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            {" · "}
-            <a href="https://github.com/sujoy-kr" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-          </p>
+          <ul className="profile-list">
+            {PROFILES.map((profile) => (
+              <li key={profile.href}>
+                <a href={profile.href} target="_blank" rel="noopener noreferrer">
+                  <BrandBadge name={profile.label} />
+                  {profile.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
         <div>
           <h2>

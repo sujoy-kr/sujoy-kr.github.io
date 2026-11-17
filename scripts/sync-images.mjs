@@ -90,6 +90,9 @@ export function syncImages() {
     source: "sujoykr/assets/img/about/sujoy-karmakar.png",
   });
   provenance.push(
+    { file: "images/education/ewu.webp", source: "ewubd.edu · logo.png, emblem crop" },
+    { file: "images/education/gsc.webp", source: "en.wikipedia.org · File:GOVT. SCIENCE COLLEGE DHAKA LOGO.png" },
+    { file: "images/education/cit.webp", source: "creativeitinstitute.com · favicon.png" },
     {
       file: "images/hero/gsg-home.webp",
       source: "portfolio-nextjs/public/images/gsg/image1.webp · homepage crop",

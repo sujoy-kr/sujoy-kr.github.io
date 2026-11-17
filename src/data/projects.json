@@ -3,7 +3,7 @@
     "slug": "safoyana",
     "repo": "Safoyana-Digital-Print",
     "title": "Safoyana Digital Print",
-    "group": "Web apps",
+    "group": "Client work",
     "pitch": "From a print specification to an organised order queue.",
     "technologies": [
       "Next.js",
@@ -371,7 +371,7 @@
     "slug": "medikart",
     "repo": "medikartFrontend",
     "title": "Medikart",
-    "group": "Web apps",
+    "group": "Client work",
     "pitch": "A pharmacy commerce platform with a SvelteKit storefront and Express API.",
     "technologies": [
       "Svelte",
@@ -418,7 +418,7 @@
     "slug": "lab",
     "repo": "LAB-Main-Svelte",
     "title": "LAB — Website & Admin Panel",
-    "group": "Web apps",
+    "group": "Client work",
     "pitch": "A club’s public website and editorial administration workspace, presented as one project.",
     "technologies": [
       "Svelte",
@@ -533,7 +533,7 @@
     "slug": "dermacare",
     "repo": "cosmeticsEcom-frontend",
     "title": "DermaCare",
-    "group": "Web apps",
+    "group": "Client work",
     "pitch": "A cosmetics commerce platform combining storefront, store administration and API.",
     "technologies": [
       "Svelte",
