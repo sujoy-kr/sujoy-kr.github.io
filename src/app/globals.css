@@ -190,14 +190,23 @@ h3 {
   gap: 24px;
 }
 .wordmark {
-  font-family: var(--serif);
-  font-size: 1.2rem;
-  letter-spacing: -0.01em;
+  font-family: var(--font-serif), "Iowan Old Style", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   white-space: nowrap;
 }
-:root[lang="bn"] .wordmark {
-  font-family: var(--font-sans), var(--sans);
-  font-size: 1.1rem;
+.wordmark span {
+  color: var(--accent);
+}
+.wordmark::after {
+  content: "";
+  display: inline-block;
+  width: 0.28em;
+  height: 0.28em;
+  margin-left: 0.08em;
+  border-radius: 50%;
+  background: var(--accent);
 }
 .header nav {
   display: flex;
@@ -1182,7 +1191,7 @@ h3 {
     grid-template-columns: minmax(0, 1fr);
   }
   .wordmark {
-    font-size: 1.1rem;
+    font-size: 1.55rem;
   }
   .lang-button span {
     display: none;
@@ -1200,7 +1209,7 @@ h3 {
 }
 @media (max-width: 380px) {
   .wordmark {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -53,7 +53,7 @@ export function Header() {
     >
       <div className="header-inner">
         <Link href="/" className="wordmark" aria-label="Sujoy Karmakar">
-          Sujoy Karmakar
+          sujoy<span>kr</span>
         </Link>
         <div className="header-actions">
           <LanguageSwitch />

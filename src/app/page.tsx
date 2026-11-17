@@ -7,6 +7,9 @@ import { education, experience, stack } from "@/data/profile";
 
 const bySlug = (slugs: string[]) => slugs.flatMap((slug) => projects.filter((p) => p.slug === slug));
 const spotlight = bySlug(["gsg", "medikart"]);
+const homeDesigns = ["web-dashboard-ui-design", "agency-website-landing-page-design", "interior-design-website-landing-page"].flatMap(
+  (slug) => designs.filter((d) => d.slug === slug),
+);
 const homeProjects = bySlug(["safoyana", "talentrack-ai-powered-recruitment-platform", "nextset"]);
 const marqueeTech = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "Svelte", "Android", "Python", "Figma"];
 import { Arrow } from "@/components/Icons";
@@ -255,7 +258,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid">
-          {designs.slice(0, 3).map((d) => (
+          {homeDesigns.map((d) => (
             <DesignCard key={d.slug} design={d} />
           ))}
         </div>
