@@ -414,6 +414,14 @@ h3 {
 .card-fill {
   isolation: isolate;
 }
+.chip-fill {
+  position: relative;
+}
+/* Pills keep their resting border; the lit border comes from the ::after layer. */
+.chips .chip-fill,
+.profile-list a.chip-fill:hover {
+  border-color: var(--line);
+}
 .card-fill:hover,
 .card-fill:focus-within {
   border-color: var(--line);

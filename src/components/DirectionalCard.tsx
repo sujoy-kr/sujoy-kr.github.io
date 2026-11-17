@@ -1,5 +1,5 @@
 "use client";
-import type { PointerEvent, ReactNode } from "react";
+import { createElement, type AnchorHTMLAttributes, type PointerEvent, type ReactNode } from "react";
 
 type Side = "left" | "right" | "top" | "bottom";
 
@@ -86,10 +86,14 @@ const pendingLeave = new Map<HTMLElement, () => void>();
 export function DirectionalCard({
   children,
   className = "",
+  as = "article",
+  ...rest
 }: {
   children: ReactNode;
   className?: string;
-}) {
+  /** `article` for cards; `li` / `a` for pill-shaped chips and link buttons. */
+  as?: "article" | "li" | "a";
+} & Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "target" | "rel">) {
   const enter = (e: PointerEvent<HTMLElement>) => {
     if (e.pointerType === "touch") return;
     const el = e.currentTarget;
@@ -135,13 +139,15 @@ export function DirectionalCard({
       }, HOLD_MS);
     });
   };
-  return (
-    <article
-      className={`card card-fill ${className}`.trim()}
-      onPointerEnter={enter}
-      onPointerLeave={leave}
-    >
-      {children}
-    </article>
+  const base = as === "article" ? "card card-fill" : "card-fill chip-fill";
+  return createElement(
+    as,
+    {
+      ...rest,
+      className: `${base} ${className}`.trim(),
+      onPointerEnter: enter,
+      onPointerLeave: leave,
+    },
+    children,
   );
 }

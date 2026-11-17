@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PortraitBackdrop } from "@/components/PortraitBackdrop";
 import { Arrow } from "@/components/Icons";
 import { BrandBadge } from "@/components/BrandBadge";
+import { DirectionalCard } from "@/components/DirectionalCard";
 import { Tx } from "@/components/Tx";
 import { education, experience, stack } from "@/data/profile";
 import { JsonLd } from "@/components/JsonLd";
@@ -76,10 +77,10 @@ export default function About() {
             </h2>
             <ul className="chips">
               {group.items.map((item) => (
-                <li key={item}>
+                <DirectionalCard as="li" key={item}>
                   <BrandBadge name={item} />
                   {item}
-                </li>
+                </DirectionalCard>
               ))}
             </ul>
           </div>

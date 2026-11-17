@@ -2,6 +2,7 @@ import { GradientBackdrop } from "@/components/GradientBackdrop";
 import type { Metadata } from "next";
 import { Arrow } from "@/components/Icons";
 import { BrandBadge } from "@/components/BrandBadge";
+import { DirectionalCard } from "@/components/DirectionalCard";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
 import { NAME, PROFILES, SITE_URL, abs, breadcrumbs, pageMetadata } from "@/lib/seo";
@@ -63,10 +64,15 @@ export default function Contact() {
           <ul className="profile-list">
             {PROFILES.map((profile) => (
               <li key={profile.href}>
-                <a href={profile.href} target="_blank" rel="noopener noreferrer">
+                <DirectionalCard
+                  as="a"
+                  href={profile.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <BrandBadge name={profile.label} />
                   {profile.label}
-                </a>
+                </DirectionalCard>
               </li>
             ))}
           </ul>

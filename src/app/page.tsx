@@ -197,10 +197,10 @@ export default function Home() {
               </h3>
               <ul className="chips">
                 {group.items.slice(0, 6).map((item) => (
-                  <li key={item}>
+                  <DirectionalCard as="li" key={item}>
                     <BrandBadge name={item} />
                     {item}
-                  </li>
+                  </DirectionalCard>
                 ))}
               </ul>
             </div>
