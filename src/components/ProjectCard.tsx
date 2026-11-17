@@ -25,41 +25,7 @@ export function ProjectCard({ project: p }: { project: Project }) {
             sizes="(min-width: 960px) 360px, (min-width: 600px) 50vw, 100vw"
           />
         </Link>
-        {(p.repositories.length > 0 || p.liveUrl) && (
-          <div className="card-repos">
-            {p.repositories.map((r) => (
-              <a
-                key={r.url}
-                href={r.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-repo"
-                aria-label={`${p.title}: ${r.label} (GitHub)`}
-              >
-                <Github size={18} />
-                <span>
-                  {p.repositories.length > 1 ? (
-                    <Tx en={r.label} bn={repoLabels[r.label] ?? r.label} />
-                  ) : (
-                    "GitHub"
-                  )}
-                </span>
-              </a>
-            ))}
-            {p.liveUrl && (
-              <a
-                href={p.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-repo"
-                aria-label={`${p.title}: website`}
-              >
-                <Tx en="Website" bn="ওয়েবসাইট" />
-                <Arrow diagonal />
-              </a>
-            )}
-          </div>
-        )}
+        <CardLinks project={p} />
       </div>
       <div className="card-meta">
         <Tx en={p.group} bn={groupLabels[p.group] ?? p.group} />
@@ -71,5 +37,45 @@ export function ProjectCard({ project: p }: { project: Project }) {
         <Tx en={p.pitch} bn={p.bn.pitch} />
       </p>
     </article>
+  );
+}
+
+/** Hover overlay with the repository and website links shown on a project thumbnail. */
+export function CardLinks({ project: p }: { project: Project }) {
+  if (p.repositories.length === 0 && !p.liveUrl) return null;
+  return (
+    <div className="card-repos">
+      {p.repositories.map((r) => (
+        <a
+          key={r.url}
+          href={r.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-repo"
+          aria-label={`${p.title}: ${r.label} (GitHub)`}
+        >
+          <Github size={18} />
+          <span>
+            {p.repositories.length > 1 ? (
+              <Tx en={r.label} bn={repoLabels[r.label] ?? r.label} />
+            ) : (
+              "GitHub"
+            )}
+          </span>
+        </a>
+      ))}
+      {p.liveUrl && (
+        <a
+          href={p.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-repo"
+          aria-label={`${p.title}: website`}
+        >
+          <Tx en="Website" bn="ওয়েবসাইট" />
+          <Arrow diagonal />
+        </a>
+      )}
+    </div>
   );
 }

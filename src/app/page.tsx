@@ -1,16 +1,21 @@
+import Image from "next/image";
 import Link from "next/link";
-import { featured, projects } from "@/data/projects";
+import { projects } from "@/data/projects";
+import { designs } from "@/data/designs";
+import { education, experience, stack } from "@/data/profile";
 
-const EXTRA_HOME_SLUGS = ["talentrack-ai-powered-recruitment-platform", "medikart", "lab"];
-const homeProjects = [
-  ...featured.slice(0, 3),
-  ...EXTRA_HOME_SLUGS.flatMap((slug) => projects.filter((p) => p.slug === slug)),
-];
+const bySlug = (slugs: string[]) => slugs.flatMap((slug) => projects.filter((p) => p.slug === slug));
+const spotlight = bySlug(["gsg", "medikart"]);
+const homeProjects = bySlug(["safoyana", "talentrack-ai-powered-recruitment-platform", "nextset"]);
+const marqueeTech = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "Svelte", "Android", "Python", "Figma"];
 import { Arrow } from "@/components/Icons";
-import { ProjectCard } from "@/components/ProjectCard";
+import { BrandBadge } from "@/components/BrandBadge";
+import { DesignCard } from "@/components/DesignCard";
+import { CardLinks, ProjectCard } from "@/components/ProjectCard";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
-import { NAME, SITE_URL, abs } from "@/lib/seo";
+import { groupLabels } from "@/data/labels";
+import { NAME, PORTRAIT, PROFILES, SITE_URL, abs } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -55,6 +60,7 @@ export default function Home() {
         }}
       />
       <section className="hero wrap">
+        <div className="hero-grid">
         <div className="hero-copy">
           <p className="availability">
             <i />
@@ -77,14 +83,38 @@ export default function Home() {
               <Tx en="Explore my work" bn="আমার কাজ দেখুন" />
               <Arrow />
             </Link>
+            <a className="button" href="mailto:thesujoykr@gmail.com">
+              <Tx en="Email me" bn="ইমেইল করুন" />
+            </a>
             <Link className="text-link" href="/about/">
               <Tx en="About me" bn="আমার কথা" />
             </Link>
           </div>
         </div>
+        <Image
+          className="portrait hero-portrait"
+          src={PORTRAIT.src}
+          width={PORTRAIT.width}
+          height={PORTRAIT.height}
+          alt={NAME}
+          priority
+          sizes="(min-width: 960px) 360px, 70vw"
+        />
+        </div>
       </section>
 
-      <section className="section wrap">
+      <section className="wrap proof" aria-label="Highlights">
+        <ul className="chips tech-strip">
+          {marqueeTech.map((t) => (
+            <li key={t}>
+              <BrandBadge name={t} />
+              {t}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section wrap reveal">
         <div className="section-head">
           <h2>
             <Tx en="Selected work" bn="নির্বাচিত কাজ" />
@@ -93,6 +123,39 @@ export default function Home() {
             <Tx en={`All ${projects.length} projects`} bn={`সব ${projects.length}টি প্রকল্প`} />
             <Arrow />
           </Link>
+        </div>
+        <div className="spotlight">
+          {spotlight.map((p) => (
+            <article className="card spotlight-card" key={p.slug}>
+              <div className="card-media">
+                <Link href={`/projects/${p.slug}/`} className="card-image" aria-label={p.title}>
+                  <Image
+                    className={p.thumbnailOverlayBaked ? undefined : "thumbnail-overlay"}
+                    src={p.thumbnail}
+                    alt={`${p.title} — ${p.imageKind}`}
+                    width={p.thumbnailWidth}
+                    height={p.thumbnailHeight}
+                    sizes="(min-width: 960px) 540px, 100vw"
+                  />
+                </Link>
+                <CardLinks project={p} />
+              </div>
+              <div className="card-meta">
+                <Tx en={p.group} bn={groupLabels[p.group] ?? p.group} />
+              </div>
+              <h3>
+                <Link href={`/projects/${p.slug}/`}>{p.title}</Link>
+              </h3>
+              <p>
+                <Tx en={p.pitch} bn={p.bn.pitch} />
+              </p>
+              <ul className="tags">
+                {p.displayTechnologies.slice(0, 5).map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
         <div className="grid">
           {homeProjects.map((p) => (
@@ -117,6 +180,112 @@ export default function Home() {
                 <Tx en={s.en[1]} bn={s.bn[1]} />
               </p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section wrap reveal">
+        <div className="section-head">
+          <h2>
+            <Tx en="Tools I work with" bn="যেসব টুল নিয়ে কাজ করি" />
+          </h2>
+          <Link className="text-link" href="/about/">
+            <Tx en="Full stack" bn="পুরো তালিকা" />
+            <Arrow />
+          </Link>
+        </div>
+        <div className="stack home-stack">
+          {stack.map((group) => (
+            <div key={group.title.en}>
+              <h3>
+                <Tx en={group.title.en} bn={group.title.bn} />
+              </h3>
+              <ul className="chips">
+                {group.items.slice(0, 6).map((item) => (
+                  <li key={item}>
+                    <BrandBadge name={item} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="section wrap reveal">
+        <div className="home-about">
+          <div>
+            <h2>
+              <Tx
+                en={<>A developer who cares about <em>the whole picture.</em></>}
+                bn={<>যে ডেভেলপার <em>পুরো ছবিটা</em> নিয়ে ভাবে।</>}
+              />
+            </h2>
+            <p>
+              <Tx
+                en="From the interface to the database and the server it runs on, I enjoy connecting the pieces so they work well together. I’m open to freelance projects and engineering roles."
+                bn="ইন্টারফেস থেকে ডেটাবেস আর যে সার্ভারে সেটি চলে, সবকিছু একসঙ্গে ঠিকভাবে কাজ করানোতেই আমার আনন্দ। ফ্রিল্যান্স প্রকল্প ও ইঞ্জিনিয়ারিং ভূমিকায় আমি আগ্রহী।"
+              />
+            </p>
+            <p className="home-edu">
+              {education[0].short} · <Tx en={education[0].detail.en} bn={education[0].detail.bn} />
+            </p>
+            <Link className="text-link" href="/about/">
+              <Tx en="More about me" bn="আমার সম্পর্কে আরও" />
+              <Arrow />
+            </Link>
+          </div>
+          <div className="timeline home-timeline">
+            {experience.slice(0, 3).map((e) => (
+              <div className="timeline-row" key={e.org}>
+                <p className="timeline-when">
+                  <Tx en={e.when.en} bn={e.when.bn} />
+                </p>
+                <div>
+                  <h3>
+                    {e.org} <span>· <Tx en={e.role.en} bn={e.role.bn} /></span>
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section wrap reveal">
+        <div className="section-head">
+          <h2>
+            <Tx en="Design work" bn="ডিজাইনের কাজ" />
+          </h2>
+          <Link className="text-link" href="/design/">
+            <Tx en={`All ${designs.length} designs`} bn={`সব ${designs.length}টি ডিজাইন`} />
+            <Arrow />
+          </Link>
+        </div>
+        <div className="grid">
+          {designs.slice(0, 3).map((d) => (
+            <DesignCard key={d.slug} design={d} />
+          ))}
+        </div>
+      </section>
+
+      <section className="wrap cta-band reveal">
+        <h2>
+          <Tx
+            en={<>Have a project in mind? <em>Let’s talk.</em></>}
+            bn={<>মাথায় কোনো প্রকল্প আছে? <em>কথা বলি।</em></>}
+          />
+        </h2>
+        <div className="actions">
+          <a className="button primary" href="mailto:thesujoykr@gmail.com">
+            <Tx en="Send an email" bn="ইমেইল পাঠান" />
+            <Arrow />
+          </a>
+          {PROFILES.filter((pr) => ["GitHub", "LinkedIn"].includes(pr.label)).map((pr) => (
+            <a className="button" key={pr.href} href={pr.href} target="_blank" rel="noopener noreferrer">
+              {pr.label}
+            </a>
           ))}
         </div>
       </section>
