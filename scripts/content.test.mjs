@@ -168,10 +168,21 @@ test("new image files are discovered in numeric order without editing project da
     rmSync(folder, { recursive: true, force: true });
   }
 });
-test("the audited five projects still lead the collection", () => {
+test("the featured projects keep their order in the collection", () => {
   assert.deepEqual(
     projects.filter((p) => p.featured).map((p) => p.slug),
-    ["gsg", "nextset", "safoyana", "reclaim", "notepad-ai"],
+    [
+      "gsg",
+      "medikart",
+      "nextset",
+      "safoyana",
+      "talentrack-ai-powered-recruitment-platform",
+      "reclaim",
+      "notepad-ai",
+      "car-shop-management-system",
+      "microservice-ecommerce",
+      "p2p-file-stream",
+    ],
   );
 });
 

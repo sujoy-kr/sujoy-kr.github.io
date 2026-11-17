@@ -64,7 +64,6 @@ export function pageMetadata(o: {
   };
 }
 
-export const personRef = { "@id": `${SITE_URL}/#person` };
 
 export const person = {
   "@type": "Person",
