@@ -411,6 +411,54 @@ h3 {
   border-color: var(--accent);
   box-shadow: var(--shadow);
 }
+.card-fill {
+  isolation: isolate;
+}
+.card-fill:hover,
+.card-fill:focus-within {
+  border-color: var(--line);
+  box-shadow: none;
+}
+.card-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent) 20%, transparent),
+    color-mix(in srgb, var(--accent) 9%, transparent)
+  );
+  clip-path: var(--fill-hidden, inset(0 100% 0 0));
+  pointer-events: none;
+}
+/* Border that lights up with the same clip, speed and direction as the fill. */
+.card-fill::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border: 1px solid color-mix(in srgb, var(--accent) 58%, transparent);
+  border-radius: inherit;
+  clip-path: var(--fill-hidden, inset(0 100% 0 0));
+  pointer-events: none;
+}
+.card-fill[data-fill="on"]::before,
+.card-fill[data-fill="on"]::after {
+  clip-path: inset(0);
+  transition: clip-path var(--fill-dur, 0.22s) cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card-fill[data-fill="off"]::before,
+.card-fill[data-fill="off"]::after {
+  transition: clip-path var(--fill-dur, 0.22s) cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-fill[data-fill]::before,
+  .card-fill[data-fill]::after {
+    transition: none;
+  }
+}
 .card > :last-child {
   margin-bottom: 0;
 }

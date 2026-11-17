@@ -15,6 +15,7 @@ const marqueeTech = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", 
 import { Arrow } from "@/components/Icons";
 import { BrandBadge } from "@/components/BrandBadge";
 import { DesignCard } from "@/components/DesignCard";
+import { DirectionalCard } from "@/components/DirectionalCard";
 import { CardLinks, ProjectCard } from "@/components/ProjectCard";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
@@ -120,7 +121,7 @@ export default function Home() {
         </div>
         <div className="spotlight">
           {spotlight.map((p) => (
-            <article className="card spotlight-card" key={p.slug}>
+            <DirectionalCard className="spotlight-card" key={p.slug}>
               <div className="card-media">
                 <Link href={`/projects/${p.slug}/`} className="card-image" aria-label={p.title}>
                   <Image
@@ -148,7 +149,7 @@ export default function Home() {
                   <li key={t}>{t}</li>
                 ))}
               </ul>
-            </article>
+            </DirectionalCard>
           ))}
         </div>
         <div className="grid">

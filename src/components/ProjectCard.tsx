@@ -4,10 +4,11 @@ import type { Project } from "@/data/projects";
 import { groupLabels, repoLabels } from "@/data/labels";
 import { Arrow, Github } from "./Icons";
 import { Tx } from "./Tx";
+import { DirectionalCard } from "./DirectionalCard";
 
 export function ProjectCard({ project: p }: { project: Project }) {
   return (
-    <article className="card">
+    <DirectionalCard>
       <div className="card-media">
         <Link
           href={`/projects/${p.slug}/`}
@@ -36,7 +37,7 @@ export function ProjectCard({ project: p }: { project: Project }) {
       <p>
         <Tx en={p.pitch} bn={p.bn.pitch} />
       </p>
-    </article>
+    </DirectionalCard>
   );
 }
 

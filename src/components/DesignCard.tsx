@@ -3,10 +3,11 @@ import Image from "next/image";
 import { designBn, type Design } from "@/data/designs";
 import { categoryLabels } from "@/data/labels";
 import { Tx } from "./Tx";
+import { DirectionalCard } from "./DirectionalCard";
 
 export function DesignCard({ design: d }: { design: Design }) {
   return (
-    <article className="card">
+    <DirectionalCard>
       <Link href={`/design/${d.slug}/`} className="card-image" aria-label={d.title}>
         <Image
           src={d.thumbnail.src}
@@ -25,6 +26,6 @@ export function DesignCard({ design: d }: { design: Design }) {
       <p>
         <Tx en={d.description} bn={designBn[d.slug] ?? d.description} />
       </p>
-    </article>
+    </DirectionalCard>
   );
 }
