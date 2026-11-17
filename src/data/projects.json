@@ -57,7 +57,7 @@
       "Staff administration and point-of-sale interfaces",
       "Inventory, store, order and prescription API routes"
     ],
-    "featured": false,
+    "featured": true,
     "client": false,
     "github": null,
     "imageKind": "Repository artwork",
@@ -174,7 +174,7 @@
       "PDF ingestion and document retrieval",
       "Separate web, API and model services"
     ],
-    "featured": false,
+    "featured": true,
     "client": false,
     "github": "https://github.com/sujoy-kr/TalenTrack---AI-Powered-Recruitment-Platform",
     "imageKind": "Reference-led artistic screenshot composition",
@@ -440,7 +440,7 @@
       "Vehicle-specific pricing tools and customer purchase logs",
       "31 passing JUnit tests across domain logic and purchase workflows"
     ],
-    "featured": false,
+    "featured": true,
     "client": false,
     "github": "https://github.com/sujoy-kr/Car-shop-management-system-GUI",
     "imageKind": "Local Swing application captures · fictional demo data",
@@ -484,7 +484,7 @@
       "Message-broker integration",
       "Independent persistence boundaries"
     ],
-    "featured": false,
+    "featured": true,
     "client": false,
     "github": "https://github.com/sujoy-kr/microservice-ecommerce",
     "imageKind": "Repository artwork",
@@ -526,7 +526,7 @@
       "Socket-based connection handshakes",
       "Streaming file transfer"
     ],
-    "featured": false,
+    "featured": true,
     "client": false,
     "github": "https://github.com/sujoy-kr/p2p-file-stream",
     "imageKind": "Reference-led artistic screenshot composition",
