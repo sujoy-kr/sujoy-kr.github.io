@@ -65,7 +65,10 @@ export default async function ProjectPage({
             creator: { "@id": `${SITE_URL}/#person` },
             keywords: p.displayTechnologies.join(", "),
             genre: p.group,
-            inLanguage: "en",
+            inLanguage: ["en", "bn"],
+            isPartOf: { "@id": `${SITE_URL}/#website` },
+            mainEntityOfPage: abs(`/projects/${p.slug}/`),
+            ...(p.github ? { codeRepository: p.github } : {}),
             sameAs: [p.github, p.liveUrl].filter(Boolean),
           },
           breadcrumbs([

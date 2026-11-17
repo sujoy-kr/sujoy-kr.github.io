@@ -56,6 +56,10 @@ export default async function DesignPage({
             author: { "@id": `${SITE_URL}/#person` },
             copyrightHolder: { "@id": `${SITE_URL}/#person` },
             creditText: NAME,
+            isPartOf: { "@id": `${SITE_URL}/#website` },
+            mainEntityOfPage: abs(`/design/${d.slug}/`),
+            representativeOfPage: true,
+            inLanguage: ["en", "bn"],
             genre: d.category,
           },
           breadcrumbs([

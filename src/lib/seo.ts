@@ -51,6 +51,7 @@ export function pageMetadata(o: {
       url: o.path,
       siteName: NAME,
       locale: "en_US",
+      alternateLocale: ["bn_BD"],
       type: o.type ?? "website",
       images,
     },
@@ -91,6 +92,10 @@ export const person = {
     "PostgreSQL",
     "UI design",
   ],
+  nationality: { "@type": "Country", name: "Bangladesh" },
+  knowsLanguage: ["en", "bn"],
+  worksFor: { "@type": "Organization", name: "MediKart BD" },
+  alumniOf: { "@type": "CollegeOrUniversity", name: "East West University" },
   sameAs: SAME_AS,
 };
 

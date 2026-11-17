@@ -46,6 +46,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: NAME, url: SITE_URL }],
   creator: NAME,
+  category: "technology",
   publisher: NAME,
   alternates: { canonical: "/" },
   openGraph: {
@@ -54,6 +55,7 @@ export const metadata: Metadata = {
     url: "/",
     siteName: NAME,
     locale: "en_US",
+    alternateLocale: ["bn_BD"],
     type: "website",
     images: [{ url: PORTRAIT.src, width: PORTRAIT.width, height: PORTRAIT.height, alt: NAME }],
   },
