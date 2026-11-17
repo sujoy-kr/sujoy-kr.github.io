@@ -1,3 +1,4 @@
+import { GradientBackdrop } from "@/components/GradientBackdrop";
 import type { Metadata } from "next";
 import { Arrow } from "@/components/Icons";
 import { BrandBadge } from "@/components/BrandBadge";
@@ -14,7 +15,8 @@ export const metadata: Metadata = pageMetadata({
 
 export default function Contact() {
   return (
-    <main id="main" className="wrap page">
+    <main id="main" className="wrap page detail">
+      <GradientBackdrop />
       <JsonLd
         data={[
           {

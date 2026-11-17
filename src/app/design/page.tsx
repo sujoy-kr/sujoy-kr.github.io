@@ -1,3 +1,4 @@
+import { GradientBackdrop } from "@/components/GradientBackdrop";
 import type { Metadata } from "next";
 import { designs } from "@/data/designs";
 import { DesignCard } from "@/components/DesignCard";
@@ -40,7 +41,8 @@ const ordered = [...designs].sort(
 
 export default function Design() {
   return (
-    <main id="main" className="wrap page">
+    <main id="main" className="wrap page detail">
+      <GradientBackdrop />
       <JsonLd
         data={[
           {
