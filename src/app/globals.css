@@ -9,7 +9,7 @@
   --accent: #3d6a5c;
   --accent-ink: #f6f4ef;
   --shadow: 0 1px 2px #1f24210d, 0 12px 32px -12px #1f24211f;
-  --header-bg: #f6f4efcc;
+  --header-bg: #f6f4efb8;
   --sans: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: var(--font-serif), "Iowan Old Style", Georgia, serif;
   --gutter: clamp(20px, 5vw, 48px);
@@ -26,7 +26,7 @@
   --accent: #8dbaa9;
   --accent-ink: #131615;
   --shadow: 0 1px 2px #0006, 0 14px 36px -12px #0009;
-  --header-bg: #131615cc;
+  --header-bg: #131615b8;
 }
 :root[lang="bn"] {
   --sans: var(--font-bangla), var(--font-sans), "Noto Sans Bengali", "Nirmala UI", sans-serif;
@@ -165,10 +165,16 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--header-bg);
-  backdrop-filter: saturate(1.4) blur(14px);
-  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-bottom: 1px solid var(--line);
+}
+/* Blur lives on a pseudo-element so the mobile menu can blur the page itself (nested backdrop-filters don't). */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--header-bg);
+  backdrop-filter: saturate(1.8) blur(24px);
 }
 .header-inner {
   width: min(1120px, 100% - 2 * var(--gutter));
@@ -860,6 +866,12 @@ h3 {
     color-mix(in srgb, var(--bg) 25%, transparent) 100%
   );
 }
+.detail-backdrop-design .thumbnail-overlay {
+  filter: brightness(0.55);
+}
+.detail-backdrop-design {
+  opacity: 0.8;
+}
 .detail-head-compact {
   min-height: 0;
 }
@@ -1323,12 +1335,12 @@ h3 {
     right: 0;
     flex-direction: column;
     gap: 0;
-    padding: 8px var(--gutter) 20px;
+    padding: 8px var(--gutter) 0;
     max-height: calc(100dvh - 68px);
     overflow-y: auto;
     overscroll-behavior: contain;
-    background: var(--bg);
-    border-bottom: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg) 84%, transparent);
+    backdrop-filter: saturate(1.8) blur(24px);
   }
   .header[data-open="true"] nav {
     display: flex;
@@ -1337,6 +1349,9 @@ h3 {
     padding: 14px 0;
     font-size: 1.05rem;
     border-bottom: 1px solid var(--line);
+  }
+  .header nav a:last-child {
+    border-bottom: 0;
   }
   .header nav a[aria-current="page"] {
     border-color: var(--line);

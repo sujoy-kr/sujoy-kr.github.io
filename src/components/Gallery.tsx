@@ -24,6 +24,7 @@ export function Gallery({
   const stage = useRef<HTMLDivElement>(null);
   const previousZoom = useRef(1);
   const dragged = useRef(false);
+  const swipe = useRef<{ x: number; y: number } | null>(null);
   const drag = useRef<{
     x: number;
     y: number;
@@ -248,6 +249,27 @@ export function Gallery({
                 return;
             }
             dialog.current?.close();
+          }}
+          onTouchStart={(event) => {
+            swipe.current =
+              event.touches.length === 1 && zoom <= 1
+                ? { x: event.touches[0].clientX, y: event.touches[0].clientY }
+                : null;
+          }}
+          onTouchEnd={(event) => {
+            const start = swipe.current;
+            swipe.current = null;
+            if (!start || p.images.length < 2) return;
+            const t = event.changedTouches[0];
+            const dx = t.clientX - start.x;
+            const dy = t.clientY - start.y;
+            if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+              dragged.current = true;
+              move(dx < 0 ? 1 : -1);
+            }
+          }}
+          onTouchCancel={() => {
+            swipe.current = null;
           }}
           onPointerDown={(event) => {
             dragged.current = false;

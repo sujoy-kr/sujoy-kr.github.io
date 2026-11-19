@@ -69,10 +69,21 @@ export default async function DesignPage({
           ]),
         ]}
       />
+      <div className="detail-backdrop detail-backdrop-design" aria-hidden="true">
+        <Image
+          className="detail-backdrop-img thumbnail-overlay"
+          src={d.thumbnail.src}
+          alt=""
+          width={d.thumbnail.width}
+          height={d.thumbnail.height}
+          priority
+          sizes="100vw"
+        />
+      </div>
       <Link className="back-link" href="/design/">
         ← <Tx en="All designs" bn="সব ডিজাইন" />
       </Link>
-      <header className="detail-head">
+      <header className="detail-head detail-head-compact">
         <p className="eyebrow">
           <Tx en={d.category} bn={categoryLabels[d.category] ?? d.category} />
         </p>
