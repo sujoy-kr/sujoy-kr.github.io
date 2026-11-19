@@ -24,7 +24,7 @@ import { NAME, PROFILES, SITE_URL, abs } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Sujoy Karmakar — Full-stack Developer & Designer from Bangladesh" },
+  title: { absolute: "Sujoy Karmakar — Full-stack Developer from Bangladesh" },
   description:
     "Sujoy Karmakar is a full-stack developer from Bangladesh. Explore his websites, web applications, Android apps, backend systems and UI designs.",
   alternates: { canonical: "/" },

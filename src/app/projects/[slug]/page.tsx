@@ -37,7 +37,7 @@ export async function generateMetadata({
   if (!project) return { title: "Project not found" };
   return pageMetadata({
     title: project.title,
-    description: `${project.title}, a project by ${NAME}. ${project.pitch} Built with ${project.displayTechnologies.join(", ") || "HTML and CSS"}.`,
+    description: `${project.title}, a project by ${NAME}. ${project.pitch} ${project.displayTechnologies.length ? ` Built with ${project.displayTechnologies.join(", ")}.` : ""}`,
     path: `/projects/${project.slug}/`,
     type: "article",
     image: {

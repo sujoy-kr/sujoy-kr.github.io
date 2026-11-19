@@ -21,6 +21,7 @@ const bangla = Hind_Siliguri({
   weight: ["400", "500", "600"],
   variable: "--font-bangla",
   display: "swap",
+  preload: false,
 });
 
 const DESCRIPTION =
@@ -29,7 +30,7 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sujoy Karmakar — Full-stack Developer & Designer from Bangladesh",
+    default: "Sujoy Karmakar — Full-stack Developer from Bangladesh",
     template: "%s — Sujoy Karmakar",
   },
   description: DESCRIPTION,
@@ -108,6 +109,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <a className="skip-link" href="#main">
+          <Tx en="Skip to content" bn="মূল অংশে যান" />
+        </a>
         <div className="scroll-progress" aria-hidden="true" />
         <Header />
         <EasterEggs />

@@ -317,7 +317,7 @@ export function Gallery({
             className="lightbox-canvas"
             style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%` }}
           >
-            <img src={current.src} alt={current.caption} draggable={false} />
+            {open && <img src={current.src} alt={current.caption} draggable={false} />}
           </div>
         </div>
         <div className="lightbox-bottom">

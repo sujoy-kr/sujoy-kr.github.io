@@ -27,6 +27,16 @@ export const abs = (path: string) => `${SITE_URL}${path}`;
 
 type Img = { src: string; width: number; height: number; alt?: string };
 
+/** Trims to a SERP-friendly length at a sentence or word boundary. */
+export function trimDescription(text: string, max = 158): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max);
+  const sentence = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentence >= 80) return cut.slice(0, sentence + 1);
+  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[\s,;:.\-—]+$/, "")}…`;
+}
+
 /** Canonical, Open Graph and Twitter metadata for one page. */
 export function pageMetadata(o: {
   title: string;
@@ -37,17 +47,18 @@ export function pageMetadata(o: {
   keywords?: string[];
 }): Metadata {
   const image: Img = o.image ?? PORTRAIT;
+  const description = trimDescription(o.description);
   const images = [
     { url: image.src, width: image.width, height: image.height, alt: image.alt ?? `${o.title} — ${NAME}` },
   ];
   return {
     title: o.title,
-    description: o.description,
+    description,
     keywords: o.keywords,
     alternates: { canonical: o.path },
     openGraph: {
       title: `${o.title} — ${NAME}`,
-      description: o.description,
+      description,
       url: o.path,
       siteName: NAME,
       locale: "en_US",
@@ -58,7 +69,7 @@ export function pageMetadata(o: {
     twitter: {
       card: "summary_large_image",
       title: `${o.title} — ${NAME}`,
-      description: o.description,
+      description,
       images: images.map((i) => i.url),
     },
   };

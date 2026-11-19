@@ -52,7 +52,7 @@ export function Header() {
       }}
     >
       <div className="header-inner">
-        <Link href="/" className="wordmark" aria-label="Sujoy Karmakar">
+        <Link href="/" className="wordmark" aria-label="sujoykr — Sujoy Karmakar, home">
           sujoy<span>kr</span>
         </Link>
         <div className="header-actions">
