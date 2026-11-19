@@ -4,7 +4,7 @@
     "repo": "GSG-PHP",
     "title": "G.S. Garments Ltd.",
     "group": "Client work",
-    "pitch": "A multilingual garment-manufacturer website with product, fabric and content administration.",
+    "pitch": "Multilingual (12 languages) PHP 8 CMS-style site: custom router/controllers/repositories, PDO + MariaDB, CSRF-protected admin and first-party analytics.",
     "technologies": [
       "PHP",
       "PDO",
@@ -41,7 +41,7 @@
     "repo": "medikartFrontend",
     "title": "MediKart BD",
     "group": "Client work",
-    "pitch": "A pharmacy commerce platform with a SvelteKit storefront and Express API.",
+    "pitch": "Pharmacy commerce platform: SvelteKit storefront, POS and admin over an Express/Mongoose REST API with MongoDB and Redis caching.",
     "technologies": [
       "Svelte",
       "SvelteKit",
@@ -78,7 +78,7 @@
     "repo": "NextSet",
     "title": "NextSet",
     "group": "Mobile",
-    "pitch": "A workout companion that keeps going when the connection doesn’t.",
+    "pitch": "Offline-first Android workout tracker: Kotlin, Jetpack Compose, Room, deadline-based timers and crash-safe session recovery.",
     "technologies": [
       "Kotlin",
       "Jetpack Compose",
@@ -86,9 +86,9 @@
       "Android"
     ],
     "highlights": [
-      "Workout templates, weekday plans and repeating sequences",
-      "Recoverable sessions with transactional checkpoints",
-      "Weekly analysis and deterministic domain logic"
+      "Clean-architecture layers (domain / data / notifications / ui) with a shared set-and-rest planner",
+      "Room schema v1–4 with committed migrations, transactional checkpoints and immutable session snapshots",
+      "AlarmManager rest deadlines that survive process death and reboot; no INTERNET permission"
     ],
     "featured": true,
     "client": false,
@@ -97,7 +97,7 @@
     "order": 2,
     "audience": "people planning routines and tracking workouts offline",
     "overview": "NextSet is built around the part of a workout that happens away from a desk: choosing a plan, completing sets and returning to a session without losing its structure. It supports fixed weekdays and repeating sequences, alongside a weekly view of planned and completed work.",
-    "engineering": "Kotlin and Jetpack Compose provide the native interface, while Room stores plans and workout history locally. Immutable session snapshots and transactional checkpoints preserve execution state. Scheduling and progress calculations live in deterministic domain logic, supported by 41 unit tests.",
+    "engineering": "Kotlin and Jetpack Compose drive a lifecycle-aware ViewModel/StateFlow UI over a pure domain layer holding validated models, a deterministic reducer, weekday/sequence date resolution and reminder policy. Room persists normalised templates → blocks → exercises plus immutable session snapshots; execution state, status and completed sets are observed in one transaction. Rest timers are deadline-based on a monotonic clock and scheduled with permission-aware AlarmManager, with receivers restoring alarms after reboot. Schemas 1–4 are committed with non-destructive migrations, R8 shrinking is enabled for release, and 41 unit tests cover the domain logic.",
     "sourceRepos": [
       "NextSet"
     ],
@@ -121,7 +121,7 @@
     "repo": "Safoyana-Digital-Print",
     "title": "Safoyana Digital Print",
     "group": "Client work",
-    "pitch": "From a print specification to an organised order queue.",
+    "pitch": "Print-ordering platform: Next.js 16 + NestJS 11 + Prisma/PostgreSQL, JWT roles, server-calculated tiered pricing and transactional order updates.",
     "technologies": [
       "Next.js",
       "TypeScript",
@@ -160,7 +160,7 @@
     "repo": "TalenTrack---AI-Powered-Recruitment-Platform",
     "title": "TalenTrack",
     "group": "Data & AI",
-    "pitch": "Recruitment records meet searchable candidate documents.",
+    "pitch": "Full-stack recruitment platform with a RAG copilot: React, Express, FastAPI, PostgreSQL + pgvector and local Ollama models.",
     "technologies": [
       "React",
       "Express",
@@ -170,9 +170,9 @@
       "Ollama"
     ],
     "highlights": [
-      "Jobs and applicant records",
-      "PDF ingestion and document retrieval",
-      "Separate web, API and model services"
+      "RAG pipeline: PDF parsing, embeddings, pgvector cosine-similarity search, LLM answers",
+      "Polyglot services: Node/Express API webhooks into a Python FastAPI ingestion service",
+      "Fully local inference (Ollama) and a five-container Docker Compose stack"
     ],
     "featured": true,
     "client": false,
@@ -181,7 +181,7 @@
     "order": 4,
     "audience": "teams exploring data, research and local automation",
     "overview": "TalenTrack brings job openings, applicants and candidate documents into a recruitment workspace. Its scope extends from application forms and applicant records to PDF ingestion and local-model-assisted retrieval, making it a useful example of several services supporting one workflow.",
-    "engineering": "A React frontend connects to Express/PostgreSQL for recruitment records. A separate FastAPI service handles document ingestion with pgvector embeddings and local Ollama models, keeping conventional record management and model-backed retrieval in distinct service boundaries.",
+    "engineering": "A React (Vite, Tailwind) frontend uploads résumés as multipart/form-data to an Express API, which stores the file, writes relational metadata to PostgreSQL and fires a webhook (POST /api/ai/ingest) to a FastAPI service. FastAPI extracts text with PyPDF2, embeds chunks through Ollama (all-minilm) and stores vectors in pgvector. At query time the question is embedded, the closest résumé chunks are retrieved by cosine similarity and passed to llama3.2:1b for the answer. Docker Compose orchestrates PostgreSQL, the AI service, the API, the frontend and Ollama.",
     "sourceRepos": [
       "TalenTrack---AI-Powered-Recruitment-Platform"
     ],
@@ -205,7 +205,7 @@
     "repo": "cosmeticsEcom-frontend",
     "title": "DermaCare",
     "group": "Client work",
-    "pitch": "A cosmetics commerce platform combining storefront, store administration and API.",
+    "pitch": "Cosmetics e-commerce: SvelteKit storefront and admin over an Express/MongoDB API with auth middleware and Redis caching.",
     "technologies": [
       "Svelte",
       "SvelteKit",
@@ -241,7 +241,7 @@
     "repo": "sujoykr",
     "title": "Clipping",
     "group": "Client work",
-    "pitch": "A photo-services order workspace, from image submission to order summaries.",
+    "pitch": "Photo-service order dashboard: multi-step image submission, service selection and order-summary flows in Bootstrap and vanilla JavaScript.",
     "technologies": [
       "JavaScript",
       "Bootstrap"
@@ -270,7 +270,7 @@
     "repo": "LAB-Main-Svelte",
     "title": "Lovebird Association of Bangladesh",
     "group": "Client work",
-    "pitch": "A club’s public website and editorial administration workspace, presented as one project.",
+    "pitch": "Two SvelteKit apps, a public site and an editorial admin panel, sharing one API for articles, events and members.",
     "technologies": [
       "Svelte",
       "SvelteKit",
@@ -302,7 +302,7 @@
     "repo": "PATH-smoking-resumption-prediction-for-CSE366",
     "title": "PATH Smoking Resumption Prediction",
     "group": "Data & AI",
-    "pitch": "Making longitudinal research understandable, one outlook at a time.",
+    "pitch": "Survival-analysis web app on PATH Study waves 1–8: interval-censored models, bootstrap uncertainty, exact Shapley explanations.",
     "technologies": [
       "Python",
       "Streamlit",
@@ -311,9 +311,9 @@
       "scikit-learn"
     ],
     "highlights": [
-      "Separate population models for smoking transitions",
-      "Local JSON-model inference and contribution explanations",
-      "Reproducible checks and explicit uncertainty"
+      "Three interval-censored survival models, held-out ROC-AUC 0.77–0.82 at 36 months",
+      "100 bootstrap refits for 95% uncertainty bands; exact Shapley contributions by input group",
+      "Pickle-free JSON model with hash-checked launcher and byte-for-byte reproducible training"
     ],
     "featured": true,
     "client": false,
@@ -322,7 +322,7 @@
     "order": 8,
     "audience": "researchers exploring smoking transitions, uncertainty and model behaviour",
     "overview": "Reclaim turns a longitudinal smoking-transition study into an explorable research interface. A fixed-choice questionnaire routes a fictional profile to the relevant population model, then presents cumulative outlooks, uncertainty and contributing factors together with the evidence needed to interpret them.",
-    "engineering": "A fingerprinted plain-JSON survival-model bundle supports local inference. Separate former-, current- and never-established-smoker populations, interval-censored outcomes and grouped explanation contributions make the modelling decisions visible alongside uncertainty and research evidence.",
+    "engineering": "Each population (former, current, never-established smokers) has its own interval-censored survival model with 100 bootstrap refits, stored as plain JSON with no pickle and no participant rows. The launcher verifies model hashes, NumPy/pandas versions and five regression profiles before starting the Streamlit UI. Predictions show cumulative probability at horizons that beat a no-input baseline, 95% uncertainty bands, exact Shapley contributions grouped by input, and a held-out evidence panel (ROC-AUC, Brier score). Retraining reproduces model.json byte-for-byte, the training script refuses to overwrite an existing run, and 36 tests run by default.",
     "sourceRepos": [
       "PATH-smoking-resumption-prediction-for-CSE366"
     ],
@@ -340,7 +340,7 @@
     "repo": "Notepad-AI",
     "title": "Notepad AI",
     "group": "Data & AI",
-    "pitch": "A focused writing space, with room for a local AI assistant.",
+    "pitch": "Offline notepad with Tab-to-accept inline autocomplete and a document chat: Next.js, FastAPI, SQLite and local Ollama.",
     "technologies": [
       "Next.js",
       "TypeScript",
@@ -349,9 +349,9 @@
       "Ollama"
     ],
     "highlights": [
-      "Persistent note library with a focused writing interface",
-      "Debounced saving backed by SQLite",
-      "Local completions and streamed assistant chat through Ollama"
+      "Debounced inline completions (3–5 tokens) with sub-100 ms latency targets on CPU",
+      "Streamed assistant chat that receives the open note as context",
+      "In-app Ollama model search, download and switching; SQLite autosave after 1.2 s idle"
     ],
     "featured": true,
     "client": false,
@@ -360,7 +360,7 @@
     "order": 9,
     "audience": "individual writers managing a local note library with optional local-model assistance",
     "overview": "Notepad AI brings a persistent note library, a focused editor and local AI assistance into one writing workspace. Writers can move between notes, develop ideas with an assistant, and keep their content saved as they work.",
-    "engineering": "A Next.js frontend connects to a FastAPI backend with SQLite persistence. Debounced saving keeps editing fluid, while Ollama powers local completion and streamed chat workflows. The Ollama integration was tested during development, bringing note management and local-model assistance together without requiring a hosted AI provider.",
+    "engineering": "A Next.js/TypeScript frontend talks to a FastAPI backend that persists notes in SQLite and proxies a local Ollama instance. Autosave is debounced (about 1.2 s after typing stops), inline completions are triggered by a configurable debounce and accepted with Tab, and the chat panel streams responses with the open document as context. Sliders for debounce delay, max completion tokens and context-window size let users tune CPU-only latency (small Qwen2.5-Coder models, 3–5 tokens, ~1,000–1,500 characters of context). The Ollama integration was tested during development, and no hosted AI provider is required.",
     "sourceRepos": [
       "Notepad-AI"
     ],
@@ -384,7 +384,7 @@
     "repo": "Hood-Up-CSE489",
     "title": "Hood Up",
     "group": "Mobile",
-    "pitch": "Workshop booking and vehicle service workflows on Android.",
+    "pitch": "Native Android (Java) workshop-booking app: Firebase Auth, Firestore security rules, SQLite offline cache, Gemini chatbot.",
     "technologies": [
       "Java",
       "Android",
@@ -392,9 +392,9 @@
       "Firestore"
     ],
     "highlights": [
-      "Workshop booking flows",
-      "Firestore security rules",
-      "Local queue and cache with advisor fallback"
+      "Firebase Auth with Firestore role-based rules, indexes and an admin dashboard",
+      "SQLite local cache and queue for offline use alongside Cloud Firestore",
+      "Gemini-powered mechanic chatbot with local fallback; background services and notifications"
     ],
     "featured": false,
     "client": false,
@@ -403,7 +403,7 @@
     "order": 10,
     "audience": "people using software on Android devices",
     "overview": "Hood Up explores vehicle-service booking from an Android application. Workshop discovery and booking sit alongside local queue/cache handling, bringing customer-facing interactions and connectivity concerns into the same mobile project.",
-    "engineering": "Java activities integrate Firebase and Firestore, with repository security rules forming part of the data-access boundary. The local queue and cache provide additional implementation depth beyond a collection of static Android screens.",
+    "engineering": "Java activities and XML layouts integrate Firebase Authentication and Cloud Firestore, with committed firestore.rules and firestore.indexes.json forming the data-access boundary and a users/{uid}.role field gating admin access. SQLite provides local storage and offline caching, while Android services, background threads, broadcasts and notifications deliver booking updates and reminders. The “Ask the Mechanic” chatbot calls the Gemini API with a key kept out of Git and degrades to local suggestions when no key is available.",
     "sourceRepos": [
       "Hood-Up-CSE489"
     ],
@@ -427,16 +427,16 @@
     "repo": "Car-shop-management-system-GUI",
     "title": "Car Shop Management System",
     "group": "Desktop",
-    "pitch": "A Java desktop showroom connecting vehicle inventory, customer purchases and tested business logic.",
+    "pitch": "Java Swing desktop app built on an OOP vehicle hierarchy, with a 31-test JUnit 5 suite covering unit, integration and boundary cases.",
     "technologies": [
       "Java",
       "Swing",
       "JUnit 5"
     ],
     "highlights": [
-      "Separate customer showroom and inventory administration",
-      "Vehicle-specific pricing tools and customer purchase logs",
-      "31 passing JUnit tests across domain logic and purchase workflows"
+      "Abstract Car → Commuter / Sports polymorphism with type-specific cost calculations",
+      "JUnit 5: parameterized, negative, boundary-value and customer↔shop integration tests",
+      "Package-separated vehicles, users and inventory behind a CardLayout Swing UI"
     ],
     "featured": true,
     "client": false,
@@ -445,7 +445,7 @@
     "order": 11,
     "audience": "customers exploring vehicles and staff managing a car-shop inventory",
     "overview": "Car Shop Management System brings a small dealership workflow into a Java desktop application. Customers create a local profile, browse commuter and sports cars, explore cost estimates and purchase a vehicle. An administration view connects vehicle entry with inventory statistics and customer purchase records.",
-    "engineering": "Swing panels and a CardLayout organise the customer and administration views around separate inventory, vehicle and customer classes. A shared vehicle abstraction supports commuter and sports-specific calculations. The JUnit 5 suite exercises pricing, search boundaries, customer summaries and the purchase workflow across multiple domain classes.",
+    "engineering": "The domain is split into carShop.vehicles (abstract Car with Commuter and Sports subclasses), carShop.users (abstract User, Customer with wallet and VIP logic) and carShop.inventory (CarShop search, removal and pricing). A Swing CardLayout presents the customer and admin views over that model. The JUnit 5 suite covers unit tests, a full Customer↔CarShop checkout integration flow, @ParameterizedTest case-insensitive search, IllegalArgumentException negative tests and null/empty-string boundary values.",
     "sourceRepos": [
       "Car-shop-management-system-GUI"
     ],
@@ -469,7 +469,7 @@
     "repo": "microservice-ecommerce",
     "title": "Microservice Ecommerce",
     "group": "Systems & APIs",
-    "pitch": "An exploration of event-driven commerce service boundaries.",
+    "pitch": "Event-driven e-commerce backend: five Node.js services over RabbitMQ with PostgreSQL, MongoDB, Redis and Elasticsearch.",
     "technologies": [
       "Node.js",
       "RabbitMQ",
@@ -478,9 +478,9 @@
       "Redis"
     ],
     "highlights": [
-      "Separate user, catalogue, cart and order services",
-      "Message-broker integration",
-      "Independent persistence boundaries"
+      "Database-per-service: PostgreSQL (Prisma), MongoDB + Elasticsearch, Redis",
+      "RabbitMQ async messaging from orders to email notifications; SSE live order feed",
+      "JWT user/admin roles, bcrypt, Joi validation and rate limiting"
     ],
     "featured": true,
     "client": false,
@@ -489,7 +489,7 @@
     "order": 12,
     "audience": "engineering teams interested in backend and service design",
     "overview": "Microservice Ecommerce explores a shopping system divided into user, catalogue, cart, order and notification services. Its focus is the coordination of distinct business responsibilities and the data each service owns.",
-    "engineering": "RabbitMQ connects parts of the service architecture, with Prisma, MongoDB and Redis used across different persistence concerns. The repository provides concrete material for discussing message-based coordination, independent data models and service boundaries.",
+    "engineering": "Five Express services own their data: user (PostgreSQL via Prisma), product (MongoDB via Mongoose with Elasticsearch search), cart (Redis), order (PostgreSQL via Prisma) and notification (Nodemailer). Services coordinate asynchronously through RabbitMQ — placing an order publishes a message the notification service consumes to send a confirmation email — and the order service streams pending orders to clients over Server-Sent Events. Security uses JWT with user/admin roles, bcrypt hashing, Joi validation and express-rate-limit; PM2 and concurrently manage the processes.",
     "sourceRepos": [
       "microservice-ecommerce"
     ],
@@ -512,7 +512,7 @@
     "repo": "p2p-file-stream",
     "title": "P2P File Stream",
     "group": "Systems & APIs",
-    "pitch": "Explore files moving directly across the local network.",
+    "pitch": "Zero-config LAN file transfer: mDNS (Bonjour) discovery and direct Node.js streams with Socket.IO progress, no server storage.",
     "technologies": [
       "React",
       "Node.js",
@@ -520,9 +520,9 @@
       "Bonjour"
     ],
     "highlights": [
-      "Local network discovery",
-      "Socket-based connection handshakes",
-      "Streaming file transfer"
+      "mDNS/Bonjour peer discovery on the local network, no configuration",
+      "Direct sender → receiver Axios/Multer stream transfer with no intermediate storage",
+      "Socket.IO live progress for large files; auto-save to ~/Downloads"
     ],
     "featured": true,
     "client": false,
@@ -531,7 +531,7 @@
     "order": 13,
     "audience": "engineering teams interested in backend and service design",
     "overview": "P2P File Stream connects local-network discovery, connection handshakes and file delivery in one workflow. Each stage has a clear responsibility, making it a useful example of how peers find each other and coordinate a transfer.",
-    "engineering": "Bonjour provides local discovery, Socket.IO coordinates peer handshakes, and Node.js streams the transfer. The React frontend presents the connection flow while the receiving side writes files to the native Downloads location.",
+    "engineering": "The receiving Node/Express node advertises itself with bonjour-service; the sender discovers it over mDNS and streams the file directly with Axios to a Multer endpoint, so nothing is stored on an intermediate server. Socket.IO coordinates the handshake and pushes live percentage progress to the React (Vite) UI, and the received payload is written to the native Downloads folder.",
     "sourceRepos": [
       "p2p-file-stream"
     ],
@@ -554,7 +554,7 @@
     "repo": "Secure-Note-Taking",
     "title": "Secure Note Taking",
     "group": "Web apps",
-    "pitch": "Private notes with a community and administration layer.",
+    "pitch": "MERN app with JWT role-based access control, server-enforced note ownership, MongoDB aggregations and Swagger docs, shipped via Docker Compose.",
     "technologies": [
       "React",
       "Express",
@@ -562,9 +562,9 @@
       "JWT"
     ],
     "highlights": [
-      "Private-note ownership checks",
-      "JWT roles and authenticated routes",
-      "Community and admin interfaces"
+      "Unified JWT login that decodes the role to route users and admins",
+      "Server-side ownership checks isolate each user's private notes",
+      "MongoDB aggregation dashboard, OpenAPI/Swagger docs, Docker Compose deployment"
     ],
     "featured": false,
     "client": false,
@@ -573,7 +573,7 @@
     "order": 14,
     "audience": "people managing day-to-day business or personal workflows",
     "overview": "Secure Note Taking combines private note management with community and administration views. It explores the difference between personal content and shared application data, with authenticated routes and role-aware interfaces supporting those separate uses.",
-    "engineering": "The React client connects to Express controllers and MongoDB records. JWT middleware, roles and explicit ownership checks protect private-note access on the server, where the security boundary belongs.",
+    "engineering": "A React (Vite) client calls Express controllers over Mongoose/MongoDB. JWT middleware, role checks and explicit ownership checks enforce access on the server, where the security boundary belongs: users see only their own notes, while admins moderate content and view MongoDB aggregation statistics such as grouping users by shared interests. The API is documented with Swagger/OpenAPI, seeded on first run, and the database, backend and frontend all start with a single Docker Compose command.",
     "sourceRepos": [
       "Secure-Note-Taking"
     ],
@@ -597,16 +597,16 @@
     "repo": "bdjobs-scraper",
     "title": "BDJobs Scraper",
     "group": "Data & AI",
-    "pitch": "Turn job listings into structured, salary-normalised records.",
+    "pitch": "Concurrent Puppeteer-cluster scraper that classifies job listings by tech stack and buckets salaries into JSON and report output.",
     "technologies": [
       "Node.js",
       "Puppeteer",
       "Puppeteer Cluster"
     ],
     "highlights": [
-      "Browser-based job extraction",
-      "Salary normalisation",
-      "Saved structured reports"
+      "puppeteer-cluster concurrency with stealth plugin, randomised delays and timeouts",
+      "Keyword-based primary-stack classification (JavaScript, Java, PHP, .NET, Python)",
+      "Salary parsing into per-stack distribution buckets; checkpointed JSON + text report"
     ],
     "featured": false,
     "client": false,
@@ -615,7 +615,7 @@
     "order": 15,
     "audience": "teams exploring data, research and local automation",
     "overview": "The job-data collector explores turning browser-rendered listings into structured reports. Salary normalisation is part of the processing step, so extracted values can be compared more consistently than raw page text.",
-    "engineering": "Puppeteer and its cluster tooling coordinate browser extraction in Node.js. The script separates collection and record normalisation from saving report output, while remaining dependent on the structure and availability of the external source site.",
+    "engineering": "A configuration object controls listing depth, concurrency, timeouts, random 1–4 s delays and checkpoint interval. Puppeteer-cluster workers (with puppeteer-extra stealth) fetch each job page, strip scripts, styles and tags, then match keywords against TECH_STACKS to pick a primary stack and note other mentions. Salaries are extracted, converted to numbers and placed in predefined buckets to produce per-stack distributions, with progress checkpointed every 100 jobs and results written to bdjobs_data.json and a readable report.",
     "sourceRepos": [
       "bdjobs-scraper"
     ],
@@ -639,7 +639,7 @@
     "repo": "regro-media",
     "title": "Regro Media",
     "group": "Client work",
-    "pitch": "A service-led website for a marketplace and brand-management agency.",
+    "pitch": "Agency marketing site in SvelteKit and Tailwind CSS: reusable section components in a responsive, enquiry-focused layout.",
     "technologies": [
       "SvelteKit",
       "Svelte",
@@ -670,7 +670,7 @@
     "repo": "instagram-clone",
     "title": "Instagram Clone",
     "group": "Web apps",
-    "pitch": "A social application exploring feeds and real-time conversations.",
+    "pitch": "Social app: Svelte, Express, PostgreSQL/Sequelize and Socket.IO for real-time messaging and notifications.",
     "technologies": [
       "Svelte",
       "Express",
@@ -708,7 +708,7 @@
     "repo": "group_chat",
     "title": "Group Chat",
     "group": "Web apps",
-    "pitch": "A compact real-time conversation app with named rooms.",
+    "pitch": "Real-time chat: Express and Socket.IO rooms with messages persisted in MongoDB.",
     "technologies": [
       "Node.js",
       "Express",
@@ -745,7 +745,7 @@
     "repo": "fileShare",
     "title": "FileShare API",
     "group": "Systems & APIs",
-    "pitch": "Authenticated uploads and link-based file sharing.",
+    "pitch": "File-sharing REST API with JWT auth, email confirmation, expiring signed links, Redis path caching, Prisma/PostgreSQL and rate limiting.",
     "technologies": [
       "Node.js",
       "Express",
@@ -754,9 +754,9 @@
       "Redis"
     ],
     "highlights": [
-      "JWT authentication",
-      "Upload controllers",
-      "Share-link routes"
+      "JWT accounts gated by email confirmation before uploads",
+      "Time-limited signed share links for each file",
+      "Redis path caching, Joi validation, Helmet headers and rate limiting"
     ],
     "featured": false,
     "client": false,
@@ -765,7 +765,7 @@
     "order": 19,
     "audience": "engineering teams interested in backend and service design",
     "overview": "FileShare organises authenticated uploads and shareable links behind a focused API. Upload handling, file records and sharing routes provide a clear example of turning a file-management workflow into backend responsibilities.",
-    "engineering": "Express routes use JWT authentication, upload handling and share-link controllers. Prisma/PostgreSQL and Redis dependencies support persistence and caching boundaries around the file workflow.",
+    "engineering": "An Express API with Prisma/PostgreSQL persistence, Multer uploads and bcrypt password hashing. Users must confirm their email (Nodemailer link carrying a signed JWT) before uploading; each file can be shared through a unique, time-limited signed link, and Redis caches file paths to skip repeated lookups. Joi validates input, Helmet sets secure headers and express-rate-limit guards against abuse, with centralised error handling across the file workflow.",
     "sourceRepos": [
       "fileShare"
     ],
@@ -788,7 +788,7 @@
     "repo": "photo-editor-backend",
     "title": "Photo Editor Backend",
     "group": "Systems & APIs",
-    "pitch": "An exploration of service boundaries for image workflows.",
+    "pitch": "Real-time collaborative image-editing backend: microservices over RabbitMQ, socket.io, Sharp, Nginx gateway and Prometheus/Grafana monitoring.",
     "technologies": [
       "Node.js",
       "Express",
@@ -797,9 +797,9 @@
       "Sharp"
     ],
     "highlights": [
-      "Gateway, access and image services",
-      "Image processing and notification boundaries",
-      "Containerised observability configuration"
+      "Six-plus Dockerised services: user, image, access, notification, API gateway, Nginx proxy",
+      "socket.io collaborative editing with JWT verified on every WebSocket message",
+      "Prometheus metrics (prom-client) with Grafana dashboards; Sharp image processing"
     ],
     "featured": false,
     "client": false,
@@ -808,7 +808,7 @@
     "order": 20,
     "audience": "engineering teams interested in backend and service design",
     "overview": "This project explores backend service boundaries for image workflows. Gateway, access, image and notification services organise distinct responsibilities, with image-processing and observability configuration providing a concrete view into the architecture.",
-    "engineering": "Express services use RabbitMQ and Redis alongside Sharp image processing. The gateway provides a single entry point, while service-specific routes separate access, processing and notification concerns. Container and observability configuration makes the infrastructure relationships easier to inspect.",
+    "engineering": "A Docker Compose stack of Node/Express services communicating over RabbitMQ: a user service (PostgreSQL, Prisma, JWT), an image service (MongoDB, Multer, Sharp, socket.io for simultaneous edits), a notification service (Redis, Nodemailer), an access service and an API gateway, fronted by an Nginx reverse proxy. Services expose Prometheus metrics via prom-client for Grafana dashboards. The README is explicit about limits: WebSocket connections currently work only directly against the image service, not through Nginx or the gateway.",
     "sourceRepos": [
       "photo-editor-backend"
     ],
@@ -832,7 +832,7 @@
     "repo": "finshark-backend",
     "title": "FinShark Backend",
     "group": "Systems & APIs",
-    "pitch": "An API exercise in stocks, comments and portfolio data.",
+    "pitch": "Clean-architecture ASP.NET Core (.NET 9) Web API: EF Core, ASP.NET Identity, JWT auth, repository pattern and Swagger docs.",
     "technologies": [
       "C#",
       "ASP.NET Core",
@@ -840,9 +840,9 @@
       "JWT"
     ],
     "highlights": [
-      "Identity and JWT authentication",
-      "Stock and comment repositories",
-      "Portfolio endpoints"
+      "Controllers → services → repositories → DTO layering with interfaces",
+      "ASP.NET Core Identity issuing JWTs for account, stock, comment and portfolio endpoints",
+      "EF Core persistence with auto-generated Swagger/OpenAPI documentation"
     ],
     "featured": false,
     "client": false,
@@ -851,7 +851,7 @@
     "order": 21,
     "audience": "engineering teams interested in backend and service design",
     "overview": "FinShark organises stock, comment and user-portfolio data behind an authenticated API. Its typed endpoints and explicit persistence structure make it a clear example of backend application organisation.",
-    "engineering": "ASP.NET Identity and JWT authentication sit alongside Entity Framework and repository abstractions. The stock, comment and portfolio areas show how request handling, identity and persistence can be organised into separate responsibilities.",
+    "engineering": "A .NET 9 Web API organised into controllers, services, repositories, DTOs and interfaces. ASP.NET Core Identity manages users and roles and issues JWTs, EF Core with an Identity-aware DbContext handles persistence, and separate Account, Stock, Comment and Portfolio controllers expose RESTful endpoints documented automatically through Swagger.",
     "sourceRepos": [
       "finshark-backend"
     ],
@@ -874,16 +874,16 @@
     "repo": "BD-Walks",
     "title": "BD Walks API",
     "group": "Systems & APIs",
-    "pitch": "Structured region and walking-route data behind a typed API.",
+    "pitch": "ASP.NET Core (.NET 9) REST API with JWT Reader/Writer roles, EF Core + SQL Server, AutoMapper DTOs, action-filter validation and Serilog.",
     "technologies": [
       "C#",
       "ASP.NET Core",
       "Entity Framework"
     ],
     "highlights": [
-      "Region, walk and image endpoints",
-      "DTO mapping",
-      "Role-based endpoint policies"
+      "JWT with Reader/Writer role policies over region, walk and image CRUD",
+      "AutoMapper DTOs, validation action filters and centralised exception middleware",
+      "Serilog logging, Swagger/OpenAPI docs and image upload to local storage"
     ],
     "featured": false,
     "client": false,
@@ -892,7 +892,7 @@
     "order": 22,
     "audience": "engineering teams interested in backend and service design",
     "overview": "BD Walks models regions and walking routes behind a structured API. Region, walk and image endpoints connect location-oriented records with typed request handling and role-based access.",
-    "engineering": "ASP.NET Core supplies the typed HTTP layer, Entity Framework handles persistence, and DTO mappings separate transport shapes from stored entities. Role policies add an explicit authorisation layer to protected operations.",
+    "engineering": "ASP.NET Core supplies the typed HTTP layer, Entity Framework Core with SQL Server handles persistence, and AutoMapper keeps transport DTOs separate from stored entities. ASP.NET Core Identity and JWT enforce Reader/Writer authorisation, custom action filters validate models, a centralised exception-handling middleware standardises errors, Serilog provides logging and Swagger documents the API.",
     "sourceRepos": [
       "BD-Walks"
     ],
@@ -915,16 +915,16 @@
     "repo": "medicine-data-scraper-with-proxy-rotation",
     "title": "Medicine Data Scraper with Proxy Rotation",
     "group": "Data & AI",
-    "pitch": "A browser automation pipeline for structured product data.",
+    "pitch": "Anti-detection Puppeteer scraper with per-session proxy, viewport and user-agent rotation, auto-restart and API sync.",
     "technologies": [
       "Node.js",
       "Puppeteer",
       "Axios"
     ],
     "highlights": [
-      "Browser-based extraction",
-      "Proxy rotation",
-      "Product API updates"
+      "Per-session proxy, viewport and user-agent randomisation with stealth mode",
+      "Human-like scrolling and automatic restart on failure",
+      "Cheerio parsing and Axios updates to a backend API"
     ],
     "featured": false,
     "client": false,
@@ -933,7 +933,7 @@
     "order": 23,
     "audience": "teams exploring data, research and local automation",
     "overview": "This automation utility collects structured medicine-product information and can send updates to a product API. It combines browser extraction and network configuration in a pipeline intended to move data between systems.",
-    "engineering": "Node.js and Puppeteer handle browser-driven collection, with rotating proxy support and Axios requests for the update boundary. That makes live execution operationally different from reading a static dataset.",
+    "engineering": "Puppeteer drives a stealth browser that randomises proxy, viewport and user agent for every session, scrolls like a person and restarts itself after failures. Cheerio extracts generic name, strength, brand and price for tablets and capsules from the target site, and Axios pushes the records to a backend API. Reliable runs need a working proxy list to avoid Cloudflare blocking.",
     "sourceRepos": [
       "medicine-data-scraper-with-proxy-rotation"
     ],
@@ -1339,7 +1339,7 @@
     "repo": "sketchbox",
     "title": "Sketchbox",
     "group": "Web apps",
-    "pitch": "A playful canvas for drawing and experimenting with colour.",
+    "pitch": "Svelte drawing app on the Canvas API with palette and drawing state kept in components.",
     "technologies": [
       "Svelte",
       "JavaScript",
@@ -1375,7 +1375,7 @@
     "repo": "soundboard",
     "title": "Soundboard",
     "group": "Web apps",
-    "pitch": "A small audio library for uploading and playing sounds.",
+    "pitch": "Audio library: Next.js frontend, Express/MongoDB API, sound upload and playback.",
     "technologies": [
       "Next.js",
       "Express",
@@ -1411,7 +1411,7 @@
     "repo": "Studio-Ghibli-Movies",
     "title": "Studio Ghibli Movies",
     "group": "Web apps",
-    "pitch": "A compact way to browse films and explore their details.",
+    "pitch": "Svelte film browser: shared store, list/detail views and an external REST API integration.",
     "technologies": [
       "Svelte",
       "JavaScript"
@@ -1446,7 +1446,7 @@
     "repo": "CSE302-project",
     "title": "CSE302 — Canteen Management",
     "group": "Web apps",
-    "pitch": "Coursework connecting canteen records with staff reports.",
+    "pitch": "Canteen management system: React frontend, Express API, MySQL schema with fixtures and reporting routes.",
     "technologies": [
       "React",
       "Express",
@@ -1482,14 +1482,14 @@
     "repo": "Monkeytype-Automator",
     "title": "Monkeytype Automator",
     "group": "Data & AI",
-    "pitch": "A small browser automation experiment.",
+    "pitch": "Puppeteer script that reads the live DOM and types with randomised key delays, tuned to about 100 WPM.",
     "technologies": [
       "Node.js",
       "Puppeteer"
     ],
     "highlights": [
-      "Browser control script",
-      "Automated typing interactions"
+      "DOM-based active-word detection",
+      "Randomised inter-key delays calibrated to ~100 WPM"
     ],
     "featured": false,
     "client": false,
@@ -1498,7 +1498,7 @@
     "order": 41,
     "audience": "teams exploring data, research and local automation",
     "overview": "A compact browser-automation experiment exploring how a script can drive a typing interaction. The project focuses on browser control and repeatable actions, providing a small, inspectable example of task automation.",
-    "engineering": "Node.js and Puppeteer coordinate the browser session and typing actions. The concise script keeps the control flow easy to inspect and provides a focused example of programmatic interaction with a web interface.",
+    "engineering": "Node.js and Puppeteer launch a visible browser, read the active word straight from the page DOM and dispatch keystrokes with randomised gaps calibrated to an average of about 100 words per minute. The concise script keeps the control flow easy to inspect.",
     "sourceRepos": [
       "Monkeytype-Automator"
     ],
