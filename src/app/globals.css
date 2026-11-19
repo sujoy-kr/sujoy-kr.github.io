@@ -334,6 +334,24 @@ h3 {
   border-color: var(--accent);
   color: var(--accent-ink);
 }
+/* Primary button: accent fill grows from the cursor and follows it (driven by DirectionalCard). */
+.button.primary.card-fill {
+  position: relative;
+}
+.button.primary.card-fill:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+.button.primary.card-fill::before {
+  background: var(--accent);
+}
+.button.primary.card-fill::after {
+  display: none;
+}
+.button.primary.card-fill:focus-visible::before {
+  clip-path: none;
+}
 .text-link {
   display: inline-flex;
   align-items: center;

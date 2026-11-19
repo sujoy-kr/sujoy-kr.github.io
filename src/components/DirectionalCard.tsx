@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { createElement, type AnchorHTMLAttributes, type PointerEvent, type ReactNode } from "react";
 
 /** Per-card fill state: the lit circle (x, y, r) eases toward its target (tx, ty, tr). */
@@ -28,6 +29,8 @@ const reducedMotion = () =>
 
 /** Radius that lights the area around the cursor; small chips get a tight spot so the following stays visible. */
 function fullRadius(el: HTMLElement): number {
+  // Buttons fill completely: reach the farthest corner.
+  if (el.dataset.fill === "full") return Math.hypot(el.offsetWidth, el.offsetHeight);
   if (el.offsetHeight < 80) return el.offsetHeight * 0.9;
   return Math.max(el.offsetWidth, el.offsetHeight) * 0.6 + 40;
 }
@@ -87,12 +90,15 @@ export function DirectionalCard({
   children,
   className = "",
   as = "article",
+  fill,
   ...rest
 }: {
   children: ReactNode;
   className?: string;
-  /** `article` for cards; `li` / `a` for pill-shaped chips and link buttons. */
-  as?: "article" | "li" | "a";
+  /** `article` for cards; `li` / `a` for pill-shaped chips and link buttons; `link` is a client-routed `next/link` button. */
+  as?: "article" | "li" | "a" | "link";
+  /** `full` makes the lit circle grow until it covers the whole element (buttons). */
+  fill?: "full";
 } & Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "target" | "rel">) {
   const enter = (e: PointerEvent<HTMLElement>) => {
     if (e.pointerType === "touch") return;
@@ -129,9 +135,10 @@ export function DirectionalCard({
   };
   const base = as === "article" ? "card card-fill" : "card-fill chip-fill";
   return createElement(
-    as,
+    as === "link" ? (Link as unknown as "a") : as,
     {
       ...rest,
+      ...(fill ? { "data-fill": fill } : null),
       className: `${base} ${className}`.trim(),
       onPointerEnter: enter,
       onPointerMove: move,

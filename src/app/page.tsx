@@ -84,10 +84,10 @@ export default function Home() {
             />
           </p>
           <div className="actions">
-            <Link className="button primary" href="/projects/">
+            <DirectionalCard as="link" fill="full" className="button primary" href="/projects/">
               <Tx en="Explore my work" bn="আমার কাজ দেখুন" />
               <Arrow />
-            </Link>
+            </DirectionalCard>
             <a className="button" href="mailto:thesujoykr@gmail.com">
               <Tx en="Email me" bn="ইমেইল করুন" />
             </a>
