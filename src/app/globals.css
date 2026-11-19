@@ -46,6 +46,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 84px;
   -webkit-text-size-adjust: 100%;
+  /* No browser flash box on tap; pressed and keyboard-focus states are styled explicitly. */
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   margin: 0;
