@@ -4,7 +4,7 @@ import { Tx } from "./Tx";
 
 const roles = [
   { en: "Full-stack developer", bn: "ফুল-স্ট্যাক ডেভেলপার" },
-  { en: "Android app builder", bn: "অ্যান্ড্রয়েড অ্যাপ নির্মাতা" },
+  { en: "Android developer", bn: "অ্যান্ড্রয়েড ডেভেলপার" },
   { en: "Backend engineer", bn: "ব্যাকএন্ড ইঞ্জিনিয়ার" },
   { en: "UI designer", bn: "ইউআই ডিজাইনার" },
 ];
