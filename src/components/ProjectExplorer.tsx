@@ -10,6 +10,8 @@ export function ProjectExplorer() {
   const lang = useLang();
   const [group, setGroup] = useState<string>("All work");
   const [query, setQuery] = useState("");
+  // Only animate after the visitor changes a filter, never on first paint.
+  const [swaps, setSwaps] = useState(0);
   const shown = projects.filter(
     (p) =>
       (group === "All work" ||
@@ -23,7 +25,11 @@ export function ProjectExplorer() {
       <div className="explorer-tools">
         <div className="filters" role="group" aria-label="Filter projects">
           {groups.map((g) => (
-            <button key={g} aria-pressed={group === g} onClick={() => setGroup(g)}>
+            <button key={g} aria-pressed={group === g} onClick={() => {
+                if (g === group) return;
+                setGroup(g);
+                setSwaps((n) => n + 1);
+              }}>
               <Tx en={g} bn={groupLabels[g]} />
             </button>
           ))}
@@ -39,13 +45,13 @@ export function ProjectExplorer() {
           }
         />
       </div>
-      <p className="results-meta" role="status">
+      <p className="results-meta" role="status" key={shown.length}>
         {lang === "bn"
           ? `${shown.length}টি প্রকল্প`
           : `${shown.length} project${shown.length === 1 ? "" : "s"}`}
       </p>
       {shown.length ? (
-        <div className="grid">
+        <div className={swaps ? "grid swapping" : "grid"} key={group}>
           {shown.map((p) => (
             <ProjectCard key={p.slug} project={p} />
           ))}
@@ -60,6 +66,7 @@ export function ProjectExplorer() {
             onClick={() => {
               setQuery("");
               setGroup("All work");
+              setSwaps((n) => n + 1);
             }}
           >
             <Tx en="Reset filters" bn="ফিল্টার রিসেট করুন" />

@@ -142,6 +142,14 @@ export function EasterEggs() {
     };
     window.addEventListener("portfolio-theme-change", onToggle);
 
+    const onCopy = () => {
+      if (String(document.getSelection()).includes("thesujoykr@gmail.com")) {
+        confetti(100);
+        say("Copied! Can’t wait to hear from you. ✉️");
+      }
+    };
+    document.addEventListener("copy", onCopy);
+
     console.log(
       "%cHey, fellow dev 👋%c\nCurious about the code? It’s on GitHub. Try the Konami code, or type “hire” on any page.",
       "font:600 16px system-ui;color:#3d6a5c",
@@ -152,6 +160,7 @@ export function EasterEggs() {
       window.removeEventListener("keydown", onKey);
       document.removeEventListener("click", onClick, true);
       window.removeEventListener("portfolio-theme-change", onToggle);
+      document.removeEventListener("copy", onCopy);
       clearTimeout(tapTimer);
       cancelAnimationFrame(raf.current);
     };

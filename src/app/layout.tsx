@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Hind_Siliguri, Inter, Newsreader } from "next/font/google";
 import Link from "next/link";
+import { Alive } from "@/components/Alive";
 import { EasterEggs } from "@/components/EasterEggs";
 import { Header } from "@/components/Header";
 import { Arrow } from "@/components/Icons";
@@ -115,6 +116,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="scroll-progress" aria-hidden="true" />
         <Header />
         <EasterEggs />
+        <Alive />
         {children}
         <footer className="footer">
           <div className="wrap footer-inner">
@@ -128,7 +130,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </a>
             </div>
             <div className="footer-bottom">
-              <span>© {new Date().getFullYear()} Sujoy Karmakar</span>
+              <span title="Psst… try the Konami code, or type “hire”.">© {new Date().getFullYear()} Sujoy Karmakar</span>
               <div>
                 {PROFILES.filter(({ label }) => label === "GitHub" || label === "LinkedIn")
                   .map(({ label, href }) => (

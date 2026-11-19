@@ -17,6 +17,8 @@ import { BrandBadge } from "@/components/BrandBadge";
 import { DesignCard } from "@/components/DesignCard";
 import { DirectionalCard } from "@/components/DirectionalCard";
 import { CardLinks, ProjectCard } from "@/components/ProjectCard";
+import { LocalTime } from "@/components/LocalTime";
+import { RoleRotator } from "@/components/RoleRotator";
 import { Tx } from "@/components/Tx";
 import { JsonLd } from "@/components/JsonLd";
 import { groupLabels } from "@/data/labels";
@@ -70,6 +72,7 @@ export default function Home() {
           <p className="availability">
             <i />
             <Tx en="Open to projects & opportunities" bn="নতুন প্রকল্প ও সুযোগের জন্য প্রস্তুত" />
+            <LocalTime />
           </p>
           <h1>
             <Tx
@@ -77,6 +80,7 @@ export default function Home() {
               bn={<>ভালো ভাবনা।<br />যত্নের কোড।<br /><em>কাজের জিনিস।</em></>}
             />
           </h1>
+          <RoleRotator />
           <p className="hero-lead">
             <Tx
               en="I’m Sujoy Karmakar, a full-stack developer turning business problems into websites and applications people can actually use."

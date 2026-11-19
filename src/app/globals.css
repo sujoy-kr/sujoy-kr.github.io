@@ -2184,3 +2184,276 @@ img::selection {
     padding-inline: 4px;
   }
 }
+
+/* Alive: pointer, scroll and transition effects. Progressive enhancement; every one is off for reduced motion. */
+/* Magnetic controls (JS sets --mx/--my) and card tilt (JS sets --rx/--ry); both use properties that compose with hover lifts. */
+.button,
+.theme-toggle,
+.menu-button,
+.lang-button {
+  translate: var(--mx, 0px) var(--my, 0px);
+}
+.button {
+  transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.2, 1), translate 0.25s ease-out, box-shadow 0.2s,
+    background 0.2s, color 0.2s, border-color 0.2s;
+}
+.theme-toggle,
+.menu-button,
+.lang-button {
+  transition: color 0.2s, background 0.2s, translate 0.25s ease-out;
+}
+.card {
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s ease-out;
+}
+.card[data-tilt] {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.08s linear;
+}
+.button svg,
+.text-link svg {
+  transition: translate 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.button:hover svg,
+.text-link:hover svg {
+  translate: 3px 0;
+}
+.theme-toggle svg {
+  animation: icon-swap 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+@keyframes icon-swap {
+  from {
+    rotate: -90deg;
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+
+/* Hero: shimmering accent line, drifting glow, floating portrait, role rotator, local time. */
+.hero h1 em {
+  background: linear-gradient(
+    100deg,
+    var(--accent) 35%,
+    color-mix(in srgb, var(--accent) 35%, var(--ink)) 50%,
+    var(--accent) 65%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 7s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%,
+  100% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 0;
+  z-index: -1;
+  width: min(520px, 70%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 14%, transparent), transparent);
+  pointer-events: none;
+  animation: drift 18s ease-in-out infinite alternate;
+}
+@keyframes drift {
+  to {
+    translate: 36px 28px;
+    scale: 1.12;
+  }
+}
+.portrait-backdrop-img {
+  animation: float 14s ease-in-out infinite alternate;
+}
+@keyframes float {
+  to {
+    translate: 0 -8px;
+    scale: 1.025;
+  }
+}
+@supports (animation-timeline: scroll()) {
+  @keyframes parallax {
+    to {
+      translate: 0 70px;
+    }
+  }
+  .portrait-backdrop {
+    animation: parallax linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+  }
+}
+.hero-copy > :nth-child(5) {
+  animation-delay: 0.32s;
+}
+.role-line {
+  display: grid;
+  margin: -12px 0 24px;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+}
+.role {
+  grid-area: 1 / 1;
+  opacity: 0;
+  translate: 0 0.6em;
+  transition: opacity 0.5s ease, translate 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.role[data-on] {
+  opacity: 1;
+  translate: 0 0;
+}
+.availability {
+  flex-wrap: wrap;
+}
+.local-time {
+  visibility: hidden;
+}
+.local-time[data-ready] {
+  visibility: visible;
+  animation: fade-in 0.6s ease both;
+}
+.local-time::before {
+  content: "·";
+  margin-right: 10px;
+}
+
+/* Below-the-fold images: shimmer while loading, fade in when ready (set by Alive). */
+img[data-loading] {
+  background: linear-gradient(90deg, var(--surface), color-mix(in srgb, var(--ink) 8%, var(--surface)), var(--surface));
+  background-size: 200% 100%;
+  animation: skeleton 1.3s ease-in-out infinite;
+}
+img[data-loaded] {
+  animation: fade-in 0.6s ease both;
+}
+@keyframes skeleton {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Scroll-linked item reveals (a column-based stagger comes from slightly shifted ranges). */
+.grid > .card,
+.services > div,
+.stats > div,
+.spotlight > * {
+  animation-fill-mode: backwards;
+}
+@supports (animation-timeline: view()) {
+  @keyframes item-in {
+    from {
+      opacity: 0;
+      translate: 0 32px;
+      scale: 0.97;
+    }
+  }
+  .grid > .card,
+  .services > div,
+  .stats > div,
+  .spotlight > * {
+    animation-name: item-in;
+    animation-timing-function: ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 45%;
+  }
+  .grid > :nth-child(3n + 2),
+  .services > :nth-child(2),
+  .stats > :nth-child(2),
+  .spotlight > :nth-child(2n) {
+    animation-range: entry 6% entry 51%;
+  }
+  .grid > :nth-child(3n),
+  .services > :nth-child(3),
+  .stats > :nth-child(3) {
+    animation-range: entry 12% entry 57%;
+  }
+}
+
+/* View transitions: cross-fade between pages, circular reveal for the theme switch. */
+.header {
+  view-transition-name: site-header;
+}
+::view-transition-group(site-header) {
+  animation: none;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.28s;
+}
+:root[data-vt="theme"] .header {
+  view-transition-name: none;
+}
+:root[data-vt="theme"] body {
+  transition: none;
+}
+:root[data-vt="theme"]::view-transition-old(root),
+:root[data-vt="theme"]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+:root[data-vt="theme"]::view-transition-old(root) {
+  z-index: 1;
+}
+:root[data-vt="theme"]::view-transition-new(root) {
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle svg,
+  .role,
+  .local-time,
+  img[data-loading],
+  img[data-loaded] {
+    animation: none !important;
+    transition: none !important;
+  }
+  .role {
+    translate: none;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* Project filters: cards re-enter with a stagger when the category changes; the count ticks in. */
+@keyframes swap-in {
+  from {
+    opacity: 0;
+    translate: 0 22px;
+    scale: 0.96;
+  }
+}
+.grid.swapping > .card {
+  animation: swap-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.grid.swapping > :nth-child(2) { animation-delay: 0.05s; }
+.grid.swapping > :nth-child(3) { animation-delay: 0.1s; }
+.grid.swapping > :nth-child(4) { animation-delay: 0.15s; }
+.grid.swapping > :nth-child(5) { animation-delay: 0.2s; }
+.grid.swapping > :nth-child(6) { animation-delay: 0.25s; }
+.grid.swapping > :nth-child(7) { animation-delay: 0.3s; }
+.grid.swapping > :nth-child(8) { animation-delay: 0.35s; }
+.grid.swapping > :nth-child(n + 9) { animation-delay: 0.4s; }
+.results-meta {
+  animation: fade-in 0.4s ease both;
+}
+.filters button {
+  transition: background 0.25s, color 0.25s, border-color 0.25s, scale 0.15s;
+}
+.filters button:active {
+  scale: 0.95;
+}

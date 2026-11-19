@@ -45,17 +45,39 @@ export function ThemeToggle() {
       type="button"
       aria-label={`Switch to ${next} mode`}
       title={`Switch to ${next} mode`}
-      onClick={() => {
-        document.documentElement.dataset.theme = next;
-        try {
-          localStorage.setItem(key, next);
-        } catch {
-          /* The switch still works without persistence. */
+      onClick={(event) => {
+        const root = document.documentElement;
+        const apply = () => {
+          root.dataset.theme = next;
+          try {
+            localStorage.setItem(key, next);
+          } catch {
+            /* The switch still works without persistence. */
+          }
+          window.dispatchEvent(new Event("portfolio-theme-change"));
+        };
+        if (!document.startViewTransition || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          apply();
+          return;
         }
-        window.dispatchEvent(new Event("portfolio-theme-change"));
+        // Circular reveal growing from the toggle.
+        const box = event.currentTarget.getBoundingClientRect();
+        const x = box.left + box.width / 2;
+        const y = box.top + box.height / 2;
+        const radius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
+        root.dataset.vt = "theme";
+        const transition = document.startViewTransition(apply);
+        void transition.ready.then(() =>
+          root.animate(
+            { clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+            { duration: 650, easing: "cubic-bezier(0.4, 0, 0.2, 1)", pseudoElement: "::view-transition-new(root)" },
+          ),
+        );
+        void transition.finished.finally(() => delete root.dataset.vt);
       }}
     >
       <svg
+        key={theme}
         width="20"
         height="20"
         viewBox="0 0 24 24"
