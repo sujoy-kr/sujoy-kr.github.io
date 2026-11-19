@@ -1,27 +1,27 @@
 export const stack = [
   {
     title: { en: "Interfaces", bn: "ইন্টারফেস" },
-    items: ["React", "Next.js", "Svelte", "TypeScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap", "Figma"],
+    items: ["React", "Next.js", "Svelte", "TypeScript", "Tailwind CSS", "Bootstrap", "Vite", "Figma"],
   },
   {
     title: { en: "Backend & real-time", bn: "ব্যাকএন্ড ও রিয়েল-টাইম" },
-    items: ["Node.js", "Express", "NestJS", "FastAPI", "PHP", "Python", "ASP.NET Core", "Socket.IO"],
+    items: ["Node.js", "Express", "NestJS", "FastAPI", "PHP", "Python", "C#", "ASP.NET Core", "Socket.IO"],
   },
   {
     title: { en: "Data & search", bn: "ডেটা ও সার্চ" },
-    items: ["PostgreSQL", "MongoDB", "MariaDB", "MySQL", "SQLite", "Redis", "Elasticsearch", "Prisma", "Sequelize", "Mongoose", "Firebase"],
+    items: ["PostgreSQL", "MongoDB", "MariaDB", "MySQL", "SQL Server", "SQLite", "Redis", "Elasticsearch", "Prisma", "Sequelize", "Mongoose", "Firebase"],
   },
   {
     title: { en: "Security & quality", bn: "নিরাপত্তা ও মান" },
-    items: ["JWT", "Passport.js", "Jest", "Swagger"],
+    items: ["JWT", "Passport.js", "Jest", "JUnit 5", "pytest", "Playwright", "Swagger"],
   },
   {
     title: { en: "Infrastructure", bn: "ইনফ্রাস্ট্রাকচার" },
-    items: ["Docker", "Nginx", "Let’s Encrypt", "RabbitMQ", "GitHub Actions", "PM2", "Prometheus", "Grafana", "Linux", "Vultr", "Heroku"],
+    items: ["Docker", "Nginx", "Let’s Encrypt", "RabbitMQ", "GitHub Actions", "PM2", "Prometheus", "Grafana", "Linux", "Vercel", "Vultr", "Heroku"],
   },
   {
     title: { en: "Beyond the browser", bn: "ব্রাউজারের বাইরে" },
-    items: ["Puppeteer", "Cheerio", "Sharp", "Java", "Kotlin", "Android", "Jetpack Compose", "pandas", "scikit-learn", "Streamlit", "Ollama"],
+    items: ["Puppeteer", "Cheerio", "Sharp", "Java", "Kotlin", "Android", "Gradle", "Jetpack Compose", "NumPy", "pandas", "scikit-learn", "Streamlit", "Ollama", "Gemini API"],
   },
 ];
 

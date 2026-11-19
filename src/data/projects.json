@@ -243,8 +243,6 @@
     "group": "Client work",
     "pitch": "A photo-services order workspace, from image submission to order summaries.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -960,8 +958,6 @@
     "group": "Client work",
     "pitch": "An app landing page built around a distinctive visual identity.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript"
     ],
     "highlights": [
@@ -996,8 +992,6 @@
     "group": "Client work",
     "pitch": "A finance-themed landing page with a bold visual language.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript"
     ],
     "highlights": [
@@ -1058,8 +1052,6 @@
     "group": "Client work",
     "pitch": "A digital agency website with a confident visual identity.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1089,8 +1081,6 @@
     "group": "Client work",
     "pitch": "A technology-focused landing page built for clear product storytelling.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1120,8 +1110,6 @@
     "group": "Client work",
     "pitch": "A business landing page balancing service information and visual character.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1151,8 +1139,6 @@
     "group": "Client work",
     "pitch": "A creative agency frontend focused on work and services.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1182,8 +1168,6 @@
     "group": "Client work",
     "pitch": "A mobile-solutions business website with a clear service structure.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1213,8 +1197,6 @@
     "group": "Client work",
     "pitch": "A service-led website for discovering local care.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1244,8 +1226,6 @@
     "group": "Client work",
     "pitch": "A healthcare discovery frontend with clear information hierarchy.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1275,8 +1255,6 @@
     "group": "Client work",
     "pitch": "A seasonal campaign page with a festive visual direction.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1306,8 +1284,6 @@
     "group": "Client work",
     "pitch": "A themed campaign page for Valentine’s Day.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript",
       "Bootstrap"
     ],
@@ -1337,8 +1313,6 @@
     "group": "Web apps",
     "pitch": "A small, purpose-built map selection tool for competitive play.",
     "technologies": [
-      "HTML",
-      "CSS",
       "JavaScript"
     ],
     "highlights": [
@@ -1440,8 +1414,7 @@
     "pitch": "A compact way to browse films and explore their details.",
     "technologies": [
       "Svelte",
-      "JavaScript",
-      "CSS"
+      "JavaScript"
     ],
     "highlights": [
       "Film list and detail views",

@@ -64,7 +64,7 @@ test("unique routes have substantive overview and implementation sections", () =
     assert.ok(p.engineering.length > 150, p.slug);
 
     assert.ok(p.highlights.length >= 2);
-    assert.ok(p.technologies.length >= 2);
+    assert.ok(p.technologies.length >= 1);
     assert.ok(p.audience.length > 10);
   }
 });

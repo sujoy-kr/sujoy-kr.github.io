@@ -11,7 +11,7 @@ const homeDesigns = ["web-dashboard-ui-design", "agency-website-landing-page-des
   (slug) => designs.filter((d) => d.slug === slug),
 );
 const homeProjects = bySlug(["safoyana", "talentrack-ai-powered-recruitment-platform", "nextset"]);
-const marqueeTech = ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "Svelte", "Android", "Python", "Figma"];
+const marqueeTech = Array.from(new Set(stack.flatMap((group) => group.items)));
 import { Arrow } from "@/components/Icons";
 import { BrandBadge } from "@/components/BrandBadge";
 import { DesignCard } from "@/components/DesignCard";
@@ -98,15 +98,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="wrap proof" aria-label="Highlights">
-        <ul className="chips tech-strip">
-          {marqueeTech.map((t) => (
-            <li key={t}>
-              <BrandBadge name={t} />
-              {t}
-            </li>
+      <section className="wrap proof" aria-label="Skills">
+        <div className="marquee">
+          {[false, true].map((copy) => (
+            <ul className="chips marquee-track" key={String(copy)} aria-hidden={copy || undefined}>
+              {marqueeTech.map((t) => (
+                <li key={t}>
+                  <BrandBadge name={t} />
+                  {t}
+                </li>
+              ))}
+            </ul>
           ))}
-        </ul>
+        </div>
       </section>
 
       <section className="section wrap reveal">
