@@ -444,10 +444,10 @@ h3 {
     color-mix(in srgb, var(--accent) 20%, transparent),
     color-mix(in srgb, var(--accent) 9%, transparent)
   );
-  clip-path: var(--fill-hidden, inset(0 100% 0 0));
+  clip-path: circle(var(--fr, 0px) at var(--fx, 50%) var(--fy, 50%));
   pointer-events: none;
 }
-/* Border that lights up with the same clip, speed and direction as the fill. */
+/* Border that lights up with the same clip as the fill (a circle that follows the cursor, driven by DirectionalCard). */
 .card-fill::after {
   content: "";
   position: absolute;
@@ -455,23 +455,8 @@ h3 {
   z-index: -1;
   border: 1px solid color-mix(in srgb, var(--accent) 58%, transparent);
   border-radius: inherit;
-  clip-path: var(--fill-hidden, inset(0 100% 0 0));
+  clip-path: circle(var(--fr, 0px) at var(--fx, 50%) var(--fy, 50%));
   pointer-events: none;
-}
-.card-fill[data-fill="on"]::before,
-.card-fill[data-fill="on"]::after {
-  clip-path: inset(0);
-  transition: clip-path var(--fill-dur, 0.22s) cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.card-fill[data-fill="off"]::before,
-.card-fill[data-fill="off"]::after {
-  transition: clip-path var(--fill-dur, 0.22s) cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-@media (prefers-reduced-motion: reduce) {
-  .card-fill[data-fill]::before,
-  .card-fill[data-fill]::after {
-    transition: none;
-  }
 }
 .card > :last-child {
   margin-bottom: 0;

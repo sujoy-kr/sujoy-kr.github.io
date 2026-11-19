@@ -1,88 +1,87 @@
 "use client";
 import { createElement, type AnchorHTMLAttributes, type PointerEvent, type ReactNode } from "react";
 
-type Side = "left" | "right" | "top" | "bottom";
-
-// Collapsed clip-path for each edge the fill can grow from / retract to.
-const hidden: Record<Side, string> = {
-  left: "inset(0 100% 0 0)",
-  right: "inset(0 0 0 100%)",
-  top: "inset(0 0 100% 0)",
-  bottom: "inset(100% 0 0 0)",
-};
-
-// Last two pointer positions, so a fast sweep still resolves the edge it actually crossed.
-let prev: { x: number; y: number; t: number } | null = null;
-let cur: { x: number; y: number; t: number } | null = null;
-if (typeof window !== "undefined") {
-  window.addEventListener(
-    "pointermove",
-    (e) => {
-      prev = cur;
-      cur = { x: e.clientX, y: e.clientY, t: e.timeStamp };
-    },
-    { capture: true, passive: true },
-  );
+/** Per-card fill state: the lit circle (x, y, r) eases toward its target (tx, ty, tr). */
+interface Fill {
+  x: number;
+  y: number;
+  r: number;
+  tx: number;
+  ty: number;
+  tr: number;
+  /** Pointer speed in px/ms at the last move, and when it was measured. */
+  speed: number;
+  moved: number;
+  /** Last pointer sample, for computing speed. */
+  px: number;
+  py: number;
+  pt: number;
+  raf: number;
+  last: number;
 }
 
-/** Edge of `r` crossed by the segment prev→cur; `entering` picks the first crossing, otherwise the last. */
-function crossedSide(r: DOMRect, entering: boolean): Side | null {
-  if (!prev || !cur) return null;
-  const dx = cur.x - prev.x;
-  const dy = cur.y - prev.y;
-  let best: { side: Side; t: number } | null = null;
-  const test = (side: Side, t: number, along: number, lo: number, hi: number) => {
-    if (!isFinite(t) || t < 0 || t > 1 || along < lo || along > hi) return;
-    if (!best || (entering ? t < best.t : t > best.t)) best = { side, t };
-  };
-  if (dx !== 0) {
-    for (const [side, x] of [["left", r.left], ["right", r.right]] as const) {
-      const t = (x - prev.x) / dx;
-      test(side, t, prev.y + t * dy, r.top, r.bottom);
-    }
+const fills = new WeakMap<HTMLElement, Fill>();
+
+const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
+const reducedMotion = () =>
+  typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/** Radius that comfortably lights most of the card around the cursor. */
+function fullRadius(el: HTMLElement): number {
+  return Math.max(el.offsetWidth, el.offsetHeight) * 0.6 + 40;
+}
+
+function tick(el: HTMLElement, f: Fill, now: number) {
+  const dt = clamp(now - f.last, 1, 50);
+  f.last = now;
+  // Pointer speed fades once the pointer stops, so slow drifts stay smooth.
+  const speed = f.speed * Math.exp(-(now - f.moved) / 80);
+  const calm = reducedMotion();
+  // Position tracks the pointer harder the faster it moves: a fast sweep is caught, never left behind.
+  const tauPos = calm ? 0 : clamp(70 - speed * 45, 4, 70);
+  const tauRad = calm ? 0 : clamp(130 - speed * 50, 40, 130);
+  const kPos = tauPos === 0 ? 1 : 1 - Math.exp(-dt / tauPos);
+  const kRad = tauRad === 0 ? 1 : 1 - Math.exp(-dt / tauRad);
+  f.x += (f.tx - f.x) * kPos;
+  f.y += (f.ty - f.y) * kPos;
+  f.r += (f.tr - f.r) * kRad;
+  const settled =
+    Math.abs(f.tx - f.x) < 0.5 && Math.abs(f.ty - f.y) < 0.5 && Math.abs(f.tr - f.r) < 0.5;
+  if (settled) {
+    f.x = f.tx;
+    f.y = f.ty;
+    f.r = f.tr;
   }
-  if (dy !== 0) {
-    for (const [side, y] of [["top", r.top], ["bottom", r.bottom]] as const) {
-      const t = (y - prev.y) / dy;
-      test(side, t, prev.x + t * dx, r.left, r.right);
-    }
+  el.style.setProperty("--fx", `${f.x.toFixed(1)}px`);
+  el.style.setProperty("--fy", `${f.y.toFixed(1)}px`);
+  el.style.setProperty("--fr", `${f.r.toFixed(1)}px`);
+  f.raf = settled ? 0 : requestAnimationFrame((t) => tick(el, f, t));
+}
+
+function kick(el: HTMLElement, f: Fill) {
+  if (f.raf) return;
+  f.last = performance.now();
+  f.raf = requestAnimationFrame((t) => tick(el, f, t));
+}
+
+/** Records the pointer position (relative to the card) and speed, and aims the fill at it. */
+function aim(e: PointerEvent<HTMLElement>, f: Fill) {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const dt = e.timeStamp - f.pt;
+  if (f.pt && dt > 0) {
+    const v = Math.hypot(e.clientX - f.px, e.clientY - f.py) / dt;
+    // Keep the peak of a quick burst so coalesced/sparse events still read as fast.
+    f.speed = Math.max(v, f.speed * Math.exp(-(e.timeStamp - f.moved) / 80));
   }
-  return (best as { side: Side } | null)?.side ?? null;
+  f.px = e.clientX;
+  f.py = e.clientY;
+  f.pt = e.timeStamp;
+  f.moved = performance.now();
+  f.tx = e.clientX - rect.left;
+  f.ty = e.clientY - rect.top;
 }
 
-/** Animation length that follows the cursor: a fast sweep snaps (140ms), a slow drift glides (300ms). */
-function durationMs(): number {
-  if (!prev || !cur || cur.t <= prev.t) return 220;
-  const speed = Math.hypot(cur.x - prev.x, cur.y - prev.y) / (cur.t - prev.t); // px/ms
-  return Math.round(Math.min(300, Math.max(140, 300 - speed * 90)));
-}
-
-function sideOf(e: PointerEvent<HTMLElement>, entering: boolean): Side {
-  const r = e.currentTarget.getBoundingClientRect();
-  const crossed = crossedSide(r, entering);
-  if (crossed) return crossed;
-  const d: [Side, number][] = [
-    ["left", e.clientX - r.left],
-    ["right", r.right - e.clientX],
-    ["top", e.clientY - r.top],
-    ["bottom", r.bottom - e.clientY],
-  ];
-  return d.reduce((a, b) => (b[1] < a[1] ? b : a))[0];
-}
-
-const isFillAnim = (a: Animation) =>
-  a.playState === "running" &&
-  ["::before", "::after"].includes(
-      (a.effect as KeyframeEffect | null)?.pseudoElement ?? "",
-    );
-
-// Pause on the fully filled card before draining after an early exit.
-const HOLD_MS = 40;
-
-// Cards left before their fill-in finished, waiting to drain; a re-enter cancels, a hand-off flushes.
-const pendingLeave = new Map<HTMLElement, () => void>();
-
-/** Card whose hover background fills in from the edge the pointer entered, and drains out through the edge it leaves. */
+/** Card whose hover background grows around the cursor and follows it, faster the faster the pointer moves. */
 export function DirectionalCard({
   children,
   className = "",
@@ -97,47 +96,35 @@ export function DirectionalCard({
   const enter = (e: PointerEvent<HTMLElement>) => {
     if (e.pointerType === "touch") return;
     const el = e.currentTarget;
-    pendingLeave.delete(el);
-    // Moving from one card straight into another: the previous card drains right now, in
-    // step with this one filling, so the lit area behaves like a single box sliding across.
-    const dur = `${durationMs()}ms`;
-    for (const [other, drainOther] of [...pendingLeave]) {
-      pendingLeave.delete(other);
-      other.style.setProperty("--fill-dur", dur);
-      drainOther();
+    let f = fills.get(el);
+    if (!f) {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      f = { x, y, r: 0, tx: x, ty: y, tr: 0, speed: 0, moved: 0, px: 0, py: 0, pt: 0, raf: 0, last: 0 };
+      fills.set(el, f);
     }
-    el.style.setProperty("--fill-dur", dur);
-    // Re-entered while still animating: continue from the current shape instead of snapping.
-    if (!el.getAnimations({ subtree: true }).some(isFillAnim)) {
-      el.dataset.fill = "reset";
-      el.style.setProperty("--fill-hidden", hidden[sideOf(e, true)]);
-      void el.offsetWidth; // commit the start position before animating
-    }
-    el.dataset.fill = "on";
+    f.pt = 0; // a new visit: don't measure speed across the gap
+    aim(e, f);
+    f.speed = Math.max(f.speed, 1.5); // entering mid-sweep is treated as fast until real samples arrive
+    f.tr = fullRadius(el);
+    kick(el, f);
+  };
+  const move = (e: PointerEvent<HTMLElement>) => {
+    if (e.pointerType === "touch") return;
+    const f = fills.get(e.currentTarget);
+    if (!f || f.tr === 0) return;
+    // Coalesced samples keep the speed estimate honest when the pointer outruns the frame rate.
+    aim(e, f);
+    kick(e.currentTarget, f);
   };
   const leave = (e: PointerEvent<HTMLElement>) => {
     if (e.pointerType === "touch") return;
-    const el = e.currentTarget;
-    const exit = hidden[sideOf(e, false)];
-    el.style.setProperty("--fill-dur", `${durationMs()}ms`);
-    const drain = () => {
-      el.style.setProperty("--fill-hidden", exit);
-      el.dataset.fill = "off";
-    };
-    // Let a fill-in that is still running play to the end before draining.
-    const filling = el.dataset.fill === "on" ? el.getAnimations({ subtree: true }).filter(isFillAnim) : [];
-    if (filling.length === 0) return drain();
-    const pending = () => {
-      pendingLeave.delete(el);
-      drain();
-    };
-    pendingLeave.set(el, pending);
-    Promise.allSettled(filling.map((a) => a.finished)).then(() => {
-      // Hold the full fill briefly so a quick flick still reads as fill → pause → drain.
-      setTimeout(() => {
-        if (pendingLeave.get(el) === pending) pending();
-      }, HOLD_MS);
-    });
+    const f = fills.get(e.currentTarget);
+    if (!f) return;
+    aim(e, f); // chase the exit point while shrinking, so a flyover is still caught end to end
+    f.tr = 0;
+    kick(e.currentTarget, f);
   };
   const base = as === "article" ? "card card-fill" : "card-fill chip-fill";
   return createElement(
@@ -146,6 +133,7 @@ export function DirectionalCard({
       ...rest,
       className: `${base} ${className}`.trim(),
       onPointerEnter: enter,
+      onPointerMove: move,
       onPointerLeave: leave,
     },
     children,

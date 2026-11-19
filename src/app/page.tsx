@@ -103,10 +103,10 @@ export default function Home() {
           {[false, true].map((copy) => (
             <ul className="chips marquee-track" key={String(copy)} aria-hidden={copy || undefined}>
               {marqueeTech.map((t) => (
-                <li key={t}>
+                <DirectionalCard as="li" key={t}>
                   <BrandBadge name={t} />
                   {t}
-                </li>
+                </DirectionalCard>
               ))}
             </ul>
           ))}
