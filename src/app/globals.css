@@ -2147,8 +2147,9 @@ img::selection {
   outline-offset: 2px;
 }
 @media (max-width: 820px) {
-  /* Full-width titles sit over the artwork: veil from the top down, not left-to-right. */
-  .detail-backdrop::after {
+  /* Full-width titles sit over the artwork: veil from the top down, not left-to-right.
+     The gradient variant is excluded: its ::after is the drifting blue glow, not a veil. */
+  .detail-backdrop:not(.detail-backdrop-gradient)::after {
     background: linear-gradient(
       to bottom,
       color-mix(in srgb, var(--bg) 82%, transparent) 0%,
@@ -2379,21 +2380,9 @@ img[data-loaded] {
 }
 
 /* View transitions: cross-fade between pages, circular reveal for the theme switch. */
-.header {
-  view-transition-name: site-header;
-}
-::view-transition-group(site-header) {
-  animation: none;
-}
-::view-transition-old(site-header) {
-  display: none;
-}
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: 0.28s;
-}
-:root[data-vt="theme"] .header {
-  view-transition-name: none;
 }
 :root[data-vt="theme"] body {
   transition: none;
