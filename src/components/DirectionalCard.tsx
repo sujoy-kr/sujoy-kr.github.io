@@ -26,8 +26,9 @@ const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v
 const reducedMotion = () =>
   typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/** Radius that comfortably lights most of the card around the cursor. */
+/** Radius that lights the area around the cursor; small chips get a tight spot so the following stays visible. */
 function fullRadius(el: HTMLElement): number {
+  if (el.offsetHeight < 80) return el.offsetHeight * 0.9;
   return Math.max(el.offsetWidth, el.offsetHeight) * 0.6 + 40;
 }
 
